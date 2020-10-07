@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "easy-fix"
+    }
+  },
+  "defaultProject": "easy-fix",
+  "cli": {
+    "analytics": "40d5f72f-3a6a-4989-a25b-422e1c8b1bd7"
+  }
 }
