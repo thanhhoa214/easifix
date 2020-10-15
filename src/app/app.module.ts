@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SigninComponent } from './signin/signin.component';
 import { ConfirmRequestTimeComponent } from './confirm-request-time/confirm-request-time.component';
+import { ListStoreDetailsComponent } from './list-store-details/list-store-details.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { ConfirmRequestTimeComponent } from './confirm-request-time/confirm-requ
     WelcomeComponent,
     SigninComponent,
     ConfirmRequestTimeComponent
+    ListStoreDetailsComponent
   ],
   imports: [
     BrowserModule,
