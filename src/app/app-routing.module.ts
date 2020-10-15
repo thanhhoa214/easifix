@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { BookFailedComponent } from './book-failed/book-failed.component';
 import { BookProcessComponent } from './book-process/book-process.component';
 import { BookSuccessComponent } from './book-success/book-success.component';
+import { SettingComponent } from './setting/setting.component';
 import { SigninComponent } from './signin/signin.component';
 import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -30,6 +31,10 @@ const routes: Routes = [
   }, {
     path: 'book-failed',
     component: BookFailedComponent,
+  },
+  {
+    path: 'setting',
+    component: SettingComponent,
   },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];

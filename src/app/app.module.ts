@@ -9,6 +9,7 @@ import { StoreCallDetailsComponent } from './store-call-details/store-call-detai
 import { BookProcessComponent } from './book-process/book-process.component';
 import { BookSuccessComponent } from './book-success/book-success.component';
 import { BookFailedComponent } from './book-failed/book-failed.component';
+import { SettingComponent } from './setting/setting.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BookFailedComponent } from './book-failed/book-failed.component';
     StoreCallDetailsComponent,
     BookProcessComponent,
     BookSuccessComponent,
-    BookFailedComponent
+    BookFailedComponent,
+    SettingComponent
   ],
   imports: [
     BrowserModule,
