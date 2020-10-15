@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { BookFailedComponent } from './book-failed/book-failed.component';
 import { BookProcessComponent } from './book-process/book-process.component';
 import { BookSuccessComponent } from './book-success/book-success.component';
 import { SigninComponent } from './signin/signin.component';
@@ -26,6 +27,9 @@ const routes: Routes = [
   {
     path: 'book-success',
     component: BookSuccessComponent,
+  }, {
+    path: 'book-failed',
+    component: BookFailedComponent,
   },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];

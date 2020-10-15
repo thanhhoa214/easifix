@@ -8,6 +8,7 @@ import { SigninComponent } from './signin/signin.component';
 import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { BookProcessComponent } from './book-process/book-process.component';
 import { BookSuccessComponent } from './book-success/book-success.component';
+import { BookFailedComponent } from './book-failed/book-failed.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BookSuccessComponent } from './book-success/book-success.component';
     SigninComponent,
     StoreCallDetailsComponent,
     BookProcessComponent,
-    BookSuccessComponent
+    BookSuccessComponent,
+    BookFailedComponent
   ],
   imports: [
     BrowserModule,
