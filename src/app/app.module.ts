@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SigninComponent } from './signin/signin.component';
 import { PromotionScreenComponent } from './promotion-screen/promotion-screen.component';
+import { CreateAddressComponent } from './create-address/create-address.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     SigninComponent,
-    PromotionScreenComponent
+    PromotionScreenComponent,
+    CreateAddressComponent
   ],
   imports: [
     BrowserModule,
