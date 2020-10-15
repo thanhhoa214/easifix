@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SigninComponent } from './signin/signin.component';
+import { PendingAfterRequest1Component } from './pending-after-request1/pending-after-request1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    SigninComponent
+    SigninComponent,
+    PendingAfterRequest1Component
   ],
   imports: [
     BrowserModule,
