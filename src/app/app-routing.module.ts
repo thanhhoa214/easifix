@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HistoryCancelComponent } from './history-cancel/history-cancel.component';
 import { SigninComponent } from './signin/signin.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'signin',
     component: SigninComponent,
+  },
+  {
+    path: 'history-cancel',
+    component: HistoryCancelComponent,
   },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
