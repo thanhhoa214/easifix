@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SigninComponent } from './signin/signin.component';
-import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
+import { StoreMapDetailsComponent } from './store-map-details/store-map-details.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
@@ -14,8 +14,8 @@ const routes: Routes = [
     component: SigninComponent,
   },
   {
-    path: 'store-call-details',
-    component: StoreCallDetailsComponent,
+    path: 'store-map-details',
+    component: StoreMapDetailsComponent,
   },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
