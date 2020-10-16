@@ -10,6 +10,7 @@ import { PendingAfterRequest2Component } from './pending-after-request2/pending-
 import { PendingAfterRequest3Component } from './pending-after-request3/pending-after-request3.component';
 import { PendingAfterRequest4Component } from './pending-after-request4/pending-after-request4.component';
 import { HomeSearchComponent } from './home-search/home-search.component';
+import { BookFailedComponent } from './book-failed/book-failed.component';
 import { BookProcessComponent } from './book-process/book-process.component';
 import { BookSuccessComponent } from './book-success/book-success.component';
 import { SigninComponent } from './signin/signin.component';
@@ -58,6 +59,10 @@ const routes: Routes = [
   {
     path: 'book-success',
     component: BookSuccessComponent,
+  },
+  {
+    path: 'book-failed',
+    component: BookFailedComponent,
   },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
