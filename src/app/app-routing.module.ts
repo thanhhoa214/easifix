@@ -9,6 +9,7 @@ import { PendingAfterRequest1Component } from './pending-after-request1/pending-
 import { PendingAfterRequest2Component } from './pending-after-request2/pending-after-request2.component';
 import { PendingAfterRequest3Component } from './pending-after-request3/pending-after-request3.component';
 import { PendingAfterRequest4Component } from './pending-after-request4/pending-after-request4.component';
+import { HomeSearchComponent } from './home-search/home-search.component';
 import { SigninComponent } from './signin/signin.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
@@ -45,6 +46,7 @@ const routes: Routes = [
   { path: 'pending-after-request2', component: PendingAfterRequest2Component },
   { path: 'pending-after-request3', component: PendingAfterRequest3Component },
   { path: 'pending-after-request4', component: PendingAfterRequest4Component },
+  { path: 'home-search', component: HomeSearchComponent },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
 

@@ -14,6 +14,7 @@ import { PendingAfterRequest1Component } from './pending-after-request1/pending-
 import { PendingAfterRequest2Component } from './pending-after-request2/pending-after-request2.component';
 import { PendingAfterRequest3Component } from './pending-after-request3/pending-after-request3.component';
 import { PendingAfterRequest4Component } from './pending-after-request4/pending-after-request4.component';
+import { HomeSearchComponent } from './home-search/home-search.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PendingAfterRequest4Component } from './pending-after-request4/pending-
     PendingAfterRequest2Component,
     PendingAfterRequest3Component,
     PendingAfterRequest4Component,
+    HomeSearchComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
