@@ -11,6 +11,7 @@ import { PendingAfterRequest3Component } from './pending-after-request3/pending-
 import { PendingAfterRequest4Component } from './pending-after-request4/pending-after-request4.component';
 import { HomeSearchComponent } from './home-search/home-search.component';
 import { BookProcessComponent } from './book-process/book-process.component';
+import { BookSuccessComponent } from './book-success/book-success.component';
 import { SigninComponent } from './signin/signin.component';
 import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -53,6 +54,10 @@ const routes: Routes = [
   {
     path: 'book-process',
     component: BookProcessComponent,
+  },
+  {
+    path: 'book-success',
+    component: BookSuccessComponent,
   },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];

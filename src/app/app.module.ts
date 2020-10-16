@@ -17,6 +17,7 @@ import { PendingAfterRequest4Component } from './pending-after-request4/pending-
 import { HomeSearchComponent } from './home-search/home-search.component';
 import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { BookProcessComponent } from './book-process/book-process.component';
+import { BookSuccessComponent } from './book-success/book-success.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { BookProcessComponent } from './book-process/book-process.component';
     HomeSearchComponent,
     StoreCallDetailsComponent,
     BookProcessComponent,
+    BookSuccessComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
