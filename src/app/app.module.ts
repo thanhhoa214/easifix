@@ -9,6 +9,7 @@ import { PromotionScreenComponent } from './promotion-screen/promotion-screen.co
 import { ConfirmRequestTimeComponent } from './confirm-request-time/confirm-request-time.component';
 import { PromotionDetailScreenComponent } from './promotion-detail-screen/promotion-detail-screen.component';
 import { OrderHistoryDetailComponent } from './order-history-detail/order-history-detail.component';
+import { ConfirmRequestAddressComponent } from './confirm-request-address/confirm-request-address.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { OrderHistoryDetailComponent } from './order-history-detail/order-histor
     ConfirmRequestTimeComponent,
     PromotionDetailScreenComponent,
     OrderHistoryDetailComponent,
+    ConfirmRequestAddressComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

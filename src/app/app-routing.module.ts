@@ -4,6 +4,7 @@ import { PromotionScreenComponent } from './promotion-screen/promotion-screen.co
 import { ConfirmRequestTimeComponent } from './confirm-request-time/confirm-request-time.component';
 import { PromotionDetailScreenComponent } from './promotion-detail-screen/promotion-detail-screen.component';
 import { OrderHistoryDetailComponent } from './order-history-detail/order-history-detail.component';
+import { ConfirmRequestAddressComponent } from './confirm-request-address/confirm-request-address.component';
 import { SigninComponent } from './signin/signin.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'order-history-detail',
     component: OrderHistoryDetailComponent,
+  },
+  {
+    path: 'confirm-request-address',
+    component: ConfirmRequestAddressComponent,
   },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
