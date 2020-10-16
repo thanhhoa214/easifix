@@ -15,6 +15,8 @@ import { PendingAfterRequest2Component } from './pending-after-request2/pending-
 import { PendingAfterRequest3Component } from './pending-after-request3/pending-after-request3.component';
 import { PendingAfterRequest4Component } from './pending-after-request4/pending-after-request4.component';
 import { HomeSearchComponent } from './home-search/home-search.component';
+import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
+import { BookProcessComponent } from './book-process/book-process.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { HomeSearchComponent } from './home-search/home-search.component';
     PendingAfterRequest3Component,
     PendingAfterRequest4Component,
     HomeSearchComponent,
+    StoreCallDetailsComponent,
+    BookProcessComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
