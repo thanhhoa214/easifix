@@ -13,6 +13,7 @@ import { ConfirmRequestAddressComponent } from './confirm-request-address/confir
 import { PendingAfterRequest1Component } from './pending-after-request1/pending-after-request1.component';
 import { PendingAfterRequest2Component } from './pending-after-request2/pending-after-request2.component';
 import { PendingAfterRequest3Component } from './pending-after-request3/pending-after-request3.component';
+import { PendingAfterRequest4Component } from './pending-after-request4/pending-after-request4.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PendingAfterRequest3Component } from './pending-after-request3/pending-
     PendingAfterRequest1Component,
     PendingAfterRequest2Component,
     PendingAfterRequest3Component,
+    PendingAfterRequest4Component,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
