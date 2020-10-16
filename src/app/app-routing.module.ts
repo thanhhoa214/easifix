@@ -5,6 +5,7 @@ import { ConfirmRequestTimeComponent } from './confirm-request-time/confirm-requ
 import { PromotionDetailScreenComponent } from './promotion-detail-screen/promotion-detail-screen.component';
 import { OrderHistoryDetailComponent } from './order-history-detail/order-history-detail.component';
 import { ConfirmRequestAddressComponent } from './confirm-request-address/confirm-request-address.component';
+import { PendingAfterRequest1Component } from './pending-after-request1/pending-after-request1.component';
 import { SigninComponent } from './signin/signin.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
@@ -37,6 +38,7 @@ const routes: Routes = [
     path: 'confirm-request-address',
     component: ConfirmRequestAddressComponent,
   },
+  { path: 'pending-after-request1', component: PendingAfterRequest1Component },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
 
