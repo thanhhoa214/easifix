@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SigninComponent } from './signin/signin.component';
 import { PromotionScreenComponent } from './promotion-screen/promotion-screen.component';
+import { ConfirmRequestTimeComponent } from './confirm-request-time/confirm-request-time.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { PromotionScreenComponent } from './promotion-screen/promotion-screen.co
     WelcomeComponent,
     SigninComponent,
     PromotionScreenComponent,
+    ConfirmRequestTimeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
