@@ -12,6 +12,7 @@ import { OrderHistoryDetailComponent } from './order-history-detail/order-histor
 import { ConfirmRequestAddressComponent } from './confirm-request-address/confirm-request-address.component';
 import { PendingAfterRequest1Component } from './pending-after-request1/pending-after-request1.component';
 import { PendingAfterRequest2Component } from './pending-after-request2/pending-after-request2.component';
+import { PendingAfterRequest3Component } from './pending-after-request3/pending-after-request3.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { PendingAfterRequest2Component } from './pending-after-request2/pending-
     ConfirmRequestAddressComponent,
     PendingAfterRequest1Component,
     PendingAfterRequest2Component,
+    PendingAfterRequest3Component,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
