@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PromotionScreenComponent } from './promotion-screen/promotion-screen.component';
 import { ConfirmRequestTimeComponent } from './confirm-request-time/confirm-request-time.component';
 import { PromotionDetailScreenComponent } from './promotion-detail-screen/promotion-detail-screen.component';
+import { OrderHistoryDetailComponent } from './order-history-detail/order-history-detail.component';
 import { SigninComponent } from './signin/signin.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'promotion-detail-screen',
     component: PromotionDetailScreenComponent,
+  },
+  {
+    path: 'order-history-detail',
+    component: OrderHistoryDetailComponent,
   },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
