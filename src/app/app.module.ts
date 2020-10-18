@@ -20,6 +20,7 @@ import { BookProcessComponent } from './book-process/book-process.component';
 import { BookSuccessComponent } from './book-success/book-success.component';
 import { BookFailedComponent } from './book-failed/book-failed.component';
 import { PolicyScreenComponent } from './policy-screen/policy-screen.component';
+import { SuccessComponent } from './success/success.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { PolicyScreenComponent } from './policy-screen/policy-screen.component';
     BookSuccessComponent,
     BookFailedComponent,
     PolicyScreenComponent,
+    SuccessComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
