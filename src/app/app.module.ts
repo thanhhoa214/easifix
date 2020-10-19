@@ -21,6 +21,8 @@ import { BookSuccessComponent } from './book-success/book-success.component';
 import { BookFailedComponent } from './book-failed/book-failed.component';
 import { PolicyScreenComponent } from './policy-screen/policy-screen.component';
 import { SuccessComponent } from './success/success.component';
+import { BottomBarComponent } from './shared/components/bottom-bar/bottom-bar.component';
+import { HomeSearchModalComponent } from './shared/components/home-search-modal/home-search-modal.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { SuccessComponent } from './success/success.component';
     BookFailedComponent,
     PolicyScreenComponent,
     SuccessComponent,
+    BottomBarComponent,
+    HomeSearchModalComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

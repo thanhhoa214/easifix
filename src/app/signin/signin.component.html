@@ -128,7 +128,7 @@
       ></rect>
     </svg>
   </div>
-  <div onclick="application.goToTargetView(event)" id="ButtonRoundedLargeGreen">
+  <div [routerLink]="['..', 'home-search']" id="ButtonRoundedLargeGreen">
     <svg class="bg_co">
       <rect id="bg_co" rx="6" ry="6" x="0" y="0" width="334" height="55"></rect>
     </svg>
@@ -150,11 +150,7 @@
         ></path>
       </svg>
     </div>
-    <div
-      onclick="application.goToTargetView(event)"
-      [routerLink]="['..', 'signin']"
-      id="Sign_n"
-    >
+    <div [routerLink]="['..', 'signin']" id="Sign_n">
       <span>WELCOME</span>
     </div>
     <div id="Light_Status_Bar">
