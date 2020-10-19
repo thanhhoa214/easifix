@@ -28,6 +28,7 @@ import { CreateAddressComponent } from './create-address/create-address.componen
 import { HistoryOngoingComponent } from './history-ongoing/history-ongoing.component';
 import { HistoryCancelComponent } from './history-cancel/history-cancel.component';
 import { HistoryCompleteComponent } from './history-complete/history-complete.component';
+import { NotificationScreenComponent } from './notification-screen/notification-screen.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { HistoryCompleteComponent } from './history-complete/history-complete.co
     HistoryOngoingComponent,
     HistoryCancelComponent,
     HistoryCompleteComponent,
+    NotificationScreenComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

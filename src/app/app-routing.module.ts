@@ -19,6 +19,7 @@ import { ListAddressComponent } from './list-address/list-address.component';
 import { HistoryOngoingComponent } from './history-ongoing/history-ongoing.component';
 import { HistoryCancelComponent } from './history-cancel/history-cancel.component';
 import { HistoryCompleteComponent } from './history-complete/history-complete.component';
+import { NotificationScreenComponent } from './notification-screen/notification-screen.component';
 import { SigninComponent } from './signin/signin.component';
 import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -87,6 +88,7 @@ const routes: Routes = [
     path: 'history-complete',
     component: HistoryCompleteComponent,
   },
+  { path: 'notification-screen', component: NotificationScreenComponent },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
 
