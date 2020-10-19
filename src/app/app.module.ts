@@ -15,7 +15,6 @@ import { PendingAfterRequest2Component } from './pending-after-request2/pending-
 import { PendingAfterRequest3Component } from './pending-after-request3/pending-after-request3.component';
 import { PendingAfterRequest4Component } from './pending-after-request4/pending-after-request4.component';
 import { HomeSearchComponent } from './home-search/home-search.component';
-// import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { BookProcessComponent } from './book-process/book-process.component';
 import { BookSuccessComponent } from './book-success/book-success.component';
 import { BookFailedComponent } from './book-failed/book-failed.component';
@@ -36,6 +35,7 @@ import { StoreMapDetailsComponent } from './store-map-details/store-map-details.
 import { SettingComponent } from './setting/setting.component';
 import { SignupComponent } from './signup/signup.component';
 import { SignupOtpComponent } from './signup-otp/signup-otp.component';
+import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +72,7 @@ import { SignupOtpComponent } from './signup-otp/signup-otp.component';
     SettingComponent,
     SignupComponent,
     SignupOtpComponent,
+    StoreCallDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   bootstrap: [AppComponent],

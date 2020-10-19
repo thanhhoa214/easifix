@@ -23,7 +23,7 @@ import { NotificationScreenComponent } from './notification-screen/notification-
 import { ListStoreComponent } from './list-store/list-store.component';
 import { SettingComponent } from './setting/setting.component';
 import { SigninComponent } from './signin/signin.component';
-// import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
+import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { StroreDetailsComponent } from './strore-details/strore-details.component';
 import { StoreMapDetailsComponent } from './store-map-details/store-map-details.component';
 import { SignupOtpComponent } from './signup-otp/signup-otp.component';
@@ -70,7 +70,7 @@ const routes: Routes = [
   { path: 'pending-after-request3', component: PendingAfterRequest3Component },
   { path: 'pending-after-request4', component: PendingAfterRequest4Component },
   { path: 'home-search', component: HomeSearchComponent },
-  // { path: 'store-call-details', component: StoreCallDetailsComponent },
+  { path: 'store-call-details', component: StoreCallDetailsComponent },
   {
     path: 'book-process',
     component: BookProcessComponent,
