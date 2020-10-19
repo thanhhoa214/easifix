@@ -17,6 +17,7 @@ import { PolicyScreenComponent } from './policy-screen/policy-screen.component';
 import { SigninComponent } from './signin/signin.component';
 import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { SuccessComponent } from './success/success.component';
 
 const routes: Routes = [
   {
@@ -68,6 +69,9 @@ const routes: Routes = [
   {
     path: 'policy-screen',
     component: PolicyScreenComponent,
+  },{
+    path: 'success',
+    component: SuccessComponent,
   },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
