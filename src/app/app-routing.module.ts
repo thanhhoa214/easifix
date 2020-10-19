@@ -14,6 +14,7 @@ import { BookFailedComponent } from './book-failed/book-failed.component';
 import { BookProcessComponent } from './book-process/book-process.component';
 import { BookSuccessComponent } from './book-success/book-success.component';
 import { PolicyScreenComponent } from './policy-screen/policy-screen.component';
+import { ListAddressComponent } from './list-address/list-address.component';
 import { SigninComponent } from './signin/signin.component';
 import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -69,10 +70,12 @@ const routes: Routes = [
   {
     path: 'policy-screen',
     component: PolicyScreenComponent,
-  },{
+  },
+  {
     path: 'success',
     component: SuccessComponent,
   },
+  { path: 'list-address', component: ListAddressComponent },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
 

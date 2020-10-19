@@ -23,6 +23,7 @@ import { PolicyScreenComponent } from './policy-screen/policy-screen.component';
 import { SuccessComponent } from './success/success.component';
 import { BottomBarComponent } from './shared/components/bottom-bar/bottom-bar.component';
 import { HomeSearchModalComponent } from './shared/components/home-search-modal/home-search-modal.component';
+import { ListAddressComponent } from './list-address/list-address.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { HomeSearchModalComponent } from './shared/components/home-search-modal/
     SuccessComponent,
     BottomBarComponent,
     HomeSearchModalComponent,
+    ListAddressComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
