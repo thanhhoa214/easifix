@@ -33,6 +33,7 @@ import { ListStoreComponent } from './list-store/list-store.component';
 import { StroreDetailsComponent } from './strore-details/strore-details.component';
 
 import { StoreMapDetailsComponent } from './store-map-details/store-map-details.component';
+import { SettingComponent } from './setting/setting.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { StoreMapDetailsComponent } from './store-map-details/store-map-details.
     ListStoreComponent,
     StroreDetailsComponent,
     StoreMapDetailsComponent,
+    SettingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   bootstrap: [AppComponent],
