@@ -1,0 +1,180 @@
+.mediaViewInfo {
+    --web-view-name: bottom-bar;
+    --web-view-id: bottom-bar;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+ :root {
+    --web-view-ids: bottom-bar;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+#bottom-bar {
+    position: absolute;
+    width: 360px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    --web-view-name: bottom-bar;
+    --web-view-id: bottom-bar;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+#bottom-bar_cd {
+    position: absolute;
+    width: 360px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#home-bg {
+    fill: rgba(255, 255, 255, 1);
+}
+
+.home-bg {
+    filter: drop-shadow(0px -1px 0px rgba(0, 0, 0, 0.502));
+    position: absolute;
+    overflow: visible;
+    width: 360px;
+    height: 57px;
+    left: 0px;
+    top: 4px;
+}
+
+#Home {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#home-component {
+    opacity: 0.9;
+    fill: rgba(255, 255, 255, 1);
+}
+
+.home-component {
+    position: absolute;
+    overflow: visible;
+    width: 90px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+}
+
+#home-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 25px;
+    top: 10px;
+    overflow: visible;
+}
+
+#history {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    left: 90px;
+    top: 0px;
+    overflow: visible;
+}
+
+#history-component {
+    opacity: 0.9;
+    fill: rgba(255, 255, 255, 1);
+}
+
+.history-component {
+    position: absolute;
+    overflow: visible;
+    width: 90px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+}
+
+#Mask_Group_9887 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 25px;
+    top: 10px;
+    overflow: visible;
+}
+
+#notify {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    left: 180px;
+    top: 0px;
+    overflow: visible;
+}
+
+#notify-component {
+    opacity: 0.9;
+    fill: rgba(255, 255, 255, 1);
+}
+
+.notify-component {
+    position: absolute;
+    overflow: visible;
+    width: 90px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+}
+
+#notify-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 25px;
+    top: 10px;
+    overflow: visible;
+}
+
+#info {
+    position: absolute;
+    width: 90px;
+    height: 60px;
+    left: 270px;
+    top: 0px;
+    overflow: visible;
+}
+
+#info-component {
+    opacity: 0.9;
+    fill: rgba(255, 255, 255, 1);
+}
+
+.info-component {
+    position: absolute;
+    overflow: visible;
+    width: 90px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+}
+
+#Mask_Group_9888 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 25px;
+    top: 10px;
+    overflow: visible;
+}
