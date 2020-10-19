@@ -30,6 +30,7 @@ import { SignupOtpComponent } from './signup-otp/signup-otp.component';
 import { SignupComponent } from './signup/signup.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SuccessComponent } from './success/success.component';
+import { HomeListStoreComponent } from './home-list-store/home-list-store.component';
 
 const routes: Routes = [
   {
@@ -113,6 +114,10 @@ const routes: Routes = [
   {
     path: 'signup-otp',
     component: SignupOtpComponent,
+  },
+  {
+    path: 'home-list-store',
+    component: HomeListStoreComponent,
   },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];

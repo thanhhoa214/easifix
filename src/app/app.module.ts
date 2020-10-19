@@ -36,6 +36,7 @@ import { SettingComponent } from './setting/setting.component';
 import { SignupComponent } from './signup/signup.component';
 import { SignupOtpComponent } from './signup-otp/signup-otp.component';
 import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
+import { HomeListStoreComponent } from './home-list-store/home-list-store.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,7 @@ import { StoreCallDetailsComponent } from './store-call-details/store-call-detai
     SignupComponent,
     SignupOtpComponent,
     StoreCallDetailsComponent,
+    HomeListStoreComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   bootstrap: [AppComponent],
