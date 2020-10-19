@@ -15,7 +15,7 @@ import { PendingAfterRequest2Component } from './pending-after-request2/pending-
 import { PendingAfterRequest3Component } from './pending-after-request3/pending-after-request3.component';
 import { PendingAfterRequest4Component } from './pending-after-request4/pending-after-request4.component';
 import { HomeSearchComponent } from './home-search/home-search.component';
-import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
+// import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { BookProcessComponent } from './book-process/book-process.component';
 import { BookSuccessComponent } from './book-success/book-success.component';
 import { BookFailedComponent } from './book-failed/book-failed.component';
@@ -32,6 +32,8 @@ import { NotificationScreenComponent } from './notification-screen/notification-
 import { ListStoreComponent } from './list-store/list-store.component';
 import { StroreDetailsComponent } from './strore-details/strore-details.component';
 
+import { StoreMapDetailsComponent } from './store-map-details/store-map-details.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +49,7 @@ import { StroreDetailsComponent } from './strore-details/strore-details.componen
     PendingAfterRequest3Component,
     PendingAfterRequest4Component,
     HomeSearchComponent,
-    StoreCallDetailsComponent,
+    // StoreCallDetailsComponent,
     BookProcessComponent,
     BookSuccessComponent,
     BookFailedComponent,
@@ -63,6 +65,7 @@ import { StroreDetailsComponent } from './strore-details/strore-details.componen
     NotificationScreenComponent,
     ListStoreComponent,
     StroreDetailsComponent,
+    StoreMapDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   bootstrap: [AppComponent],
