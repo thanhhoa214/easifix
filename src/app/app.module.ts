@@ -27,6 +27,7 @@ import { ListAddressComponent } from './list-address/list-address.component';
 import { CreateAddressComponent } from './create-address/create-address.component';
 import { HistoryOngoingComponent } from './history-ongoing/history-ongoing.component';
 import { HistoryCancelComponent } from './history-cancel/history-cancel.component';
+import { HistoryCompleteComponent } from './history-complete/history-complete.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { HistoryCancelComponent } from './history-cancel/history-cancel.componen
     CreateAddressComponent,
     HistoryOngoingComponent,
     HistoryCancelComponent,
+    HistoryCompleteComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

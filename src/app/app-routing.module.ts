@@ -18,6 +18,7 @@ import { PolicyScreenComponent } from './policy-screen/policy-screen.component';
 import { ListAddressComponent } from './list-address/list-address.component';
 import { HistoryOngoingComponent } from './history-ongoing/history-ongoing.component';
 import { HistoryCancelComponent } from './history-cancel/history-cancel.component';
+import { HistoryCompleteComponent } from './history-complete/history-complete.component';
 import { SigninComponent } from './signin/signin.component';
 import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -82,6 +83,10 @@ const routes: Routes = [
   { path: 'create-address', component: CreateAddressComponent },
   { path: 'history-ongoing', component: HistoryOngoingComponent },
   { path: 'history-cancel', component: HistoryCancelComponent },
+  {
+    path: 'history-complete',
+    component: HistoryCompleteComponent,
+  },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
 
