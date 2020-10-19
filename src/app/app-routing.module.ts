@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CreateAddressComponent } from './create-address/create-address.component';
 import { PromotionScreenComponent } from './promotion-screen/promotion-screen.component';
 import { ConfirmRequestTimeComponent } from './confirm-request-time/confirm-request-time.component';
 import { PromotionDetailScreenComponent } from './promotion-detail-screen/promotion-detail-screen.component';
@@ -76,6 +77,7 @@ const routes: Routes = [
     component: SuccessComponent,
   },
   { path: 'list-address', component: ListAddressComponent },
+  { path: 'create-address', component: CreateAddressComponent },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
 
