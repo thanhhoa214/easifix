@@ -26,6 +26,7 @@ import { HomeSearchModalComponent } from './shared/components/home-search-modal/
 import { ListAddressComponent } from './list-address/list-address.component';
 import { CreateAddressComponent } from './create-address/create-address.component';
 import { HistoryOngoingComponent } from './history-ongoing/history-ongoing.component';
+import { HistoryCancelComponent } from './history-cancel/history-cancel.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { HistoryOngoingComponent } from './history-ongoing/history-ongoing.compo
     ListAddressComponent,
     CreateAddressComponent,
     HistoryOngoingComponent,
+    HistoryCancelComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
