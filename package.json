@@ -6,6 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "build:prod": "ng build --prod",
+    "sync": "npx cap sync",
+    "android": "npm run build:prod && cd android && ./gradlew assembleDebug && open app/build/outputs/apk",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
