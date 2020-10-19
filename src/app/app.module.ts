@@ -29,6 +29,7 @@ import { HistoryOngoingComponent } from './history-ongoing/history-ongoing.compo
 import { HistoryCancelComponent } from './history-cancel/history-cancel.component';
 import { HistoryCompleteComponent } from './history-complete/history-complete.component';
 import { NotificationScreenComponent } from './notification-screen/notification-screen.component';
+import { ListStoreComponent } from './list-store/list-store.component';
 
 @NgModule({
   declarations: [
@@ -59,9 +60,9 @@ import { NotificationScreenComponent } from './notification-screen/notification-
     HistoryCancelComponent,
     HistoryCompleteComponent,
     NotificationScreenComponent,
+    ListStoreComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
