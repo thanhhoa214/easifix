@@ -26,6 +26,8 @@ import { SigninComponent } from './signin/signin.component';
 // import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { StroreDetailsComponent } from './strore-details/strore-details.component';
 import { StoreMapDetailsComponent } from './store-map-details/store-map-details.component';
+import { SignupOtpComponent } from './signup-otp/signup-otp.component';
+import { SignupComponent } from './signup/signup.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SuccessComponent } from './success/success.component';
 
@@ -100,6 +102,18 @@ const routes: Routes = [
   { path: 'notification-screen', component: NotificationScreenComponent },
   { path: 'list-store', component: ListStoreComponent },
   { path: 'setting', component: SettingComponent },
+  {
+    path: 'signup',
+    component: SignupComponent,
+  },
+  {
+    path: 'signup',
+    component: SignupComponent,
+  },
+  {
+    path: 'signup-otp',
+    component: SignupOtpComponent,
+  },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
 

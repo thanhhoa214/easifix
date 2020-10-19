@@ -34,6 +34,8 @@ import { StroreDetailsComponent } from './strore-details/strore-details.componen
 
 import { StoreMapDetailsComponent } from './store-map-details/store-map-details.component';
 import { SettingComponent } from './setting/setting.component';
+import { SignupComponent } from './signup/signup.component';
+import { SignupOtpComponent } from './signup-otp/signup-otp.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +70,8 @@ import { SettingComponent } from './setting/setting.component';
     StroreDetailsComponent,
     StoreMapDetailsComponent,
     SettingComponent,
+    SignupComponent,
+    SignupOtpComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   bootstrap: [AppComponent],
