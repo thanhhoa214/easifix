@@ -30,6 +30,7 @@ import { HistoryCancelComponent } from './history-cancel/history-cancel.componen
 import { HistoryCompleteComponent } from './history-complete/history-complete.component';
 import { NotificationScreenComponent } from './notification-screen/notification-screen.component';
 import { ListStoreComponent } from './list-store/list-store.component';
+import { StroreDetailsComponent } from './strore-details/strore-details.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { ListStoreComponent } from './list-store/list-store.component';
     HistoryCompleteComponent,
     NotificationScreenComponent,
     ListStoreComponent,
+    StroreDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   bootstrap: [AppComponent],

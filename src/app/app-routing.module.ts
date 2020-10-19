@@ -23,6 +23,7 @@ import { NotificationScreenComponent } from './notification-screen/notification-
 import { ListStoreComponent } from './list-store/list-store.component';
 import { SigninComponent } from './signin/signin.component';
 import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
+import { StroreDetailsComponent } from './strore-details/strore-details.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SuccessComponent } from './success/success.component';
 
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: 'promotion-screen',
     component: PromotionScreenComponent,
+  },
+  {
+    path: 'store-details',
+    component: StroreDetailsComponent,
   },
   {
     path: 'confirm-request-time',
