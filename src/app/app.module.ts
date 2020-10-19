@@ -25,6 +25,7 @@ import { BottomBarComponent } from './shared/components/bottom-bar/bottom-bar.co
 import { HomeSearchModalComponent } from './shared/components/home-search-modal/home-search-modal.component';
 import { ListAddressComponent } from './list-address/list-address.component';
 import { CreateAddressComponent } from './create-address/create-address.component';
+import { HistoryOngoingComponent } from './history-ongoing/history-ongoing.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { CreateAddressComponent } from './create-address/create-address.componen
     HomeSearchModalComponent,
     ListAddressComponent,
     CreateAddressComponent,
+    HistoryOngoingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

@@ -16,6 +16,7 @@ import { BookProcessComponent } from './book-process/book-process.component';
 import { BookSuccessComponent } from './book-success/book-success.component';
 import { PolicyScreenComponent } from './policy-screen/policy-screen.component';
 import { ListAddressComponent } from './list-address/list-address.component';
+import { HistoryOngoingComponent } from './history-ongoing/history-ongoing.component';
 import { SigninComponent } from './signin/signin.component';
 import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -78,6 +79,7 @@ const routes: Routes = [
   },
   { path: 'list-address', component: ListAddressComponent },
   { path: 'create-address', component: CreateAddressComponent },
+  { path: 'history-ongoing', component: HistoryOngoingComponent },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
 
