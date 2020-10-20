@@ -1,0 +1,566 @@
+.mediaViewInfo {
+  --web-view-name: SIGN IN;
+  --web-view-id: SIGN_IN;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: fit;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+:root {
+  --web-view-ids: SIGN_IN;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+#SIGN_IN {
+  position: absolute;
+  width: 375px;
+  height: 812px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  --web-view-name: SIGN IN;
+  --web-view-id: SIGN_IN;
+  --web-scale-to-fit: true;
+  --web-scale-to-fit-type: fit;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Form {
+  position: absolute;
+  width: 334px;
+  height: 129px;
+  left: 20px;
+  top: 371px;
+  overflow: visible;
+}
+#Group_9715 {
+  position: absolute;
+  width: 334px;
+  height: 28px;
+  left: 0px;
+  top: 101px;
+  overflow: visible;
+}
+#line_copy {
+  position: absolute;
+  width: 334px;
+  height: 1px;
+  left: 0px;
+  top: 27px;
+  overflow: visible;
+}
+#Rectangle_9 {
+  fill: transparent;
+}
+.Rectangle_9 {
+  position: absolute;
+  overflow: visible;
+  width: 334px;
+  height: 1px;
+  left: 0px;
+  top: 0px;
+}
+#Rectangle_9_Copy {
+  fill: rgba(211, 223, 239, 1);
+}
+.Rectangle_9_Copy {
+  position: absolute;
+  overflow: visible;
+  width: 334px;
+  height: 0.5px;
+  left: 0px;
+  top: 0px;
+}
+#Password {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 54px;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: -2px;
+  text-align: left;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(121, 121, 121, 1);
+}
+#Group_9680 {
+  position: absolute;
+  width: 334px;
+  height: 58px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#line {
+  position: absolute;
+  width: 334px;
+  height: 2px;
+  left: 0px;
+  top: 56px;
+  overflow: visible;
+}
+#Rectangle_9_b {
+  fill: transparent;
+}
+.Rectangle_9_b {
+  position: absolute;
+  overflow: visible;
+  width: 334px;
+  height: 2px;
+  left: 0px;
+  top: 0px;
+}
+#Rectangle_9_Copy_b {
+  fill: rgba(51, 191, 154, 1);
+}
+.Rectangle_9_Copy_b {
+  position: absolute;
+  overflow: visible;
+  width: 334px;
+  height: 2px;
+  left: 0px;
+  top: 0px;
+}
+#Icofettleproper {
+  position: absolute;
+  width: 13.847px;
+  height: 13.847px;
+  left: 317.077px;
+  top: 29.077px;
+  overflow: visible;
+}
+#Shape {
+  fill: transparent;
+}
+.Shape {
+  overflow: visible;
+  position: absolute;
+  width: 13.846px;
+  height: 13.846px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Icofettleproper_cb {
+  position: absolute;
+  width: 13.846px;
+  height: 13.846px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Shreyashbarot {
+  opacity: 0.8;
+  left: 84px;
+  top: 27.5px;
+  position: absolute;
+  overflow: visible;
+  width: 101px;
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -3px;
+  text-align: left;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(36, 39, 43, 1);
+}
+#Username {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 80px;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: -2px;
+  text-align: left;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(121, 121, 121, 1);
+}
+#Rectangle_4 {
+  fill: rgba(189, 189, 189, 1);
+}
+.Rectangle_4 {
+  position: absolute;
+  overflow: visible;
+  width: 2px;
+  height: 20px;
+  left: 199px;
+  top: 25px;
+}
+#bg {
+  fill: rgba(255, 255, 255, 1);
+}
+.bg {
+  filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.102));
+  position: absolute;
+  overflow: visible;
+  width: 122px;
+  height: 75px;
+  left: 0px;
+  top: 20px;
+}
+#ID880 {
+  left: 37px;
+  top: 27px;
+  position: absolute;
+  overflow: visible;
+  width: 33px;
+  white-space: nowrap;
+  line-height: 35px;
+  margin-top: -10.5px;
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(48, 48, 48, 1);
+}
+#Rectangle_2 {
+  filter: blur(10px);
+  fill: rgba(88, 190, 63, 0.2);
+}
+.Rectangle_2 {
+  position: absolute;
+  overflow: visible;
+  width: 280px;
+  height: 74px;
+  left: 78px;
+  top: 624px;
+}
+#Forgot_password {
+  left: 258px;
+  top: 511px;
+  position: absolute;
+  overflow: visible;
+  width: 97px;
+  white-space: nowrap;
+  line-height: 35px;
+  margin-top: -11.5px;
+  text-align: right;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(51, 191, 154, 1);
+}
+#Forgot_password_cj {
+  left: 20px;
+  top: 511px;
+  position: absolute;
+  overflow: visible;
+  width: 153px;
+  white-space: nowrap;
+  line-height: 35px;
+  margin-top: -11.5px;
+  text-align: left;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(51, 191, 154, 1);
+}
+#Welcome_back {
+  left: 20px;
+  top: 300px;
+  position: absolute;
+  overflow: visible;
+  width: 176px;
+  white-space: nowrap;
+  line-height: 35px;
+  margin-top: -5.5px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: rgba(48, 48, 48, 1);
+}
+#Home_Indicator {
+  position: absolute;
+  width: 134px;
+  height: 5px;
+  left: 121px;
+  top: 798px;
+  overflow: visible;
+}
+#Rectangle_24 {
+  fill: rgba(189, 189, 189, 1);
+}
+.Rectangle_24 {
+  position: absolute;
+  overflow: visible;
+  width: 134px;
+  height: 5px;
+  left: 0px;
+  top: 0px;
+}
+#ButtonRoundedLargeGreen {
+  position: absolute;
+  width: 334px;
+  height: 55px;
+  left: 20.5px;
+  top: 577px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: Home.html;
+  cursor: pointer;
+}
+#bg_co {
+  fill: rgba(51, 191, 154, 1);
+}
+.bg_co {
+  position: absolute;
+  overflow: visible;
+  width: 334px;
+  height: 55px;
+  left: 0px;
+  top: 0px;
+}
+#ButtonRoundedLargeGreen_cp {
+  position: absolute;
+  width: 334px;
+  height: 55px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Group_9672 {
+  position: absolute;
+  width: 1176.223px;
+  height: 680.36px;
+  left: -547.223px;
+  top: -469.36px;
+  overflow: visible;
+}
+#Group_9752 {
+  position: absolute;
+  width: 1176.223px;
+  height: 680.36px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+#Background {
+  fill: rgba(51, 191, 154, 1);
+}
+.Background {
+  overflow: visible;
+  position: absolute;
+  width: 1176.223px;
+  height: 680.36px;
+  transform: translate(508.223px, 280.36px)
+    matrix(1, 0, 0, 1, -508.2227, -280.3597) rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
+}
+#Sign_n {
+  left: 603.223px;
+  top: 546.36px;
+  position: absolute;
+  overflow: visible;
+  width: 81px;
+  white-space: nowrap;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: WELCOME.html;
+  cursor: pointer;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.7142857360839844px;
+  text-transform: uppercase;
+}
+#Light_Status_Bar {
+  position: absolute;
+  width: 347.328px;
+  height: 16.669px;
+  left: 553.223px;
+  top: 483.69px;
+  overflow: visible;
+}
+#Battery {
+  position: absolute;
+  width: 24.328px;
+  height: 11.333px;
+  left: 323px;
+  top: 0.003px;
+  overflow: visible;
+}
+#Border {
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(255, 255, 255, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
+}
+.Border {
+  position: absolute;
+  overflow: visible;
+  width: 22px;
+  height: 11.333px;
+  left: 0px;
+  top: 0px;
+}
+#Cap {
+  fill: rgba(255, 255, 255, 1);
+}
+.Cap {
+  overflow: visible;
+  position: absolute;
+  width: 1.328px;
+  height: 4px;
+  left: 23px;
+  top: 3.667px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Capacity {
+  fill: rgba(255, 255, 255, 1);
+}
+.Capacity {
+  position: absolute;
+  overflow: visible;
+  width: 18px;
+  height: 7.333px;
+  left: 2px;
+  top: 2px;
+}
+#Wifi {
+  opacity: 0.96;
+  fill: rgba(255, 255, 255, 1);
+}
+.Wifi {
+  overflow: visible;
+  position: absolute;
+  width: 15.272px;
+  height: 10.966px;
+  left: 302.694px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Cellular_Connection {
+  fill: rgba(255, 255, 255, 1);
+}
+.Cellular_Connection {
+  overflow: visible;
+  position: absolute;
+  width: 17px;
+  height: 10.667px;
+  left: 280.667px;
+  top: 0.336px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Time_Style {
+  position: absolute;
+  width: 54px;
+  height: 16px;
+  left: 0px;
+  top: 0.669px;
+  overflow: visible;
+}
+#_Time {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 55px;
+  height: 16px;
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: -0.2px;
+}
+#Back {
+  position: absolute;
+  width: 16px;
+  height: 13.51px;
+  left: 567.223px;
+  top: 548.36px;
+  overflow: visible;
+}
+#union {
+  fill: rgba(255, 255, 255, 1);
+}
+.union {
+  overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 13.51px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Image_1 {
+  position: absolute;
+  width: 28px;
+  height: 19px;
+  left: 23px;
+  top: 397px;
+  overflow: visible;
+}
+#Group_9771 {
+  position: absolute;
+  width: 146px;
+  height: 17px;
+  left: 22px;
+  top: 639px;
+  overflow: visible;
+}
+#Terms__Conditions {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 15px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 14px;
+  color: rgba(80, 80, 80, 1);
+}
+#Terms__Conditions_c {
+  left: 26px;
+  top: 3px;
+  position: absolute;
+  overflow: visible;
+  width: 121px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 14px;
+  color: rgba(51, 191, 154, 1);
+}
