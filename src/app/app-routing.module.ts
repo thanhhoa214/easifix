@@ -31,11 +31,16 @@ import { SignupComponent } from './signup/signup.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SuccessComponent } from './success/success.component';
 import { HomeListStoreComponent } from './home-list-store/home-list-store.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
     path: 'welcome',
     component: WelcomeComponent,
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
   },
   {
     path: 'signin',

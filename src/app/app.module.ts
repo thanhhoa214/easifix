@@ -38,6 +38,7 @@ import { StoreCallDetailsComponent } from './store-call-details/store-call-detai
 import { HomeListStoreComponent } from './home-list-store/home-list-store.component';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +76,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SignupOtpComponent,
     StoreCallDetailsComponent,
     HomeListStoreComponent,
+    LoginComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SharedModule, BrowserAnimationsModule],
   bootstrap: [AppComponent],
