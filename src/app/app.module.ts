@@ -20,7 +20,6 @@ import { BookSuccessComponent } from './book-success/book-success.component';
 import { BookFailedComponent } from './book-failed/book-failed.component';
 import { PolicyScreenComponent } from './policy-screen/policy-screen.component';
 import { SuccessComponent } from './success/success.component';
-import { BottomBarComponent } from './shared/components/bottom-bar/bottom-bar.component';
 import { HomeSearchModalComponent } from './shared/components/home-search-modal/home-search-modal.component';
 import { ListAddressComponent } from './list-address/list-address.component';
 import { CreateAddressComponent } from './create-address/create-address.component';
@@ -37,6 +36,7 @@ import { SignupComponent } from './signup/signup.component';
 import { SignupOtpComponent } from './signup-otp/signup-otp.component';
 import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { HomeListStoreComponent } from './home-list-store/home-list-store.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -59,7 +59,6 @@ import { HomeListStoreComponent } from './home-list-store/home-list-store.compon
     BookFailedComponent,
     PolicyScreenComponent,
     SuccessComponent,
-    BottomBarComponent,
     HomeSearchModalComponent,
     ListAddressComponent,
     CreateAddressComponent,
@@ -76,7 +75,7 @@ import { HomeListStoreComponent } from './home-list-store/home-list-store.compon
     StoreCallDetailsComponent,
     HomeListStoreComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, SharedModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
