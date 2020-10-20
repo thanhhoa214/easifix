@@ -23,5 +23,6 @@ build-apk:
       - easifix.apk
   only:
     - develop
+    - /^swd-apk-.+$/
   tags:
     - ios
