@@ -69,6 +69,10 @@ const routes: Routes = [
     path: 'policy-screen',
     component: PolicyScreenComponent,
   },
+  {
+    path: 'store-screen',
+    component: PolicyScreenComponent,
+  },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
 
