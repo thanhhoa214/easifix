@@ -37,6 +37,7 @@ import { SignupOtpComponent } from './signup-otp/signup-otp.component';
 import { StoreCallDetailsComponent } from './store-call-details/store-call-details.component';
 import { HomeListStoreComponent } from './home-list-store/home-list-store.component';
 import { SharedModule } from './shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,7 @@ import { SharedModule } from './shared/shared.module';
     StoreCallDetailsComponent,
     HomeListStoreComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule],
+  imports: [BrowserModule, AppRoutingModule, SharedModule, BrowserAnimationsModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
