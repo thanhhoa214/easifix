@@ -1,0 +1,28 @@
+image: node:latest
+stages:
+  - build-apk
+
+variables:
+  LC_ALL: 'en_US.UTF-8'
+  LANG: 'en_US.UTF-8'
+  GIT_STRATEGY: clone
+
+build-apk:
+  stage: build-apk
+  script:
+    - echo "Build APK in Debug Mode"
+    - npm install
+    - npm run build:prod
+    - npm run sync
+    - cd $PWD/android
+    - ./gradlew assembleDebug
+    - cp app/build/outputs/apk/debug/app-debug.apk ../easifix.apk
+
+  artifacts:
+    paths:
+      - easifix.apk
+  only:
+    - develop
+    - /^swd-apk-.+$/
+  tags:
+    - ios
