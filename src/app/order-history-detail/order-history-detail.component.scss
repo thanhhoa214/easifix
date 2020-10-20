@@ -1,740 +1,740 @@
 .mediaViewInfo {
-	--web-view-name: order-history-detail;
-	--web-view-id: order-history-detail;
-	--web-scale-on-resize: true;
-	--web-enable-deep-linking: true;
+  --web-view-name: order-history-detail;
+  --web-view-id: order-history-detail;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
 }
 :root {
-	--web-view-ids: order-history-detail;
+  --web-view-ids: order-history-detail;
 }
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
 }
 #order-history-detail {
-	position: absolute;
-	width: 360px;
-	height: 760px;
-	background-color: rgba(255,255,255,1);
-	overflow: hidden;
-	--web-view-name: order-history-detail;
-	--web-view-id: order-history-detail;
-	--web-scale-on-resize: true;
-	--web-enable-deep-linking: true;
+  position: absolute;
+  width: 360px;
+  height: 760px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  --web-view-name: order-history-detail;
+  --web-view-id: order-history-detail;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
 }
 
 #Group_9672 {
-	position: absolute;
-	width: 1129.174px;
-	height: 680.36px;
-	left: -525.334px;
-	top: -469.36px;
-	overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  left: -525.334px;
+  top: -469.36px;
+  overflow: visible;
 }
 #Group_9752 {
-	position: absolute;
-	width: 1129.174px;
-	height: 680.36px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 #Background {
-	fill: rgba(51,191,154,1);
+  fill: rgba(51, 191, 154, 1);
 }
 .Background {
-	overflow: visible;
-	position: absolute;
-	width: 1129.174px;
-	height: 680.36px;
-	transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
-	transform-origin: center;
-	left: 0px;
-	top: 0px;
+  overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
 }
 #Path_2863 {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Path_2863 {
-	overflow: visible;
-	position: absolute;
-	width: 360px;
-	height: 702.201px;
-	left: 0px;
-	top: 50px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 360px;
+  height: 702.201px;
+  left: 0px;
+  top: 50px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #fixer-info {
-	position: absolute;
-	width: 320px;
-	height: 121px;
-	left: 19px;
-	top: 62px;
-	overflow: visible;
+  position: absolute;
+  width: 320px;
+  height: 121px;
+  left: 19px;
+  top: 62px;
+  overflow: visible;
 }
 #HoaNT_-_Box-shadow {
-	position: absolute;
-	width: 317px;
-	height: 90px;
-	left: 3px;
-	top: 31px;
-	overflow: visible;
+  position: absolute;
+  width: 317px;
+  height: 90px;
+  left: 3px;
+  top: 31px;
+  overflow: visible;
 }
 #bg {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .bg {
-	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.2));
-	position: absolute;
-	overflow: visible;
-	width: 362px;
-	height: 135px;
-	left: 0px;
-	top: 0px;
+  filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.2));
+  position: absolute;
+  overflow: visible;
+  width: 362px;
+  height: 135px;
+  left: 0px;
+  top: 0px;
 }
 #info {
-	position: absolute;
-	width: 125px;
-	height: 20px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 125px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 #Thng_tin_th {
-	left: 30px;
-	top: 1px;
-	position: absolute;
-	overflow: visible;
-	width: 96px;
-	white-space: nowrap;
-	line-height: 24px;
-	margin-top: -4px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(36,39,43,1);
+  left: 30px;
+  top: 1px;
+  position: absolute;
+  overflow: visible;
+  width: 96px;
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 #service_icon {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 #truong {
-	position: absolute;
-	width: 90px;
-	height: 90px;
-	left: 2px;
-	top: 31px;
-	overflow: visible;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 2px;
+  top: 31px;
+  overflow: visible;
 }
 #a_ch__Ca_hng_in_lnh_-_C_Kh_Ton {
-	left: 102px;
-	top: 75px;
-	position: absolute;
-	overflow: visible;
-	width: 209px;
-	height: 46px;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 102px;
+  top: 75px;
+  position: absolute;
+  overflow: visible;
+  width: 209px;
+  height: 46px;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 #V_Hu_Trng {
-	left: 102px;
-	top: 36px;
-	position: absolute;
-	overflow: visible;
-	width: 209px;
-	height: 18px;
-	line-height: 24px;
-	margin-top: -4px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(36,39,43,1);
+  left: 102px;
+  top: 36px;
+  position: absolute;
+  overflow: visible;
+  width: 209px;
+  height: 18px;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 #S_in_thoi_0123456789 {
-	left: 102px;
-	top: 59px;
-	position: absolute;
-	overflow: visible;
-	width: 209px;
-	height: 18px;
-	line-height: 14px;
-	margin-top: -1px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 12px;
-	color: rgba(80,80,80,1);
+  left: 102px;
+  top: 59px;
+  position: absolute;
+  overflow: visible;
+  width: 209px;
+  height: 18px;
+  line-height: 14px;
+  margin-top: -1px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 12px;
+  color: rgba(80, 80, 80, 1);
 }
 #service {
-	position: absolute;
-	width: 320px;
-	height: 81px;
-	left: 20px;
-	top: 205px;
-	overflow: visible;
+  position: absolute;
+  width: 320px;
+  height: 81px;
+  left: 20px;
+  top: 205px;
+  overflow: visible;
 }
 #choose_heder {
-	position: absolute;
-	width: 86px;
-	height: 20px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 86px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 #Dch_V {
-	left: 30px;
-	top: 1px;
-	position: absolute;
-	overflow: visible;
-	width: 57px;
-	white-space: nowrap;
-	line-height: 24px;
-	margin-top: -4px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(36,39,43,1);
+  left: 30px;
+  top: 1px;
+  position: absolute;
+  overflow: visible;
+  width: 57px;
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 #service_icon_ct {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 #choose_box {
-	position: absolute;
-	width: 320px;
-	height: 50px;
-	left: 0px;
-	top: 31px;
-	overflow: visible;
+  position: absolute;
+  width: 320px;
+  height: 50px;
+  left: 0px;
+  top: 31px;
+  overflow: visible;
 }
 #Path_2824 {
-	fill: rgba(255,255,255,1);
-	stroke: rgba(189,189,189,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: rgba(255, 255, 255, 1);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Path_2824 {
-	overflow: visible;
-	position: absolute;
-	width: 320px;
-	height: 50px;
-	left: 0px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 320px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Sa_t_lnh {
-	left: 10px;
-	top: 17px;
-	position: absolute;
-	overflow: visible;
-	width: 73px;
-	white-space: nowrap;
-	line-height: 35px;
-	margin-top: -10.5px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	color: rgba(48,48,48,1);
+  left: 10px;
+  top: 17px;
+  position: absolute;
+  overflow: visible;
+  width: 73px;
+  white-space: nowrap;
+  line-height: 35px;
+  margin-top: -10.5px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(48, 48, 48, 1);
 }
 #Header1 {
-	position: absolute;
-	width: 248px;
-	height: 20px;
-	left: 10px;
-	top: 20px;
-	overflow: visible;
+  position: absolute;
+  width: 248px;
+  height: 20px;
+  left: 10px;
+  top: 20px;
+  overflow: visible;
 }
 #Fixing_Time {
-	left: 108px;
-	top: 2px;
-	position: absolute;
-	overflow: visible;
-	width: 141px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	color: rgba(255,255,255,1);
-	letter-spacing: 0.7142857360839844px;
-	text-transform: uppercase;
+  left: 108px;
+  top: 2px;
+  position: absolute;
+  overflow: visible;
+  width: 141px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.7142857360839844px;
+  text-transform: uppercase;
 }
 #back_icon {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-	--web-animation: fadein 0.3s ease-out;
-	--web-action-type: page;
-	--web-action-target: history_complete.html;
-	cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: history_complete.html;
+  cursor: pointer;
 }
 #phuKien-Gia {
-	position: absolute;
-	width: 321px;
-	height: 106px;
-	left: 19px;
-	top: 298px;
-	overflow: visible;
+  position: absolute;
+  width: 321px;
+  height: 106px;
+  left: 19px;
+  top: 298px;
+  overflow: visible;
 }
 #Ph_tng_-_Gi {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 91px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 14px;
-	color: rgba(80,80,80,1);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 91px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 14px;
+  color: rgba(80, 80, 80, 1);
 }
 #item1 {
-	position: absolute;
-	width: 310px;
-	height: 23px;
-	left: 11px;
-	top: 38px;
-	overflow: visible;
+  position: absolute;
+  width: 310px;
+  height: 23px;
+  left: 11px;
+  top: 38px;
+  overflow: visible;
 }
 #Ca_t_lnh {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 87px;
-	height: 23px;
-	line-height: 24px;
-	margin-top: -4px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(36,39,43,1);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 87px;
+  height: 23px;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 #ID2000000 {
-	left: 225px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 86px;
-	height: 23px;
-	line-height: 24px;
-	margin-top: -4px;
-	text-align: right;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(36,39,43,1);
+  left: 225px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 86px;
+  height: 23px;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: right;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 #tiem3 {
-	position: absolute;
-	width: 309px;
-	height: 23px;
-	left: 12px;
-	top: 83px;
-	overflow: visible;
+  position: absolute;
+  width: 309px;
+  height: 23px;
+  left: 12px;
+  top: 83px;
+  overflow: visible;
 }
 #Cng_thay_ {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 102px;
-	height: 23px;
-	line-height: 24px;
-	margin-top: -4px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(36,39,43,1);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 102px;
+  height: 23px;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 #ID200000 {
-	left: 240px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 70px;
-	height: 23px;
-	line-height: 24px;
-	margin-top: -4px;
-	text-align: right;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(36,39,43,1);
+  left: 240px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 70px;
+  height: 23px;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: right;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 #Line_68 {
-	fill: transparent;
-	stroke: rgba(189,189,189,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: transparent;
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Line_68 {
-	overflow: visible;
-	position: absolute;
-	width: 321px;
-	height: 1px;
-	left: 19.5px;
-	top: 413.5px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 321px;
+  height: 1px;
+  left: 19.5px;
+  top: 413.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #price {
-	position: absolute;
-	width: 320.5px;
-	height: 133px;
-	left: 20px;
-	top: 423.733px;
-	overflow: visible;
+  position: absolute;
+  width: 320.5px;
+  height: 133px;
+  left: 20px;
+  top: 423.733px;
+  overflow: visible;
 }
 #total-item {
-	position: absolute;
-	width: 318px;
-	height: 20px;
-	left: 1px;
-	top: 29px;
-	overflow: visible;
+  position: absolute;
+  width: 318px;
+  height: 20px;
+  left: 1px;
+  top: 29px;
+  overflow: visible;
 }
 #Tng_tin_sn_phm {
-	left: 0px;
-	top: 1px;
-	position: absolute;
-	overflow: visible;
-	width: 162px;
-	height: 19px;
-	line-height: 24px;
-	margin-top: -4px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(36,39,43,1);
+  left: 0px;
+  top: 1px;
+  position: absolute;
+  overflow: visible;
+  width: 162px;
+  height: 19px;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 #ID2200000 {
-	left: 238px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 81px;
-	height: 20px;
-	line-height: 24px;
-	margin-top: -4px;
-	text-align: right;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(36,39,43,1);
+  left: 238px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 81px;
+  height: 20px;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: right;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 #giam-khuyen-mai {
-	position: absolute;
-	width: 318px;
-	height: 19px;
-	left: 0px;
-	top: 69px;
-	overflow: visible;
+  position: absolute;
+  width: 318px;
+  height: 19px;
+  left: 0px;
+  top: 69px;
+  overflow: visible;
 }
 #Khuyn_mi_gim {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 115px;
-	height: 19px;
-	line-height: 24px;
-	margin-top: -4px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(36,39,43,1);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: hidden;
+  width: 115px;
+  height: 19px;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
-#-50000 {
-	left: 242px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 77px;
-	height: 19px;
-	line-height: 24px;
-	margin-top: -4px;
-	text-align: right;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(36,39,43,1);
+#minus50000 {
+  left: 242px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 77px;
+  height: 19px;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: right;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 #total-all {
-	position: absolute;
-	width: 316.5px;
-	height: 25px;
-	left: 2.5px;
-	top: 108px;
-	overflow: visible;
+  position: absolute;
+  width: 316.5px;
+  height: 25px;
+  left: 2.5px;
+  top: 108px;
+  overflow: visible;
 }
 #TNG {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 73px;
-	height: 25px;
-	line-height: 35px;
-	margin-top: -13px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 9px;
-	color: rgba(48,48,48,1);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 73px;
+  height: 25px;
+  line-height: 35px;
+  margin-top: -13px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 9px;
+  color: rgba(48, 48, 48, 1);
 }
 #ID2150000 {
-	left: 172px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 145.5px;
-	height: 25px;
-	line-height: 35px;
-	margin-top: -13px;
-	text-align: right;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 9px;
-	color: rgba(48,48,48,1);
+  left: 172px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 145.5px;
+  height: 25px;
+  line-height: 35px;
+  margin-top: -13px;
+  text-align: right;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 9px;
+  color: rgba(48, 48, 48, 1);
 }
 #Line_42 {
-	fill: transparent;
-	stroke: rgba(189,189,189,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: transparent;
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Line_42 {
-	overflow: visible;
-	position: absolute;
-	width: 318px;
-	height: 1px;
-	left: 2.5px;
-	top: 58.531px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 318px;
+  height: 1px;
+  left: 2.5px;
+  top: 58.531px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #ma-khuyen-mai {
-	position: absolute;
-	width: 319px;
-	height: 19px;
-	left: 1px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 319px;
+  height: 19px;
+  left: 1px;
+  top: 0px;
+  overflow: visible;
 }
 #M_Khuyn_Mi {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 128px;
-	height: 19px;
-	line-height: 24px;
-	margin-top: -4px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(36,39,43,1);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 128px;
+  height: 19px;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 #GIAM50K {
-	left: 189px;
-	top: 0px;
-	position: absolute;
-	overflow: hidden;
-	width: 131px;
-	height: 19px;
-	line-height: 24px;
-	margin-top: -4px;
-	text-align: right;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 16px;
-	color: rgba(36,39,43,1);
+  left: 189px;
+  top: 0px;
+  position: absolute;
+  overflow: hidden;
+  width: 131px;
+  height: 19px;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: right;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 #bottom-bar {
-	position: absolute;
-	width: 360px;
-	height: 60px;
-	left: 0px;
-	top: 700px;
-	overflow: visible;
+  position: absolute;
+  width: 360px;
+  height: 60px;
+  left: 0px;
+  top: 700px;
+  overflow: visible;
 }
 #home-bg {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .home-bg {
-	filter: drop-shadow(0px -1px 0px rgba(0, 0, 0, 0.702));
-	position: absolute;
-	overflow: visible;
-	width: 360px;
-	height: 60px;
-	left: 0px;
-	top: 1px;
+  filter: drop-shadow(0px -1px 0px rgba(0, 0, 0, 0.702));
+  position: absolute;
+  overflow: visible;
+  width: 360px;
+  height: 60px;
+  left: 0px;
+  top: 1px;
 }
 #Home {
-	position: absolute;
-	width: 90px;
-	height: 59px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 90px;
+  height: 59px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 #home-component {
-	opacity: 0.9;
-	fill: rgba(255,255,255,1);
+  opacity: 0.9;
+  fill: rgba(255, 255, 255, 1);
 }
 .home-component {
-	position: absolute;
-	overflow: visible;
-	width: 90px;
-	height: 59px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 90px;
+  height: 59px;
+  left: 0px;
+  top: 0px;
 }
 #home-icon {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 25px;
-	top: 9.5px;
-	overflow: visible;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 25px;
+  top: 9.5px;
+  overflow: visible;
 }
 #history {
-	position: absolute;
-	width: 90px;
-	height: 59px;
-	left: 90px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 90px;
+  height: 59px;
+  left: 90px;
+  top: 0px;
+  overflow: visible;
 }
 #history-component {
-	opacity: 0.9;
-	fill: rgba(255,255,255,1);
+  opacity: 0.9;
+  fill: rgba(255, 255, 255, 1);
 }
 .history-component {
-	position: absolute;
-	overflow: visible;
-	width: 90px;
-	height: 59px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 90px;
+  height: 59px;
+  left: 0px;
+  top: 0px;
 }
 #Mask_Group_9887 {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 25px;
-	top: 9.5px;
-	overflow: visible;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 25px;
+  top: 9.5px;
+  overflow: visible;
 }
 #notify {
-	position: absolute;
-	width: 90px;
-	height: 59px;
-	left: 180px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 90px;
+  height: 59px;
+  left: 180px;
+  top: 0px;
+  overflow: visible;
 }
 #notify-component {
-	opacity: 0.9;
-	fill: rgba(255,255,255,1);
+  opacity: 0.9;
+  fill: rgba(255, 255, 255, 1);
 }
 .notify-component {
-	position: absolute;
-	overflow: visible;
-	width: 90px;
-	height: 59px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 90px;
+  height: 59px;
+  left: 0px;
+  top: 0px;
 }
 #notify-icon {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 25px;
-	top: 9.5px;
-	overflow: visible;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 25px;
+  top: 9.5px;
+  overflow: visible;
 }
 #info_dy {
-	position: absolute;
-	width: 90px;
-	height: 59px;
-	left: 270px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 90px;
+  height: 59px;
+  left: 270px;
+  top: 0px;
+  overflow: visible;
 }
 #info-component {
-	opacity: 0.9;
-	fill: rgba(255,255,255,1);
+  opacity: 0.9;
+  fill: rgba(255, 255, 255, 1);
 }
 .info-component {
-	position: absolute;
-	overflow: visible;
-	width: 90px;
-	height: 59px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 90px;
+  height: 59px;
+  left: 0px;
+  top: 0px;
 }
 #Mask_Group_9888 {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	left: 25px;
-	top: 9.5px;
-	overflow: visible;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 25px;
+  top: 9.5px;
+  overflow: visible;
 }
