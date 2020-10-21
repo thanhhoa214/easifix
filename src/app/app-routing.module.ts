@@ -32,6 +32,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { SuccessComponent } from './success/success.component';
 import { HomeListStoreComponent } from './home-list-store/home-list-store.component';
 import { LoginComponent } from './login/login.component';
+import { SignupPersonalComponent } from './signup-personal/signup-personal.component';
 
 const routes: Routes = [
   {
@@ -124,6 +125,10 @@ const routes: Routes = [
   {
     path: 'home-list-store',
     component: HomeListStoreComponent,
+  },
+  {
+    path: 'signup-personal',
+    component: SignupPersonalComponent,
   },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
