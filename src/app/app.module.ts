@@ -40,6 +40,7 @@ import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { SignupPersonalComponent } from './signup-personal/signup-personal.component';
+import { ListStoreDetailComponent } from './list-store-detail/list-store-detail.component';
 
 @NgModule({
   declarations: [
@@ -79,6 +80,7 @@ import { SignupPersonalComponent } from './signup-personal/signup-personal.compo
     HomeListStoreComponent,
     LoginComponent,
     SignupPersonalComponent,
+    ListStoreDetailComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SharedModule, BrowserAnimationsModule],
   bootstrap: [AppComponent],
