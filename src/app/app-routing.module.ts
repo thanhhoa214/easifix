@@ -94,9 +94,10 @@ const routes: Routes = [
     component: PolicyScreenComponent,
   },
   {
-    path: 'success',
-    component: SuccessComponent,
+    path: 'store-screen',
+    component: PolicyScreenComponent,
   },
+  { path: 'success', component: SuccessComponent },
   { path: 'list-address', component: ListAddressComponent },
   { path: 'create-address', component: CreateAddressComponent },
   { path: 'history-ongoing', component: HistoryOngoingComponent },
