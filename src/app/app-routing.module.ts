@@ -33,6 +33,7 @@ import { SuccessComponent } from './success/success.component';
 import { HomeListStoreComponent } from './home-list-store/home-list-store.component';
 import { LoginComponent } from './login/login.component';
 import { SignupPersonalComponent } from './signup-personal/signup-personal.component';
+import { ListStoreDetailComponent } from './list-store-detail/list-store-detail.component';
 import { PolicySettingComponent } from './policy-setting/policy-setting.component';
 
 const routes: Routes = [
@@ -130,6 +131,10 @@ const routes: Routes = [
   {
     path: 'signup-personal',
     component: SignupPersonalComponent,
+  },
+  {
+    path: 'list-store-detail',
+    component: ListStoreDetailComponent,
   },
   {
     path: 'policy-setting',

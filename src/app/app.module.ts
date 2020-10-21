@@ -40,6 +40,7 @@ import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { SignupPersonalComponent } from './signup-personal/signup-personal.component';
+import { ListStoreDetailComponent } from './list-store-detail/list-store-detail.component';
 import { PolicySettingComponent } from './policy-setting/policy-setting.component';
 
 @NgModule({
@@ -80,9 +81,15 @@ import { PolicySettingComponent } from './policy-setting/policy-setting.componen
     HomeListStoreComponent,
     LoginComponent,
     SignupPersonalComponent,
+    ListStoreDetailComponent,
     PolicySettingComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SharedModule,
+    BrowserAnimationsModule,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
