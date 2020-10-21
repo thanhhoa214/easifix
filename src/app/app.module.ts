@@ -41,6 +41,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { SignupPersonalComponent } from './signup-personal/signup-personal.component';
 import { ListStoreDetailComponent } from './list-store-detail/list-store-detail.component';
+import { PolicySettingComponent } from './policy-setting/policy-setting.component';
 
 @NgModule({
   declarations: [
@@ -81,8 +82,14 @@ import { ListStoreDetailComponent } from './list-store-detail/list-store-detail.
     LoginComponent,
     SignupPersonalComponent,
     ListStoreDetailComponent,
+    PolicySettingComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SharedModule,
+    BrowserAnimationsModule,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
