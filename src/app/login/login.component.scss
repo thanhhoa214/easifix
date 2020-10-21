@@ -1,0 +1,411 @@
+.mediaViewInfo {
+	--web-view-name: login;
+	--web-view-id: login;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: login;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#login {
+	position: absolute;
+	width: 360px;
+	height: 710px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: login;
+	--web-view-id: login;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+
+#Form {
+	position: absolute;
+	width: 319px;
+	height: 133px;
+	left: 21px;
+	top: 324.894px;
+	overflow: visible;
+}
+#Group_9715 {
+	position: absolute;
+	width: 319px;
+	height: 30px;
+	left: 0px;
+	top: 103px;
+	overflow: visible;
+}
+#line_copy {
+	position: absolute;
+	width: 319px;
+	height: 1px;
+	left: 0px;
+	top: 29px;
+	overflow: visible;
+}
+#Rectangle_9 {
+	fill: transparent;
+}
+.Rectangle_9 {
+	position: absolute;
+	overflow: visible;
+	width: 319px;
+	height: 1px;
+	left: 0px;
+	top: 0px;
+}
+#Rectangle_9_Copy {
+	fill: rgba(211,223,239,1);
+}
+.Rectangle_9_Copy {
+	position: absolute;
+	overflow: visible;
+	width: 319px;
+	height: 0.5px;
+	left: 0px;
+	top: 0px;
+}
+#Password {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	line-height: 16px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: rgba(121,121,121,1);
+}
+#Group_9680 {
+	position: absolute;
+	width: 319px;
+	height: 62px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#line {
+	position: absolute;
+	width: 319px;
+	height: 2px;
+	left: 0px;
+	top: 60px;
+	overflow: visible;
+}
+#Rectangle_9_c {
+	fill: transparent;
+}
+.Rectangle_9_c {
+	position: absolute;
+	overflow: visible;
+	width: 319px;
+	height: 2px;
+	left: 0px;
+	top: 0px;
+}
+#Rectangle_9_Copy_c {
+	fill: rgba(51,191,154,1);
+}
+.Rectangle_9_Copy_c {
+	position: absolute;
+	overflow: visible;
+	width: 319px;
+	height: 2px;
+	left: 0px;
+	top: 0px;
+}
+#Icofettleproper {
+	position: absolute;
+	width: 13.847px;
+	height: 13.847px;
+	left: 302.077px;
+	top: 33.077px;
+	overflow: visible;
+}
+#Shape_c {
+	fill: transparent;
+}
+.Shape_c {
+	overflow: visible;
+	position: absolute;
+	width: 13.846px;
+	height: 13.847px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Icofettleproper_c {
+	position: absolute;
+	width: 13.846px;
+	height: 13.847px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Username {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 75px;
+	white-space: nowrap;
+	line-height: 16px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: rgba(121,121,121,1);
+}
+#bg_db {
+	fill: rgba(255,255,255,1);
+}
+.bg_db {
+	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.102));
+	position: absolute;
+	overflow: visible;
+	width: 122px;
+	height: 75px;
+	left: 0px;
+	top: 24px;
+}
+#ID880 {
+	left: 36px;
+	top: 31px;
+	position: absolute;
+	overflow: visible;
+	width: 35px;
+	white-space: nowrap;
+	line-height: 35px;
+	margin-top: -10.5px;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(48,48,48,1);
+}
+#Rectangle_2_dd {
+	filter: blur(10px);
+	fill: rgba(88,190,63,0.2);
+}
+.Rectangle_2_dd {
+	position: absolute;
+	overflow: visible;
+	width: 265px;
+	height: 74px;
+	left: 79px;
+	top: 569.338px;
+}
+#Forgot_password {
+	left: 252.52px;
+	top: 461.915px;
+	position: absolute;
+	overflow: visible;
+	width: 85px;
+	white-space: nowrap;
+	line-height: 32px;
+	margin-top: -10.5px;
+	text-align: right;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(51,191,154,1);
+}
+#Forgot_password_df {
+	left: 20.2px;
+	top: 461.915px;
+	position: absolute;
+	overflow: visible;
+	width: 108px;
+	white-space: nowrap;
+	line-height: 32px;
+	margin-top: -10.5px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(51,191,154,1);
+}
+#Welcome_back {
+	left: 21px;
+	top: 235px;
+	position: absolute;
+	overflow: visible;
+	width: 120px;
+	white-space: nowrap;
+	line-height: 34px;
+	margin-top: -5.5px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 23px;
+	color: rgba(48,48,48,1);
+}
+#ButtonRoundedLargeGreen_dh {
+	position: absolute;
+	width: 319px;
+	height: 55px;
+	left: 21.5px;
+	top: 523.365px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: home_search.html;
+	cursor: pointer;
+}
+#bg_di {
+	fill: rgba(51,191,154,1);
+}
+.bg_di {
+	position: absolute;
+	overflow: visible;
+	width: 319px;
+	height: 55px;
+	left: 0px;
+	top: 0px;
+}
+#ButtonRoundedLargeGreen_dj {
+	position: absolute;
+	width: 319px;
+	height: 55px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Group_9672_dk {
+	position: absolute;
+	width: 1129.174px;
+	height: 680.36px;
+	left: -513.334px;
+	top: -495.302px;
+	overflow: visible;
+}
+#Group_9752 {
+	position: absolute;
+	width: 1129.174px;
+	height: 680.36px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Background {
+	fill: rgba(51,191,154,1);
+}
+.Background {
+	overflow: visible;
+	position: absolute;
+	width: 1129.174px;
+	height: 680.36px;
+	transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+#Sign_n {
+	left: 579.094px;
+	top: 547.36px;
+	position: absolute;
+	overflow: visible;
+	width: 87px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.7142857360839844px;
+	text-transform: uppercase;
+}
+#Back {
+	position: absolute;
+	width: 16px;
+	height: 13.511px;
+	left: 544.221px;
+	top: 548.359px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: welcome.html;
+	cursor: pointer;
+}
+#union {
+	fill: rgba(255,255,255,1);
+}
+.union {
+	overflow: visible;
+	position: absolute;
+	width: 16px;
+	height: 13.511px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Image_1 {
+	position: absolute;
+	width: 28px;
+	height: 19px;
+	left: 24px;
+	top: 356.967px;
+	overflow: visible;
+}
+#Group_10335 {
+	position: absolute;
+	width: 148px;
+	height: 16px;
+	left: 20px;
+	top: 588.256px;
+	overflow: visible;
+}
+#Terms__Conditions_ds {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 33px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 14px;
+	color: rgba(80,80,80,1);
+}
+#Terms__Conditions_dt {
+	left: 36px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 113px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: signup.html;
+	cursor: pointer;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 14px;
+	color: rgba(51,191,154,1);
+}
