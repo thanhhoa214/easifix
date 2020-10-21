@@ -3,7 +3,7 @@
 	--web-view-id: home-search;
 	--web-scale-on-resize: true;
 	--web-center-horizontally: true;
-	--web-navigate-on-keypress: true;
+	--web-center-vertically: true;
 	--web-enable-deep-linking: true;
 }
 :root {
@@ -15,7 +15,7 @@
 	box-sizing: border-box;
 	border: none;
 }
-#home-search {
+.home-search_Class {
 	position: absolute;
 	width: 360px;
 	height: 710px;
@@ -25,7 +25,7 @@
 	--web-view-id: home-search;
 	--web-scale-on-resize: true;
 	--web-center-horizontally: true;
-	--web-navigate-on-keypress: true;
+	--web-center-vertically: true;
 	--web-enable-deep-linking: true;
 }
 @keyframes fadein {
@@ -38,7 +38,7 @@
 	}
 
 }
-#HoaNT_-_Header_Background {
+.HoaNT_-_Header_Background_Class {
 	position: absolute;
 	width: 1129.174px;
 	height: 680.36px;
@@ -46,7 +46,7 @@
 	top: -469.36px;
 	overflow: visible;
 }
-#Group_9752 {
+.Group_9752_Class {
 	position: absolute;
 	width: 1129.174px;
 	height: 680.36px;
@@ -54,7 +54,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Background {
+.Background_Class {
 	fill: rgba(51,191,154,1);
 }
 .Background {
@@ -67,7 +67,7 @@
 	left: 0px;
 	top: 0px;
 }
-#Path_2860 {
+.Path_2860_Class {
 	fill: rgba(255,255,255,1);
 }
 .Path_2860 {
@@ -79,7 +79,7 @@
 	top: 50px;
 	transform: matrix(1,0,0,1,0,0);
 }
-#Group_9773 {
+.Group_9773_Class {
 	position: absolute;
 	width: 340px;
 	height: 38px;
@@ -87,7 +87,7 @@
 	top: 60px;
 	overflow: visible;
 }
-#CTA {
+.CTA_Class {
 	position: absolute;
 	width: 340px;
 	height: 38px;
@@ -95,7 +95,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Rectangle_5 {
+.Rectangle_5_Class {
 	fill: rgba(255,255,255,1);
 }
 .Rectangle_5 {
@@ -107,7 +107,7 @@
 	left: 0px;
 	top: 0px;
 }
-#Dch_v_a_ch_bn_mun_tm {
+.Dch_v_a_ch_bn_mun_tm_Class {
 	left: 13px;
 	top: 13px;
 	position: absolute;
@@ -123,7 +123,7 @@
 	font-size: 12px;
 	color: rgba(189,189,189,1);
 }
-#tam {
+.tam_Class {
 	position: absolute;
 	width: 30px;
 	height: 30px;
@@ -131,7 +131,7 @@
 	top: 4px;
 	overflow: visible;
 }
-#tam_cl {
+.tam_cl_Class {
 	position: absolute;
 	width: 30px;
 	height: 30px;
@@ -139,15 +139,15 @@
 	top: 0px;
 	overflow: visible;
 }
-#Repeat_Grid_36 {
+.Repeat_Grid_36_Class {
 	position: absolute;
 	width: 360.2px;
-	height: 602px;
+	height: 628px;
 	left: 0px;
 	top: 132.5px;
 	overflow: hidden;
 }
-#Group_10355 {
+.Group_10355_Class {
 	position: absolute;
 	width: 360px;
 	height: 173px;
@@ -155,7 +155,7 @@
 	top: 17.5px;
 	overflow: visible;
 }
-#HoaNT_-_Box-shadow {
+.HoaNT_-_Box-shadow_Class {
 	position: absolute;
 	width: 360px;
 	height: 170px;
@@ -163,7 +163,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#bg {
+.bg_Class {
 	fill: rgba(255,255,255,1);
 }
 .bg {
@@ -175,7 +175,7 @@
 	left: 0px;
 	top: 0px;
 }
-#Sa_tivi {
+.Sa_tivi_Class {
 	left: 20px;
 	top: 10px;
 	position: absolute;
@@ -189,15 +189,15 @@
 	font-size: 18px;
 	color: rgba(121,121,121,1);
 }
-#Repeat_Grid_35 {
+.Repeat_Grid_35_Class {
 	position: absolute;
 	width: 340px;
 	height: 131px;
-	left: 20px;
+	left: 10px;
 	top: 42px;
 	overflow: hidden;
 }
-#Group_10354 {
+.Group_10354_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -205,7 +205,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Group_10384 {
+.Group_10384_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -213,7 +213,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Rectangle_2458 {
+.Rectangle_2458_Class {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(112,112,112,1);
 	stroke-width: 1px;
@@ -230,43 +230,31 @@
 	left: 0px;
 	top: 0px;
 }
-#Group_10344 {
+.Group_10344_Class {
 	position: absolute;
-	width: 62.439px;
-	height: 9px;
-	left: 10.631px;
-	top: 85.047px;
+	width: 64px;
+	height: 11px;
+	left: 13px;
+	top: 83.047px;
 	overflow: visible;
 }
-#Path_2971 {
-	fill: rgba(51,191,154,1);
-}
-.Path_2971 {
-	overflow: visible;
-	position: absolute;
-	width: 8.859px;
-	height: 8.859px;
+.ID5_pht__16km_Class {
 	left: 0px;
-	top: 0.068px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#ID5_pht__16km {
-	left: 11.438px;
 	top: 0px;
 	position: absolute;
 	overflow: visible;
-	width: 52px;
+	width: 65px;
 	white-space: nowrap;
 	line-height: 11px;
-	margin-top: -1.5px;
+	margin-top: -0.5px;
 	text-align: left;
 	font-family: Helvetica Neue;
 	font-style: normal;
 	font-weight: lighter;
-	font-size: 8px;
+	font-size: 10px;
 	color: rgba(80,80,80,1);
 }
-#Vit_Long {
+.Vit_Long_Class {
 	left: 0px;
 	top: 66px;
 	position: absolute;
@@ -282,7 +270,7 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#ID1 {
+.ID1_Class {
 	position: absolute;
 	width: 49px;
 	height: 49px;
@@ -290,7 +278,7 @@
 	top: 9px;
 	overflow: visible;
 }
-#Group_10354_c {
+.Group_10354_cz_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -298,7 +286,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Group_10384_c {
+.Group_10384_c_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -306,7 +294,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Rectangle_2458_c {
+.Rectangle_2458_c_Class {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(112,112,112,1);
 	stroke-width: 1px;
@@ -323,43 +311,31 @@
 	left: 0px;
 	top: 0px;
 }
-#Group_10344_c {
+.Group_10344_c_Class {
 	position: absolute;
-	width: 62.439px;
-	height: 9px;
-	left: 10.631px;
-	top: 85.047px;
+	width: 64px;
+	height: 11px;
+	left: 13px;
+	top: 83.047px;
 	overflow: visible;
 }
-#Path_2971_c {
-	fill: rgba(51,191,154,1);
-}
-.Path_2971_c {
-	overflow: visible;
-	position: absolute;
-	width: 8.859px;
-	height: 8.859px;
+.ID5_pht__16km_c_Class {
 	left: 0px;
-	top: 0.068px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#ID5_pht__16km_c {
-	left: 11.439px;
 	top: 0px;
 	position: absolute;
 	overflow: visible;
-	width: 52px;
+	width: 65px;
 	white-space: nowrap;
 	line-height: 11px;
-	margin-top: -1.5px;
+	margin-top: -0.5px;
 	text-align: left;
 	font-family: Helvetica Neue;
 	font-style: normal;
 	font-weight: lighter;
-	font-size: 8px;
+	font-size: 10px;
 	color: rgba(80,80,80,1);
 }
-#Nguyn_Kim {
+.Nguyn_Kim_Class {
 	left: 0px;
 	top: 66px;
 	position: absolute;
@@ -375,7 +351,7 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#nguyenkim {
+.nguyenkim_Class {
 	position: absolute;
 	width: 49px;
 	height: 49px;
@@ -383,7 +359,7 @@
 	top: 9px;
 	overflow: visible;
 }
-#Group_10354_da {
+.Group_10354_c_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -391,7 +367,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Group_10384_da {
+.Group_10384_da_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -399,7 +375,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Rectangle_2458_da {
+.Rectangle_2458_da_Class {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(112,112,112,1);
 	stroke-width: 1px;
@@ -416,43 +392,31 @@
 	left: 0px;
 	top: 0px;
 }
-#Group_10344_db {
+.Group_10344_da_Class {
 	position: absolute;
-	width: 62.439px;
-	height: 9px;
-	left: 10.631px;
-	top: 85.047px;
+	width: 64px;
+	height: 11px;
+	left: 13px;
+	top: 83.047px;
 	overflow: visible;
 }
-#Path_2971_dc {
-	fill: rgba(51,191,154,1);
-}
-.Path_2971_dc {
-	overflow: visible;
-	position: absolute;
-	width: 8.859px;
-	height: 8.859px;
+.ID5_pht__16km_da_Class {
 	left: 0px;
-	top: 0.068px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#ID5_pht__16km_dd {
-	left: 11.439px;
 	top: 0px;
 	position: absolute;
 	overflow: visible;
-	width: 52px;
+	width: 65px;
 	white-space: nowrap;
 	line-height: 11px;
-	margin-top: -1.5px;
+	margin-top: -0.5px;
 	text-align: left;
 	font-family: Helvetica Neue;
 	font-style: normal;
 	font-weight: lighter;
-	font-size: 8px;
+	font-size: 10px;
 	color: rgba(80,80,80,1);
 }
-#Hu_Thnh {
+.Hu_Thnh_Class {
 	left: 0px;
 	top: 66px;
 	position: absolute;
@@ -468,7 +432,7 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#website-logo-diencohuuthinh {
+.website-logo-diencohuuthinh_Class {
 	position: absolute;
 	width: 49px;
 	height: 49px;
@@ -476,7 +440,7 @@
 	top: 9px;
 	overflow: visible;
 }
-#Group_10355_dg {
+.Group_10355_dd_Class {
 	position: absolute;
 	width: 360px;
 	height: 173px;
@@ -484,7 +448,7 @@
 	top: 212.5px;
 	overflow: visible;
 }
-#HoaNT_-_Box-shadow_dh {
+.HoaNT_-_Box-shadow_de_Class {
 	position: absolute;
 	width: 360px;
 	height: 170px;
@@ -492,10 +456,10 @@
 	top: 0px;
 	overflow: visible;
 }
-#bg_di {
+.bg_df_Class {
 	fill: rgba(255,255,255,1);
 }
-.bg_di {
+.bg_df {
 	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.2));
 	position: absolute;
 	overflow: visible;
@@ -504,7 +468,7 @@
 	left: 0px;
 	top: 0px;
 }
-#Sa_my_lnh {
+.Sa_my_lnh_Class {
 	left: 20px;
 	top: 10px;
 	position: absolute;
@@ -518,15 +482,15 @@
 	font-size: 18px;
 	color: rgba(121,121,121,1);
 }
-#Repeat_Grid_35_dk {
+.Repeat_Grid_35_dh_Class {
 	position: absolute;
 	width: 340px;
 	height: 131px;
-	left: 20px;
+	left: 10px;
 	top: 42px;
 	overflow: hidden;
 }
-#Group_10354_dl {
+.Group_10354_di_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -534,7 +498,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Group_10384_dm {
+.Group_10384_dj_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -542,7 +506,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Rectangle_2458_dn {
+.Rectangle_2458_dk_Class {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(112,112,112,1);
 	stroke-width: 1px;
@@ -551,7 +515,7 @@
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
 }
-.Rectangle_2458_dn {
+.Rectangle_2458_dk {
 	position: absolute;
 	overflow: visible;
 	width: 89px;
@@ -559,43 +523,31 @@
 	left: 0px;
 	top: 0px;
 }
-#Group_10344_do {
+.Group_10344_dl_Class {
 	position: absolute;
-	width: 62.439px;
-	height: 9px;
-	left: 10.631px;
-	top: 85.047px;
+	width: 64px;
+	height: 11px;
+	left: 13px;
+	top: 83.047px;
 	overflow: visible;
 }
-#Path_2971_dp {
-	fill: rgba(51,191,154,1);
-}
-.Path_2971_dp {
-	overflow: visible;
-	position: absolute;
-	width: 8.859px;
-	height: 8.859px;
+.ID5_pht__16km_dm_Class {
 	left: 0px;
-	top: 0.068px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#ID5_pht__16km_dq {
-	left: 11.438px;
 	top: 0px;
 	position: absolute;
 	overflow: visible;
-	width: 52px;
+	width: 65px;
 	white-space: nowrap;
 	line-height: 11px;
-	margin-top: -1.5px;
+	margin-top: -0.5px;
 	text-align: left;
 	font-family: Helvetica Neue;
 	font-style: normal;
 	font-weight: lighter;
-	font-size: 8px;
+	font-size: 10px;
 	color: rgba(80,80,80,1);
 }
-#Vit_Long_dr {
+.Vit_Long_dn_Class {
 	left: 0px;
 	top: 66px;
 	position: absolute;
@@ -611,7 +563,7 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#ID1_ds {
+.ID1_do_Class {
 	position: absolute;
 	width: 49px;
 	height: 49px;
@@ -619,7 +571,7 @@
 	top: 9px;
 	overflow: visible;
 }
-#Group_10354_dt {
+.Group_10354_dp_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -627,7 +579,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Group_10384_du {
+.Group_10384_dq_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -635,7 +587,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Rectangle_2458_dv {
+.Rectangle_2458_dr_Class {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(112,112,112,1);
 	stroke-width: 1px;
@@ -644,7 +596,7 @@
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
 }
-.Rectangle_2458_dv {
+.Rectangle_2458_dr {
 	position: absolute;
 	overflow: visible;
 	width: 89px;
@@ -652,43 +604,31 @@
 	left: 0px;
 	top: 0px;
 }
-#Group_10344_dw {
+.Group_10344_ds_Class {
 	position: absolute;
-	width: 62.439px;
-	height: 9px;
-	left: 10.631px;
-	top: 85.047px;
+	width: 64px;
+	height: 11px;
+	left: 13px;
+	top: 83.047px;
 	overflow: visible;
 }
-#Path_2971_dx {
-	fill: rgba(51,191,154,1);
-}
-.Path_2971_dx {
-	overflow: visible;
-	position: absolute;
-	width: 8.859px;
-	height: 8.859px;
+.ID5_pht__16km_dt_Class {
 	left: 0px;
-	top: 0.068px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#ID5_pht__16km_dy {
-	left: 11.439px;
 	top: 0px;
 	position: absolute;
 	overflow: visible;
-	width: 52px;
+	width: 65px;
 	white-space: nowrap;
 	line-height: 11px;
-	margin-top: -1.5px;
+	margin-top: -0.5px;
 	text-align: left;
 	font-family: Helvetica Neue;
 	font-style: normal;
 	font-weight: lighter;
-	font-size: 8px;
+	font-size: 10px;
 	color: rgba(80,80,80,1);
 }
-#Nguyn_Kim_dz {
+.Nguyn_Kim_du_Class {
 	left: 0px;
 	top: 66px;
 	position: absolute;
@@ -704,7 +644,7 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#nguyenkim_d {
+.nguyenkim_dv_Class {
 	position: absolute;
 	width: 49px;
 	height: 49px;
@@ -712,7 +652,7 @@
 	top: 9px;
 	overflow: visible;
 }
-#Group_10354_d {
+.Group_10354_dw_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -720,7 +660,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Group_10384_d {
+.Group_10384_dx_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -728,7 +668,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Rectangle_2458_d {
+.Rectangle_2458_dy_Class {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(112,112,112,1);
 	stroke-width: 1px;
@@ -737,7 +677,7 @@
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
 }
-.Rectangle_2458_d {
+.Rectangle_2458_dy {
 	position: absolute;
 	overflow: visible;
 	width: 89px;
@@ -745,43 +685,31 @@
 	left: 0px;
 	top: 0px;
 }
-#Group_10344_d {
+.Group_10344_dz_Class {
 	position: absolute;
-	width: 62.439px;
-	height: 9px;
-	left: 10.631px;
-	top: 85.047px;
+	width: 64px;
+	height: 11px;
+	left: 13px;
+	top: 83.047px;
 	overflow: visible;
 }
-#Path_2971_d {
-	fill: rgba(51,191,154,1);
-}
-.Path_2971_d {
-	overflow: visible;
-	position: absolute;
-	width: 8.859px;
-	height: 8.859px;
+.ID5_pht__16km_d_Class {
 	left: 0px;
-	top: 0.068px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#ID5_pht__16km_d {
-	left: 11.439px;
 	top: 0px;
 	position: absolute;
 	overflow: visible;
-	width: 52px;
+	width: 65px;
 	white-space: nowrap;
 	line-height: 11px;
-	margin-top: -1.5px;
+	margin-top: -0.5px;
 	text-align: left;
 	font-family: Helvetica Neue;
 	font-style: normal;
 	font-weight: lighter;
-	font-size: 8px;
+	font-size: 10px;
 	color: rgba(80,80,80,1);
 }
-#Hu_Thnh_d {
+.Hu_Thnh_d_Class {
 	left: 0px;
 	top: 66px;
 	position: absolute;
@@ -797,7 +725,7 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#website-logo-diencohuuthinh_d {
+.website-logo-diencohuuthinh_d_Class {
 	position: absolute;
 	width: 49px;
 	height: 49px;
@@ -805,7 +733,7 @@
 	top: 9px;
 	overflow: visible;
 }
-#Group_10355_d {
+.Group_10355_d_Class {
 	position: absolute;
 	width: 360px;
 	height: 173px;
@@ -813,7 +741,7 @@
 	top: 407.5px;
 	overflow: visible;
 }
-#HoaNT_-_Box-shadow_ea {
+.HoaNT_-_Box-shadow_d_Class {
 	position: absolute;
 	width: 360px;
 	height: 170px;
@@ -821,10 +749,10 @@
 	top: 0px;
 	overflow: visible;
 }
-#bg_eb {
+.bg_d_Class {
 	fill: rgba(255,255,255,1);
 }
-.bg_eb {
+.bg_d {
 	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.2));
 	position: absolute;
 	overflow: visible;
@@ -833,7 +761,7 @@
 	left: 0px;
 	top: 0px;
 }
-#Sa_t_lnh {
+.Sa_t_lnh_Class {
 	left: 20px;
 	top: 10px;
 	position: absolute;
@@ -847,15 +775,15 @@
 	font-size: 18px;
 	color: rgba(121,121,121,1);
 }
-#Repeat_Grid_35_ed {
+.Repeat_Grid_35_d_Class {
 	position: absolute;
 	width: 340px;
 	height: 131px;
-	left: 20px;
+	left: 10px;
 	top: 42px;
 	overflow: hidden;
 }
-#Group_10354_ee {
+.Group_10354_d_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -863,7 +791,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Group_10384_ef {
+.Group_10384_d_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -871,7 +799,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Rectangle_2458_eg {
+.Rectangle_2458_ea_Class {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(112,112,112,1);
 	stroke-width: 1px;
@@ -880,7 +808,7 @@
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
 }
-.Rectangle_2458_eg {
+.Rectangle_2458_ea {
 	position: absolute;
 	overflow: visible;
 	width: 89px;
@@ -888,43 +816,31 @@
 	left: 0px;
 	top: 0px;
 }
-#Group_10344_eh {
+.Group_10344_eb_Class {
 	position: absolute;
-	width: 62.439px;
-	height: 9px;
-	left: 10.631px;
-	top: 85.047px;
+	width: 64px;
+	height: 11px;
+	left: 13px;
+	top: 83.047px;
 	overflow: visible;
 }
-#Path_2971_ei {
-	fill: rgba(51,191,154,1);
-}
-.Path_2971_ei {
-	overflow: visible;
-	position: absolute;
-	width: 8.859px;
-	height: 8.859px;
+.ID5_pht__16km_ec_Class {
 	left: 0px;
-	top: 0.068px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#ID5_pht__16km_ej {
-	left: 11.438px;
 	top: 0px;
 	position: absolute;
 	overflow: visible;
-	width: 52px;
+	width: 65px;
 	white-space: nowrap;
 	line-height: 11px;
-	margin-top: -1.5px;
+	margin-top: -0.5px;
 	text-align: left;
 	font-family: Helvetica Neue;
 	font-style: normal;
 	font-weight: lighter;
-	font-size: 8px;
+	font-size: 10px;
 	color: rgba(80,80,80,1);
 }
-#Vit_Long_ek {
+.Vit_Long_ed_Class {
 	left: 0px;
 	top: 66px;
 	position: absolute;
@@ -940,7 +856,7 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#ID1_el {
+.ID1_ee_Class {
 	position: absolute;
 	width: 49px;
 	height: 49px;
@@ -948,7 +864,7 @@
 	top: 9px;
 	overflow: visible;
 }
-#Group_10354_em {
+.Group_10354_ef_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -956,7 +872,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Group_10384_en {
+.Group_10384_eg_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -964,7 +880,88 @@
 	top: 0px;
 	overflow: visible;
 }
-#Rectangle_2458_eo {
+.Rectangle_2458_eh_Class {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_2458_eh {
+	position: absolute;
+	overflow: visible;
+	width: 89px;
+	height: 104px;
+	left: 0px;
+	top: 0px;
+}
+.Group_10344_ei_Class {
+	position: absolute;
+	width: 64px;
+	height: 11px;
+	left: 13px;
+	top: 83.047px;
+	overflow: visible;
+}
+.ID5_pht__16km_ej_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 65px;
+	white-space: nowrap;
+	line-height: 11px;
+	margin-top: -0.5px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Nguyn_Kim_ek_Class {
+	left: 0px;
+	top: 66px;
+	position: absolute;
+	overflow: hidden;
+	width: 90px;
+	height: 10px;
+	line-height: 18px;
+	margin-top: -4px;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10px;
+	color: rgba(121,121,121,1);
+}
+.nguyenkim_el_Class {
+	position: absolute;
+	width: 49px;
+	height: 49px;
+	left: 20px;
+	top: 9px;
+	overflow: visible;
+}
+.Group_10354_em_Class {
+	position: absolute;
+	width: 89px;
+	height: 104px;
+	left: 240px;
+	top: 0px;
+	overflow: visible;
+}
+.Group_10384_en_Class {
+	position: absolute;
+	width: 89px;
+	height: 104px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_2458_eo_Class {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(112,112,112,1);
 	stroke-width: 1px;
@@ -981,43 +978,31 @@
 	left: 0px;
 	top: 0px;
 }
-#Group_10344_ep {
+.Group_10344_ep_Class {
 	position: absolute;
-	width: 62.439px;
-	height: 9px;
-	left: 10.631px;
-	top: 85.047px;
+	width: 64px;
+	height: 11px;
+	left: 13px;
+	top: 83.047px;
 	overflow: visible;
 }
-#Path_2971_eq {
-	fill: rgba(51,191,154,1);
-}
-.Path_2971_eq {
-	overflow: visible;
-	position: absolute;
-	width: 8.859px;
-	height: 8.859px;
+.ID5_pht__16km_eq_Class {
 	left: 0px;
-	top: 0.068px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#ID5_pht__16km_er {
-	left: 11.439px;
 	top: 0px;
 	position: absolute;
 	overflow: visible;
-	width: 52px;
+	width: 65px;
 	white-space: nowrap;
 	line-height: 11px;
-	margin-top: -1.5px;
+	margin-top: -0.5px;
 	text-align: left;
 	font-family: Helvetica Neue;
 	font-style: normal;
 	font-weight: lighter;
-	font-size: 8px;
+	font-size: 10px;
 	color: rgba(80,80,80,1);
 }
-#Nguyn_Kim_es {
+.Hu_Thnh_er_Class {
 	left: 0px;
 	top: 66px;
 	position: absolute;
@@ -1033,7 +1018,7 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#nguyenkim_et {
+.website-logo-diencohuuthinh_es_Class {
 	position: absolute;
 	width: 49px;
 	height: 49px;
@@ -1041,100 +1026,7 @@
 	top: 9px;
 	overflow: visible;
 }
-#Group_10354_eu {
-	position: absolute;
-	width: 89px;
-	height: 104px;
-	left: 240px;
-	top: 0px;
-	overflow: visible;
-}
-#Group_10384_ev {
-	position: absolute;
-	width: 89px;
-	height: 104px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-}
-#Rectangle_2458_ew {
-	fill: rgba(255,255,255,1);
-	stroke: rgba(112,112,112,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.Rectangle_2458_ew {
-	position: absolute;
-	overflow: visible;
-	width: 89px;
-	height: 104px;
-	left: 0px;
-	top: 0px;
-}
-#Group_10344_ex {
-	position: absolute;
-	width: 62.439px;
-	height: 9px;
-	left: 10.631px;
-	top: 85.047px;
-	overflow: visible;
-}
-#Path_2971_ey {
-	fill: rgba(51,191,154,1);
-}
-.Path_2971_ey {
-	overflow: visible;
-	position: absolute;
-	width: 8.859px;
-	height: 8.859px;
-	left: 0px;
-	top: 0.068px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#ID5_pht__16km_ez {
-	left: 11.439px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 52px;
-	white-space: nowrap;
-	line-height: 11px;
-	margin-top: -1.5px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 8px;
-	color: rgba(80,80,80,1);
-}
-#Hu_Thnh_e {
-	left: 0px;
-	top: 66px;
-	position: absolute;
-	overflow: hidden;
-	width: 90px;
-	height: 10px;
-	line-height: 18px;
-	margin-top: -4px;
-	text-align: center;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 10px;
-	color: rgba(121,121,121,1);
-}
-#website-logo-diencohuuthinh_e {
-	position: absolute;
-	width: 49px;
-	height: 49px;
-	left: 20px;
-	top: 9px;
-	overflow: visible;
-}
-#Group_10355_e {
+.Group_10355_et_Class {
 	position: absolute;
 	width: 375px;
 	height: 173px;
@@ -1142,7 +1034,7 @@
 	top: 602.5px;
 	overflow: visible;
 }
-#HoaNT_-_Box-shadow_e {
+.HoaNT_-_Box-shadow_eu_Class {
 	position: absolute;
 	width: 375px;
 	height: 170px;
@@ -1150,10 +1042,10 @@
 	top: 0px;
 	overflow: visible;
 }
-#bg_e {
+.bg_ev_Class {
 	fill: rgba(255,255,255,1);
 }
-.bg_e {
+.bg_ev {
 	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.2));
 	position: absolute;
 	overflow: visible;
@@ -1162,7 +1054,7 @@
 	left: 0px;
 	top: 0px;
 }
-#Sa_my_si {
+.Sa_my_si_Class {
 	left: 20px;
 	top: 10px;
 	position: absolute;
@@ -1176,15 +1068,15 @@
 	font-size: 18px;
 	color: rgba(121,121,121,1);
 }
-#Repeat_Grid_35_e {
+.Repeat_Grid_35_ex_Class {
 	position: absolute;
 	width: 340px;
 	height: 131px;
-	left: 20px;
+	left: 10px;
 	top: 42px;
 	overflow: hidden;
 }
-#Group_10354_e {
+.Group_10354_ey_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -1192,7 +1084,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Group_10384_e {
+.Group_10384_ez_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -1200,7 +1092,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Rectangle_2458_e {
+.Rectangle_2458_e_Class {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(112,112,112,1);
 	stroke-width: 1px;
@@ -1217,43 +1109,31 @@
 	left: 0px;
 	top: 0px;
 }
-#Group_10344_fa {
+.Group_10344_e_Class {
 	position: absolute;
-	width: 62.439px;
-	height: 9px;
-	left: 10.631px;
-	top: 85.047px;
+	width: 64px;
+	height: 11px;
+	left: 13px;
+	top: 83.047px;
 	overflow: visible;
 }
-#Path_2971_fb {
-	fill: rgba(51,191,154,1);
-}
-.Path_2971_fb {
-	overflow: visible;
-	position: absolute;
-	width: 8.859px;
-	height: 8.859px;
+.ID5_pht__16km_e_Class {
 	left: 0px;
-	top: 0.068px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#ID5_pht__16km_fc {
-	left: 11.438px;
 	top: 0px;
 	position: absolute;
 	overflow: visible;
-	width: 52px;
+	width: 65px;
 	white-space: nowrap;
 	line-height: 11px;
-	margin-top: -1.5px;
+	margin-top: -0.5px;
 	text-align: left;
 	font-family: Helvetica Neue;
 	font-style: normal;
 	font-weight: lighter;
-	font-size: 8px;
+	font-size: 10px;
 	color: rgba(80,80,80,1);
 }
-#Vit_Long_fd {
+.Vit_Long_e_Class {
 	left: 0px;
 	top: 66px;
 	position: absolute;
@@ -1269,7 +1149,7 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#ID1_fe {
+.ID1_e_Class {
 	position: absolute;
 	width: 49px;
 	height: 49px;
@@ -1277,7 +1157,7 @@
 	top: 9px;
 	overflow: visible;
 }
-#Group_10354_ff {
+.Group_10354_e_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -1285,7 +1165,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Group_10384_fg {
+.Group_10384_e_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -1293,7 +1173,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Rectangle_2458_fh {
+.Rectangle_2458_fa_Class {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(112,112,112,1);
 	stroke-width: 1px;
@@ -1302,7 +1182,7 @@
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
 }
-.Rectangle_2458_fh {
+.Rectangle_2458_fa {
 	position: absolute;
 	overflow: visible;
 	width: 89px;
@@ -1310,43 +1190,31 @@
 	left: 0px;
 	top: 0px;
 }
-#Group_10344_fi {
+.Group_10344_fa_Class {
 	position: absolute;
-	width: 62.439px;
-	height: 9px;
-	left: 10.631px;
-	top: 85.047px;
+	width: 64px;
+	height: 11px;
+	left: 13px;
+	top: 83.047px;
 	overflow: visible;
 }
-#Path_2971_fj {
-	fill: rgba(51,191,154,1);
-}
-.Path_2971_fj {
-	overflow: visible;
-	position: absolute;
-	width: 8.859px;
-	height: 8.859px;
+.ID5_pht__16km_fa_Class {
 	left: 0px;
-	top: 0.068px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#ID5_pht__16km_fk {
-	left: 11.439px;
 	top: 0px;
 	position: absolute;
 	overflow: visible;
-	width: 52px;
+	width: 65px;
 	white-space: nowrap;
 	line-height: 11px;
-	margin-top: -1.5px;
+	margin-top: -0.5px;
 	text-align: left;
 	font-family: Helvetica Neue;
 	font-style: normal;
 	font-weight: lighter;
-	font-size: 8px;
+	font-size: 10px;
 	color: rgba(80,80,80,1);
 }
-#Nguyn_Kim_fl {
+.Nguyn_Kim_fa_Class {
 	left: 0px;
 	top: 66px;
 	position: absolute;
@@ -1362,7 +1230,7 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#nguyenkim_fm {
+.nguyenkim_fb_Class {
 	position: absolute;
 	width: 49px;
 	height: 49px;
@@ -1370,7 +1238,7 @@
 	top: 9px;
 	overflow: visible;
 }
-#Group_10354_fn {
+.Group_10354_fc_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -1378,7 +1246,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Group_10384_fo {
+.Group_10384_fd_Class {
 	position: absolute;
 	width: 89px;
 	height: 104px;
@@ -1386,7 +1254,7 @@
 	top: 0px;
 	overflow: visible;
 }
-#Rectangle_2458_fp {
+.Rectangle_2458_fe_Class {
 	fill: rgba(255,255,255,1);
 	stroke: rgba(112,112,112,1);
 	stroke-width: 1px;
@@ -1395,7 +1263,7 @@
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
 }
-.Rectangle_2458_fp {
+.Rectangle_2458_fe {
 	position: absolute;
 	overflow: visible;
 	width: 89px;
@@ -1403,43 +1271,31 @@
 	left: 0px;
 	top: 0px;
 }
-#Group_10344_fq {
+.Group_10344_ff_Class {
 	position: absolute;
-	width: 62.439px;
-	height: 9px;
-	left: 10.631px;
-	top: 85.047px;
+	width: 64px;
+	height: 11px;
+	left: 13px;
+	top: 83.047px;
 	overflow: visible;
 }
-#Path_2971_fr {
-	fill: rgba(51,191,154,1);
-}
-.Path_2971_fr {
-	overflow: visible;
-	position: absolute;
-	width: 8.859px;
-	height: 8.859px;
+.ID5_pht__16km_fg_Class {
 	left: 0px;
-	top: 0.068px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#ID5_pht__16km_fs {
-	left: 11.439px;
 	top: 0px;
 	position: absolute;
 	overflow: visible;
-	width: 52px;
+	width: 65px;
 	white-space: nowrap;
 	line-height: 11px;
-	margin-top: -1.5px;
+	margin-top: -0.5px;
 	text-align: left;
 	font-family: Helvetica Neue;
 	font-style: normal;
 	font-weight: lighter;
-	font-size: 8px;
+	font-size: 10px;
 	color: rgba(80,80,80,1);
 }
-#Hu_Thnh_ft {
+.Hu_Thnh_fh_Class {
 	left: 0px;
 	top: 66px;
 	position: absolute;
@@ -1455,7 +1311,7 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#website-logo-diencohuuthinh_fu {
+.website-logo-diencohuuthinh_fi_Class {
 	position: absolute;
 	width: 49px;
 	height: 49px;
@@ -1463,7 +1319,7 @@
 	top: 9px;
 	overflow: visible;
 }
-#Gn_bn {
+.Gn_bn_Class {
 	left: 10px;
 	top: 118px;
 	position: absolute;
@@ -1471,22 +1327,46 @@
 	width: 341px;
 	height: 22px;
 	line-height: 35px;
-	margin-top: -13px;
+	margin-top: -11.5px;
 	text-align: left;
 	font-family: Helvetica Neue;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 9px;
+	font-size: 12px;
 	color: rgba(48,48,48,1);
 }
-#info-bg {
+.Header1_Class {
+	position: absolute;
+	width: 92px;
+	height: 16px;
+	left: 134.402px;
+	top: 20px;
+	overflow: visible;
+}
+.Fixing_Time_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 93px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.7142857360839844px;
+	text-transform: uppercase;
+}
+.info-bg_Class {
 	fill: rgba(0,0,0,0.302);
 }
 .info-bg {
 	overflow: visible;
 	position: absolute;
 	width: 373.727px;
-	height: 762px;
+	height: 762.5px;
 	left: -5.567px;
 	top: -2px;
 	transform: matrix(1,0,0,1,0,0);
@@ -1495,10 +1375,10 @@
 	--web-action-target: home_list_store.html;
 	cursor: pointer;
 }
-#info-bg_fx {
+.info-bg_fn_Class {
 	fill: rgba(255,255,255,1);
 }
-.info-bg_fx {
+.info-bg_fn {
 	overflow: visible;
 	position: absolute;
 	width: 301.92px;
@@ -1507,7 +1387,7 @@
 	top: 197.68px;
 	transform: matrix(1,0,0,1,0,0);
 }
-#Group_9773_fy {
+.Group_9773_fo_Class {
 	position: absolute;
 	width: 277px;
 	height: 38px;
@@ -1515,7 +1395,7 @@
 	top: 214px;
 	overflow: visible;
 }
-#CTA_fz {
+.CTA_fp_Class {
 	position: absolute;
 	width: 277px;
 	height: 38px;
@@ -1523,10 +1403,10 @@
 	top: 0px;
 	overflow: visible;
 }
-#Rectangle_5_f {
+.Rectangle_5_fq_Class {
 	fill: rgba(255,255,255,1);
 }
-.Rectangle_5_f {
+.Rectangle_5_fq {
 	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.102));
 	position: absolute;
 	overflow: visible;
@@ -1535,7 +1415,7 @@
 	left: 0px;
 	top: 0px;
 }
-#Bn_ang_tm_dch_v_g_ {
+.Bn_ang_tm_dch_v_g__Class {
 	left: 13px;
 	top: 13px;
 	position: absolute;
@@ -1551,7 +1431,7 @@
 	font-size: 12px;
 	color: rgba(189,189,189,1);
 }
-#Group_10359 {
+.Group_10359_Class {
 	position: absolute;
 	width: 51px;
 	height: 17px;
@@ -1563,7 +1443,7 @@
 	--web-action-target: list_store.html;
 	cursor: pointer;
 }
-#Rectangle_1950 {
+.Rectangle_1950_Class {
 	fill: transparent;
 	stroke: rgba(121,121,121,1);
 	stroke-width: 1px;
@@ -1580,7 +1460,7 @@
 	left: 0px;
 	top: 0px;
 }
-#My_git {
+.My_git_Class {
 	left: 7px;
 	top: 3px;
 	position: absolute;
@@ -1596,7 +1476,7 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#Group_10363 {
+.Group_10363_Class {
 	position: absolute;
 	width: 56px;
 	height: 17px;
@@ -1604,7 +1484,7 @@
 	top: 287px;
 	overflow: visible;
 }
-#Rectangle_1950_f {
+.Rectangle_1950_fw_Class {
 	fill: transparent;
 	stroke: rgba(121,121,121,1);
 	stroke-width: 1px;
@@ -1613,7 +1493,7 @@
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
 }
-.Rectangle_1950_f {
+.Rectangle_1950_fw {
 	position: absolute;
 	overflow: visible;
 	width: 56px;
@@ -1621,9 +1501,9 @@
 	left: 0px;
 	top: 0px;
 }
-#My_sy {
+.My_sy_Class {
 	left: 9px;
-	top: 4px;
+	top: 3px;
 	position: absolute;
 	overflow: visible;
 	width: 39px;
@@ -1637,15 +1517,15 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#Group_10364 {
+.Group_10364_Class {
 	position: absolute;
 	width: 62px;
 	height: 17px;
-	left: 99.968px;
+	left: 100px;
 	top: 287px;
 	overflow: visible;
 }
-#Rectangle_1950_ga {
+.Rectangle_1950_fz_Class {
 	fill: transparent;
 	stroke: rgba(121,121,121,1);
 	stroke-width: 1px;
@@ -1654,7 +1534,7 @@
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
 }
-.Rectangle_1950_ga {
+.Rectangle_1950_fz {
 	position: absolute;
 	overflow: visible;
 	width: 62px;
@@ -1662,9 +1542,9 @@
 	left: 0px;
 	top: 0px;
 }
-#L_vi_sng {
+.L_vi_sng_Class {
 	left: 8px;
-	top: 4px;
+	top: 3px;
 	position: absolute;
 	overflow: visible;
 	width: 47px;
@@ -1678,15 +1558,15 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#Group_10365 {
+.Group_10365_Class {
 	position: absolute;
-	width: 62px;
+	width: 52px;
 	height: 17px;
-	left: 166.613px;
+	left: 167px;
 	top: 287px;
 	overflow: visible;
 }
-#Rectangle_1950_gc {
+.Rectangle_1950_f_Class {
 	fill: transparent;
 	stroke: rgba(121,121,121,1);
 	stroke-width: 1px;
@@ -1695,58 +1575,17 @@
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
 }
-.Rectangle_1950_gc {
+.Rectangle_1950_f {
 	position: absolute;
 	overflow: visible;
-	width: 62px;
+	width: 52px;
 	height: 17px;
 	left: 0px;
 	top: 0px;
 }
-#Bp_t {
-	left: 16px;
-	top: 4px;
-	position: absolute;
-	overflow: visible;
-	width: 31px;
-	white-space: nowrap;
-	line-height: 18px;
-	margin-top: -4px;
-	text-align: center;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 10px;
-	color: rgba(121,121,121,1);
-}
-#Group_10360 {
-	position: absolute;
-	width: 51px;
-	height: 17px;
-	left: 94.417px;
-	top: 265px;
-	overflow: visible;
-}
-#Rectangle_1950_gf {
-	fill: transparent;
-	stroke: rgba(121,121,121,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.Rectangle_1950_gf {
-	position: absolute;
-	overflow: visible;
-	width: 51px;
-	height: 17px;
-	left: 0px;
-	top: 0px;
-}
-#My_i {
+.Bp_t_Class {
 	left: 11px;
-	top: 4px;
+	top: 3px;
 	position: absolute;
 	overflow: visible;
 	width: 31px;
@@ -1760,15 +1599,15 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#Group_10361 {
+.Group_10360_Class {
 	position: absolute;
 	width: 51px;
 	height: 17px;
-	left: 149.731px;
+	left: 94px;
 	top: 265px;
 	overflow: visible;
 }
-#Rectangle_1950_gi {
+.Rectangle_1950_ga_Class {
 	fill: transparent;
 	stroke: rgba(121,121,121,1);
 	stroke-width: 1px;
@@ -1777,7 +1616,7 @@
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
 }
-.Rectangle_1950_gi {
+.Rectangle_1950_ga {
 	position: absolute;
 	overflow: visible;
 	width: 51px;
@@ -1785,8 +1624,49 @@
 	left: 0px;
 	top: 0px;
 }
-#T_lnh {
-	left: 9px;
+.My_i_Class {
+	left: 11px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 31px;
+	white-space: nowrap;
+	line-height: 18px;
+	margin-top: -4px;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(121,121,121,1);
+}
+.Group_10361_Class {
+	position: absolute;
+	width: 51px;
+	height: 17px;
+	left: 150px;
+	top: 265px;
+	overflow: visible;
+}
+.Rectangle_1950_gb_Class {
+	fill: transparent;
+	stroke: rgba(121,121,121,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_1950_gb {
+	position: absolute;
+	overflow: visible;
+	width: 51px;
+	height: 17px;
+	left: 0px;
+	top: 0px;
+}
+.T_lnh_Class {
+	left: 8px;
 	top: 3px;
 	position: absolute;
 	overflow: visible;
@@ -1801,7 +1681,7 @@
 	font-size: 10px;
 	color: rgba(121,121,121,1);
 }
-#Group_10362 {
+.Group_10362_Class {
 	position: absolute;
 	width: 79px;
 	height: 17px;
@@ -1809,7 +1689,7 @@
 	top: 265px;
 	overflow: visible;
 }
-#Rectangle_1950_gl {
+.Rectangle_1950_gc_Class {
 	fill: transparent;
 	stroke: rgba(121,121,121,1);
 	stroke-width: 1px;
@@ -1818,7 +1698,7 @@
 	stroke-miterlimit: 4;
 	shape-rendering: auto;
 }
-.Rectangle_1950_gl {
+.Rectangle_1950_gc {
 	position: absolute;
 	overflow: visible;
 	width: 79px;
@@ -1826,7 +1706,7 @@
 	left: 0px;
 	top: 0px;
 }
-#My_ra_chn {
+.My_ra_chn_Class {
 	left: 9px;
 	top: 3px;
 	position: absolute;
