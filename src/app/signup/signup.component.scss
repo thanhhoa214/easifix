@@ -1,403 +1,400 @@
 .mediaViewInfo {
-	--web-view-name: signup;
-	--web-view-id: signup;
-	--web-scale-on-resize: true;
-	--web-enable-deep-linking: true;
+  --web-view-name: signup;
+  --web-view-id: signup;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
 }
 :root {
-	--web-view-ids: signup;
+  --web-view-ids: signup;
 }
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
 }
 #signup {
-	position: absolute;
-	width: 360px;
-	height: 710px;
-	background-color: rgba(255,255,255,1);
-	overflow: hidden;
-	--web-view-name: signup;
-	--web-view-id: signup;
-	--web-scale-on-resize: true;
-	--web-enable-deep-linking: true;
+  position: absolute;
+  width: 360px;
+  height: 710px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  --web-view-name: signup;
+  --web-view-id: signup;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
 }
 #Light_Status_Bar {
-	position: absolute;
-	width: 327.328px;
-	height: 16.669px;
-	left: 15px;
-	top: 14.331px;
-	overflow: visible;
+  position: absolute;
+  width: 327.328px;
+  height: 16.669px;
+  left: 15px;
+  top: 14.331px;
+  overflow: visible;
 }
 #Battery {
-	position: absolute;
-	width: 24.328px;
-	height: 11.333px;
-	left: 303px;
-	top: 0.003px;
-	overflow: visible;
+  position: absolute;
+  width: 24.328px;
+  height: 11.333px;
+  left: 303px;
+  top: 0.003px;
+  overflow: visible;
 }
 #Border {
-	fill: rgba(0,0,0,0);
-	stroke: rgba(255,255,255,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 10;
-	shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(255, 255, 255, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 .Border {
-	position: absolute;
-	overflow: visible;
-	width: 22px;
-	height: 11.333px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 22px;
+  height: 11.333px;
+  left: 0px;
+  top: 0px;
 }
 #Cap {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Cap {
-	overflow: visible;
-	position: absolute;
-	width: 1.328px;
-	height: 4px;
-	left: 23px;
-	top: 3.667px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 1.328px;
+  height: 4px;
+  left: 23px;
+  top: 3.667px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Capacity {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Capacity {
-	position: absolute;
-	overflow: visible;
-	width: 18px;
-	height: 7.333px;
-	left: 2px;
-	top: 2px;
+  position: absolute;
+  overflow: visible;
+  width: 18px;
+  height: 7.333px;
+  left: 2px;
+  top: 2px;
 }
 #Wifi {
-	opacity: 0.96;
-	fill: rgba(255,255,255,1);
+  opacity: 0.96;
+  fill: rgba(255, 255, 255, 1);
 }
 .Wifi {
-	overflow: visible;
-	position: absolute;
-	width: 15.272px;
-	height: 10.966px;
-	left: 282.694px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 15.272px;
+  height: 10.966px;
+  left: 282.694px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Cellular_Connection {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Cellular_Connection {
-	overflow: visible;
-	position: absolute;
-	width: 17px;
-	height: 10.667px;
-	left: 260.667px;
-	top: 0.336px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 17px;
+  height: 10.667px;
+  left: 260.667px;
+  top: 0.336px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Time_Style {
-	position: absolute;
-	width: 54px;
-	height: 16px;
-	left: 0px;
-	top: 0.669px;
-	overflow: visible;
+  position: absolute;
+  width: 54px;
+  height: 16px;
+  left: 0px;
+  top: 0.669px;
+  overflow: visible;
 }
 #_Time {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 55px;
-	height: 16px;
-	text-align: center;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	color: rgba(255,255,255,1);
-	letter-spacing: -0.2px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 55px;
+  height: 16px;
+  text-align: center;
+  font-family: Helvetica Neue;
+
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: -0.2px;
 }
 #Group_9592 {
-	position: absolute;
-	width: 320px;
-	height: 325px;
-	left: 20px;
-	top: 234.832px;
-	overflow: visible;
+  position: absolute;
+  width: 320px;
+  height: 325px;
+  left: 20px;
+  top: 234.832px;
+  overflow: visible;
 }
 #Enter_number {
-	position: absolute;
-	width: 319px;
-	height: 65px;
-	left: 0px;
-	top: 80px;
-	overflow: visible;
+  position: absolute;
+  width: 319px;
+  height: 65px;
+  left: 0px;
+  top: 80px;
+  overflow: visible;
 }
 #bg {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .bg {
-	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.102));
-	position: absolute;
-	overflow: visible;
-	width: 364px;
-	height: 110px;
-	left: 0px;
-	top: 0px;
+  filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.102));
+  position: absolute;
+  overflow: visible;
+  width: 364px;
+  height: 110px;
+  left: 0px;
+  top: 0px;
 }
 #Nhp_s_in_thoi_ca_bn {
-	left: 107px;
-	top: 25px;
-	position: absolute;
-	overflow: visible;
-	width: 171px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	color: rgba(189,189,189,1);
+  left: 107px;
+  top: 25px;
+  position: absolute;
+  overflow: visible;
+  width: 171px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Helvetica Neue;
+
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(189, 189, 189, 1);
 }
 #divider {
-	fill: rgba(246,246,246,1);
+  fill: rgba(246, 246, 246, 1);
 }
 .divider {
-	width: 65px;
-	height: 1px;
-	position: absolute;
-	overflow: visible;
-	transform: translate(0px, 0px) matrix(1,0,0,1,69.2252,32) rotate(270deg);
-	transform-origin: center;
+  width: 65px;
+  height: 1px;
+  position: absolute;
+  overflow: visible;
+  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 69.2252, 32) rotate(270deg);
+  transform-origin: center;
 }
 #Number__Flag {
-	position: absolute;
-	width: 86.993px;
-	height: 20px;
-	left: 9px;
-	top: 102px;
-	overflow: visible;
+  position: absolute;
+  width: 86.993px;
+  height: 20px;
+  left: 9px;
+  top: 102px;
+  overflow: visible;
 }
 #ID880 {
-	left: 29px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 41px;
-	white-space: nowrap;
-	line-height: 24px;
-	margin-top: -5px;
-	text-align: center;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	color: rgba(36,39,43,1);
+  left: 29px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 41px;
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -5px;
+  text-align: center;
+
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(36, 39, 43, 1);
 }
 #Path_407 {
-	fill: rgba(214,214,214,1);
+  fill: rgba(214, 214, 214, 1);
 }
 .Path_407 {
-	overflow: visible;
-	position: absolute;
-	width: 11.993px;
-	height: 6.663px;
-	transform: translate(0px, 0px) matrix(1,0,0,1,75,7) rotate(180deg);
-	transform-origin: center;
-	left: 0px;
-	top: 0px;
+  overflow: visible;
+  position: absolute;
+  width: 11.993px;
+  height: 6.663px;
+  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 75, 7) rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
 }
 #Image_1 {
-	position: absolute;
-	width: 28px;
-	height: 18.655px;
-	left: 0px;
-	top: 1px;
-	overflow: visible;
+  position: absolute;
+  width: 28px;
+  height: 18.655px;
+  left: 0px;
+  top: 1px;
+  overflow: visible;
 }
 #By_creating_an_account_you_agr {
-	left: 0px;
-	top: 192px;
-	position: absolute;
-	overflow: visible;
-	width: 321px;
-	height: 29px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 12px;
-	color: rgba(48,48,48,1);
+  left: 0px;
+  top: 192px;
+  position: absolute;
+  overflow: visible;
+  width: 321px;
+  height: 29px;
+  text-align: left;
+  font-family: Helvetica Neue;
+
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(48, 48, 48, 1);
 }
 #CTA {
-	position: absolute;
-	width: 319px;
-	height: 55px;
-	left: 0.5px;
-	top: 270px;
-	overflow: visible;
+  position: absolute;
+  width: 319px;
+  height: 55px;
+  left: 0.5px;
+  top: 270px;
+  overflow: visible;
 }
 #Rectangle_5 {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Rectangle_5 {
-	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.102));
-	position: absolute;
-	overflow: visible;
-	width: 364px;
-	height: 100px;
-	left: 0px;
-	top: 0px;
+  filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.102));
+  position: absolute;
+  overflow: visible;
+  width: 364px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
 }
 #ng_k {
-	left: 39px;
-	top: 18px;
-	position: absolute;
-	overflow: visible;
-	width: 67px;
-	height: 20px;
-	line-height: 24px;
-	margin-top: -5px;
-	text-align: center;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	color: rgba(189,189,189,1);
+  left: 39px;
+  top: 18px;
+  position: absolute;
+  overflow: visible;
+  width: 67px;
+  height: 20px;
+  line-height: 24px;
+  margin-top: -5px;
+  text-align: center;
+
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(189, 189, 189, 1);
 }
 #icons {
-	position: absolute;
-	width: 21.083px;
-	height: 19.078px;
-	left: 257.44px;
-	top: 17.619px;
-	overflow: visible;
+  position: absolute;
+  width: 21.083px;
+  height: 19.078px;
+  left: 257.44px;
+  top: 17.619px;
+  overflow: visible;
 }
 #arrow-right {
-	position: absolute;
-	width: 21.083px;
-	height: 19.078px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 21.083px;
+  height: 19.078px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 #Shape {
-	fill: rgba(0,0,0,0);
-	stroke: rgba(189,189,189,1);
-	stroke-width: 2px;
-	stroke-linejoin: round;
-	stroke-linecap: round;
-	stroke-miterlimit: 10;
-	shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 .Shape {
-	overflow: visible;
-	position: absolute;
-	width: 23.083px;
-	height: 2px;
-	left: 0px;
-	top: 9.539px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 23.083px;
+  height: 2px;
+  left: 0px;
+  top: 9.539px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Shape_c {
-	fill: rgba(0,0,0,0);
-	stroke: rgba(189,189,189,1);
-	stroke-width: 2px;
-	stroke-linejoin: round;
-	stroke-linecap: round;
-	stroke-miterlimit: 10;
-	shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 .Shape_c {
-	overflow: visible;
-	position: absolute;
-	width: 10.314px;
-	height: 21.894px;
-	left: 13.177px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 10.314px;
+  height: 21.894px;
+  left: 13.177px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #XIn_cho_Rt_vui_c_gp_bn_Tham_gi {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 265px;
-	white-space: nowrap;
-	line-height: 28px;
-	margin-top: -8px;
-	text-align: left;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 12px;
-	color: rgba(48,48,48,1);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 265px;
+  white-space: nowrap;
+  line-height: 28px;
+  margin-top: -8px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(48, 48, 48, 1);
 }
 #Group_9752 {
-	position: absolute;
-	width: 1129.174px;
-	height: 680.36px;
-	left: -513.334px;
-	top: -495.302px;
-	overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  left: -513.334px;
+  top: -495.302px;
+  overflow: visible;
 }
 #Background {
-	fill: rgba(51,191,154,1);
+  fill: rgba(51, 191, 154, 1);
 }
 .Background {
-	overflow: visible;
-	position: absolute;
-	width: 1129.174px;
-	height: 680.36px;
-	transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
-	transform-origin: center;
-	left: 0px;
-	top: 0px;
+  overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
 }
 #Sign_n {
-	left: 65.76px;
-	top: 52.058px;
-	position: absolute;
-	overflow: visible;
-	width: 67px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(255,255,255,1);
-	letter-spacing: 0.7142857360839844px;
-	text-transform: uppercase;
+  left: 65.76px;
+  top: 52.058px;
+  position: absolute;
+  overflow: visible;
+  width: 67px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Helvetica Neue;
+
+  font-weight: bold;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.7142857360839844px;
+  text-transform: uppercase;
 }
 #Back {
-	position: absolute;
-	width: 16px;
-	height: 13.511px;
-	left: 30.887px;
-	top: 53.057px;
-	overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 13.511px;
+  left: 30.887px;
+  top: 53.057px;
+  overflow: visible;
 }
 #union {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .union {
-	overflow: visible;
-	position: absolute;
-	width: 16px;
-	height: 13.511px;
-	left: 0px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 13.511px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }

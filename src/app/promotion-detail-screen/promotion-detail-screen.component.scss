@@ -1,277 +1,277 @@
 .mediaViewInfo {
-	--web-view-name: promotion-detail-screen;
-	--web-view-id: promotion-detail-screen;
-	--web-scale-on-resize: true;
-	--web-enable-deep-linking: true;
+  --web-view-name: promotion-detail-screen;
+  --web-view-id: promotion-detail-screen;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
 }
 :root {
-	--web-view-ids: promotion-detail-screen;
+  --web-view-ids: promotion-detail-screen;
 }
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
 }
 #promotion-detail-screen {
-	position: absolute;
-	width: 360px;
-	height: 760px;
-	background-color: rgba(255,255,255,1);
-	overflow: hidden;
-	--web-view-name: promotion-detail-screen;
-	--web-view-id: promotion-detail-screen;
-	--web-scale-on-resize: true;
-	--web-enable-deep-linking: true;
+  position: absolute;
+  width: 360px;
+  height: 760px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  --web-view-name: promotion-detail-screen;
+  --web-view-id: promotion-detail-screen;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
 }
 
 #Group_9672 {
-	position: absolute;
-	width: 1129.174px;
-	height: 680.36px;
-	left: -525.334px;
-	top: -439.302px;
-	overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  left: -525.334px;
+  top: -439.302px;
+  overflow: visible;
 }
 #Group_9752 {
-	position: absolute;
-	width: 1129.174px;
-	height: 680.36px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 #Background {
-	fill: rgba(51,191,154,1);
+  fill: rgba(51, 191, 154, 1);
 }
 .Background {
-	overflow: visible;
-	position: absolute;
-	width: 1129.174px;
-	height: 680.36px;
-	transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
-	transform-origin: center;
-	left: 0px;
-	top: 0px;
+  overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
 }
 #Header1 {
-	position: absolute;
-	width: 254px;
-	height: 20px;
-	left: 535.348px;
-	top: 459.36px;
-	overflow: visible;
+  position: absolute;
+  width: 254px;
+  height: 20px;
+  left: 535.348px;
+  top: 459.36px;
+  overflow: visible;
 }
 #Fixing_Time {
-	left: 85px;
-	top: 2px;
-	position: absolute;
-	overflow: visible;
-	width: 170px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	color: rgba(255,255,255,1);
-	letter-spacing: 0.7142857360839844px;
-	text-transform: uppercase;
+  left: 85px;
+  top: 2px;
+  position: absolute;
+  overflow: visible;
+  width: 170px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Helvetica Neue;
+
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.7142857360839844px;
+  text-transform: uppercase;
 }
 #back_icon {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
-	--web-animation: fadein 0.3s ease-out;
-	--web-action-type: page;
-	--web-action-target: promotion_screen.html;
-	cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: promotion_screen.html;
+  cursor: pointer;
 }
 #NoPath {
-	position: absolute;
-	width: 360px;
-	height: 188px;
-	left: 0px;
-	top: 50px;
-	overflow: visible;
+  position: absolute;
+  width: 360px;
+  height: 188px;
+  left: 0px;
+  top: 50px;
+  overflow: visible;
 }
 #Promo_Details {
-	position: absolute;
-	width: 360px;
-	height: 383px;
-	left: 0px;
-	top: 211.848px;
-	overflow: visible;
+  position: absolute;
+  width: 360px;
+  height: 383px;
+  left: 0px;
+  top: 211.848px;
+  overflow: visible;
 }
 #Rectangle_2443 {
-	fill: rgba(255,255,255,1);
-	stroke: rgba(112,112,112,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: rgba(255, 255, 255, 1);
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Rectangle_2443 {
-	position: absolute;
-	overflow: visible;
-	width: 360px;
-	height: 383px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 360px;
+  height: 383px;
+  left: 0px;
+  top: 0px;
 }
 #Path_2974 {
-	fill: rgba(218,222,227,1);
-	stroke: rgba(218,222,227,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: rgba(218, 222, 227, 1);
+  stroke: rgba(218, 222, 227, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Path_2974 {
-	overflow: visible;
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	left: 31.5px;
-	top: 55.5px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  left: 31.5px;
+  top: 55.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #__Lu___Thi_gian_08102020_-_311 {
-	left: 31px;
-	top: 231px;
-	position: absolute;
-	overflow: visible;
-	width: 271px;
-	white-space: nowrap;
-	line-height: 25px;
-	margin-top: -4px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 17px;
-	color: rgba(18,18,18,1);
+  left: 31px;
+  top: 231px;
+  position: absolute;
+  overflow: visible;
+  width: 271px;
+  white-space: nowrap;
+  line-height: 25px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Helvetica Neue;
+
+  font-weight: normal;
+  font-size: 17px;
+  color: rgba(18, 18, 18, 1);
 }
 #t_ngay_dch_v_sa_cha_vi_mc__u_i {
-	left: 42px;
-	top: 167px;
-	position: absolute;
-	overflow: visible;
-	width: 277px;
-	white-space: nowrap;
-	line-height: 21px;
-	margin-top: -2px;
-	text-align: center;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 17px;
-	color: rgba(18,18,18,1);
+  left: 42px;
+  top: 167px;
+  position: absolute;
+  overflow: visible;
+  width: 277px;
+  white-space: nowrap;
+  line-height: 21px;
+  margin-top: -2px;
+  text-align: center;
+  font-family: Helvetica Neue;
+
+  font-weight: normal;
+  font-size: 17px;
+  color: rgba(18, 18, 18, 1);
 }
 #T_08102020_n_31102020 {
-	left: 69.5px;
-	top: 130px;
-	position: absolute;
-	overflow: visible;
-	width: 222px;
-	white-space: nowrap;
-	line-height: 24px;
-	margin-top: -4px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	color: rgba(36,39,43,1);
+  left: 69.5px;
+  top: 130px;
+  position: absolute;
+  overflow: visible;
+  width: 222px;
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Helvetica Neue;
+
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 #LuanNM_PromoCode {
-	position: absolute;
-	width: 111px;
-	height: 37px;
-	left: 124.5px;
-	top: 71px;
-	overflow: visible;
+  position: absolute;
+  width: 111px;
+  height: 37px;
+  left: 124.5px;
+  top: 71px;
+  overflow: visible;
 }
 #Rectangle_2425 {
-	fill: rgba(255,255,255,1);
-	stroke: rgba(51,191,154,1);
-	stroke-width: 0.5px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-dasharray: 5;
-	stroke-dashoffset: 0;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: rgba(255, 255, 255, 1);
+  stroke: rgba(51, 191, 154, 1);
+  stroke-width: 0.5px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-dasharray: 5;
+  stroke-dashoffset: 0;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Rectangle_2425 {
-	position: absolute;
-	overflow: visible;
-	width: 111px;
-	height: 37px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 111px;
+  height: 37px;
+  left: 0px;
+  top: 0px;
 }
 #DEDANG {
-	left: 17px;
-	top: 9px;
-	position: absolute;
-	overflow: visible;
-	width: 79px;
-	white-space: nowrap;
-	line-height: 20px;
-	margin-top: -1px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 18px;
-	color: rgba(51,191,154,1);
+  left: 17px;
+  top: 9px;
+  position: absolute;
+  overflow: visible;
+  width: 79px;
+  white-space: nowrap;
+  line-height: 20px;
+  margin-top: -1px;
+  text-align: left;
+  font-family: Helvetica Neue;
+
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(51, 191, 154, 1);
 }
 #Easifix_-_Sa_cha_d_dng {
-	left: 40px;
-	top: 27px;
-	position: absolute;
-	overflow: hidden;
-	width: 302px;
-	height: 35px;
-	line-height: 35px;
-	margin-top: -5.5px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 24px;
-	color: rgba(51,191,154,1);
+  left: 40px;
+  top: 27px;
+  position: absolute;
+  overflow: hidden;
+  width: 302px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: -5.5px;
+  text-align: left;
+  font-family: Helvetica Neue;
+
+  font-weight: bold;
+  font-size: 24px;
+  color: rgba(51, 191, 154, 1);
 }
 #ButtonRoundedLargeGreen {
-	position: absolute;
-	width: 317.5px;
-	height: 54.5px;
-	left: 21px;
-	top: 626px;
-	overflow: visible;
+  position: absolute;
+  width: 317.5px;
+  height: 54.5px;
+  left: 21px;
+  top: 626px;
+  overflow: visible;
 }
 #bg {
-	fill: rgba(51,191,154,1);
+  fill: rgba(51, 191, 154, 1);
 }
 .bg {
-	position: absolute;
-	overflow: visible;
-	width: 317px;
-	height: 54px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 317px;
+  height: 54px;
+  left: 0px;
+  top: 0px;
 }
 #ButtonRoundedLargeGreen_cv {
-	position: absolute;
-	width: 317px;
-	height: 54px;
-	left: 0.5px;
-	top: 0.5px;
-	overflow: visible;
+  position: absolute;
+  width: 317px;
+  height: 54px;
+  left: 0.5px;
+  top: 0.5px;
+  overflow: visible;
 }
