@@ -1,388 +1,379 @@
 .mediaViewInfo {
-    --web-view-name: policy-setting;
-    --web-view-id: policy-setting;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
+  --web-view-name: policy-setting;
+  --web-view-id: policy-setting;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
 }
 
- :root {
-    --web-view-ids: policy-setting;
+:root {
+  --web-view-ids: policy-setting;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
 }
 
 #policy-setting {
-    position: absolute;
-    width: 360px;
-    height: 1115px;
-    background-color: rgba(255, 255, 255, 1);
-    overflow: hidden;
-    --web-view-name: policy-setting;
-    --web-view-id: policy-setting;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
+  position: absolute;
+  width: 360px;
+  height: 1115px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  --web-view-name: policy-setting;
+  --web-view-id: policy-setting;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
 }
 
 #Group_9672 {
-    position: absolute;
-    width: 1129.174px;
-    height: 680.36px;
-    left: -525.334px;
-    top: -469.36px;
-    overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  left: -525.334px;
+  top: -469.36px;
+  overflow: visible;
 }
 
 #Group_9752 {
-    position: absolute;
-    width: 1129.174px;
-    height: 680.36px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 
 #Background {
-    fill: rgba(51, 191, 154, 1);
+  fill: rgba(51, 191, 154, 1);
 }
 
 .Background {
-    overflow: visible;
-    position: absolute;
-    width: 1129.174px;
-    height: 680.36px;
-    transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
-    transform-origin: center;
-    left: 0px;
-    top: 0px;
+  overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
 }
 
 #Header1 {
-    position: absolute;
-    width: 335px;
-    height: 20px;
-    left: 13px;
-    top: 20px;
-    overflow: visible;
+  position: absolute;
+  width: 335px;
+  height: 20px;
+  left: 13px;
+  top: 20px;
+  overflow: visible;
 }
 
 #Mask_Group_9877 {
-    position: absolute;
-    width: 12px;
-    height: 20px;
-    left: 323px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 12px;
+  height: 20px;
+  left: 323px;
+  top: 0px;
+  overflow: visible;
 }
 
 #Fixing_Time {
-    left: 148.357px;
-    top: 2px;
-    position: absolute;
-    overflow: visible;
-    width: 63px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    color: rgba(255, 255, 255, 1);
-    letter-spacing: 0.7142857360839844px;
-    text-transform: uppercase;
+  left: 148.357px;
+  top: 2px;
+  position: absolute;
+  overflow: visible;
+  width: 63px;
+  white-space: nowrap;
+  text-align: left;
+
+  font-weight: bold;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.7142857360839844px;
+  text-transform: uppercase;
 }
 
 #back_icon {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
-    --web-animation: fadein 0.3s ease-out;
-    --web-action-type: page;
-    --web-action-target: setting.html;
-    cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: setting.html;
+  cursor: pointer;
 }
 
 #Path_2863 {
-    fill: rgba(255, 255, 255, 1);
+  fill: rgba(255, 255, 255, 1);
 }
 
 .Path_2863 {
-    overflow: visible;
-    position: absolute;
-    width: 360px;
-    height: 732px;
-    left: 0px;
-    top: 50px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 360px;
+  height: 732px;
+  left: 0px;
+  top: 50px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #HoaNT_-_Box-shadow {
-    position: absolute;
-    width: 360px;
-    height: 200px;
-    left: 0px;
-    top: 50px;
-    overflow: visible;
+  position: absolute;
+  width: 360px;
+  height: 200px;
+  left: 0px;
+  top: 50px;
+  overflow: visible;
 }
 
 #bg {
-    position: absolute;
-    width: 360px;
-    height: 200px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 360px;
+  height: 200px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 
 #iu_khon_s_dng_dch_v {
-    left: 119.471px;
-    top: 262px;
-    position: absolute;
-    overflow: visible;
-    width: 123px;
-    white-space: nowrap;
-    line-height: 35px;
-    margin-top: -13px;
-    text-align: center;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 9px;
-    color: rgba(48, 48, 48, 1);
+  left: 119.471px;
+  top: 262px;
+  position: absolute;
+  overflow: visible;
+  width: 123px;
+  white-space: nowrap;
+  line-height: 35px;
+  margin-top: -13px;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 9px;
+  color: rgba(48, 48, 48, 1);
 }
 
 #Cc_iu_khon_di_y_iu_khon_iu_chn {
-    left: 21px;
-    top: 284px;
-    position: absolute;
-    overflow: visible;
-    width: 320px;
-    height: 154px;
-    line-height: 20px;
-    margin-top: -4px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    color: rgba(48, 48, 48, 1);
+  left: 21px;
+  top: 284px;
+  position: absolute;
+  overflow: visible;
+  width: 320px;
+  height: 154px;
+  line-height: 20px;
+  margin-top: -4px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(48, 48, 48, 1);
 }
 
 #VUI_LNG_C_K_CC_IU_KHON_NY_TRC_ {
-    left: 21px;
-    top: 458px;
-    position: absolute;
-    overflow: visible;
-    width: 320px;
-    height: 35px;
-    line-height: 20px;
-    margin-top: -4px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    color: rgba(48, 48, 48, 1);
+  left: 21px;
+  top: 458px;
+  position: absolute;
+  overflow: visible;
+  width: 320px;
+  height: 35px;
+  line-height: 20px;
+  margin-top: -4px;
+  text-align: left;
+
+  font-weight: bold;
+  font-size: 12px;
+  color: rgba(48, 48, 48, 1);
 }
 
 #iu_1_Ni_dung_dch_v_c_cung_cp_t {
-    left: 21px;
-    top: 523px;
-    position: absolute;
-    overflow: visible;
-    width: 297px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    color: rgba(48, 48, 48, 1);
+  left: 21px;
+  top: 523px;
+  position: absolute;
+  overflow: visible;
+  width: 297px;
+  white-space: nowrap;
+  text-align: left;
+
+  font-weight: bold;
+  font-size: 12px;
+  color: rgba(48, 48, 48, 1);
 }
 
 #Cng_ty_cung_cp_mt_nn_tng_cng_n {
-    left: 20px;
-    top: 588px;
-    position: absolute;
-    overflow: visible;
-    width: 320px;
-    height: 434px;
-    line-height: 20px;
-    margin-top: -4px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    color: rgba(48, 48, 48, 1);
+  left: 20px;
+  top: 588px;
+  position: absolute;
+  overflow: visible;
+  width: 320px;
+  height: 434px;
+  line-height: 20px;
+  margin-top: -4px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(48, 48, 48, 1);
 }
 
 #Group_10325 {
-    position: absolute;
-    width: 162px;
-    height: 236px;
-    left: 198px;
-    top: 50px;
-    overflow: visible;
+  position: absolute;
+  width: 162px;
+  height: 236px;
+  left: 198px;
+  top: 50px;
+  overflow: visible;
 }
 
 #HoaNT_-_Box-shadow_cs {
-    position: absolute;
-    width: 162px;
-    height: 236px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 162px;
+  height: 236px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 
 #bg_ct {
-    fill: rgba(255, 255, 255, 1);
+  fill: rgba(255, 255, 255, 1);
 }
 
 .bg_ct {
-    filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.2));
-    position: absolute;
-    overflow: visible;
-    width: 207px;
-    height: 281px;
-    left: 0px;
-    top: 0px;
+  filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.2));
+  position: absolute;
+  overflow: visible;
+  width: 207px;
+  height: 281px;
+  left: 0px;
+  top: 0px;
 }
 
 #HoaNT_-_Box-shadow_cu {
-    position: absolute;
-    width: 162px;
-    height: 42px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 162px;
+  height: 42px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 
 #bg_cv {
-    fill: rgba(255, 255, 255, 1);
+  fill: rgba(255, 255, 255, 1);
 }
 
 .bg_cv {
-    filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.2));
-    position: absolute;
-    overflow: visible;
-    width: 207px;
-    height: 87px;
-    left: 0px;
-    top: 0px;
+  filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.2));
+  position: absolute;
+  overflow: visible;
+  width: 207px;
+  height: 87px;
+  left: 0px;
+  top: 0px;
 }
 
 #right-arrow {
-    fill: rgba(189, 189, 189, 1);
+  fill: rgba(189, 189, 189, 1);
 }
 
 .right-arrow {
-    overflow: visible;
-    position: absolute;
-    width: 21.146px;
-    height: 14.869px;
-    left: 13px;
-    top: 14px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 21.146px;
+  height: 14.869px;
+  left: 13px;
+  top: 14px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Solid {
-    opacity: 0.79;
-    transform: translate(0px, 0px) matrix(1, 0, 0, 1, 50.8856, 12.0672) rotate(145deg);
-    transform-origin: center;
-    position: absolute;
-    width: 19.817px;
-    height: 17.873px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+  opacity: 0.79;
+  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 50.8856, 12.0672)
+    rotate(145deg);
+  transform-origin: center;
+  position: absolute;
+  width: 19.817px;
+  height: 17.873px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 
 #Path_3326 {
-    fill: rgba(0, 0, 0, 1);
+  fill: rgba(0, 0, 0, 1);
 }
 
 .Path_3326 {
-    overflow: visible;
-    position: absolute;
-    width: 26.484px;
-    height: 26.007px;
-    left: 0px;
-    top: 0px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 26.484px;
+  height: 26.007px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Chia_s {
-    left: 13px;
-    top: 52px;
-    position: absolute;
-    overflow: visible;
-    width: 69px;
-    height: 22px;
-    line-height: 24px;
-    margin-top: -3px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    color: rgba(36, 39, 43, 1);
+  left: 13px;
+  top: 52px;
+  position: absolute;
+  overflow: visible;
+  width: 69px;
+  height: 22px;
+  line-height: 24px;
+  margin-top: -3px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(36, 39, 43, 1);
 }
 
 #Sao_chp {
-    left: 13px;
-    top: 94px;
-    position: absolute;
-    overflow: visible;
-    width: 88px;
-    height: 22px;
-    line-height: 24px;
-    margin-top: -3px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    color: rgba(36, 39, 43, 1);
+  left: 13px;
+  top: 94px;
+  position: absolute;
+  overflow: visible;
+  width: 88px;
+  height: 22px;
+  line-height: 24px;
+  margin-top: -3px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(36, 39, 43, 1);
 }
 
 #M_bng_trnh_duyt {
-    left: 13px;
-    top: 136px;
-    position: absolute;
-    overflow: visible;
-    width: 145px;
-    height: 49px;
-    line-height: 24px;
-    margin-top: -3px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    color: rgba(36, 39, 43, 1);
+  left: 13px;
+  top: 136px;
+  position: absolute;
+  overflow: visible;
+  width: 145px;
+  height: 49px;
+  line-height: 24px;
+  margin-top: -3px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(36, 39, 43, 1);
 }
 
 #Thot {
-    left: 13px;
-    top: 205px;
-    position: absolute;
-    overflow: visible;
-    width: 53px;
-    height: 20px;
-    line-height: 24px;
-    margin-top: -3px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    color: rgba(36, 39, 43, 1);
+  left: 13px;
+  top: 205px;
+  position: absolute;
+  overflow: visible;
+  width: 53px;
+  height: 20px;
+  line-height: 24px;
+  margin-top: -3px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(36, 39, 43, 1);
 }

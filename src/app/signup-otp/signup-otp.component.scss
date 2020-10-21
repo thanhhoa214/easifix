@@ -1,455 +1,446 @@
 .mediaViewInfo {
-	--web-view-name: signup-otp;
-	--web-view-id: signup-otp;
-	--web-scale-on-resize: true;
-	--web-enable-deep-linking: true;
+  --web-view-name: signup-otp;
+  --web-view-id: signup-otp;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
 }
 :root {
-	--web-view-ids: signup-otp;
+  --web-view-ids: signup-otp;
 }
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
 }
 #signup-otp {
-	position: absolute;
-	width: 360px;
-	height: 710px;
-	background-color: rgba(255,255,255,1);
-	overflow: hidden;
-	--web-view-name: signup-otp;
-	--web-view-id: signup-otp;
-	--web-scale-on-resize: true;
-	--web-enable-deep-linking: true;
+  position: absolute;
+  width: 360px;
+  height: 710px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  --web-view-name: signup-otp;
+  --web-view-id: signup-otp;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
 }
 #Light_Status_Bar {
-	position: absolute;
-	width: 327.328px;
-	height: 16.669px;
-	left: 15px;
-	top: 14.331px;
-	overflow: visible;
+  position: absolute;
+  width: 327.328px;
+  height: 16.669px;
+  left: 15px;
+  top: 14.331px;
+  overflow: visible;
 }
 #Battery {
-	position: absolute;
-	width: 24.328px;
-	height: 11.333px;
-	left: 303px;
-	top: 0.003px;
-	overflow: visible;
+  position: absolute;
+  width: 24.328px;
+  height: 11.333px;
+  left: 303px;
+  top: 0.003px;
+  overflow: visible;
 }
 #Border {
-	fill: rgba(0,0,0,0);
-	stroke: rgba(255,255,255,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 10;
-	shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(255, 255, 255, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 .Border {
-	position: absolute;
-	overflow: visible;
-	width: 22px;
-	height: 11.333px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 22px;
+  height: 11.333px;
+  left: 0px;
+  top: 0px;
 }
 #Cap {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Cap {
-	overflow: visible;
-	position: absolute;
-	width: 1.328px;
-	height: 4px;
-	left: 23px;
-	top: 3.667px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 1.328px;
+  height: 4px;
+  left: 23px;
+  top: 3.667px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Capacity {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Capacity {
-	position: absolute;
-	overflow: visible;
-	width: 18px;
-	height: 7.333px;
-	left: 2px;
-	top: 2px;
+  position: absolute;
+  overflow: visible;
+  width: 18px;
+  height: 7.333px;
+  left: 2px;
+  top: 2px;
 }
 #Wifi {
-	opacity: 0.96;
-	fill: rgba(255,255,255,1);
+  opacity: 0.96;
+  fill: rgba(255, 255, 255, 1);
 }
 .Wifi {
-	overflow: visible;
-	position: absolute;
-	width: 15.272px;
-	height: 10.966px;
-	left: 282.694px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 15.272px;
+  height: 10.966px;
+  left: 282.694px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Cellular_Connection {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Cellular_Connection {
-	overflow: visible;
-	position: absolute;
-	width: 17px;
-	height: 10.667px;
-	left: 260.667px;
-	top: 0.336px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 17px;
+  height: 10.667px;
+  left: 260.667px;
+  top: 0.336px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Time_Style {
-	position: absolute;
-	width: 54px;
-	height: 16px;
-	left: 0px;
-	top: 0.669px;
-	overflow: visible;
+  position: absolute;
+  width: 54px;
+  height: 16px;
+  left: 0px;
+  top: 0.669px;
+  overflow: visible;
 }
 #_Time {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 55px;
-	height: 16px;
-	text-align: center;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	color: rgba(255,255,255,1);
-	letter-spacing: -0.2px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 55px;
+  height: 16px;
+  text-align: center;
+
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: -0.2px;
 }
 #Group_9592 {
-	position: absolute;
-	width: 319px;
-	height: 293px;
-	left: 21px;
-	top: 235.353px;
-	overflow: visible;
+  position: absolute;
+  width: 319px;
+  height: 293px;
+  left: 21px;
+  top: 235.353px;
+  overflow: visible;
 }
 #Enter_number {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	left: 269px;
-	top: 243px;
-	overflow: visible;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 269px;
+  top: 243px;
+  overflow: visible;
 }
 #Group_9594 {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 #marius-ciocirlan-398931-unspla {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .marius-ciocirlan-398931-unspla {
-	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.102));
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	overflow: visible;
-	transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
-	transform-origin: center;
+  filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.102));
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  overflow: visible;
+  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform-origin: center;
 }
 #union {
-	fill: rgba(189,189,189,1);
+  fill: rgba(189, 189, 189, 1);
 }
 .union {
-	overflow: visible;
-	position: absolute;
-	width: 12.937px;
-	height: 10.924px;
-	transform: translate(0px, 0px) matrix(1,0,0,1,18.5315,19.8007) rotate(180deg);
-	transform-origin: center;
-	left: 0px;
-	top: 0px;
+  overflow: visible;
+  position: absolute;
+  width: 12.937px;
+  height: 10.924px;
+  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 18.5315, 19.8007)
+    rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
 }
 #Xc_nhn_s_in_thoi_Nhp_m_OTP_ca_ {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 255px;
-	white-space: nowrap;
-	line-height: 28px;
-	margin-top: -8px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 12px;
-	color: rgba(48,48,48,1);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 255px;
+  white-space: nowrap;
+  line-height: 28px;
+  margin-top: -8px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(48, 48, 48, 1);
 }
 #By_creating_an_account_you_agr {
-	left: 4px;
-	top: 261px;
-	position: absolute;
-	overflow: visible;
-	width: 157px;
-	white-space: nowrap;
-	text-align: center;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 12px;
-	color: rgba(48,48,48,1);
+  left: 4px;
+  top: 261px;
+  position: absolute;
+  overflow: visible;
+  width: 157px;
+  white-space: nowrap;
+  text-align: center;
+
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(48, 48, 48, 1);
 }
 #Group_2 {
-	position: absolute;
-	width: 76px;
-	height: 53px;
-	left: 20px;
-	top: 409.184px;
-	overflow: visible;
+  position: absolute;
+  width: 76px;
+  height: 53px;
+  left: 20px;
+  top: 409.184px;
+  overflow: visible;
 }
 #Rectangle {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Rectangle {
-	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.051));
-	position: absolute;
-	overflow: visible;
-	width: 121px;
-	height: 98px;
-	left: 0px;
-	top: 0px;
+  filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.051));
+  position: absolute;
+  overflow: visible;
+  width: 121px;
+  height: 98px;
+  left: 0px;
+  top: 0px;
 }
 #ID1 {
-	left: 32.823px;
-	top: 14px;
-	position: absolute;
-	overflow: visible;
-	width: 11px;
-	white-space: nowrap;
-	text-align: center;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 18px;
-	color: rgba(189,189,189,1);
+  left: 32.823px;
+  top: 14px;
+  position: absolute;
+  overflow: visible;
+  width: 11px;
+  white-space: nowrap;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(189, 189, 189, 1);
 }
 #Group_2_cv {
-	position: absolute;
-	width: 76px;
-	height: 53px;
-	left: 100.682px;
-	top: 409.184px;
-	overflow: visible;
+  position: absolute;
+  width: 76px;
+  height: 53px;
+  left: 100.682px;
+  top: 409.184px;
+  overflow: visible;
 }
 #Rectangle_cw {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Rectangle_cw {
-	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.051));
-	position: absolute;
-	overflow: visible;
-	width: 121px;
-	height: 98px;
-	left: 0px;
-	top: 0px;
+  filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.051));
+  position: absolute;
+  overflow: visible;
+  width: 121px;
+  height: 98px;
+  left: 0px;
+  top: 0px;
 }
 #ID4 {
-	left: 35px;
-	top: 14px;
-	position: absolute;
-	overflow: visible;
-	width: 7px;
-	white-space: nowrap;
-	text-align: center;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 18px;
-	color: rgba(189,189,189,1);
+  left: 35px;
+  top: 14px;
+  position: absolute;
+  overflow: visible;
+  width: 7px;
+  white-space: nowrap;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(189, 189, 189, 1);
 }
 #Group_2_cy {
-	position: absolute;
-	width: 76px;
-	height: 53px;
-	left: 182.368px;
-	top: 409.184px;
-	overflow: visible;
+  position: absolute;
+  width: 76px;
+  height: 53px;
+  left: 182.368px;
+  top: 409.184px;
+  overflow: visible;
 }
 #Rectangle_cz {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Rectangle_cz {
-	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.051));
-	position: absolute;
-	overflow: visible;
-	width: 121px;
-	height: 98px;
-	left: 0px;
-	top: 0px;
+  filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.051));
+  position: absolute;
+  overflow: visible;
+  width: 121px;
+  height: 98px;
+  left: 0px;
+  top: 0px;
 }
 #ID6 {
-	left: 31.83px;
-	top: 14px;
-	position: absolute;
-	overflow: visible;
-	width: 13px;
-	white-space: nowrap;
-	text-align: center;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 18px;
-	color: rgba(189,189,189,1);
+  left: 31.83px;
+  top: 14px;
+  position: absolute;
+  overflow: visible;
+  width: 13px;
+  white-space: nowrap;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(189, 189, 189, 1);
 }
 #Group_2_c {
-	position: absolute;
-	width: 76px;
-	height: 53px;
-	left: 263px;
-	top: 409.184px;
-	overflow: visible;
+  position: absolute;
+  width: 76px;
+  height: 53px;
+  left: 263px;
+  top: 409.184px;
+  overflow: visible;
 }
 #Rectangle_c {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Rectangle_c {
-	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.051));
-	position: absolute;
-	overflow: visible;
-	width: 121px;
-	height: 98px;
-	left: 0px;
-	top: 0px;
+  filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.051));
+  position: absolute;
+  overflow: visible;
+  width: 121px;
+  height: 98px;
+  left: 0px;
+  top: 0px;
 }
 #ID9 {
-	opacity: 0.98;
-	left: 35px;
-	top: 9px;
-	position: absolute;
-	overflow: visible;
-	width: 7px;
-	white-space: nowrap;
-	text-align: center;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 18px;
-	color: rgba(189,189,189,1);
+  opacity: 0.98;
+  left: 35px;
+  top: 9px;
+  position: absolute;
+  overflow: visible;
+  width: 7px;
+  white-space: nowrap;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(189, 189, 189, 1);
 }
 #Enter_the_4-digit_co {
-	left: 20.2px;
-	top: 294.075px;
-	position: absolute;
-	overflow: visible;
-	width: 306.28px;
-	height: 64px;
-	line-height: 22px;
-	margin-top: -4px;
-	text-align: left;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	color: rgba(48,48,48,1);
+  left: 20.2px;
+  top: 294.075px;
+  position: absolute;
+  overflow: visible;
+  width: 306.28px;
+  height: 64px;
+  line-height: 22px;
+  margin-top: -4px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(48, 48, 48, 1);
 }
 #Get_moving_with_Uber {
-	left: 93.12px;
-	top: 72.911px;
-	position: absolute;
-	overflow: visible;
-	width: 134px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(255,255,255,1);
-	letter-spacing: 0.7142857360839844px;
-	text-transform: uppercase;
+  left: 93.12px;
+  top: 72.911px;
+  position: absolute;
+  overflow: visible;
+  width: 134px;
+  white-space: nowrap;
+  text-align: left;
+
+  font-weight: bold;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.7142857360839844px;
+  text-transform: uppercase;
 }
 #Back_db {
-	position: absolute;
-	width: 16px;
-	height: 13.511px;
-	left: 30.887px;
-	top: 53.057px;
-	overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 13.511px;
+  left: 30.887px;
+  top: 53.057px;
+  overflow: visible;
 }
 #union_dc {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .union_dc {
-	overflow: visible;
-	position: absolute;
-	width: 16px;
-	height: 13.511px;
-	left: 0px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 13.511px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_9752 {
-	position: absolute;
-	width: 1129.174px;
-	height: 680.36px;
-	left: -513.334px;
-	top: -495.302px;
-	overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  left: -513.334px;
+  top: -495.302px;
+  overflow: visible;
 }
 #Background {
-	fill: rgba(51,191,154,1);
+  fill: rgba(51, 191, 154, 1);
 }
 .Background {
-	overflow: visible;
-	position: absolute;
-	width: 1129.174px;
-	height: 680.36px;
-	transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
-	transform-origin: center;
-	left: 0px;
-	top: 0px;
+  overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
 }
 #Sign_n {
-	left: 65.76px;
-	top: 52.058px;
-	position: absolute;
-	overflow: visible;
-	width: 110px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(255,255,255,1);
-	letter-spacing: 0.7142857360839844px;
-	text-transform: uppercase;
+  left: 65.76px;
+  top: 52.058px;
+  position: absolute;
+  overflow: visible;
+  width: 110px;
+  white-space: nowrap;
+  text-align: left;
+
+  font-weight: bold;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.7142857360839844px;
+  text-transform: uppercase;
 }
 #Back_db {
-	position: absolute;
-	width: 16px;
-	height: 13.511px;
-	left: 30.887px;
-	top: 53.057px;
-	overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 13.511px;
+  left: 30.887px;
+  top: 53.057px;
+  overflow: visible;
 }
 #union_dc {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .union_dc {
-	overflow: visible;
-	position: absolute;
-	width: 16px;
-	height: 13.511px;
-	left: 0px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 16px;
+  height: 13.511px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }

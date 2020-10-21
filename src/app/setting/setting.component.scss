@@ -1,962 +1,952 @@
 .mediaViewInfo {
-    --web-view-name: setting;
-    --web-view-id: setting;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
+  --web-view-name: setting;
+  --web-view-id: setting;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
 }
 
- :root {
-    --web-view-ids: setting;
+:root {
+  --web-view-ids: setting;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
 }
 
 #setting {
-    position: absolute;
-    width: 360px;
-    height: 760px;
-    background-color: rgba(255, 255, 255, 1);
-    overflow: hidden;
-    --web-view-name: setting;
-    --web-view-id: setting;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
+  position: absolute;
+  width: 360px;
+  height: 760px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  --web-view-name: setting;
+  --web-view-id: setting;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
 }
 
 #Group_9752 {
-    position: absolute;
-    width: 1129.174px;
-    height: 603.575px;
-    left: -525.334px;
-    top: -469.36px;
-    overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 603.575px;
+  left: -525.334px;
+  top: -469.36px;
+  overflow: visible;
 }
 
 #Background {
-    fill: rgba(51, 191, 154, 1);
+  fill: rgba(51, 191, 154, 1);
 }
 
 .Background {
-    overflow: visible;
-    position: absolute;
-    width: 1129.174px;
-    height: 603.575px;
-    transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
-    transform-origin: center;
-    left: 0px;
-    top: 0px;
+  overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 603.575px;
+  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
 }
 
 #Group_10120 {
-    position: absolute;
-    width: 319px;
-    height: 630px;
-    left: 21px;
-    top: 70px;
-    overflow: visible;
+  position: absolute;
+  width: 319px;
+  height: 630px;
+  left: 21px;
+  top: 70px;
+  overflow: visible;
 }
 
 #HoaNT_-_Box-shadow {
-    position: absolute;
-    width: 319px;
-    height: 630px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 319px;
+  height: 630px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 
 #bg {
-    fill: rgba(255, 255, 255, 1);
+  fill: rgba(255, 255, 255, 1);
 }
 
 .bg {
-    filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.2));
-    position: absolute;
-    overflow: visible;
-    width: 364px;
-    height: 675px;
-    left: 0px;
-    top: 0px;
+  filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.2));
+  position: absolute;
+  overflow: visible;
+  width: 364px;
+  height: 675px;
+  left: 0px;
+  top: 0px;
 }
 
 #Group_10334 {
-    position: absolute;
-    width: 319px;
-    height: 373.625px;
-    left: 0px;
-    top: 112px;
-    overflow: visible;
+  position: absolute;
+  width: 319px;
+  height: 373.625px;
+  left: 0px;
+  top: 112px;
+  overflow: visible;
 }
 
 #Group_10119 {
-    position: absolute;
-    width: 309px;
-    height: 52.625px;
-    left: 0px;
-    top: 321px;
-    overflow: visible;
+  position: absolute;
+  width: 309px;
+  height: 52.625px;
+  left: 0px;
+  top: 321px;
+  overflow: visible;
 }
 
 #Rectangle_2400 {
-    fill: rgba(255, 255, 255, 1);
+  fill: rgba(255, 255, 255, 1);
 }
 
 .Rectangle_2400 {
-    position: absolute;
-    overflow: visible;
-    width: 309px;
-    height: 52px;
-    left: 0px;
-    top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 309px;
+  height: 52px;
+  left: 0px;
+  top: 0px;
 }
 
 #Mask_Group_9881 {
-    position: absolute;
-    width: 40px;
-    height: 42px;
-    left: 12px;
-    top: 5px;
-    overflow: visible;
+  position: absolute;
+  width: 40px;
+  height: 42px;
+  left: 12px;
+  top: 5px;
+  overflow: visible;
 }
 
 #Ci_t {
-    left: 60.483px;
-    top: 17.45px;
-    position: absolute;
-    overflow: visible;
-    width: 52px;
-    white-space: nowrap;
-    line-height: 24px;
-    margin-top: -4px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(36, 39, 43, 1);
+  left: 60.483px;
+  top: 17.45px;
+  position: absolute;
+  overflow: visible;
+  width: 52px;
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 
 #Line_72 {
-    fill: transparent;
-    stroke: rgba(112, 112, 112, 1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
+  fill: transparent;
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 
 .Line_72 {
-    overflow: visible;
-    position: absolute;
-    width: 243px;
-    height: 1px;
-    left: 36.5px;
-    top: 52.625px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 243px;
+  height: 1px;
+  left: 36.5px;
+  top: 52.625px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #icons {
-    position: absolute;
-    width: 12.438px;
-    height: 11.819px;
-    left: 277.44px;
-    top: 19.55px;
-    overflow: visible;
+  position: absolute;
+  width: 12.438px;
+  height: 11.819px;
+  left: 277.44px;
+  top: 19.55px;
+  overflow: visible;
 }
 
 #arrow-right {
-    position: absolute;
-    width: 12.438px;
-    height: 11.819px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 12.438px;
+  height: 11.819px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 
 #Shape {
-    fill: rgba(0, 0, 0, 0);
-    stroke: rgba(189, 189, 189, 1);
-    stroke-width: 2px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 
 .Shape {
-    overflow: visible;
-    position: absolute;
-    width: 14.438px;
-    height: 2px;
-    left: 0px;
-    top: 5.909px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 14.438px;
+  height: 2px;
+  left: 0px;
+  top: 5.909px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Shape_cq {
-    fill: rgba(0, 0, 0, 0);
-    stroke: rgba(189, 189, 189, 1);
-    stroke-width: 2px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 
 .Shape_cq {
-    overflow: visible;
-    position: absolute;
-    width: 7.069px;
-    height: 14.628px;
-    left: 7.774px;
-    top: 0px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 7.069px;
+  height: 14.628px;
+  left: 7.774px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Group_10315 {
-    position: absolute;
-    width: 309px;
-    height: 52.575px;
-    left: 3px;
-    top: 257px;
-    overflow: visible;
+  position: absolute;
+  width: 309px;
+  height: 52.575px;
+  left: 3px;
+  top: 257px;
+  overflow: visible;
 }
 
 #Rectangle_2400_cs {
-    fill: rgba(255, 255, 255, 1);
+  fill: rgba(255, 255, 255, 1);
 }
 
 .Rectangle_2400_cs {
-    position: absolute;
-    overflow: visible;
-    width: 309px;
-    height: 52px;
-    left: 0px;
-    top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 309px;
+  height: 52px;
+  left: 0px;
+  top: 0px;
 }
 
 #Mask_Group_9880 {
-    position: absolute;
-    width: 40px;
-    height: 42px;
-    left: 10px;
-    top: 6px;
-    overflow: visible;
+  position: absolute;
+  width: 40px;
+  height: 42px;
+  left: 10px;
+  top: 6px;
+  overflow: visible;
 }
 
 #Lin_h {
-    left: 60.471px;
-    top: 17.4px;
-    position: absolute;
-    overflow: visible;
-    width: 53px;
-    white-space: nowrap;
-    line-height: 24px;
-    margin-top: -4px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(36, 39, 43, 1);
+  left: 60.471px;
+  top: 17.4px;
+  position: absolute;
+  overflow: visible;
+  width: 53px;
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 
 #Line_72_cv {
-    fill: transparent;
-    stroke: rgba(112, 112, 112, 1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
+  fill: transparent;
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 
 .Line_72_cv {
-    overflow: visible;
-    position: absolute;
-    width: 243px;
-    height: 1px;
-    left: 36.5px;
-    top: 52.575px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 243px;
+  height: 1px;
+  left: 36.5px;
+  top: 52.575px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #icons_cw {
-    position: absolute;
-    width: 12.438px;
-    height: 11.819px;
-    left: 277.44px;
-    top: 19.5px;
-    overflow: visible;
+  position: absolute;
+  width: 12.438px;
+  height: 11.819px;
+  left: 277.44px;
+  top: 19.5px;
+  overflow: visible;
 }
 
 #arrow-right_cx {
-    position: absolute;
-    width: 12.438px;
-    height: 11.819px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 12.438px;
+  height: 11.819px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 
 #Shape_cy {
-    fill: rgba(0, 0, 0, 0);
-    stroke: rgba(189, 189, 189, 1);
-    stroke-width: 2px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 
 .Shape_cy {
-    overflow: visible;
-    position: absolute;
-    width: 14.438px;
-    height: 2px;
-    left: 0px;
-    top: 5.909px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 14.438px;
+  height: 2px;
+  left: 0px;
+  top: 5.909px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Shape_cz {
-    fill: rgba(0, 0, 0, 0);
-    stroke: rgba(189, 189, 189, 1);
-    stroke-width: 2px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 
 .Shape_cz {
-    overflow: visible;
-    position: absolute;
-    width: 7.069px;
-    height: 14.628px;
-    left: 7.774px;
-    top: 0px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 7.069px;
+  height: 14.628px;
+  left: 7.774px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Group_10119_c {
-    position: absolute;
-    width: 309px;
-    height: 52.525px;
-    left: 3px;
-    top: 193px;
-    overflow: visible;
+  position: absolute;
+  width: 309px;
+  height: 52.525px;
+  left: 3px;
+  top: 193px;
+  overflow: visible;
 }
 
 #Rectangle_2400_c {
-    fill: rgba(255, 255, 255, 1);
+  fill: rgba(255, 255, 255, 1);
 }
 
 .Rectangle_2400_c {
-    position: absolute;
-    overflow: visible;
-    width: 309px;
-    height: 52px;
-    left: 0px;
-    top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 309px;
+  height: 52px;
+  left: 0px;
+  top: 0px;
 }
 
 #Mask_Group_9879 {
-    position: absolute;
-    width: 40px;
-    height: 42px;
-    left: 9px;
-    top: 5px;
-    overflow: visible;
+  position: absolute;
+  width: 40px;
+  height: 42px;
+  left: 9px;
+  top: 5px;
+  overflow: visible;
 }
 
 #Gp_ {
-    left: 57.744px;
-    top: 17.35px;
-    position: absolute;
-    overflow: visible;
-    width: 44px;
-    white-space: nowrap;
-    line-height: 24px;
-    margin-top: -4px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(36, 39, 43, 1);
+  left: 57.744px;
+  top: 17.35px;
+  position: absolute;
+  overflow: visible;
+  width: 44px;
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 
 #Line_72_c {
-    fill: transparent;
-    stroke: rgba(112, 112, 112, 1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
+  fill: transparent;
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 
 .Line_72_c {
-    overflow: visible;
-    position: absolute;
-    width: 243px;
-    height: 1px;
-    left: 36.5px;
-    top: 52.525px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 243px;
+  height: 1px;
+  left: 36.5px;
+  top: 52.525px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #icons_c {
-    position: absolute;
-    width: 12.438px;
-    height: 11.819px;
-    left: 277.44px;
-    top: 19.45px;
-    overflow: visible;
+  position: absolute;
+  width: 12.438px;
+  height: 11.819px;
+  left: 277.44px;
+  top: 19.45px;
+  overflow: visible;
 }
 
 #arrow-right_c {
-    position: absolute;
-    width: 12.438px;
-    height: 11.819px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 12.438px;
+  height: 11.819px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 
 #Shape_c {
-    fill: rgba(0, 0, 0, 0);
-    stroke: rgba(189, 189, 189, 1);
-    stroke-width: 2px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 
 .Shape_c {
-    overflow: visible;
-    position: absolute;
-    width: 14.438px;
-    height: 2px;
-    left: 0px;
-    top: 5.909px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 14.438px;
+  height: 2px;
+  left: 0px;
+  top: 5.909px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Shape_da {
-    fill: rgba(0, 0, 0, 0);
-    stroke: rgba(189, 189, 189, 1);
-    stroke-width: 2px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 
 .Shape_da {
-    overflow: visible;
-    position: absolute;
-    width: 7.069px;
-    height: 14.628px;
-    left: 7.774px;
-    top: 0px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 7.069px;
+  height: 14.628px;
+  left: 7.774px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Group_10119_da {
-    position: absolute;
-    width: 309px;
-    height: 53.475px;
-    left: 7px;
-    top: 128px;
-    overflow: visible;
-    --web-animation: fadein 0.3s ease-out;
-    --web-action-type: page;
-    --web-action-target: policy_screen.html;
-    cursor: pointer;
+  position: absolute;
+  width: 309px;
+  height: 53.475px;
+  left: 7px;
+  top: 128px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: policy_screen.html;
+  cursor: pointer;
 }
 
 #Rectangle_2400_da {
-    fill: rgba(255, 255, 255, 1);
+  fill: rgba(255, 255, 255, 1);
 }
 
 .Rectangle_2400_da {
-    position: absolute;
-    overflow: visible;
-    width: 309px;
-    height: 53px;
-    left: 0px;
-    top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 309px;
+  height: 53px;
+  left: 0px;
+  top: 0px;
 }
 
 #Mask_Group_9878 {
-    position: absolute;
-    width: 40px;
-    height: 42px;
-    left: 4px;
-    top: 7px;
-    overflow: visible;
+  position: absolute;
+  width: 40px;
+  height: 42px;
+  left: 4px;
+  top: 7px;
+  overflow: visible;
 }
 
 #Php_l {
-    left: 51.956px;
-    top: 18.3px;
-    position: absolute;
-    overflow: visible;
-    width: 54px;
-    white-space: nowrap;
-    line-height: 24px;
-    margin-top: -4px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(36, 39, 43, 1);
+  left: 51.956px;
+  top: 18.3px;
+  position: absolute;
+  overflow: visible;
+  width: 54px;
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 
 #Line_72_dd {
-    fill: transparent;
-    stroke: rgba(112, 112, 112, 1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
+  fill: transparent;
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 
 .Line_72_dd {
-    overflow: visible;
-    position: absolute;
-    width: 228px;
-    height: 1px;
-    left: 41.5px;
-    top: 53.475px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 228px;
+  height: 1px;
+  left: 41.5px;
+  top: 53.475px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #icons_de {
-    position: absolute;
-    width: 12.438px;
-    height: 11.819px;
-    left: 267.44px;
-    top: 20.4px;
-    overflow: visible;
+  position: absolute;
+  width: 12.438px;
+  height: 11.819px;
+  left: 267.44px;
+  top: 20.4px;
+  overflow: visible;
 }
 
 #arrow-right_df {
-    position: absolute;
-    width: 12.438px;
-    height: 11.819px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 12.438px;
+  height: 11.819px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 
 #Shape_dg {
-    fill: rgba(0, 0, 0, 0);
-    stroke: rgba(189, 189, 189, 1);
-    stroke-width: 2px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 
 .Shape_dg {
-    overflow: visible;
-    position: absolute;
-    width: 14.438px;
-    height: 2px;
-    left: 0px;
-    top: 5.909px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 14.438px;
+  height: 2px;
+  left: 0px;
+  top: 5.909px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Shape_dh {
-    fill: rgba(0, 0, 0, 0);
-    stroke: rgba(189, 189, 189, 1);
-    stroke-width: 2px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 
 .Shape_dh {
-    overflow: visible;
-    position: absolute;
-    width: 7.069px;
-    height: 14.628px;
-    left: 7.774px;
-    top: 0px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 7.069px;
+  height: 14.628px;
+  left: 7.774px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Group_10119_di {
-    position: absolute;
-    width: 309px;
-    height: 53.425px;
-    left: 10px;
-    top: 64px;
-    overflow: visible;
+  position: absolute;
+  width: 309px;
+  height: 53.425px;
+  left: 10px;
+  top: 64px;
+  overflow: visible;
 }
 
 #Rectangle_2400_dj {
-    fill: rgba(255, 255, 255, 1);
+  fill: rgba(255, 255, 255, 1);
 }
 
 .Rectangle_2400_dj {
-    position: absolute;
-    overflow: visible;
-    width: 309px;
-    height: 53px;
-    left: 0px;
-    top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 309px;
+  height: 53px;
+  left: 0px;
+  top: 0px;
 }
 
 #Mask_Group_9867 {
-    position: absolute;
-    width: 40px;
-    height: 42px;
-    left: 0px;
-    top: 5px;
-    overflow: visible;
+  position: absolute;
+  width: 40px;
+  height: 42px;
+  left: 0px;
+  top: 5px;
+  overflow: visible;
 }
 
 #Cam_kt_ca_Easifix {
-    left: 49.574px;
-    top: 18.25px;
-    position: absolute;
-    overflow: visible;
-    width: 142px;
-    white-space: nowrap;
-    line-height: 24px;
-    margin-top: -4px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(36, 39, 43, 1);
+  left: 49.574px;
+  top: 18.25px;
+  position: absolute;
+  overflow: visible;
+  width: 142px;
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 
 #Line_72_dm {
-    fill: transparent;
-    stroke: rgba(112, 112, 112, 1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
+  fill: transparent;
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 
 .Line_72_dm {
-    overflow: visible;
-    position: absolute;
-    width: 228px;
-    height: 1px;
-    left: 41.5px;
-    top: 53.425px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 228px;
+  height: 1px;
+  left: 41.5px;
+  top: 53.425px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #icons_dn {
-    position: absolute;
-    width: 12.438px;
-    height: 11.819px;
-    left: 267.44px;
-    top: 20.35px;
-    overflow: visible;
+  position: absolute;
+  width: 12.438px;
+  height: 11.819px;
+  left: 267.44px;
+  top: 20.35px;
+  overflow: visible;
 }
 
 #arrow-right_do {
-    position: absolute;
-    width: 12.438px;
-    height: 11.819px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 12.438px;
+  height: 11.819px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 
 #Shape_dp {
-    fill: rgba(0, 0, 0, 0);
-    stroke: rgba(189, 189, 189, 1);
-    stroke-width: 2px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 
 .Shape_dp {
-    overflow: visible;
-    position: absolute;
-    width: 14.438px;
-    height: 2px;
-    left: 0px;
-    top: 5.909px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 14.438px;
+  height: 2px;
+  left: 0px;
+  top: 5.909px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Shape_dq {
-    fill: rgba(0, 0, 0, 0);
-    stroke: rgba(189, 189, 189, 1);
-    stroke-width: 2px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 
 .Shape_dq {
-    overflow: visible;
-    position: absolute;
-    width: 7.069px;
-    height: 14.628px;
-    left: 7.774px;
-    top: 0px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 7.069px;
+  height: 14.628px;
+  left: 7.774px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Group_10119_dr {
-    position: absolute;
-    width: 309px;
-    height: 53.375px;
-    left: 10px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 309px;
+  height: 53.375px;
+  left: 10px;
+  top: 0px;
+  overflow: visible;
 }
 
 #Rectangle_2400_ds {
-    fill: rgba(255, 255, 255, 1);
+  fill: rgba(255, 255, 255, 1);
 }
 
 .Rectangle_2400_ds {
-    position: absolute;
-    overflow: visible;
-    width: 309px;
-    height: 53px;
-    left: 0px;
-    top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 309px;
+  height: 53px;
+  left: 0px;
+  top: 0px;
 }
 
 #Mask_Group_9867_dt {
-    position: absolute;
-    width: 40px;
-    height: 42px;
-    left: 0px;
-    top: 6px;
-    overflow: visible;
+  position: absolute;
+  width: 40px;
+  height: 42px;
+  left: 0px;
+  top: 6px;
+  overflow: visible;
 }
 
 #Cu_hi_thng_gp {
-    left: 49.525px;
-    top: 18.2px;
-    position: absolute;
-    overflow: visible;
-    width: 144px;
-    white-space: nowrap;
-    line-height: 24px;
-    margin-top: -4px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(36, 39, 43, 1);
+  left: 49.525px;
+  top: 18.2px;
+  position: absolute;
+  overflow: visible;
+  width: 144px;
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
 }
 
 #Line_72_dv {
-    fill: transparent;
-    stroke: rgba(112, 112, 112, 1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
+  fill: transparent;
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 
 .Line_72_dv {
-    overflow: visible;
-    position: absolute;
-    width: 228px;
-    height: 1px;
-    left: 41.5px;
-    top: 53.375px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 228px;
+  height: 1px;
+  left: 41.5px;
+  top: 53.375px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #icons_dw {
-    position: absolute;
-    width: 12.438px;
-    height: 11.819px;
-    left: 267.44px;
-    top: 20.3px;
-    overflow: visible;
+  position: absolute;
+  width: 12.438px;
+  height: 11.819px;
+  left: 267.44px;
+  top: 20.3px;
+  overflow: visible;
 }
 
 #arrow-right_dx {
-    position: absolute;
-    width: 12.438px;
-    height: 11.819px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 12.438px;
+  height: 11.819px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 
 #Shape_dy {
-    fill: rgba(0, 0, 0, 0);
-    stroke: rgba(189, 189, 189, 1);
-    stroke-width: 2px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 
 .Shape_dy {
-    overflow: visible;
-    position: absolute;
-    width: 14.438px;
-    height: 2px;
-    left: 0px;
-    top: 5.909px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 14.438px;
+  height: 2px;
+  left: 0px;
+  top: 5.909px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Shape_dz {
-    fill: rgba(0, 0, 0, 0);
-    stroke: rgba(189, 189, 189, 1);
-    stroke-width: 2px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    shape-rendering: auto;
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  shape-rendering: auto;
 }
 
 .Shape_dz {
-    overflow: visible;
-    position: absolute;
-    width: 7.069px;
-    height: 14.628px;
-    left: 7.774px;
-    top: 0px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
+  overflow: visible;
+  position: absolute;
+  width: 7.069px;
+  height: 14.628px;
+  left: 7.774px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #fixer-info {
-    position: absolute;
-    width: 289px;
-    height: 90px;
-    left: 34px;
-    top: 78px;
-    overflow: visible;
+  position: absolute;
+  width: 289px;
+  height: 90px;
+  left: 34px;
+  top: 78px;
+  overflow: visible;
 }
 
 #HoaNT_-_Box-shadow_d {
-    position: absolute;
-    width: 288px;
-    height: 90px;
-    left: 1px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 288px;
+  height: 90px;
+  left: 1px;
+  top: 0px;
+  overflow: visible;
 }
 
 #bg_d {
-    fill: rgba(255, 255, 255, 1);
+  fill: rgba(255, 255, 255, 1);
 }
 
 .bg_d {
-    filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.2));
-    position: absolute;
-    overflow: visible;
-    width: 333px;
-    height: 135px;
-    left: 0px;
-    top: 0px;
+  filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.2));
+  position: absolute;
+  overflow: visible;
+  width: 333px;
+  height: 135px;
+  left: 0px;
+  top: 0px;
 }
 
 #Nguyn_Thanh_Tm {
-    left: 100px;
-    top: 10px;
-    position: absolute;
-    overflow: visible;
-    width: 186px;
-    height: 20px;
-    line-height: 24px;
-    margin-top: -3px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    color: rgba(36, 39, 43, 1);
+  left: 100px;
+  top: 10px;
+  position: absolute;
+  overflow: visible;
+  width: 186px;
+  height: 20px;
+  line-height: 24px;
+  margin-top: -3px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(36, 39, 43, 1);
 }
 
 #Ngi_dng {
-    left: 108.515px;
-    top: 34px;
-    position: absolute;
-    overflow: visible;
-    width: 76px;
-    white-space: nowrap;
-    line-height: 16px;
-    margin-top: -1px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    color: rgba(189, 189, 189, 1);
+  left: 108.515px;
+  top: 34px;
+  position: absolute;
+  overflow: visible;
+  width: 76px;
+  white-space: nowrap;
+  line-height: 16px;
+  margin-top: -1px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(189, 189, 189, 1);
 }
 
 #tam {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 
 #Phin_bn_10_v1 {
-    left: 114.5px;
-    top: 663px;
-    position: absolute;
-    overflow: visible;
-    width: 132px;
-    white-space: nowrap;
-    line-height: 24px;
-    margin-top: -4px;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(29, 155, 122, 1);
+  left: 114.5px;
+  top: 663px;
+  position: absolute;
+  overflow: visible;
+  width: 132px;
+  white-space: nowrap;
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(29, 155, 122, 1);
 }
 
 #Thng_Bao {
-    left: 135.36px;
-    top: 30px;
-    position: absolute;
-    overflow: visible;
-    width: 89px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    color: rgba(255, 255, 255, 1);
-    text-transform: uppercase;
+  left: 135.36px;
+  top: 30px;
+  position: absolute;
+  overflow: visible;
+  width: 89px;
+  white-space: nowrap;
+  text-align: left;
+
+  font-weight: bold;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
 }

@@ -1,2059 +1,2015 @@
 .mediaViewInfo {
-	--web-view-name: list-store-detail;
-	--web-view-id: list-store-detail;
-	--web-scale-on-resize: true;
-	--web-center-horizontally: true;
-	--web-center-vertically: true;
-	--web-enable-deep-linking: true;
+  --web-view-name: list-store-detail;
+  --web-view-id: list-store-detail;
+  --web-scale-on-resize: true;
+  --web-center-horizontally: true;
+  --web-center-vertically: true;
+  --web-enable-deep-linking: true;
 }
 :root {
-	--web-view-ids: list-store-detail;
+  --web-view-ids: list-store-detail;
 }
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
 }
 .list-store-detail_Class {
-	position: absolute;
-	width: 360px;
-	height: 710px;
-	background-color: rgba(255,255,255,1);
-	overflow: hidden;
-	--web-view-name: list-store-detail;
-	--web-view-id: list-store-detail;
-	--web-scale-on-resize: true;
-	--web-center-horizontally: true;
-	--web-center-vertically: true;
-	--web-enable-deep-linking: true;
+  position: absolute;
+  width: 360px;
+  height: 710px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  --web-view-name: list-store-detail;
+  --web-view-id: list-store-detail;
+  --web-scale-on-resize: true;
+  --web-center-horizontally: true;
+  --web-center-vertically: true;
+  --web-enable-deep-linking: true;
 }
 @keyframes fadein {
-
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .Component_15__3_Class {
-	position: absolute;
-	width: 1129.174px;
-	height: 680.36px;
-	left: -525.334px;
-	top: -469.36px;
-	overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  left: -525.334px;
+  top: -469.36px;
+  overflow: visible;
 }
 .Group_9752_Class {
-	position: absolute;
-	width: 1129.174px;
-	height: 680.36px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .Background_Class {
-	fill: rgba(51,191,154,1);
+  fill: rgba(51, 191, 154, 1);
 }
 .Background {
-	overflow: visible;
-	position: absolute;
-	width: 1129.174px;
-	height: 680.36px;
-	transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
-	transform-origin: center;
-	left: 0px;
-	top: 0px;
+  overflow: visible;
+  position: absolute;
+  width: 1129.174px;
+  height: 680.36px;
+  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
 }
 .Cart_Class {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Cart {
-	position: absolute;
-	overflow: visible;
-	width: 362px;
-	height: 678px;
-	left: -2px;
-	top: 50px;
+  position: absolute;
+  overflow: visible;
+  width: 362px;
+  height: 678px;
+  left: -2px;
+  top: 50px;
 }
 .Group_10343_Class {
-	position: absolute;
-	width: 354.34px;
-	height: 42.5px;
-	left: -1.84px;
-	top: 112px;
-	overflow: visible;
+  position: absolute;
+  width: 354.34px;
+  height: 42.5px;
+  left: -1.84px;
+  top: 112px;
+  overflow: visible;
 }
 .Group_9684_Class {
-	position: absolute;
-	width: 70.151px;
-	height: 25.054px;
-	left: 65.69px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 70.151px;
+  height: 25.054px;
+  left: 65.69px;
+  top: 0px;
+  overflow: visible;
 }
 .Path_3346_Class {
-	fill: rgba(255,255,255,1);
-	stroke: rgba(121,121,121,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: rgba(255, 255, 255, 1);
+  stroke: rgba(121, 121, 121, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Path_3346 {
-	overflow: visible;
-	position: absolute;
-	width: 70.15px;
-	height: 25.054px;
-	left: 0px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 70.15px;
+  height: 25.054px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Gn_y_Class {
-	left: 11.805px;
-	top: 6px;
-	position: absolute;
-	overflow: visible;
-	width: 47px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -1px;
-	text-align: center;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 12px;
-	color: rgba(64,64,64,1);
+  left: 11.805px;
+  top: 6px;
+  position: absolute;
+  overflow: visible;
+  width: 47px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -1px;
+  text-align: center;
+
+  font-weight: lighter;
+  font-size: 12px;
+  color: rgba(64, 64, 64, 1);
 }
 .Group_10340_Class {
-	position: absolute;
-	width: 51.107px;
-	height: 25.054px;
-	left: 15.5px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 51.107px;
+  height: 25.054px;
+  left: 15.5px;
+  top: 0px;
+  overflow: visible;
 }
 .Path_3346_cl_Class {
-	fill: rgba(255,255,255,1);
-	stroke: rgba(121,121,121,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: rgba(255, 255, 255, 1);
+  stroke: rgba(121, 121, 121, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Path_3346_cl {
-	overflow: visible;
-	position: absolute;
-	width: 51.107px;
-	height: 25.054px;
-	left: 0px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 51.107px;
+  height: 25.054px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Group_10347_Class {
-	position: absolute;
-	width: 35px;
-	height: 14px;
-	left: 8.5px;
-	top: 6px;
-	overflow: visible;
+  position: absolute;
+  width: 35px;
+  height: 14px;
+  left: 8.5px;
+  top: 6px;
+  overflow: visible;
 }
 .back_icon_Class {
-	position: absolute;
-	width: 9px;
-	height: 10px;
-	left: 26px;
-	top: 2px;
-	overflow: visible;
+  position: absolute;
+  width: 9px;
+  height: 10px;
+  left: 26px;
+  top: 2px;
+  overflow: visible;
 }
 .Lc_Class {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 21px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -1px;
-	text-align: center;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 12px;
-	color: rgba(80,80,80,1);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 21px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -1px;
+  text-align: center;
+
+  font-weight: lighter;
+  font-size: 12px;
+  color: rgba(80, 80, 80, 1);
 }
 .Group_10342_Class {
-	position: absolute;
-	width: 57.056px;
-	height: 25.054px;
-	left: 135.159px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 57.056px;
+  height: 25.054px;
+  left: 135.159px;
+  top: 0px;
+  overflow: visible;
 }
 .Path_3346_cq_Class {
-	fill: rgba(255,255,255,1);
-	stroke: rgba(121,121,121,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: rgba(255, 255, 255, 1);
+  stroke: rgba(121, 121, 121, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Path_3346_cq {
-	overflow: visible;
-	position: absolute;
-	width: 57.057px;
-	height: 25.054px;
-	left: 0px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 57.057px;
+  height: 25.054px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .ID5_sao_Class {
-	left: 12.948px;
-	top: 6px;
-	position: absolute;
-	overflow: visible;
-	width: 31px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -1px;
-	text-align: center;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 12px;
-	color: rgba(80,80,80,1);
+  left: 12.948px;
+  top: 6px;
+  position: absolute;
+  overflow: visible;
+  width: 31px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -1px;
+  text-align: center;
+
+  font-weight: lighter;
+  font-size: 12px;
+  color: rgba(80, 80, 80, 1);
 }
 .Line_81_Class {
-	fill: transparent;
-	stroke: rgba(112,112,112,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: transparent;
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Line_81 {
-	overflow: visible;
-	position: absolute;
-	width: 354.34px;
-	height: 1px;
-	left: 0px;
-	top: 42.5px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 354.34px;
+  height: 1px;
+  left: 0px;
+  top: 42.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Item_Class {
-	position: absolute;
-	width: 354.8px;
-	height: 540px;
-	left: 7px;
-	top: 138px;
-	overflow: hidden;
+  position: absolute;
+  width: 354.8px;
+  height: 540px;
+  left: 7px;
+  top: 138px;
+  overflow: hidden;
 }
 .Item_cu_Class {
-	position: absolute;
-	width: 375px;
-	height: 125.5px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 375px;
+  height: 125.5px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .Rectangle_2449_Class {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Rectangle_2449 {
-	position: absolute;
-	overflow: visible;
-	width: 375px;
-	height: 125px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 375px;
+  height: 125px;
+  left: 0px;
+  top: 0px;
 }
 .ID1_Class {
-	position: absolute;
-	width: 96px;
-	height: 96px;
-	left: 9px;
-	top: 15px;
-	overflow: visible;
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  left: 9px;
+  top: 15px;
+  overflow: visible;
 }
 .Line_82_Class {
-	fill: transparent;
-	stroke: rgba(189,189,189,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: transparent;
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Line_82 {
-	overflow: visible;
-	position: absolute;
-	width: 357px;
-	height: 1px;
-	left: 9.5px;
-	top: 125.5px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 357px;
+  height: 1px;
+  left: 9.5px;
+  top: 125.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Sa_my_lnh_Vit_Long_Class {
-	left: 132px;
-	top: 21px;
-	position: absolute;
-	overflow: visible;
-	width: 160px;
-	white-space: nowrap;
-	line-height: 18px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	color: rgba(64,64,64,1);
+  left: 132px;
+  top: 21px;
+  position: absolute;
+  overflow: visible;
+  width: 160px;
+  white-space: nowrap;
+  line-height: 18px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(64, 64, 64, 1);
 }
 .Group_10344_Class {
-	position: absolute;
-	width: 102px;
-	height: 11px;
-	left: 132px;
-	top: 65px;
-	overflow: visible;
+  position: absolute;
+  width: 102px;
+  height: 11px;
+  left: 132px;
+  top: 65px;
+  overflow: visible;
 }
 .star_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 7px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 7px;
+  top: 0px;
+  overflow: visible;
 }
 .ID5_Class {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 7px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 7px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Path_2971_Class {
-	fill: rgba(51,191,154,1);
+  fill: rgba(51, 191, 154, 1);
 }
 .Path_2971 {
-	overflow: visible;
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 25.088px;
-	top: 0.076px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 25.088px;
+  top: 0.076px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .ID5_pht__16km_Class {
-	left: 38px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 65px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 38px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 65px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .My_lnh_Class {
-	left: 132px;
-	top: 45px;
-	position: absolute;
-	overflow: visible;
-	width: 42px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 132px;
+  top: 45px;
+  position: absolute;
+  overflow: visible;
+  width: 42px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Group_10346_Class {
-	position: absolute;
-	width: 121px;
-	height: 11px;
-	left: 132px;
-	top: 84px;
-	overflow: visible;
+  position: absolute;
+  width: 121px;
+  height: 11px;
+  left: 132px;
+  top: 84px;
+  overflow: visible;
 }
 .gift-box_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .Nhp_TDEF20_gim_20k_Class {
-	left: 14px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 108px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 14px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 108px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Item_c_Class {
-	position: absolute;
-	width: 375px;
-	height: 125.5px;
-	left: 0px;
-	top: 126px;
-	overflow: visible;
+  position: absolute;
+  width: 375px;
+  height: 125.5px;
+  left: 0px;
+  top: 126px;
+  overflow: visible;
 }
 .Rectangle_2449_c_Class {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Rectangle_2449_c {
-	position: absolute;
-	overflow: visible;
-	width: 375px;
-	height: 125px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 375px;
+  height: 125px;
+  left: 0px;
+  top: 0px;
 }
 .ID1586340163_logo-01_Class {
-	position: absolute;
-	width: 96px;
-	height: 96px;
-	left: 9px;
-	top: 15px;
-	overflow: visible;
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  left: 9px;
+  top: 15px;
+  overflow: visible;
 }
 .Line_82_db_Class {
-	fill: transparent;
-	stroke: rgba(189,189,189,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: transparent;
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Line_82_db {
-	overflow: visible;
-	position: absolute;
-	width: 357px;
-	height: 1px;
-	left: 9.5px;
-	top: 125.5px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 357px;
+  height: 1px;
+  left: 9.5px;
+  top: 125.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .in_lnh_Ton_ng_Class {
-	left: 132px;
-	top: 21px;
-	position: absolute;
-	overflow: visible;
-	width: 139px;
-	white-space: nowrap;
-	line-height: 18px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	color: rgba(64,64,64,1);
+  left: 132px;
+  top: 21px;
+  position: absolute;
+  overflow: visible;
+  width: 139px;
+  white-space: nowrap;
+  line-height: 18px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(64, 64, 64, 1);
 }
 .Group_10344_dd_Class {
-	position: absolute;
-	width: 99px;
-	height: 11px;
-	left: 132px;
-	top: 65px;
-	overflow: visible;
+  position: absolute;
+  width: 99px;
+  height: 11px;
+  left: 132px;
+  top: 65px;
+  overflow: visible;
 }
 .star_de_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 7px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 7px;
+  top: 0px;
+  overflow: visible;
 }
 .ID5_df_Class {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 7px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 7px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Path_2971_dg_Class {
-	fill: rgba(51,191,154,1);
+  fill: rgba(51, 191, 154, 1);
 }
 .Path_2971_dg {
-	overflow: visible;
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 25.088px;
-	top: 0.076px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 25.088px;
+  top: 0.076px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .ID25_pht__5km_Class {
-	left: 38px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 62px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 38px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 62px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .My_lnh_my_git_t_lnh_Class {
-	left: 132px;
-	top: 45px;
-	position: absolute;
-	overflow: visible;
-	width: 121px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 132px;
+  top: 45px;
+  position: absolute;
+  overflow: visible;
+  width: 121px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Group_10346_dj_Class {
-	position: absolute;
-	width: 121px;
-	height: 11px;
-	left: 132px;
-	top: 84px;
-	overflow: visible;
+  position: absolute;
+  width: 121px;
+  height: 11px;
+  left: 132px;
+  top: 84px;
+  overflow: visible;
 }
 .gift-box_dk_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .Nhp_TDEF40_gim_40k_Class {
-	left: 14px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 108px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 14px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 108px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Item_dm_Class {
-	position: absolute;
-	width: 375px;
-	height: 125.5px;
-	left: 0px;
-	top: 252px;
-	overflow: visible;
+  position: absolute;
+  width: 375px;
+  height: 125.5px;
+  left: 0px;
+  top: 252px;
+  overflow: visible;
 }
 .Rectangle_2449_dn_Class {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Rectangle_2449_dn {
-	position: absolute;
-	overflow: visible;
-	width: 375px;
-	height: 125px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 375px;
+  height: 125px;
+  left: 0px;
+  top: 0px;
 }
 .icon-thuan-nhu-y-1_Class {
-	position: absolute;
-	width: 96px;
-	height: 96px;
-	left: 9px;
-	top: 15px;
-	overflow: visible;
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  left: 9px;
+  top: 15px;
+  overflow: visible;
 }
 .Line_82_dp_Class {
-	fill: transparent;
-	stroke: rgba(189,189,189,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: transparent;
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Line_82_dp {
-	overflow: visible;
-	position: absolute;
-	width: 357px;
-	height: 1px;
-	left: 9.5px;
-	top: 125.5px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 357px;
+  height: 1px;
+  left: 9.5px;
+  top: 125.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Sa_my_git_qun_Th_c_Class {
-	left: 132px;
-	top: 21px;
-	position: absolute;
-	overflow: visible;
-	width: 188px;
-	white-space: nowrap;
-	line-height: 18px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	color: rgba(64,64,64,1);
+  left: 132px;
+  top: 21px;
+  position: absolute;
+  overflow: visible;
+  width: 188px;
+  white-space: nowrap;
+  line-height: 18px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(64, 64, 64, 1);
 }
 .Group_10344_dr_Class {
-	position: absolute;
-	width: 108px;
-	height: 11px;
-	left: 132px;
-	top: 65px;
-	overflow: visible;
+  position: absolute;
+  width: 108px;
+  height: 11px;
+  left: 132px;
+  top: 65px;
+  overflow: visible;
 }
 .star_ds_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 7px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 7px;
+  top: 0px;
+  overflow: visible;
 }
 .ID5_dt_Class {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 7px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 7px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Path_2971_du_Class {
-	fill: rgba(51,191,154,1);
+  fill: rgba(51, 191, 154, 1);
 }
 .Path_2971_du {
-	overflow: visible;
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 25.088px;
-	top: 0.076px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 25.088px;
+  top: 0.076px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .ID10_pht__24km_Class {
-	left: 38px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 71px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 38px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 71px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .My_git_Class {
-	left: 132px;
-	top: 45px;
-	position: absolute;
-	overflow: visible;
-	width: 39px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 132px;
+  top: 45px;
+  position: absolute;
+  overflow: visible;
+  width: 39px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Group_10346_dx_Class {
-	position: absolute;
-	width: 121px;
-	height: 11px;
-	left: 132px;
-	top: 84px;
-	overflow: visible;
+  position: absolute;
+  width: 121px;
+  height: 11px;
+  left: 132px;
+  top: 84px;
+  overflow: visible;
 }
 .gift-box_dy_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .Nhp_TDEF20_gim_20k_dz_Class {
-	left: 14px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 108px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 14px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 108px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Item_d_Class {
-	position: absolute;
-	width: 375px;
-	height: 125.5px;
-	left: 0px;
-	top: 378px;
-	overflow: visible;
+  position: absolute;
+  width: 375px;
+  height: 125.5px;
+  left: 0px;
+  top: 378px;
+  overflow: visible;
 }
 .Rectangle_2449_d_Class {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Rectangle_2449_d {
-	position: absolute;
-	overflow: visible;
-	width: 375px;
-	height: 125px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 375px;
+  height: 125px;
+  left: 0px;
+  top: 0px;
 }
 .vietlong_Class {
-	position: absolute;
-	width: 96px;
-	height: 96px;
-	left: 9px;
-	top: 15px;
-	overflow: visible;
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  left: 9px;
+  top: 15px;
+  overflow: visible;
 }
 .Line_82_d_Class {
-	fill: transparent;
-	stroke: rgba(189,189,189,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: transparent;
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Line_82_d {
-	overflow: visible;
-	position: absolute;
-	width: 357px;
-	height: 1px;
-	left: 9.5px;
-	top: 125.5px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 357px;
+  height: 1px;
+  left: 9.5px;
+  top: 125.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Sa_my_lnh_qun_Th_c_Class {
-	left: 132px;
-	top: 21px;
-	position: absolute;
-	overflow: visible;
-	width: 192px;
-	white-space: nowrap;
-	line-height: 18px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	color: rgba(64,64,64,1);
+  left: 132px;
+  top: 21px;
+  position: absolute;
+  overflow: visible;
+  width: 192px;
+  white-space: nowrap;
+  line-height: 18px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(64, 64, 64, 1);
 }
 .Group_10344_d_Class {
-	position: absolute;
-	width: 102px;
-	height: 11px;
-	left: 132px;
-	top: 65px;
-	overflow: visible;
+  position: absolute;
+  width: 102px;
+  height: 11px;
+  left: 132px;
+  top: 65px;
+  overflow: visible;
 }
 .star_d_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 7px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 7px;
+  top: 0px;
+  overflow: visible;
 }
 .ID5_d_Class {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 7px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 7px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Path_2971_d_Class {
-	fill: rgba(51,191,154,1);
+  fill: rgba(51, 191, 154, 1);
 }
 .Path_2971_d {
-	overflow: visible;
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 25.088px;
-	top: 0.076px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 25.088px;
+  top: 0.076px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .ID5_pht__16km_d_Class {
-	left: 38px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 65px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 38px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 65px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .My_lnh_ea_Class {
-	left: 132px;
-	top: 45px;
-	position: absolute;
-	overflow: visible;
-	width: 42px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 132px;
+  top: 45px;
+  position: absolute;
+  overflow: visible;
+  width: 42px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Group_10346_eb_Class {
-	position: absolute;
-	width: 121px;
-	height: 11px;
-	left: 132px;
-	top: 84px;
-	overflow: visible;
+  position: absolute;
+  width: 121px;
+  height: 11px;
+  left: 132px;
+  top: 84px;
+  overflow: visible;
 }
 .gift-box_ec_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .Nhp_TDEF20_gim_20k_ed_Class {
-	left: 14px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 108px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 14px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 108px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Item_ee_Class {
-	position: absolute;
-	width: 375px;
-	height: 125.5px;
-	left: 0px;
-	top: 504px;
-	overflow: visible;
+  position: absolute;
+  width: 375px;
+  height: 125.5px;
+  left: 0px;
+  top: 504px;
+  overflow: visible;
 }
 .Rectangle_2449_ef_Class {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Rectangle_2449_ef {
-	position: absolute;
-	overflow: visible;
-	width: 375px;
-	height: 125px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 375px;
+  height: 125px;
+  left: 0px;
+  top: 0px;
 }
 .vietlong_eg_Class {
-	position: absolute;
-	width: 96px;
-	height: 96px;
-	left: 9px;
-	top: 15px;
-	overflow: visible;
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  left: 9px;
+  top: 15px;
+  overflow: visible;
 }
 .Line_82_eh_Class {
-	fill: transparent;
-	stroke: rgba(189,189,189,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: transparent;
+  stroke: rgba(189, 189, 189, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Line_82_eh {
-	overflow: visible;
-	position: absolute;
-	width: 357px;
-	height: 1px;
-	left: 9.5px;
-	top: 125.5px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 357px;
+  height: 1px;
+  left: 9.5px;
+  top: 125.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Sa_my_lnh_qun_Th_c_ei_Class {
-	left: 132px;
-	top: 21px;
-	position: absolute;
-	overflow: visible;
-	width: 192px;
-	white-space: nowrap;
-	line-height: 18px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	color: rgba(64,64,64,1);
+  left: 132px;
+  top: 21px;
+  position: absolute;
+  overflow: visible;
+  width: 192px;
+  white-space: nowrap;
+  line-height: 18px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(64, 64, 64, 1);
 }
 .Group_10344_ej_Class {
-	position: absolute;
-	width: 102px;
-	height: 11px;
-	left: 132px;
-	top: 65px;
-	overflow: visible;
+  position: absolute;
+  width: 102px;
+  height: 11px;
+  left: 132px;
+  top: 65px;
+  overflow: visible;
 }
 .star_ek_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 7px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 7px;
+  top: 0px;
+  overflow: visible;
 }
 .ID5_el_Class {
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 7px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 7px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Path_2971_em_Class {
-	fill: rgba(51,191,154,1);
+  fill: rgba(51, 191, 154, 1);
 }
 .Path_2971_em {
-	overflow: visible;
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 25.088px;
-	top: 0.076px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 25.088px;
+  top: 0.076px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .ID5_pht__16km_en_Class {
-	left: 38px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 65px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 38px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 65px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .My_lnh_eo_Class {
-	left: 132px;
-	top: 45px;
-	position: absolute;
-	overflow: visible;
-	width: 42px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 132px;
+  top: 45px;
+  position: absolute;
+  overflow: visible;
+  width: 42px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Group_10346_ep_Class {
-	position: absolute;
-	width: 121px;
-	height: 11px;
-	left: 132px;
-	top: 84px;
-	overflow: visible;
+  position: absolute;
+  width: 121px;
+  height: 11px;
+  left: 132px;
+  top: 84px;
+  overflow: visible;
 }
 .gift-box_eq_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .Nhp_TDEF20_gim_20k_er_Class {
-	left: 14px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 108px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 10px;
-	color: rgba(80,80,80,1);
+  left: 14px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 108px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgba(80, 80, 80, 1);
 }
 .Group_9773_Class {
-	position: absolute;
-	width: 340px;
-	height: 38px;
-	left: 12px;
-	top: 62px;
-	overflow: visible;
+  position: absolute;
+  width: 340px;
+  height: 38px;
+  left: 12px;
+  top: 62px;
+  overflow: visible;
 }
 .CTA_Class {
-	position: absolute;
-	width: 340px;
-	height: 38px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 340px;
+  height: 38px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .Rectangle_5_Class {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Rectangle_5 {
-	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.102));
-	position: absolute;
-	overflow: visible;
-	width: 385px;
-	height: 83px;
-	left: 0px;
-	top: 0px;
+  filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.102));
+  position: absolute;
+  overflow: visible;
+  width: 385px;
+  height: 83px;
+  left: 0px;
+  top: 0px;
 }
 .My_git_ev_Class {
-	left: 13px;
-	top: 13px;
-	position: absolute;
-	overflow: visible;
-	width: 267px;
-	height: 14px;
-	line-height: 16px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 12px;
-	color: rgba(189,189,189,1);
+  left: 13px;
+  top: 13px;
+  position: absolute;
+  overflow: visible;
+  width: 267px;
+  height: 14px;
+  line-height: 16px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(189, 189, 189, 1);
 }
 .tam_Class {
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	left: 305px;
-	top: 4px;
-	overflow: visible;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 305px;
+  top: 4px;
+  overflow: visible;
 }
 .tam_ex_Class {
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .Header1_Class {
-	position: absolute;
-	width: 251px;
-	height: 20px;
-	left: 10px;
-	top: 20px;
-	overflow: visible;
+  position: absolute;
+  width: 251px;
+  height: 20px;
+  left: 10px;
+  top: 20px;
+  overflow: visible;
 }
 .Fixing_Time_Class {
-	left: 90px;
-	top: 2px;
-	position: absolute;
-	overflow: visible;
-	width: 162px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	color: rgba(255,255,255,1);
-	letter-spacing: 0.7142857360839844px;
-	text-transform: uppercase;
+  left: 90px;
+  top: 2px;
+  position: absolute;
+  overflow: visible;
+  width: 162px;
+  white-space: nowrap;
+  text-align: left;
+
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.7142857360839844px;
+  text-transform: uppercase;
 }
 .back_icon_e_Class {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .Group_10366_Class {
-	position: absolute;
-	width: 360px;
-	height: 710px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 360px;
+  height: 710px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .info-bg_Class {
-	fill: rgba(0,0,0,0.302);
+  fill: rgba(0, 0, 0, 0.302);
 }
 .info-bg {
-	overflow: visible;
-	position: absolute;
-	width: 360px;
-	height: 445.901px;
-	left: 0px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
-	--web-animation: fadein 0.3s ease-out;
-	--web-action-type: page;
-	--web-action-target: list_store.html;
-	cursor: pointer;
+  overflow: visible;
+  position: absolute;
+  width: 360px;
+  height: 445.901px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: list_store.html;
+  cursor: pointer;
 }
 .info-bg_e_Class {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .info-bg_e {
-	overflow: visible;
-	position: absolute;
-	width: 360px;
-	height: 276.014px;
-	left: 0px;
-	top: 433.986px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 360px;
+  height: 276.014px;
+  left: 0px;
+  top: 433.986px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Dch_v_ph_bin_Class {
-	left: 24px;
-	top: 553px;
-	position: absolute;
-	overflow: visible;
-	width: 98px;
-	white-space: nowrap;
-	line-height: 20px;
-	margin-top: -3.5px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	color: rgba(36,39,43,1);
+  left: 24px;
+  top: 553px;
+  position: absolute;
+  overflow: visible;
+  width: 98px;
+  white-space: nowrap;
+  line-height: 20px;
+  margin-top: -3.5px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 13px;
+  color: rgba(36, 39, 43, 1);
 }
 .Img_Class {
-	position: absolute;
-	width: 59px;
-	height: 76px;
-	left: 24px;
-	top: 586px;
-	overflow: visible;
+  position: absolute;
+  width: 59px;
+  height: 76px;
+  left: 24px;
+  top: 586px;
+  overflow: visible;
 }
 .Rectangle_2365_Class {
-	fill: rgba(255,255,255,1);
-	stroke: rgba(112,112,112,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: rgba(255, 255, 255, 1);
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Rectangle_2365 {
-	position: absolute;
-	overflow: visible;
-	width: 59px;
-	height: 59px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 59px;
+  height: 59px;
+  left: 0px;
+  top: 0px;
 }
 .air-conditioner_Class {
-	position: absolute;
-	width: 45px;
-	height: 45px;
-	left: 7px;
-	top: 7px;
-	overflow: visible;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 7px;
+  top: 7px;
+  overflow: visible;
 }
 .My_lnh_e_Class {
-	left: 7px;
-	top: 66px;
-	position: absolute;
-	overflow: visible;
-	width: 39px;
-	white-space: nowrap;
-	line-height: 32px;
-	margin-top: -11.5px;
-	text-align: center;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 9px;
-	color: rgba(48,48,48,1);
+  left: 7px;
+  top: 66px;
+  position: absolute;
+  overflow: visible;
+  width: 39px;
+  white-space: nowrap;
+  line-height: 32px;
+  margin-top: -11.5px;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 9px;
+  color: rgba(48, 48, 48, 1);
 }
 .Img_e_Class {
-	position: absolute;
-	width: 59.055px;
-	height: 75.945px;
-	left: 92.814px;
-	top: 585.59px;
-	overflow: visible;
-	--web-animation: fadein 0.3s ease-out;
-	--web-action-type: page;
-	--web-action-target: confirm_request_time.html;
-	cursor: pointer;
+  position: absolute;
+  width: 59.055px;
+  height: 75.945px;
+  left: 92.814px;
+  top: 585.59px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: confirm_request_time.html;
+  cursor: pointer;
 }
 .Rectangle_2365_fa_Class {
-	fill: rgba(255,255,255,1);
-	stroke: rgba(112,112,112,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: rgba(255, 255, 255, 1);
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Rectangle_2365_fa {
-	position: absolute;
-	overflow: visible;
-	width: 59.055px;
-	height: 59.055px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 59.055px;
+  height: 59.055px;
+  left: 0px;
+  top: 0px;
 }
 .My_git_fb_Class {
-	left: 8.858px;
-	top: 65.945px;
-	position: absolute;
-	overflow: visible;
-	width: 37px;
-	white-space: nowrap;
-	line-height: 32px;
-	margin-top: -11.5px;
-	text-align: center;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 9px;
-	color: rgba(48,48,48,1);
+  left: 8.858px;
+  top: 65.945px;
+  position: absolute;
+  overflow: visible;
+  width: 37px;
+  white-space: nowrap;
+  line-height: 32px;
+  margin-top: -11.5px;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 9px;
+  color: rgba(48, 48, 48, 1);
 }
 .washing-machine_Class {
-	position: absolute;
-	width: 45.275px;
-	height: 45.276px;
-	left: 6.89px;
-	top: 6.89px;
-	overflow: visible;
+  position: absolute;
+  width: 45.275px;
+  height: 45.276px;
+  left: 6.89px;
+  top: 6.89px;
+  overflow: visible;
 }
 .Img_fd_Class {
-	position: absolute;
-	width: 59.055px;
-	height: 75.945px;
-	left: 163.129px;
-	top: 585.59px;
-	overflow: visible;
+  position: absolute;
+  width: 59.055px;
+  height: 75.945px;
+  left: 163.129px;
+  top: 585.59px;
+  overflow: visible;
 }
 .Rectangle_2365_fe_Class {
-	fill: rgba(255,255,255,1);
-	stroke: rgba(112,112,112,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: rgba(255, 255, 255, 1);
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Rectangle_2365_fe {
-	position: absolute;
-	overflow: visible;
-	width: 59.055px;
-	height: 59.055px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 59.055px;
+  height: 59.055px;
+  left: 0px;
+  top: 0px;
 }
 .T_lnh_Class {
-	left: 10.827px;
-	top: 65.945px;
-	position: absolute;
-	overflow: visible;
-	width: 33px;
-	white-space: nowrap;
-	line-height: 32px;
-	margin-top: -11.5px;
-	text-align: center;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 9px;
-	color: rgba(48,48,48,1);
+  left: 10.827px;
+  top: 65.945px;
+  position: absolute;
+  overflow: visible;
+  width: 33px;
+  white-space: nowrap;
+  line-height: 32px;
+  margin-top: -11.5px;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 9px;
+  color: rgba(48, 48, 48, 1);
 }
 .fridge_Class {
-	position: absolute;
-	width: 45.275px;
-	height: 45.276px;
-	left: 6.89px;
-	top: 6.89px;
-	overflow: visible;
+  position: absolute;
+  width: 45.275px;
+  height: 45.276px;
+  left: 6.89px;
+  top: 6.89px;
+  overflow: visible;
 }
 .Img_fh_Class {
-	position: absolute;
-	width: 59.055px;
-	height: 75.945px;
-	left: 233.443px;
-	top: 585.59px;
-	overflow: visible;
+  position: absolute;
+  width: 59.055px;
+  height: 75.945px;
+  left: 233.443px;
+  top: 585.59px;
+  overflow: visible;
 }
 .Rectangle_2365_fi_Class {
-	fill: rgba(255,255,255,1);
-	stroke: rgba(112,112,112,1);
-	stroke-width: 1px;
-	stroke-linejoin: miter;
-	stroke-linecap: butt;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
+  fill: rgba(255, 255, 255, 1);
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
 }
 .Rectangle_2365_fi {
-	position: absolute;
-	overflow: visible;
-	width: 59.055px;
-	height: 59.055px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 59.055px;
+  height: 59.055px;
+  left: 0px;
+  top: 0px;
 }
 .L_si_Class {
-	left: 9.843px;
-	top: 65.945px;
-	position: absolute;
-	overflow: visible;
-	width: 35px;
-	white-space: nowrap;
-	line-height: 32px;
-	margin-top: -11.5px;
-	text-align: center;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 9px;
-	color: rgba(48,48,48,1);
+  left: 9.843px;
+  top: 65.945px;
+  position: absolute;
+  overflow: visible;
+  width: 35px;
+  white-space: nowrap;
+  line-height: 32px;
+  margin-top: -11.5px;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 9px;
+  color: rgba(48, 48, 48, 1);
 }
 .electric-heater_Class {
-	position: absolute;
-	width: 26.169px;
-	height: 45.276px;
-	left: 16.648px;
-	top: 6.756px;
-	overflow: visible;
+  position: absolute;
+  width: 26.169px;
+  height: 45.276px;
+  left: 16.648px;
+  top: 6.756px;
+  overflow: visible;
 }
 .Rectangle_2451_Class {
-	fill: rgba(134,169,191,1);
+  fill: rgba(134, 169, 191, 1);
 }
 .Rectangle_2451 {
-	position: absolute;
-	overflow: visible;
-	width: 12.279px;
-	height: 2.506px;
-	left: 6.944px;
-	top: 36.466px;
+  position: absolute;
+  overflow: visible;
+  width: 12.279px;
+  height: 2.506px;
+  left: 6.944px;
+  top: 36.466px;
 }
 .Path_3348_Class {
-	fill: rgba(179,204,226,1);
+  fill: rgba(179, 204, 226, 1);
 }
 .Path_3348 {
-	overflow: visible;
-	position: absolute;
-	width: 16.739px;
-	height: 2.505px;
-	left: 4.715px;
-	top: 38.972px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 16.739px;
+  height: 2.505px;
+  left: 4.715px;
+  top: 38.972px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Group_10348_Class {
-	position: absolute;
-	width: 6.737px;
-	height: 5.011px;
-	left: 4.11px;
-	top: 36.466px;
-	overflow: visible;
+  position: absolute;
+  width: 6.737px;
+  height: 5.011px;
+  left: 4.11px;
+  top: 36.466px;
+  overflow: visible;
 }
 .Rectangle_2452_Class {
-	opacity: 0.1;
-	fill: rgba(47,0,58,1);
+  opacity: 0.1;
+  fill: rgba(47, 0, 58, 1);
 }
 .Rectangle_2452 {
-	position: absolute;
-	overflow: visible;
-	width: 3.079px;
-	height: 2.506px;
-	left: 3.658px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 3.079px;
+  height: 2.506px;
+  left: 3.658px;
+  top: 0px;
 }
 .Path_3349_Class {
-	opacity: 0.1;
-	fill: rgba(47,0,58,1);
+  opacity: 0.1;
+  fill: rgba(47, 0, 58, 1);
 }
 .Path_3349 {
-	overflow: visible;
-	position: absolute;
-	width: 4.599px;
-	height: 2.505px;
-	left: 0px;
-	top: 2.506px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 4.599px;
+  height: 2.505px;
+  left: 0px;
+  top: 2.506px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Path_3350_Class {
-	fill: rgba(134,169,191,1);
+  fill: rgba(134, 169, 191, 1);
 }
 .Path_3350 {
-	overflow: visible;
-	position: absolute;
-	width: 24.697px;
-	height: 3.063px;
-	left: 0.735px;
-	top: 41.477px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 24.697px;
+  height: 3.063px;
+  left: 0.735px;
+  top: 41.477px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Group_10349_Class {
-	opacity: 0.1;
-	position: absolute;
-	width: 4.564px;
-	height: 3.063px;
-	left: 0.735px;
-	top: 41.477px;
-	overflow: visible;
+  opacity: 0.1;
+  position: absolute;
+  width: 4.564px;
+  height: 3.063px;
+  left: 0.735px;
+  top: 41.477px;
+  overflow: visible;
 }
 .Path_3351_Class {
-	fill: rgba(0,0,0,1);
+  fill: rgba(0, 0, 0, 1);
 }
 .Path_3351 {
-	overflow: visible;
-	position: absolute;
-	width: 4.564px;
-	height: 3.063px;
-	left: 0px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 4.564px;
+  height: 3.063px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Path_3352_Class {
-	fill: rgba(39,162,219,1);
+  fill: rgba(39, 162, 219, 1);
 }
 .Path_3352 {
-	overflow: visible;
-	position: absolute;
-	width: 24.697px;
-	height: 38.689px;
-	left: 0.735px;
-	top: 0.736px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 24.697px;
+  height: 38.689px;
+  left: 0.735px;
+  top: 0.736px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Group_10350_Class {
-	opacity: 0.1;
-	position: absolute;
-	width: 2.995px;
-	height: 38.689px;
-	left: 0.735px;
-	top: 0.736px;
-	overflow: visible;
+  opacity: 0.1;
+  position: absolute;
+  width: 2.995px;
+  height: 38.689px;
+  left: 0.735px;
+  top: 0.736px;
+  overflow: visible;
 }
 .Path_3353_Class {
-	fill: rgba(0,0,0,1);
+  fill: rgba(0, 0, 0, 1);
 }
 .Path_3353 {
-	overflow: visible;
-	position: absolute;
-	width: 2.995px;
-	height: 38.689px;
-	left: 0px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 2.995px;
+  height: 38.689px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Path_3354_Class {
-	fill: rgba(39,162,219,1);
+  fill: rgba(39, 162, 219, 1);
 }
 .Path_3354 {
-	overflow: visible;
-	position: absolute;
-	width: 18.067px;
-	height: 4.174px;
-	left: 4.051px;
-	top: 0.736px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 18.067px;
+  height: 4.174px;
+  left: 4.051px;
+  top: 0.736px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Path_3355_Class {
-	fill: rgba(255,147,0,1);
+  fill: rgba(255, 147, 0, 1);
 }
 .Path_3355 {
-	overflow: visible;
-	position: absolute;
-	width: 18.067px;
-	height: 27.236px;
-	left: 4.051px;
-	top: 4.573px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 18.067px;
+  height: 27.236px;
+  left: 4.051px;
+  top: 4.573px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Rectangle_2453_Class {
-	fill: rgba(255,197,84,1);
+  fill: rgba(255, 197, 84, 1);
 }
 .Rectangle_2453 {
-	position: absolute;
-	overflow: visible;
-	width: 13.158px;
-	height: 27.236px;
-	left: 6.505px;
-	top: 4.573px;
+  position: absolute;
+  overflow: visible;
+  width: 13.158px;
+  height: 27.236px;
+  left: 6.505px;
+  top: 4.573px;
 }
 .Group_10351_Class {
-	position: absolute;
-	width: 16.014px;
-	height: 14.912px;
-	left: 5.077px;
-	top: 11.448px;
-	overflow: visible;
+  position: absolute;
+  width: 16.014px;
+  height: 14.912px;
+  left: 5.077px;
+  top: 11.448px;
+  overflow: visible;
 }
 .Rectangle_2454_Class {
-	fill: rgba(255,147,0,1);
+  fill: rgba(255, 147, 0, 1);
 }
 .Rectangle_2454 {
-	position: absolute;
-	overflow: visible;
-	width: 16.015px;
-	height: 2.582px;
-	left: 0px;
-	top: 6.279px;
+  position: absolute;
+  overflow: visible;
+  width: 16.015px;
+  height: 2.582px;
+  left: 0px;
+  top: 6.279px;
 }
 .Rectangle_2455_Class {
-	fill: rgba(255,147,0,1);
+  fill: rgba(255, 147, 0, 1);
 }
 .Rectangle_2455 {
-	position: absolute;
-	overflow: visible;
-	width: 16.015px;
-	height: 2.582px;
-	left: 0px;
-	top: 12.33px;
+  position: absolute;
+  overflow: visible;
+  width: 16.015px;
+  height: 2.582px;
+  left: 0px;
+  top: 12.33px;
 }
 .Rectangle_2456_Class {
-	fill: rgba(255,147,0,1);
+  fill: rgba(255, 147, 0, 1);
 }
 .Rectangle_2456 {
-	position: absolute;
-	overflow: visible;
-	width: 16.015px;
-	height: 2.582px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 16.015px;
+  height: 2.582px;
+  left: 0px;
+  top: 0px;
 }
 .Group_10352_Class {
-	position: absolute;
-	width: 16.014px;
-	height: 32.84px;
-	left: 5.077px;
-	top: 4.573px;
-	overflow: visible;
+  position: absolute;
+  width: 16.014px;
+  height: 32.84px;
+  left: 5.077px;
+  top: 4.573px;
+  overflow: visible;
 }
 .Rectangle_2457_Class {
-	fill: rgba(252,229,145,1);
+  fill: rgba(252, 229, 145, 1);
 }
 .Rectangle_2457 {
-	position: absolute;
-	overflow: visible;
-	width: 16.015px;
-	height: 5.49px;
-	left: 0px;
-	top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 16.015px;
+  height: 5.49px;
+  left: 0px;
+  top: 0px;
 }
 .Path_3356_Class {
-	fill: rgba(252,229,145,1);
+  fill: rgba(252, 229, 145, 1);
 }
 .Path_3356 {
-	overflow: visible;
-	position: absolute;
-	width: 5.977px;
-	height: 2.466px;
-	left: 5.019px;
-	top: 30.374px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 5.977px;
+  height: 2.466px;
+  left: 5.019px;
+  top: 30.374px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Ellipse_512_Class {
-	fill: rgba(239,80,80,1);
+  fill: rgba(239, 80, 80, 1);
 }
 .Ellipse_512 {
-	position: absolute;
-	overflow: visible;
-	width: 2.481px;
-	height: 2.466px;
-	left: 4.051px;
-	top: 31.23px;
+  position: absolute;
+  overflow: visible;
+  width: 2.481px;
+  height: 2.466px;
+  left: 4.051px;
+  top: 31.23px;
 }
 .Path_3357_Class {
-	fill: rgba(171,181,60,1);
+  fill: rgba(171, 181, 60, 1);
 }
 .Path_3357 {
-	overflow: visible;
-	position: absolute;
-	width: 2.481px;
-	height: 2.466px;
-	left: 19.637px;
-	top: 31.23px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 2.481px;
+  height: 2.466px;
+  left: 19.637px;
+  top: 31.23px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Path_3358_Class {
-	fill: transparent;
+  fill: transparent;
 }
 .Path_3358 {
-	overflow: visible;
-	position: absolute;
-	width: 26.169px;
-	height: 45.276px;
-	left: 0px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 26.169px;
+  height: 45.276px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Path_3359_Class {
-	fill: rgba(0,0,0,1);
+  fill: rgba(0, 0, 0, 1);
 }
 .Path_3359 {
-	overflow: visible;
-	position: absolute;
-	width: 7.448px;
-	height: 3.937px;
-	left: 9.36px;
-	top: 30.559px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 7.448px;
+  height: 3.937px;
+  left: 9.36px;
+  top: 30.559px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Path_3360_Class {
-	fill: rgba(0,0,0,1);
+  fill: rgba(0, 0, 0, 1);
 }
 .Path_3360 {
-	overflow: visible;
-	position: absolute;
-	width: 3.952px;
-	height: 3.937px;
-	left: 3.315px;
-	top: 30.458px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 3.952px;
+  height: 3.937px;
+  left: 3.315px;
+  top: 30.458px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Path_3361_Class {
-	fill: rgba(0,0,0,1);
+  fill: rgba(0, 0, 0, 1);
 }
 .Path_3361 {
-	overflow: visible;
-	position: absolute;
-	width: 3.952px;
-	height: 3.937px;
-	left: 18.901px;
-	top: 30.458px;
-	transform: matrix(1,0,0,1,0,0);
+  overflow: visible;
+  position: absolute;
+  width: 3.952px;
+  height: 3.937px;
+  left: 18.901px;
+  top: 30.458px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .Icon_awesome-chevron-up_Class {
-	fill: rgba(255,255,255,1);
+  fill: rgba(255, 255, 255, 1);
 }
 .Icon_awesome-chevron-up {
-	overflow: visible;
-	position: absolute;
-	width: 27.409px;
-	height: 15.839px;
-	transform: translate(0px, -62.451px) matrix(1,0,0,1,165.8966,473.5935) rotate(180deg);
-	transform-origin: center;
-	left: 0px;
-	top: 0px;
+  overflow: visible;
+  position: absolute;
+  width: 27.409px;
+  height: 15.839px;
+  transform: translate(0px, -62.451px) matrix(1, 0, 0, 1, 165.8966, 473.5935)
+    rotate(180deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
 }
 .Group_10358_Class {
-	position: absolute;
-	width: 289.244px;
-	height: 72.746px;
-	left: 24px;
-	top: 456.254px;
-	overflow: visible;
-	--web-animation: fadein 0.3s ease-out;
-	--web-action-type: page;
-	--web-action-target: store_details.html;
-	cursor: pointer;
+  position: absolute;
+  width: 289.244px;
+  height: 72.746px;
+  left: 24px;
+  top: 456.254px;
+  overflow: visible;
+  --web-animation: fadein 0.3s ease-out;
+  --web-action-type: page;
+  --web-action-target: store_details.html;
+  cursor: pointer;
 }
 .ID0900_-_2359_Class {
-	left: 126.042px;
-	top: 59.982px;
-	position: absolute;
-	overflow: visible;
-	width: 60px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 10px;
-	color: rgba(121,121,121,1);
+  left: 126.042px;
+  top: 59.982px;
+  position: absolute;
+  overflow: visible;
+  width: 60px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 10px;
+  color: rgba(121, 121, 121, 1);
 }
 .M_ca_Class {
-	left: 66.366px;
-	top: 58.108px;
-	position: absolute;
-	overflow: visible;
-	width: 42px;
-	white-space: nowrap;
-	line-height: 28px;
-	margin-top: -8.5px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 11px;
-	color: rgba(121,121,121,1);
+  left: 66.366px;
+  top: 58.108px;
+  position: absolute;
+  overflow: visible;
+  width: 42px;
+  white-space: nowrap;
+  line-height: 28px;
+  margin-top: -8.5px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 11px;
+  color: rgba(121, 121, 121, 1);
 }
 .Group_10391_Class {
-	position: absolute;
-	width: 69.308px;
-	height: 11px;
-	left: 126.561px;
-	top: 42.746px;
-	overflow: visible;
+  position: absolute;
+  width: 69.308px;
+  height: 11px;
+  left: 126.561px;
+  top: 42.746px;
+  overflow: visible;
 }
 .ID49_Class {
-	left: 55.308px;
-	top: 0px;
-	position: absolute;
-	overflow: visible;
-	width: 15px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 10px;
-	color: rgba(121,121,121,1);
+  left: 55.308px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 15px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 10px;
+  color: rgba(121, 121, 121, 1);
 }
 .LuanNM_sm-rating_Class {
-	position: absolute;
-	width: 54.134px;
-	height: 9.372px;
-	left: 0px;
-	top: 1px;
-	overflow: hidden;
+  position: absolute;
+  width: 54.134px;
+  height: 9.372px;
+  left: 0px;
+  top: 1px;
+  overflow: hidden;
 }
 .LuanNM_sm-rating_0_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .star_gl_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .star_gl_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .LuanNM_sm-rating_1_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 11px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 11px;
+  top: 0px;
+  overflow: visible;
 }
 .star_go_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .star_go_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .LuanNM_sm-rating_2_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 22px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 22px;
+  top: 0px;
+  overflow: visible;
 }
 .star_gr_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .star_gr_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .LuanNM_sm-rating_3_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 33px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 33px;
+  top: 0px;
+  overflow: visible;
 }
 .star_gu_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .star_gu_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .LuanNM_sm-rating_4_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 44px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 44px;
+  top: 0px;
+  overflow: visible;
 }
 .star_gx_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .star_gx_Class {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
 }
 .nh_gi__Class {
-	left: 66.428px;
-	top: 42.746px;
-	position: absolute;
-	overflow: visible;
-	width: 47px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 10px;
-	color: rgba(121,121,121,1);
+  left: 66.428px;
+  top: 42.746px;
+  position: absolute;
+  overflow: visible;
+  width: 47px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 10px;
+  color: rgba(121, 121, 121, 1);
 }
 .ID55B_Trn_Quang_Khi_Q1_TP_H_Ch_Class {
-	left: 67.98px;
-	top: 21.556px;
-	position: absolute;
-	overflow: visible;
-	width: 192px;
-	white-space: nowrap;
-	line-height: 14px;
-	margin-top: -2px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 10px;
-	color: rgba(189,189,189,1);
+  left: 67.98px;
+  top: 21.556px;
+  position: absolute;
+  overflow: visible;
+  width: 192px;
+  white-space: nowrap;
+  line-height: 14px;
+  margin-top: -2px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 10px;
+  color: rgba(189, 189, 189, 1);
 }
 .in_lnh_Ton_ng_g_Class {
-	opacity: 0.99;
-	left: 89.016px;
-	top: 0.937px;
-	position: absolute;
-	overflow: visible;
-	width: 141px;
-	white-space: nowrap;
-	line-height: 29px;
-	margin-top: -7px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15px;
-	color: rgba(48,48,48,1);
+  opacity: 0.99;
+  left: 89.016px;
+  top: 0.937px;
+  position: absolute;
+  overflow: visible;
+  width: 141px;
+  white-space: nowrap;
+  line-height: 29px;
+  margin-top: -7px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 15px;
+  color: rgba(48, 48, 48, 1);
 }
 .edit_icom_Class {
-	position: absolute;
-	width: 21.653px;
-	height: 18.744px;
-	left: 67.735px;
-	top: 0px;
-	overflow: visible;
+  position: absolute;
+  width: 21.653px;
+  height: 18.744px;
+  left: 67.735px;
+  top: 0px;
+  overflow: visible;
 }
 .Mask_Group_9883_Class {
-	position: absolute;
-	width: 9.843px;
-	height: 9.372px;
-	left: 203.143px;
-	top: 60.919px;
-	overflow: visible;
+  position: absolute;
+  width: 9.843px;
+  height: 9.372px;
+  left: 203.143px;
+  top: 60.919px;
+  overflow: visible;
 }
 .ID7_mins__Class {
-	left: 214.938px;
-	top: 59.982px;
-	position: absolute;
-	overflow: visible;
-	width: 35px;
-	white-space: nowrap;
-	line-height: 11px;
-	margin-top: -0.5px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 10px;
-	color: rgba(121,121,121,1);
+  left: 214.938px;
+  top: 59.982px;
+  position: absolute;
+  overflow: visible;
+  width: 35px;
+  white-space: nowrap;
+  line-height: 11px;
+  margin-top: -0.5px;
+  text-align: left;
+
+  font-weight: bold;
+  font-size: 10px;
+  color: rgba(121, 121, 121, 1);
 }
 .ID22_km_Class {
-	left: 258.244px;
-	top: 59.982px;
-	position: absolute;
-	overflow: visible;
-	width: 32px;
-	white-space: nowrap;
-	line-height: 11px;
-	margin-top: -0.5px;
-	text-align: left;
-	font-family: Helvetica Neue;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 10px;
-	color: rgba(121,121,121,1);
+  left: 258.244px;
+  top: 59.982px;
+  position: absolute;
+  overflow: visible;
+  width: 32px;
+  white-space: nowrap;
+  line-height: 11px;
+  margin-top: -0.5px;
+  text-align: left;
+
+  font-weight: bold;
+  font-size: 10px;
+  color: rgba(121, 121, 121, 1);
 }
 .Mask_Group_9885_Class {
-	position: absolute;
-	width: 60px;
-	height: 62px;
-	left: 0px;
-	top: 10.746px;
-	overflow: visible;
+  position: absolute;
+  width: 60px;
+  height: 62px;
+  left: 0px;
+  top: 10.746px;
+  overflow: visible;
 }
