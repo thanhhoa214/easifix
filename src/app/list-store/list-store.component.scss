@@ -1,7 +1,2211 @@
-.list-horizontal {
-    max-width: 100vw;
-    overflow: auto;
+.mediaViewInfo {
+	--web-view-name: list-store;
+	--web-view-id: list-store;
+	--web-scale-on-resize: true;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-enable-deep-linking: true;
 }
-.w-5rem{
-    width: 5rem;
+:root {
+	--web-view-ids: list-store;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+.list-store_Class {
+	position: absolute;
+	width: 360px;
+	height: 1493px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: list-store;
+	--web-view-id: list-store;
+	--web-scale-on-resize: true;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+.Component_15__1_Class {
+	position: absolute;
+	width: 1129.174px;
+	height: 680.36px;
+	left: -525.334px;
+	top: -469.36px;
+	overflow: visible;
+}
+.Group_9752_Class {
+	position: absolute;
+	width: 1129.174px;
+	height: 680.36px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Background_Class {
+	fill: rgba(51,191,154,1);
+}
+.Background {
+	overflow: visible;
+	position: absolute;
+	width: 1129.174px;
+	height: 680.36px;
+	transform: translate(0px, 0px) matrix(1,0,0,1,0,0) rotate(180deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Cart_Class {
+	fill: rgba(255,255,255,1);
+}
+.Cart {
+	position: absolute;
+	overflow: visible;
+	width: 360px;
+	height: 725px;
+	left: 0px;
+	top: 82px;
+}
+.Header1_Class {
+	position: absolute;
+	width: 252px;
+	height: 20px;
+	left: 16px;
+	top: 51px;
+	overflow: visible;
+}
+.Fixing_Time_Class {
+	left: 91px;
+	top: 2px;
+	position: absolute;
+	overflow: visible;
+	width: 162px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.7142857360839844px;
+	text-transform: uppercase;
+}
+.back_icon_Class {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Group_10343_Class {
+	position: absolute;
+	width: 354.34px;
+	height: 42.5px;
+	left: -3.84px;
+	top: 144px;
+	overflow: visible;
+}
+.Group_9684_Class {
+	position: absolute;
+	width: 70.151px;
+	height: 25.054px;
+	left: 65.69px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_3346_Class {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(121,121,121,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Path_3346 {
+	overflow: visible;
+	position: absolute;
+	width: 70.15px;
+	height: 25.054px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Gn_y_Class {
+	left: 11.805px;
+	top: 6px;
+	position: absolute;
+	overflow: visible;
+	width: 47px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -1px;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 12px;
+	color: rgba(64,64,64,1);
+}
+.Group_10340_Class {
+	position: absolute;
+	width: 51.107px;
+	height: 25.054px;
+	left: 15.5px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_3346_co_Class {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(121,121,121,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Path_3346_co {
+	overflow: visible;
+	position: absolute;
+	width: 51.107px;
+	height: 25.054px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_10347_Class {
+	position: absolute;
+	width: 35px;
+	height: 14px;
+	left: 8.5px;
+	top: 6px;
+	overflow: visible;
+}
+.back_icon_cq_Class {
+	position: absolute;
+	width: 9px;
+	height: 10px;
+	left: 26px;
+	top: 2px;
+	overflow: visible;
+}
+.Lc_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 21px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -1px;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 12px;
+	color: rgba(80,80,80,1);
+}
+.Group_10342_Class {
+	position: absolute;
+	width: 57.056px;
+	height: 25.054px;
+	left: 135.159px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_3346_ct_Class {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(121,121,121,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Path_3346_ct {
+	overflow: visible;
+	position: absolute;
+	width: 57.057px;
+	height: 25.054px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.ID5_sao_Class {
+	left: 12.948px;
+	top: 6px;
+	position: absolute;
+	overflow: visible;
+	width: 31px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -1px;
+	text-align: center;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 12px;
+	color: rgba(80,80,80,1);
+}
+.Line_81_Class {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_81 {
+	overflow: visible;
+	position: absolute;
+	width: 354.34px;
+	height: 1px;
+	left: 0px;
+	top: 42.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Item_Class {
+	position: absolute;
+	width: 354.8px;
+	height: 1262px;
+	left: 5px;
+	top: 170px;
+	overflow: hidden;
+}
+.Item_cx_Class {
+	position: absolute;
+	width: 375px;
+	height: 125.5px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_2449_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2449 {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 125px;
+	left: 0px;
+	top: 0px;
+}
+.ID1_Class {
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	left: 9px;
+	top: 15px;
+	overflow: visible;
+}
+.Line_82_Class {
+	fill: transparent;
+	stroke: rgba(189,189,189,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_82 {
+	overflow: visible;
+	position: absolute;
+	width: 357px;
+	height: 1px;
+	left: 9.5px;
+	top: 125.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Sa_my_lnh_Vit_Long_Class {
+	left: 132px;
+	top: 21px;
+	position: absolute;
+	overflow: visible;
+	width: 160px;
+	white-space: nowrap;
+	line-height: 18px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(64,64,64,1);
+}
+.Group_10344_Class {
+	position: absolute;
+	width: 102px;
+	height: 11px;
+	left: 132px;
+	top: 65px;
+	overflow: visible;
+}
+.star_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 7px;
+	top: 0px;
+	overflow: visible;
+}
+.ID5_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 7px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Path_2971_Class {
+	fill: rgba(51,191,154,1);
+}
+.Path_2971 {
+	overflow: visible;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 25.088px;
+	top: 0.076px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.ID5_pht__16km_Class {
+	left: 38px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 65px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.My_lnh_Class {
+	left: 132px;
+	top: 45px;
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Group_10346_Class {
+	position: absolute;
+	width: 121px;
+	height: 11px;
+	left: 132px;
+	top: 84px;
+	overflow: visible;
+}
+.gift-box_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Nhp_TDEF20_gim_20k_Class {
+	left: 14px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 108px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Item_db_Class {
+	position: absolute;
+	width: 375px;
+	height: 125.5px;
+	left: 0px;
+	top: 126px;
+	overflow: visible;
+}
+.Rectangle_2449_dc_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2449_dc {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 125px;
+	left: 0px;
+	top: 0px;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: list_store_detail.html;
+	cursor: pointer;
+}
+.ID1586340163_logo-01_Class {
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	left: 9px;
+	top: 15px;
+	overflow: visible;
+}
+.Line_82_de_Class {
+	fill: transparent;
+	stroke: rgba(189,189,189,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_82_de {
+	overflow: visible;
+	position: absolute;
+	width: 357px;
+	height: 1px;
+	left: 9.5px;
+	top: 125.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.in_lnh_Ton_ng_Class {
+	left: 132px;
+	top: 21px;
+	position: absolute;
+	overflow: visible;
+	width: 139px;
+	white-space: nowrap;
+	line-height: 18px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(64,64,64,1);
+}
+.Group_10344_dg_Class {
+	position: absolute;
+	width: 99px;
+	height: 11px;
+	left: 132px;
+	top: 65px;
+	overflow: visible;
+}
+.star_dh_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 7px;
+	top: 0px;
+	overflow: visible;
+}
+.ID5_di_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 7px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Path_2971_dj_Class {
+	fill: rgba(51,191,154,1);
+}
+.Path_2971_dj {
+	overflow: visible;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 25.088px;
+	top: 0.076px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.ID25_pht__5km_Class {
+	left: 38px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 62px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.My_lnh_my_git_t_lnh_Class {
+	left: 132px;
+	top: 45px;
+	position: absolute;
+	overflow: visible;
+	width: 121px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Group_10346_dm_Class {
+	position: absolute;
+	width: 121px;
+	height: 11px;
+	left: 132px;
+	top: 84px;
+	overflow: visible;
+}
+.gift-box_dn_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Nhp_TDEF40_gim_40k_Class {
+	left: 14px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 108px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Item_dp_Class {
+	position: absolute;
+	width: 375px;
+	height: 125.5px;
+	left: 0px;
+	top: 252px;
+	overflow: visible;
+}
+.Rectangle_2449_dq_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2449_dq {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 125px;
+	left: 0px;
+	top: 0px;
+}
+.icon-thuan-nhu-y-1_Class {
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	left: 9px;
+	top: 15px;
+	overflow: visible;
+}
+.Line_82_ds_Class {
+	fill: transparent;
+	stroke: rgba(189,189,189,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_82_ds {
+	overflow: visible;
+	position: absolute;
+	width: 357px;
+	height: 1px;
+	left: 9.5px;
+	top: 125.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Sa_my_git_qun_Th_c_Class {
+	left: 132px;
+	top: 21px;
+	position: absolute;
+	overflow: visible;
+	width: 188px;
+	white-space: nowrap;
+	line-height: 18px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(64,64,64,1);
+}
+.Group_10344_du_Class {
+	position: absolute;
+	width: 108px;
+	height: 11px;
+	left: 132px;
+	top: 65px;
+	overflow: visible;
+}
+.star_dv_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 7px;
+	top: 0px;
+	overflow: visible;
+}
+.ID5_dw_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 7px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Path_2971_dx_Class {
+	fill: rgba(51,191,154,1);
+}
+.Path_2971_dx {
+	overflow: visible;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 25.088px;
+	top: 0.076px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.ID10_pht__24km_Class {
+	left: 38px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 71px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.My_git_Class {
+	left: 132px;
+	top: 45px;
+	position: absolute;
+	overflow: visible;
+	width: 39px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Group_10346_d_Class {
+	position: absolute;
+	width: 121px;
+	height: 11px;
+	left: 132px;
+	top: 84px;
+	overflow: visible;
+}
+.gift-box_d_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Nhp_TDEF20_gim_20k_d_Class {
+	left: 14px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 108px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Item_d_Class {
+	position: absolute;
+	width: 375px;
+	height: 125.5px;
+	left: 0px;
+	top: 378px;
+	overflow: visible;
+}
+.Rectangle_2449_d_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2449_d {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 125px;
+	left: 0px;
+	top: 0px;
+}
+.vietlong_Class {
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	left: 9px;
+	top: 15px;
+	overflow: visible;
+}
+.Line_82_d_Class {
+	fill: transparent;
+	stroke: rgba(189,189,189,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_82_d {
+	overflow: visible;
+	position: absolute;
+	width: 357px;
+	height: 1px;
+	left: 9.5px;
+	top: 125.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Sa_my_lnh_qun_Th_c_Class {
+	left: 132px;
+	top: 21px;
+	position: absolute;
+	overflow: visible;
+	width: 192px;
+	white-space: nowrap;
+	line-height: 18px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(64,64,64,1);
+}
+.Group_10344_d_Class {
+	position: absolute;
+	width: 102px;
+	height: 11px;
+	left: 132px;
+	top: 65px;
+	overflow: visible;
+}
+.star_d_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 7px;
+	top: 0px;
+	overflow: visible;
+}
+.ID5_ea_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 7px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Path_2971_eb_Class {
+	fill: rgba(51,191,154,1);
+}
+.Path_2971_eb {
+	overflow: visible;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 25.088px;
+	top: 0.076px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.ID5_pht__16km_ec_Class {
+	left: 38px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 65px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.My_lnh_ed_Class {
+	left: 132px;
+	top: 45px;
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Group_10346_ee_Class {
+	position: absolute;
+	width: 121px;
+	height: 11px;
+	left: 132px;
+	top: 84px;
+	overflow: visible;
+}
+.gift-box_ef_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Nhp_TDEF20_gim_20k_eg_Class {
+	left: 14px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 108px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Item_eh_Class {
+	position: absolute;
+	width: 375px;
+	height: 125.5px;
+	left: 0px;
+	top: 504px;
+	overflow: visible;
+}
+.Rectangle_2449_ei_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2449_ei {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 125px;
+	left: 0px;
+	top: 0px;
+}
+.vietlong_ej_Class {
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	left: 9px;
+	top: 15px;
+	overflow: visible;
+}
+.Line_82_ek_Class {
+	fill: transparent;
+	stroke: rgba(189,189,189,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_82_ek {
+	overflow: visible;
+	position: absolute;
+	width: 357px;
+	height: 1px;
+	left: 9.5px;
+	top: 125.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Sa_my_lnh_qun_Th_c_el_Class {
+	left: 132px;
+	top: 21px;
+	position: absolute;
+	overflow: visible;
+	width: 192px;
+	white-space: nowrap;
+	line-height: 18px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(64,64,64,1);
+}
+.Group_10344_em_Class {
+	position: absolute;
+	width: 102px;
+	height: 11px;
+	left: 132px;
+	top: 65px;
+	overflow: visible;
+}
+.star_en_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 7px;
+	top: 0px;
+	overflow: visible;
+}
+.ID5_eo_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 7px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Path_2971_ep_Class {
+	fill: rgba(51,191,154,1);
+}
+.Path_2971_ep {
+	overflow: visible;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 25.088px;
+	top: 0.076px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.ID5_pht__16km_eq_Class {
+	left: 38px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 65px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.My_lnh_er_Class {
+	left: 132px;
+	top: 45px;
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Group_10346_es_Class {
+	position: absolute;
+	width: 121px;
+	height: 11px;
+	left: 132px;
+	top: 84px;
+	overflow: visible;
+}
+.gift-box_et_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Nhp_TDEF20_gim_20k_eu_Class {
+	left: 14px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 108px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Item_ev_Class {
+	position: absolute;
+	width: 375px;
+	height: 125.5px;
+	left: 0px;
+	top: 630px;
+	overflow: visible;
+}
+.Rectangle_2449_ew_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2449_ew {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 125px;
+	left: 0px;
+	top: 0px;
+}
+.vietlong_ex_Class {
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	left: 9px;
+	top: 15px;
+	overflow: visible;
+}
+.Line_82_ey_Class {
+	fill: transparent;
+	stroke: rgba(189,189,189,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_82_ey {
+	overflow: visible;
+	position: absolute;
+	width: 357px;
+	height: 1px;
+	left: 9.5px;
+	top: 125.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Sa_my_lnh_qun_Th_c_ez_Class {
+	left: 132px;
+	top: 21px;
+	position: absolute;
+	overflow: visible;
+	width: 192px;
+	white-space: nowrap;
+	line-height: 18px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(64,64,64,1);
+}
+.Group_10344_e_Class {
+	position: absolute;
+	width: 102px;
+	height: 11px;
+	left: 132px;
+	top: 65px;
+	overflow: visible;
+}
+.star_e_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 7px;
+	top: 0px;
+	overflow: visible;
+}
+.ID5_e_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 7px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Path_2971_e_Class {
+	fill: rgba(51,191,154,1);
+}
+.Path_2971_e {
+	overflow: visible;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 25.088px;
+	top: 0.076px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.ID5_pht__16km_e_Class {
+	left: 38px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 65px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.My_lnh_e_Class {
+	left: 132px;
+	top: 45px;
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Group_10346_e_Class {
+	position: absolute;
+	width: 121px;
+	height: 11px;
+	left: 132px;
+	top: 84px;
+	overflow: visible;
+}
+.gift-box_e_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Nhp_TDEF20_gim_20k_e_Class {
+	left: 14px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 108px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Item_e_Class {
+	position: absolute;
+	width: 375px;
+	height: 125.5px;
+	left: 0px;
+	top: 756px;
+	overflow: visible;
+}
+.Rectangle_2449_fa_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2449_fa {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 125px;
+	left: 0px;
+	top: 0px;
+}
+.vietlong_fb_Class {
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	left: 9px;
+	top: 15px;
+	overflow: visible;
+}
+.Line_82_fc_Class {
+	fill: transparent;
+	stroke: rgba(189,189,189,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_82_fc {
+	overflow: visible;
+	position: absolute;
+	width: 357px;
+	height: 1px;
+	left: 9.5px;
+	top: 125.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Sa_my_lnh_qun_Th_c_fd_Class {
+	left: 132px;
+	top: 21px;
+	position: absolute;
+	overflow: visible;
+	width: 192px;
+	white-space: nowrap;
+	line-height: 18px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(64,64,64,1);
+}
+.Group_10344_fe_Class {
+	position: absolute;
+	width: 102px;
+	height: 11px;
+	left: 132px;
+	top: 65px;
+	overflow: visible;
+}
+.star_ff_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 7px;
+	top: 0px;
+	overflow: visible;
+}
+.ID5_fg_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 7px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Path_2971_fh_Class {
+	fill: rgba(51,191,154,1);
+}
+.Path_2971_fh {
+	overflow: visible;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 25.088px;
+	top: 0.076px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.ID5_pht__16km_fi_Class {
+	left: 38px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 65px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.My_lnh_fj_Class {
+	left: 132px;
+	top: 45px;
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Group_10346_fk_Class {
+	position: absolute;
+	width: 121px;
+	height: 11px;
+	left: 132px;
+	top: 84px;
+	overflow: visible;
+}
+.gift-box_fl_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Nhp_TDEF20_gim_20k_fm_Class {
+	left: 14px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 108px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Item_fn_Class {
+	position: absolute;
+	width: 375px;
+	height: 125.5px;
+	left: 0px;
+	top: 882px;
+	overflow: visible;
+}
+.Rectangle_2449_fo_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2449_fo {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 125px;
+	left: 0px;
+	top: 0px;
+}
+.vietlong_fp_Class {
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	left: 9px;
+	top: 15px;
+	overflow: visible;
+}
+.Line_82_fq_Class {
+	fill: transparent;
+	stroke: rgba(189,189,189,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_82_fq {
+	overflow: visible;
+	position: absolute;
+	width: 357px;
+	height: 1px;
+	left: 9.5px;
+	top: 125.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Sa_my_lnh_qun_Th_c_fr_Class {
+	left: 132px;
+	top: 21px;
+	position: absolute;
+	overflow: visible;
+	width: 192px;
+	white-space: nowrap;
+	line-height: 18px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(64,64,64,1);
+}
+.Group_10344_fs_Class {
+	position: absolute;
+	width: 102px;
+	height: 11px;
+	left: 132px;
+	top: 65px;
+	overflow: visible;
+}
+.star_ft_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 7px;
+	top: 0px;
+	overflow: visible;
+}
+.ID5_fu_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 7px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Path_2971_fv_Class {
+	fill: rgba(51,191,154,1);
+}
+.Path_2971_fv {
+	overflow: visible;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 25.088px;
+	top: 0.076px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.ID5_pht__16km_fw_Class {
+	left: 38px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 65px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.My_lnh_fx_Class {
+	left: 132px;
+	top: 45px;
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Group_10346_fy_Class {
+	position: absolute;
+	width: 121px;
+	height: 11px;
+	left: 132px;
+	top: 84px;
+	overflow: visible;
+}
+.gift-box_fz_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Nhp_TDEF20_gim_20k_f_Class {
+	left: 14px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 108px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Item_f_Class {
+	position: absolute;
+	width: 375px;
+	height: 125.5px;
+	left: 0px;
+	top: 1008px;
+	overflow: visible;
+}
+.Rectangle_2449_f_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2449_f {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 125px;
+	left: 0px;
+	top: 0px;
+}
+.vietlong_f_Class {
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	left: 9px;
+	top: 15px;
+	overflow: visible;
+}
+.Line_82_f_Class {
+	fill: transparent;
+	stroke: rgba(189,189,189,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_82_f {
+	overflow: visible;
+	position: absolute;
+	width: 357px;
+	height: 1px;
+	left: 9.5px;
+	top: 125.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Sa_my_lnh_qun_Th_c_f_Class {
+	left: 132px;
+	top: 21px;
+	position: absolute;
+	overflow: visible;
+	width: 192px;
+	white-space: nowrap;
+	line-height: 18px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(64,64,64,1);
+}
+.Group_10344_f_Class {
+	position: absolute;
+	width: 102px;
+	height: 11px;
+	left: 132px;
+	top: 65px;
+	overflow: visible;
+}
+.star_f_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 7px;
+	top: 0px;
+	overflow: visible;
+}
+.ID5_f_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 7px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Path_2971_f_Class {
+	fill: rgba(51,191,154,1);
+}
+.Path_2971_f {
+	overflow: visible;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 25.088px;
+	top: 0.076px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.ID5_pht__16km_ga_Class {
+	left: 38px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 65px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.My_lnh_gb_Class {
+	left: 132px;
+	top: 45px;
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Group_10346_gc_Class {
+	position: absolute;
+	width: 121px;
+	height: 11px;
+	left: 132px;
+	top: 84px;
+	overflow: visible;
+}
+.gift-box_gd_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Nhp_TDEF20_gim_20k_ge_Class {
+	left: 14px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 108px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Item_gf_Class {
+	position: absolute;
+	width: 375px;
+	height: 125.5px;
+	left: 0px;
+	top: 1134px;
+	overflow: visible;
+}
+.Rectangle_2449_gg_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2449_gg {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 125px;
+	left: 0px;
+	top: 0px;
+}
+.vietlong_gh_Class {
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	left: 9px;
+	top: 15px;
+	overflow: visible;
+}
+.Line_82_gi_Class {
+	fill: transparent;
+	stroke: rgba(189,189,189,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_82_gi {
+	overflow: visible;
+	position: absolute;
+	width: 357px;
+	height: 1px;
+	left: 9.5px;
+	top: 125.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Sa_my_lnh_qun_Th_c_gj_Class {
+	left: 132px;
+	top: 21px;
+	position: absolute;
+	overflow: visible;
+	width: 192px;
+	white-space: nowrap;
+	line-height: 18px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(64,64,64,1);
+}
+.Group_10344_gk_Class {
+	position: absolute;
+	width: 102px;
+	height: 11px;
+	left: 132px;
+	top: 65px;
+	overflow: visible;
+}
+.star_gl_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 7px;
+	top: 0px;
+	overflow: visible;
+}
+.ID5_gm_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 7px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Path_2971_gn_Class {
+	fill: rgba(51,191,154,1);
+}
+.Path_2971_gn {
+	overflow: visible;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 25.088px;
+	top: 0.077px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.ID5_pht__16km_go_Class {
+	left: 38px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 65px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.My_lnh_gp_Class {
+	left: 132px;
+	top: 45px;
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Group_10346_gq_Class {
+	position: absolute;
+	width: 121px;
+	height: 11px;
+	left: 132px;
+	top: 84px;
+	overflow: visible;
+}
+.gift-box_gr_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Nhp_TDEF20_gim_20k_gs_Class {
+	left: 14px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 108px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Item_gt_Class {
+	position: absolute;
+	width: 375px;
+	height: 125.5px;
+	left: 0px;
+	top: 1260px;
+	overflow: visible;
+}
+.Rectangle_2449_gu_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_2449_gu {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 125px;
+	left: 0px;
+	top: 0px;
+}
+.vietlong_gv_Class {
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	left: 9px;
+	top: 15px;
+	overflow: visible;
+}
+.Line_82_gw_Class {
+	fill: transparent;
+	stroke: rgba(189,189,189,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_82_gw {
+	overflow: visible;
+	position: absolute;
+	width: 357px;
+	height: 1px;
+	left: 9.5px;
+	top: 125.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Sa_my_lnh_qun_Th_c_gx_Class {
+	left: 132px;
+	top: 21px;
+	position: absolute;
+	overflow: visible;
+	width: 192px;
+	white-space: nowrap;
+	line-height: 18px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(64,64,64,1);
+}
+.Group_10344_gy_Class {
+	position: absolute;
+	width: 102px;
+	height: 11px;
+	left: 132px;
+	top: 65px;
+	overflow: visible;
+}
+.star_gz_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 7px;
+	top: 0px;
+	overflow: visible;
+}
+.ID5_g_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 7px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Path_2971_g_Class {
+	fill: rgba(51,191,154,1);
+}
+.Path_2971_g {
+	overflow: visible;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 25.088px;
+	top: 0.077px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.ID5_pht__16km_g_Class {
+	left: 38px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 65px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.My_lnh_g_Class {
+	left: 132px;
+	top: 45px;
+	position: absolute;
+	overflow: visible;
+	width: 42px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Group_10346_g_Class {
+	position: absolute;
+	width: 121px;
+	height: 11px;
+	left: 132px;
+	top: 84px;
+	overflow: visible;
+}
+.gift-box_g_Class {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Nhp_TDEF20_gim_20k_g_Class {
+	left: 14px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 108px;
+	white-space: nowrap;
+	line-height: 14px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 10px;
+	color: rgba(80,80,80,1);
+}
+.Group_9773_Class {
+	position: absolute;
+	width: 340px;
+	height: 38px;
+	left: 10px;
+	top: 94px;
+	overflow: visible;
+}
+.CTA_Class {
+	position: absolute;
+	width: 340px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_5_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectangle_5 {
+	filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.102));
+	position: absolute;
+	overflow: visible;
+	width: 385px;
+	height: 83px;
+	left: 0px;
+	top: 0px;
+}
+.My_git_ha_Class {
+	left: 13px;
+	top: 13px;
+	position: absolute;
+	overflow: visible;
+	width: 267px;
+	height: 14px;
+	line-height: 16px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: rgba(189,189,189,1);
+}
+.tam_Class {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 305px;
+	top: 4px;
+	overflow: visible;
+}
+.tam_hc_Class {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
 }
