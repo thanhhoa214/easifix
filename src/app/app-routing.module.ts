@@ -94,13 +94,10 @@ const routes: Routes = [
     component: PolicyScreenComponent,
   },
   {
-<<<<<<< HEAD
     path: 'store-screen',
     component: PolicyScreenComponent,
-=======
-    path: 'success',
-    component: SuccessComponent,
   },
+  { path: 'success', component: SuccessComponent },
   { path: 'list-address', component: ListAddressComponent },
   { path: 'create-address', component: CreateAddressComponent },
   { path: 'history-ongoing', component: HistoryOngoingComponent },
@@ -127,7 +124,6 @@ const routes: Routes = [
   {
     path: 'home-list-store',
     component: HomeListStoreComponent,
->>>>>>> develop
   },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
