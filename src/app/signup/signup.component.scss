@@ -30,7 +30,6 @@
   height: 16.669px;
   left: 15px;
   top: 14.331px;
-  overflow: visible;
 }
 #Battery {
   position: absolute;
@@ -38,7 +37,6 @@
   height: 11.333px;
   left: 303px;
   top: 0.003px;
-  overflow: visible;
 }
 #Border {
   fill: rgba(0, 0, 0, 0);
@@ -51,7 +49,7 @@
 }
 .Border {
   position: absolute;
-  overflow: visible;
+
   width: 22px;
   height: 11.333px;
   left: 0;
@@ -61,7 +59,6 @@
   fill: rgba(255, 255, 255, 1);
 }
 .Cap {
-  overflow: visible;
   position: absolute;
   width: 1.328px;
   height: 4px;
@@ -74,7 +71,7 @@
 }
 .Capacity {
   position: absolute;
-  overflow: visible;
+
   width: 18px;
   height: 7.333px;
   left: 2px;
@@ -85,7 +82,6 @@
   fill: rgba(255, 255, 255, 1);
 }
 .Wifi {
-  overflow: visible;
   position: absolute;
   width: 15.272px;
   height: 10.966px;
@@ -97,7 +93,6 @@
   fill: rgba(255, 255, 255, 1);
 }
 .Cellular_Connection {
-  overflow: visible;
   position: absolute;
   width: 17px;
   height: 10.667px;
@@ -111,13 +106,12 @@
   height: 16px;
   left: 0;
   top: 0.669px;
-  overflow: visible;
 }
 #_Time {
   left: 0;
   top: 0;
   position: absolute;
-  overflow: visible;
+
   width: 55px;
   height: 16px;
   text-align: center;
@@ -133,7 +127,6 @@
   height: 325px;
   left: 20px;
   top: 234.832px;
-  overflow: visible;
 }
 #Enter_number {
   position: absolute;
@@ -141,7 +134,6 @@
   height: 65px;
   left: 0;
   top: 80px;
-  overflow: visible;
 }
 #bg {
   fill: rgba(255, 255, 255, 1);
@@ -149,7 +141,7 @@
 .bg {
   filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.102));
   position: absolute;
-  overflow: visible;
+
   width: 364px;
   height: 110px;
   left: 0;
@@ -159,7 +151,7 @@
   left: 107px;
   top: 25px;
   position: absolute;
-  overflow: visible;
+
   width: 171px;
   white-space: nowrap;
   text-align: left;
@@ -175,7 +167,7 @@
   width: 65px;
   height: 1px;
   position: absolute;
-  overflow: visible;
+
   transform: translate(0px, 0) matrix(1, 0, 0, 1, 69.2252, 32) rotate(270deg);
   transform-origin: center;
 }
@@ -185,13 +177,12 @@
   height: 20px;
   left: 9px;
   top: 102px;
-  overflow: visible;
 }
 #ID880 {
   left: 29px;
   top: 0;
   position: absolute;
-  overflow: visible;
+
   width: 41px;
   white-space: nowrap;
   line-height: 24px;
@@ -206,7 +197,6 @@
   fill: rgba(214, 214, 214, 1);
 }
 .Path_407 {
-  overflow: visible;
   position: absolute;
   width: 11.993px;
   height: 6.663px;
@@ -221,13 +211,12 @@
   height: 18.655px;
   left: 0;
   top: 1px;
-  overflow: visible;
 }
 #By_creating_an_account_you_agr {
   left: 0;
   top: 192px;
   position: absolute;
-  overflow: visible;
+
   width: 321px;
   height: 29px;
   text-align: left;
@@ -242,7 +231,6 @@
   height: 55px;
   left: 0.5px;
   top: 270px;
-  overflow: visible;
 }
 #Rectangle_5 {
   fill: rgba(255, 255, 255, 1);
@@ -250,7 +238,7 @@
 .Rectangle_5 {
   filter: drop-shadow(0px 5px 15px rgba(48, 48, 48, 0.102));
   position: absolute;
-  overflow: visible;
+
   width: 364px;
   height: 100px;
   left: 0;
@@ -260,7 +248,7 @@
   left: 39px;
   top: 18px;
   position: absolute;
-  overflow: visible;
+
   width: 67px;
   height: 20px;
   line-height: 24px;
@@ -277,7 +265,6 @@
   height: 19.078px;
   left: 257.44px;
   top: 17.619px;
-  overflow: visible;
 }
 #arrow-right {
   position: absolute;
@@ -285,7 +272,6 @@
   height: 19.078px;
   left: 0;
   top: 0;
-  overflow: visible;
 }
 #Shape {
   fill: rgba(0, 0, 0, 0);
@@ -297,7 +283,6 @@
   shape-rendering: auto;
 }
 .Shape {
-  overflow: visible;
   position: absolute;
   width: 23.083px;
   height: 2px;
@@ -315,7 +300,6 @@
   shape-rendering: auto;
 }
 .Shape_c {
-  overflow: visible;
   position: absolute;
   width: 10.314px;
   height: 21.894px;
@@ -327,7 +311,7 @@
   left: 0;
   top: 0;
   position: absolute;
-  overflow: visible;
+
   width: 265px;
   white-space: nowrap;
   line-height: 28px;
@@ -344,13 +328,11 @@
   height: 680.36px;
   left: -513.334px;
   top: -495.302px;
-  overflow: visible;
 }
 #Background {
   fill: rgba(51, 191, 154, 1);
 }
 .Background {
-  overflow: visible;
   position: absolute;
   width: 1129.174px;
   height: 680.36px;
@@ -363,7 +345,7 @@
   left: 65.76px;
   top: 52.058px;
   position: absolute;
-  overflow: visible;
+
   width: 67px;
   white-space: nowrap;
   text-align: left;
@@ -380,13 +362,11 @@
   height: 13.511px;
   left: 30.887px;
   top: 53.057px;
-  overflow: visible;
 }
 #union {
   fill: rgba(255, 255, 255, 1);
 }
 .union {
-  overflow: visible;
   position: absolute;
   width: 16px;
   height: 13.511px;

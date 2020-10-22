@@ -31,7 +31,7 @@
   height: 16px;
   left: 21px;
   top: 612px;
-  overflow: visible;
+
   --web-animation: fadein 0.3s ease-out;
   --web-action-type: page;
   --web-action-target: signup.html;
@@ -41,7 +41,7 @@
   left: 0;
   top: 0;
   position: absolute;
-  overflow: visible;
+
   width: 33px;
   white-space: nowrap;
   text-align: center;
@@ -52,7 +52,7 @@
   left: 36px;
   top: 0;
   position: absolute;
-  overflow: visible;
+
   width: 113px;
   white-space: nowrap;
   text-align: center;
@@ -65,7 +65,7 @@
 }
 .Rectangle_2 {
   position: absolute;
-  overflow: visible;
+
   width: 210px;
   height: 74px;
   left: 15px;
@@ -77,14 +77,13 @@
   height: 9px;
   left: 156.5px;
   top: 488px;
-  overflow: visible;
 }
 #Oval {
   fill: rgba(51, 191, 154, 1);
 }
 .Oval {
   position: absolute;
-  overflow: visible;
+
   width: 9px;
   height: 9px;
   left: 0;
@@ -96,7 +95,7 @@
 }
 .Oval_Copy {
   position: absolute;
-  overflow: visible;
+
   width: 9px;
   height: 9px;
   left: 19px;
@@ -108,7 +107,7 @@
 }
 .Oval_Copy_2 {
   position: absolute;
-  overflow: visible;
+
   width: 9px;
   height: 9px;
   left: 38px;
@@ -118,7 +117,7 @@
   left: 20px;
   top: 50px;
   position: absolute;
-  overflow: visible;
+
   width: 280px;
   white-space: nowrap;
   line-height: 35px;
@@ -135,7 +134,7 @@
   height: 55px;
   left: 21px;
   top: 547px;
-  overflow: visible;
+
   --web-animation: fadein 0.3s ease-out;
   --web-action-type: page;
   --web-action-target: login.html;
@@ -147,14 +146,13 @@
   height: 55px;
   left: 0;
   top: 0;
-  overflow: visible;
 }
 #bg {
   fill: rgba(51, 191, 154, 1);
 }
 .bg {
   position: absolute;
-  overflow: visible;
+
   width: 319px;
   height: 55px;
   left: 0;
@@ -166,13 +164,12 @@
   height: 19.078px;
   left: 41px;
   top: 18.619px;
-  overflow: visible;
 }
 #Register_with_Phone {
   left: 0;
   top: 0.587px;
   position: absolute;
-  overflow: visible;
+
   width: 187px;
   white-space: nowrap;
   text-align: center;
@@ -187,7 +184,6 @@
   height: 19.078px;
   left: 216.439px;
   top: 0;
-  overflow: visible;
 }
 #arrow-right {
   position: absolute;
@@ -195,7 +191,6 @@
   height: 19.078px;
   left: 0;
   top: 0;
-  overflow: visible;
 }
 #Shape {
   fill: rgba(0, 0, 0, 0);
@@ -207,7 +202,6 @@
   shape-rendering: auto;
 }
 .Shape {
-  overflow: visible;
   position: absolute;
   width: 23.083px;
   height: 2px;
@@ -225,7 +219,6 @@
   shape-rendering: auto;
 }
 .Shape_ct {
-  overflow: visible;
   position: absolute;
   width: 10.314px;
   height: 21.894px;
@@ -239,5 +232,4 @@
   height: 290px;
   left: 0;
   top: 188px;
-  overflow: visible;
 }

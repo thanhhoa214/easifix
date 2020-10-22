@@ -78,7 +78,6 @@ body {
 hr {
   box-sizing: content-box;
   height: 0;
-  overflow: visible;
 }
 h1,
 h2,
@@ -228,7 +227,6 @@ textarea {
 }
 button,
 input {
-  overflow: visible;
 }
 button,
 select {
@@ -7414,7 +7412,7 @@ button.bg-dark:hover {
   position: static;
   width: auto;
   height: auto;
-  overflow: visible;
+
   clip: auto;
   white-space: normal;
 }
