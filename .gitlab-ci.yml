@@ -10,6 +10,7 @@ variables:
 build-apk:
   stage: build-apk
   script:
+    - cd /Users/hoanguyen/projects/fpt/easy-fix
     - echo "Build APK in Debug Mode"
     - npm run build:prod
     - npm run sync
