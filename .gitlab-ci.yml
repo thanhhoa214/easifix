@@ -10,13 +10,13 @@ variables:
 build-apk:
   stage: build-apk
   script:
-    - cd /Users/hoanguyen/projects/fpt/easy-fix
     - echo "Build APK in Debug Mode"
+    - npm install
     - npm run build:prod
     - npm run sync
     - cd $PWD/android
     - ./gradlew assembleDebug
-    - cp /Users/hoanguyen/projects/fpt/easy-fix/android/app/build/outputs/apk/debug/app-debug.apk ../easifix.apk
+    - cp app/build/outputs/apk/debug/app-debug.apk ../easifix.apk
 
   artifacts:
     paths:
