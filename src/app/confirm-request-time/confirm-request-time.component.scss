@@ -1693,6 +1693,19 @@
   top: 0px;
   overflow: visible;
 }
+#dat_lich {
+  line-height: 24px;
+  margin-top: -4px;
+  text-align: left;
+
+  font-weight: normal;
+  font-size: 16px;
+  color: rgba(36, 39, 43, 1);
+}
+.mat-button-toggle-checked {
+  color: white;
+  background-color: #009688;
+}
 #Thi_gian {
   left: 30px;
   top: 3px;
@@ -1750,26 +1763,26 @@
   width: 141px;
   height: 20px;
   left: 10px;
-  top: 50px;
+  top: 55px;
   overflow: visible;
 }
 #edit_icom {
   position: absolute;
   width: 22px;
   height: 20px;
-  left: 119px;
-  top: 0px;
+  left: 129px;
+  top: 10px;
   overflow: visible;
 }
 #Gi_630_-_830 {
-  left: 0px;
-  top: 2px;
+  left: 12px;
+  top: 10px;
   position: absolute;
   overflow: visible;
   width: 99px;
   white-space: nowrap;
   line-height: 35px;
-  margin-top: -10.5px;
+  margin-top: -8.5px;
   text-align: left;
 
   font-weight: normal;
@@ -1936,10 +1949,10 @@
 }
 #request-check {
   position: absolute;
-  width: 173.367px;
+  width: 200px;
   height: 20px;
   left: 20px;
-  top: 339px;
+  top: 325px;
   overflow: visible;
 }
 #check-icon {
@@ -1981,19 +1994,6 @@
   transform-origin: center;
   left: 0px;
   top: 0px;
-}
-#Yu_cu_Kim_tra_Dch_v {
-  left: 34px;
-  top: 5px;
-  position: absolute;
-  overflow: visible;
-  width: 115px;
-  white-space: nowrap;
-  text-align: left;
-
-  font-weight: normal;
-  font-size: 10px;
-  color: rgba(0, 0, 0, 1);
 }
 #error_outline-24px {
   fill: rgba(29, 155, 122, 1);
