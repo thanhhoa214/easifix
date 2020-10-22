@@ -18,11 +18,13 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatNativeDateModule } from '@angular/material/core';
 import { CdkColumnDef } from '@angular/cdk/table';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
 const componentModules = [
+  MatToolbarModule,
   MatButtonModule,
   MatDividerModule,
   MatButtonToggleModule,
