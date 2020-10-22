@@ -1,7 +1,11 @@
 <div id="confirm-request-time">
   <div id="Group_9672">
     <div id="Group_9752">
-      <svg class="Background" viewBox="0 0 1129.174 680.36">
+      <svg
+        class="Background"
+        viewBox="0 0 1129.174 680.36"
+        [routerLink]="['..']"
+      >
         <path
           id="Background"
           d="M 395.06494140625 680.3597412109375 C 395.06494140625 607.4232788085938 -153.3673095703125 618.2490234375 42.11847686767578 288.2914428710938 C 237.604248046875 -41.6683349609375 620.02734375 -107.2796630859375 719.0097045898438 190.3181762695313 C 817.9899291992188 487.9138488769531 1129.173828125 393.8937683105469 1129.173828125 239.3824462890625 L 1129.173828125 680.3597412109375 L 395.06494140625 680.3597412109375 Z"
@@ -16,6 +20,7 @@
         [routerLink]="['..', 'store-details']"
         id="back_icon"
         src="assets/back_icon.png"
+        [routerLink]="['..']"
         srcset="assets/back_icon.png 1x, assets/back_icon@2x.png 2x"
       />
     </div>
@@ -133,13 +138,13 @@
           aria-label="Font Style"
           value="a"
         >
-          <mat-button-toggle class="mx-2 border rounded-circle" value="a"
+          <mat-button-toggle class="mx-2 border rounded-lg" value="a"
             >Sáng</mat-button-toggle
           >
-          <mat-button-toggle class="mx-2 border rounded-circle"
+          <mat-button-toggle class="mx-2 border rounded-lg"
             >Trưa</mat-button-toggle
           >
-          <mat-button-toggle class="mx-2 border rounded-circle"
+          <mat-button-toggle class="mx-2 border rounded-lg"
             >Chiều</mat-button-toggle
           >
         </mat-button-toggle-group>
@@ -164,8 +169,13 @@
     />
   </div>
   <div id="request-check" class="ml-4">
-    <mat-checkbox class="mr-2"></mat-checkbox>
-    <span>Yêu cầu </span><b>Kiểm tra Dịch vụ</b>
+    <mat-checkbox
+      class="mr-2"
+      style="position: absolute; top: 0"
+    ></mat-checkbox>
+    <span style="position: absolute; top: -0.1rem" class="ml-4"
+      >Yêu cầu <b>Kiểm tra Dịch vụ</b></span
+    >
   </div>
   <div id="HoaNT_Progress_Bar" class="HoaNT_Progress_Bar">
     <svg class="Line_62" viewBox="0 0 20.514 1">
@@ -580,5 +590,5 @@
       </div>
     </div>
   </div>
-  <app-bottom-bar></app-bottom-bar>
 </div>
+<app-bottom-bar></app-bottom-bar>
