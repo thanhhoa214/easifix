@@ -37,8 +37,8 @@
   position: absolute;
   width: 1129.174px;
   height: 680.36px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Background {
@@ -49,10 +49,10 @@
   position: absolute;
   width: 1129.174px;
   height: 680.36px;
-  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform: translate(0px, 0) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
   transform-origin: center;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Header1 {
   position: absolute;
@@ -81,8 +81,8 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
   --web-animation: fadein 0.3s ease-out;
   --web-action-type: page;
@@ -93,7 +93,7 @@
   position: absolute;
   width: 360px;
   height: 188px;
-  left: 0px;
+  left: 0;
   top: 50px;
   overflow: visible;
 }
@@ -101,7 +101,7 @@
   position: absolute;
   width: 360px;
   height: 383px;
-  left: 0px;
+  left: 0;
   top: 211.848px;
   overflow: visible;
 }
@@ -119,8 +119,8 @@
   overflow: visible;
   width: 360px;
   height: 383px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Path_2974 {
   fill: rgba(218, 222, 227, 1);
@@ -209,8 +209,8 @@
   overflow: visible;
   width: 111px;
   height: 37px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #DEDANG {
   left: 17px;
@@ -258,8 +258,8 @@
   overflow: visible;
   width: 317px;
   height: 54px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #ButtonRoundedLargeGreen_cv {
   position: absolute;

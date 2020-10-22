@@ -36,8 +36,8 @@
   position: absolute;
   width: 1176.223px;
   height: 680.36px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Background {
@@ -51,8 +51,8 @@
   transform: translate(508.223px, 280.36px)
     matrix(1, 0, 0, 1, -508.2227, -280.3597) rotate(180deg);
   transform-origin: center;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Light_Status_Bar {
   position: absolute;
@@ -84,8 +84,8 @@
   overflow: visible;
   width: 22px;
   height: 11.333px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Cap {
   fill: rgba(255, 255, 255, 1);
@@ -120,7 +120,7 @@
   width: 15.272px;
   height: 10.966px;
   left: 302.694px;
-  top: 0px;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Cellular_Connection {
@@ -139,13 +139,13 @@
   position: absolute;
   width: 54px;
   height: 16px;
-  left: 0px;
+  left: 0;
   top: 0.669px;
   overflow: visible;
 }
 #_Time {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 55px;
@@ -184,8 +184,8 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
   --web-animation: fadein 0.3s ease-out;
   --web-action-type: page;
@@ -200,7 +200,7 @@
   position: absolute;
   width: 375px;
   height: 893.538px;
-  left: 0px;
+  left: 0;
   top: 80px;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -220,8 +220,8 @@
   overflow: visible;
   width: 134px;
   height: 5px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #a_ch {
   left: 9px;
@@ -239,7 +239,7 @@
   position: absolute;
   width: 375.5px;
   height: 120px;
-  left: 0px;
+  left: 0;
   top: 118px;
   overflow: visible;
 }
@@ -251,8 +251,8 @@
   overflow: visible;
   width: 375px;
   height: 120px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Line_60 {
   fill: transparent;
@@ -330,13 +330,13 @@
   position: absolute;
   width: 375px;
   height: 63px;
-  left: 0px;
+  left: 0;
   top: 661px;
   overflow: visible;
 }
 #Gi_nh {
   left: 9px;
-  top: 0px;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 53px;
@@ -350,7 +350,7 @@
   position: absolute;
   width: 375px;
   height: 40px;
-  left: 0px;
+  left: 0;
   top: 23px;
   overflow: visible;
 }
@@ -362,8 +362,8 @@
   overflow: visible;
   width: 375px;
   height: 40px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Khc {
   position: absolute;
@@ -387,8 +387,8 @@
   overflow: visible;
   width: 90px;
   height: 30px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Khc_c {
   left: 30px;
@@ -429,8 +429,8 @@
   overflow: visible;
   width: 90px;
   height: 30px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Nh_da {
   left: 33px;
@@ -465,8 +465,8 @@
   overflow: visible;
   width: 102px;
   height: 30px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #ni_lm_vic {
   left: 12px;
@@ -520,7 +520,7 @@
   width: 31.72px;
   height: 26.923px;
   left: 0.1px;
-  top: 0px;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #t_lm_a_ch_mc_nh {
@@ -573,8 +573,8 @@
   overflow: visible;
   width: 103px;
   height: 69px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Ko_v_t_ngay_a_ch_ca_bn {
   left: 5px;
@@ -608,15 +608,15 @@
   overflow: visible;
   width: 334px;
   height: 55px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #ButtonRoundedLargeGreen_dp {
   position: absolute;
   width: 334px;
   height: 55px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Group_10337 {
@@ -632,13 +632,13 @@
   fill: rgba(247, 247, 247, 1);
 }
 .Path_3058 {
-  filter: drop-shadow(0px -1px 0px rgba(2, 2, 2, 0.4));
+  filter: drop-shadow(0px -1px 0 rgba(2, 2, 2, 0.4));
   overflow: visible;
   position: absolute;
   width: 375px;
   height: 71.739px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Home_Indicator_ds {
@@ -657,8 +657,8 @@
   overflow: visible;
   width: 134px;
   height: 5px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Thong_TIn {
   position: absolute;
@@ -676,24 +676,24 @@
   position: absolute;
   width: 35.127px;
   height: 24.374px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #_x33__32_ {
   position: absolute;
   width: 35.127px;
   height: 24.374px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Group_10306 {
   position: absolute;
   width: 35.127px;
   height: 24.374px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3265 {
@@ -710,8 +710,8 @@
   position: absolute;
   width: 36.627px;
   height: 25.874px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Thng_tin {
@@ -745,7 +745,7 @@
   width: 25.115px;
   height: 27.398px;
   left: 5.807px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 #Path_3262 {
@@ -780,7 +780,7 @@
   position: absolute;
   width: 24.364px;
   height: 22.048px;
-  left: 0px;
+  left: 0;
   top: 2.283px;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -799,11 +799,11 @@
   width: 12.916px;
   height: 12.916px;
   left: 13.7px;
-  top: 0px;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Thng_bo {
-  left: 0px;
+  left: 0;
   top: 31px;
   position: absolute;
   overflow: visible;
@@ -842,8 +842,8 @@
   position: absolute;
   width: 25.716px;
   height: 31.341px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Lch_s {
@@ -877,7 +877,7 @@
   width: 25.359px;
   height: 32.685px;
   left: 13px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 #Group_10261 {
@@ -892,8 +892,8 @@
   position: absolute;
   width: 0.792px;
   height: 9.732px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3238 {
@@ -910,8 +910,8 @@
   position: absolute;
   width: 0.871px;
   height: 9.81px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10263 {
@@ -926,8 +926,8 @@
   position: absolute;
   width: 0.792px;
   height: 9.763px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3239 {
@@ -944,8 +944,8 @@
   position: absolute;
   width: 0.871px;
   height: 9.841px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10265 {
@@ -953,15 +953,15 @@
   width: 7.529px;
   height: 7.15px;
   left: 7.528px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 #Group_10264 {
   position: absolute;
   width: 7.529px;
   height: 7.15px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3240 {
@@ -978,8 +978,8 @@
   position: absolute;
   width: 7.652px;
   height: 7.229px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10267 {
@@ -987,15 +987,15 @@
   width: 7.529px;
   height: 7.15px;
   left: 14.264px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 #Group_10266 {
   position: absolute;
   width: 7.529px;
   height: 7.15px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3241 {
@@ -1012,8 +1012,8 @@
   position: absolute;
   width: 7.653px;
   height: 7.229px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10269 {
@@ -1028,8 +1028,8 @@
   position: absolute;
   width: 7.529px;
   height: 7.15px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3242 {
@@ -1046,8 +1046,8 @@
   position: absolute;
   width: 7.652px;
   height: 7.229px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10271 {
@@ -1062,8 +1062,8 @@
   position: absolute;
   width: 7.529px;
   height: 7.15px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3243 {
@@ -1080,8 +1080,8 @@
   position: absolute;
   width: 7.653px;
   height: 7.229px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10273 {
@@ -1096,8 +1096,8 @@
   position: absolute;
   width: 0.792px;
   height: 3.064px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3244 {
@@ -1114,8 +1114,8 @@
   position: absolute;
   width: 0.871px;
   height: 3.142px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10275 {
@@ -1130,8 +1130,8 @@
   position: absolute;
   width: 0.792px;
   height: 3.064px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3245 {
@@ -1148,8 +1148,8 @@
   position: absolute;
   width: 0.871px;
   height: 3.142px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10277 {
@@ -1164,8 +1164,8 @@
   position: absolute;
   width: 3.962px;
   height: 7.66px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3246 {
@@ -1182,8 +1182,8 @@
   position: absolute;
   width: 4.041px;
   height: 7.739px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10279 {
@@ -1198,8 +1198,8 @@
   position: absolute;
   width: 11.887px;
   height: 1.021px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3247 {
@@ -1216,8 +1216,8 @@
   position: absolute;
   width: 11.965px;
   height: 1.1px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10281 {
@@ -1232,8 +1232,8 @@
   position: absolute;
   width: 0.794px;
   height: 1.021px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3248 {
@@ -1250,8 +1250,8 @@
   position: absolute;
   width: 0.873px;
   height: 1.1px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10283 {
@@ -1266,8 +1266,8 @@
   position: absolute;
   width: 2.377px;
   height: 4.834px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3249 {
@@ -1284,8 +1284,8 @@
   position: absolute;
   width: 2.456px;
   height: 4.912px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10285 {
@@ -1300,8 +1300,8 @@
   position: absolute;
   width: 11.491px;
   height: 8.445px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3250 {
@@ -1318,8 +1318,8 @@
   position: absolute;
   width: 11.607px;
   height: 8.524px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10287 {
@@ -1334,8 +1334,8 @@
   position: absolute;
   width: 9.906px;
   height: 2.554px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3251 {
@@ -1352,15 +1352,15 @@
   position: absolute;
   width: 9.989px;
   height: 2.633px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10289 {
   position: absolute;
   width: 4.755px;
   height: 14.81px;
-  left: 0px;
+  left: 0;
   top: 17.364px;
   overflow: visible;
 }
@@ -1368,8 +1368,8 @@
   position: absolute;
   width: 4.755px;
   height: 14.81px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3252 {
@@ -1386,8 +1386,8 @@
   position: absolute;
   width: 4.833px;
   height: 14.888px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10291 {
@@ -1402,8 +1402,8 @@
   position: absolute;
   width: 8.446px;
   height: 2.523px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3253 {
@@ -1420,8 +1420,8 @@
   position: absolute;
   width: 8.531px;
   height: 2.602px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10293 {
@@ -1436,8 +1436,8 @@
   position: absolute;
   width: 2.377px;
   height: 5.076px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3254 {
@@ -1454,8 +1454,8 @@
   position: absolute;
   width: 2.456px;
   height: 5.155px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10295 {
@@ -1470,8 +1470,8 @@
   position: absolute;
   width: 7.009px;
   height: 2.585px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3255 {
@@ -1488,8 +1488,8 @@
   position: absolute;
   width: 7.098px;
   height: 2.664px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10297 {
@@ -1504,8 +1504,8 @@
   position: absolute;
   width: 4.359px;
   height: 1.021px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3256 {
@@ -1522,8 +1522,8 @@
   position: absolute;
   width: 4.437px;
   height: 1.1px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10299 {
@@ -1538,8 +1538,8 @@
   position: absolute;
   width: 5.777px;
   height: 1.521px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3257 {
@@ -1556,8 +1556,8 @@
   position: absolute;
   width: 5.857px;
   height: 1.6px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10301 {
@@ -1572,8 +1572,8 @@
   position: absolute;
   width: 1.063px;
   height: 1.051px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3258 {
@@ -1590,8 +1590,8 @@
   position: absolute;
   width: 1.146px;
   height: 1.129px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10303 {
@@ -1606,8 +1606,8 @@
   position: absolute;
   width: 0.958px;
   height: 1.033px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3259 {
@@ -1624,8 +1624,8 @@
   position: absolute;
   width: 1.039px;
   height: 1.112px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Group_10305 {
@@ -1640,8 +1640,8 @@
   position: absolute;
   width: 0.794px;
   height: 1.021px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_3260 {
@@ -1658,12 +1658,12 @@
   position: absolute;
   width: 0.873px;
   height: 1.1px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Mn_hnh_chnh {
-  left: 0px;
+  left: 0;
   top: 36.249px;
   position: absolute;
   overflow: visible;

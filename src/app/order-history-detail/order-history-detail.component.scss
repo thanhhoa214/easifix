@@ -37,8 +37,8 @@
   position: absolute;
   width: 1129.174px;
   height: 680.36px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Background {
@@ -49,10 +49,10 @@
   position: absolute;
   width: 1129.174px;
   height: 680.36px;
-  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform: translate(0px, 0) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
   transform-origin: center;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Path_2863 {
   fill: rgba(255, 255, 255, 1);
@@ -62,7 +62,7 @@
   position: absolute;
   width: 360px;
   height: 702.201px;
-  left: 0px;
+  left: 0;
   top: 50px;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -91,15 +91,15 @@
   overflow: visible;
   width: 362px;
   height: 135px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #info {
   position: absolute;
   width: 125px;
   height: 20px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Thng_tin_th {
@@ -121,8 +121,8 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #truong {
@@ -188,8 +188,8 @@
   position: absolute;
   width: 86px;
   height: 20px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Dch_V {
@@ -211,15 +211,15 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #choose_box {
   position: absolute;
   width: 320px;
   height: 50px;
-  left: 0px;
+  left: 0;
   top: 31px;
   overflow: visible;
 }
@@ -237,8 +237,8 @@
   position: absolute;
   width: 320px;
   height: 50px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Sa_t_lnh {
@@ -283,8 +283,8 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
   --web-animation: fadein 0.3s ease-out;
   --web-action-type: page;
@@ -300,8 +300,8 @@
   overflow: visible;
 }
 #Ph_tng_-_Gi {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 91px;
@@ -320,8 +320,8 @@
   overflow: visible;
 }
 #Ca_t_lnh {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 87px;
@@ -336,7 +336,7 @@
 }
 #ID2000000 {
   left: 225px;
-  top: 0px;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 86px;
@@ -358,8 +358,8 @@
   overflow: visible;
 }
 #Cng_thay_ {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 102px;
@@ -374,7 +374,7 @@
 }
 #ID200000 {
   left: 240px;
-  top: 0px;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 70px;
@@ -422,7 +422,7 @@
   overflow: visible;
 }
 #Tng_tin_sn_phm {
-  left: 0px;
+  left: 0;
   top: 1px;
   position: absolute;
   overflow: visible;
@@ -438,7 +438,7 @@
 }
 #ID2200000 {
   left: 238px;
-  top: 0px;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 81px;
@@ -455,13 +455,13 @@
   position: absolute;
   width: 318px;
   height: 19px;
-  left: 0px;
+  left: 0;
   top: 69px;
   overflow: visible;
 }
 #Khuyn_mi_gim {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   position: absolute;
   overflow: hidden;
   width: 115px;
@@ -476,7 +476,7 @@
 }
 #minus50000 {
   left: 242px;
-  top: 0px;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 77px;
@@ -498,8 +498,8 @@
   overflow: visible;
 }
 #TNG {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 73px;
@@ -514,7 +514,7 @@
 }
 #ID2150000 {
   left: 172px;
-  top: 0px;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 145.5px;
@@ -550,12 +550,12 @@
   width: 319px;
   height: 19px;
   left: 1px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 #M_Khuyn_Mi {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 128px;
@@ -570,7 +570,7 @@
 }
 #GIAM50K {
   left: 189px;
-  top: 0px;
+  top: 0;
   position: absolute;
   overflow: hidden;
   width: 131px;
@@ -587,7 +587,7 @@
   position: absolute;
   width: 360px;
   height: 60px;
-  left: 0px;
+  left: 0;
   top: 700px;
   overflow: visible;
 }
@@ -595,20 +595,20 @@
   fill: rgba(255, 255, 255, 1);
 }
 .home-bg {
-  filter: drop-shadow(0px -1px 0px rgba(0, 0, 0, 0.702));
+  filter: drop-shadow(0px -1px 0 rgba(0, 0, 0, 0.702));
   position: absolute;
   overflow: visible;
   width: 360px;
   height: 60px;
-  left: 0px;
+  left: 0;
   top: 1px;
 }
 #Home {
   position: absolute;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #home-component {
@@ -620,8 +620,8 @@
   overflow: visible;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #home-icon {
   position: absolute;
@@ -636,7 +636,7 @@
   width: 90px;
   height: 59px;
   left: 90px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 #history-component {
@@ -648,8 +648,8 @@
   overflow: visible;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Mask_Group_9887 {
   position: absolute;
@@ -664,7 +664,7 @@
   width: 90px;
   height: 59px;
   left: 180px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 #notify-component {
@@ -676,8 +676,8 @@
   overflow: visible;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #notify-icon {
   position: absolute;
@@ -692,7 +692,7 @@
   width: 90px;
   height: 59px;
   left: 270px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 #info-component {
@@ -704,8 +704,8 @@
   overflow: visible;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Mask_Group_9888 {
   position: absolute;

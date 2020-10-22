@@ -41,8 +41,8 @@
   position: absolute;
   width: 1129.174px;
   height: 680.36px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -55,10 +55,10 @@
   position: absolute;
   width: 1129.174px;
   height: 680.36px;
-  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform: translate(0px, 0) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
   transform-origin: center;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #Header1 {
@@ -75,7 +75,7 @@
   width: 12px;
   height: 20px;
   left: 323px;
-  top: 0px;
+  top: 0;
   overflow: visible;
   --web-animation: fadein 0.3s ease-out;
   --web-action-type: page;
@@ -103,8 +103,8 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
   --web-animation: fadein 0.3s ease-out;
   --web-action-type: page;
@@ -121,7 +121,7 @@
   position: absolute;
   width: 360px;
   height: 732px;
-  left: 0px;
+  left: 0;
   top: 50px;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -130,7 +130,7 @@
   position: absolute;
   width: 360px;
   height: 200px;
-  left: 0px;
+  left: 0;
   top: 50px;
   overflow: visible;
 }
@@ -139,8 +139,8 @@
   position: absolute;
   width: 360px;
   height: 200px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 

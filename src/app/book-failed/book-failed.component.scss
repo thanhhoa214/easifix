@@ -50,8 +50,8 @@
   position: absolute;
   width: 1129.174px;
   height: 680.36px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -64,10 +64,10 @@
   position: absolute;
   width: 1129.174px;
   height: 680.36px;
-  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform: translate(0px, 0) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
   transform-origin: center;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #bg {
@@ -80,7 +80,7 @@
   overflow: visible;
   width: 405px;
   height: 755px;
-  left: 0px;
+  left: 0;
   top: 50px;
 }
 
@@ -127,8 +127,8 @@
   overflow: visible;
   width: 162px;
   height: 42px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   --web-animation: fadein 0.3s ease-out;
   --web-action-type: page;
   --web-action-target: store_details.html;
@@ -256,7 +256,7 @@
   width: 20px;
   height: 21px;
   left: 159px;
-  top: 0px;
+  top: 0;
 }
 
 #Ellipse_496 {
@@ -275,7 +275,7 @@
   width: 21px;
   height: 21px;
   left: 119px;
-  top: 0px;
+  top: 0;
 }
 
 #Group_9920 {
@@ -296,8 +296,8 @@
   position: absolute;
   width: 8px;
   height: 9px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -345,7 +345,7 @@
   width: 20px;
   height: 21px;
   left: 80px;
-  top: 0px;
+  top: 0;
 }
 
 #request {
@@ -380,8 +380,8 @@
   position: absolute;
   width: 6.514px;
   height: 9px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -395,7 +395,7 @@
   width: 1.933px;
   height: 9px;
   left: 7.067px;
-  top: 0px;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -499,7 +499,7 @@
   width: 20px;
   height: 21px;
   left: 40px;
-  top: 0px;
+  top: 0;
 }
 
 #Mask_Group_9857 {
@@ -515,8 +515,8 @@
   position: absolute;
   width: 10px;
   height: 8px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -524,8 +524,8 @@
   position: absolute;
   width: 10px;
   height: 8px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -538,8 +538,8 @@
   position: absolute;
   width: 10px;
   height: 8px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -558,8 +558,8 @@
   overflow: visible;
   width: 21px;
   height: 21px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #menu {
@@ -575,8 +575,8 @@
   position: absolute;
   width: 11.077px;
   height: 8px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -589,7 +589,7 @@
   position: absolute;
   width: 11.077px;
   height: 0.923px;
-  left: 0px;
+  left: 0;
   top: 3.539px;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -603,8 +603,8 @@
   position: absolute;
   width: 11.077px;
   height: 0.923px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -617,7 +617,7 @@
   position: absolute;
   width: 11.077px;
   height: 0.923px;
-  left: 0px;
+  left: 0;
   top: 7.077px;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -665,8 +665,8 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -674,7 +674,7 @@
   position: absolute;
   width: 360px;
   height: 60px;
-  left: 0px;
+  left: 0;
   top: 700px;
   overflow: visible;
 }
@@ -684,12 +684,12 @@
 }
 
 .home-bg {
-  filter: drop-shadow(0px -1px 0px rgba(0, 0, 0, 0.702));
+  filter: drop-shadow(0px -1px 0 rgba(0, 0, 0, 0.702));
   position: absolute;
   overflow: visible;
   width: 360px;
   height: 60px;
-  left: 0px;
+  left: 0;
   top: 1px;
 }
 
@@ -697,8 +697,8 @@
   position: absolute;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -712,8 +712,8 @@
   overflow: visible;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #home-icon {
@@ -730,7 +730,7 @@
   width: 90px;
   height: 59px;
   left: 90px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -744,8 +744,8 @@
   overflow: visible;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #Mask_Group_9887 {
@@ -762,7 +762,7 @@
   width: 90px;
   height: 59px;
   left: 180px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -776,8 +776,8 @@
   overflow: visible;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #notify-icon {
@@ -794,7 +794,7 @@
   width: 90px;
   height: 59px;
   left: 270px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -808,8 +808,8 @@
   overflow: visible;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #Mask_Group_9888 {

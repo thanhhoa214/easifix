@@ -1,10 +1,11 @@
 #bottom-bar {
   position: fixed;
   width: 360px;
-  height: 60px;
-  left: 0px;
-  bottom: 0px;
-  overflow: visible;
+  height: 80px;
+  left: 0;
+  bottom: 50px;
+  overflow: hidden;
+  background-color: white;
 }
 
 #home-bg {
@@ -12,12 +13,12 @@
 }
 
 .home-bg {
-  filter: drop-shadow(0px -1px 0px rgba(0, 0, 0, 0.702));
+  filter: drop-shadow(0px -1px 0 rgba(0, 0, 0, 0.702));
   position: absolute;
   overflow: visible;
   width: 360px;
   height: 60px;
-  left: 0px;
+  left: 0;
   top: 1px;
 }
 
@@ -25,8 +26,8 @@
   position: absolute;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -40,8 +41,8 @@
   overflow: visible;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #home-icon {
@@ -58,7 +59,7 @@
   width: 90px;
   height: 59px;
   left: 90px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -72,8 +73,8 @@
   overflow: visible;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #Mask_Group_9887 {
@@ -90,7 +91,7 @@
   width: 90px;
   height: 59px;
   left: 180px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -104,8 +105,8 @@
   overflow: visible;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #notify-icon {
@@ -122,7 +123,7 @@
   width: 90px;
   height: 59px;
   left: 270px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -136,8 +137,8 @@
   overflow: visible;
   width: 90px;
   height: 59px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #Mask_Group_9888 {

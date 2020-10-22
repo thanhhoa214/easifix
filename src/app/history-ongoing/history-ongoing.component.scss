@@ -37,8 +37,8 @@
   position: absolute;
   width: 1129.174px;
   height: 680.36px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Background {
@@ -49,10 +49,10 @@
   position: absolute;
   width: 1129.174px;
   height: 680.36px;
-  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform: translate(0px, 0) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
   transform-origin: center;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Header1 {
   position: absolute;
@@ -63,8 +63,8 @@
   overflow: visible;
 }
 #Fixing_Time {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 65px;
@@ -85,7 +85,7 @@
   position: absolute;
   width: 360px;
   height: 698.363px;
-  left: 0px;
+  left: 0;
   top: 50px;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -151,7 +151,7 @@
   overflow: visible;
   width: 405px;
   height: 717px;
-  left: 0px;
+  left: 0;
   top: 110px;
 }
 #Home_Indicator {
@@ -170,8 +170,8 @@
   overflow: visible;
   width: 112px;
   height: 5px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Item {
   position: absolute;
@@ -189,8 +189,8 @@
   position: absolute;
   width: 326.5px;
   height: 149px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #in_lnh_Ton_ng {
@@ -276,8 +276,8 @@
   overflow: visible;
   width: 80px;
   height: 26px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Chi_tit {
   left: 21px;
@@ -344,14 +344,14 @@
   overflow: visible;
   width: 80px;
   height: 80px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #ID1586340163_logo-01 {
   position: absolute;
   width: 80px;
   height: 80px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }

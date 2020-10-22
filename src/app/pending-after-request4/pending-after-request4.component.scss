@@ -36,8 +36,8 @@
   position: absolute;
   width: 1129.174px;
   height: 680.36px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Background {
@@ -48,10 +48,10 @@
   position: absolute;
   width: 1129.174px;
   height: 680.36px;
-  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform: translate(0px, 0) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
   transform-origin: center;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Path_2860 {
   fill: rgba(255, 255, 255, 1);
@@ -61,7 +61,7 @@
   position: absolute;
   width: 360px;
   height: 674px;
-  left: 0px;
+  left: 0;
   top: 50px;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -160,7 +160,7 @@
   width: 20px;
   height: 21px;
   left: 159px;
-  top: 0px;
+  top: 0;
 }
 #Ellipse_496 {
   fill: rgba(255, 255, 255, 1);
@@ -177,7 +177,7 @@
   width: 21px;
   height: 21px;
   left: 119px;
-  top: 0px;
+  top: 0;
 }
 #Group_9920 {
   position: absolute;
@@ -195,8 +195,8 @@
   position: absolute;
   width: 8px;
   height: 9px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Path_2966 {
@@ -238,7 +238,7 @@
   width: 20px;
   height: 21px;
   left: 80px;
-  top: 0px;
+  top: 0;
 }
 #request {
   position: absolute;
@@ -268,8 +268,8 @@
   position: absolute;
   width: 6.514px;
   height: 9px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Path_2866 {
@@ -281,7 +281,7 @@
   width: 1.933px;
   height: 9px;
   left: 7.067px;
-  top: 0px;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Path_2867 {
@@ -371,7 +371,7 @@
   width: 20px;
   height: 21px;
   left: 40px;
-  top: 0px;
+  top: 0;
 }
 #Mask_Group_9857 {
   position: absolute;
@@ -385,16 +385,16 @@
   position: absolute;
   width: 10px;
   height: 8px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Group_9847 {
   position: absolute;
   width: 10px;
   height: 8px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_2888 {
@@ -405,8 +405,8 @@
   position: absolute;
   width: 10px;
   height: 8px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Ellipse_494 {
@@ -423,8 +423,8 @@
   overflow: visible;
   width: 21px;
   height: 21px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #menu {
   position: absolute;
@@ -438,8 +438,8 @@
   position: absolute;
   width: 11.077px;
   height: 8px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Path_2889 {
@@ -450,7 +450,7 @@
   position: absolute;
   width: 11.077px;
   height: 0.923px;
-  left: 0px;
+  left: 0;
   top: 3.539px;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -462,8 +462,8 @@
   position: absolute;
   width: 11.077px;
   height: 0.923px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Path_2891 {
@@ -474,7 +474,7 @@
   position: absolute;
   width: 11.077px;
   height: 0.923px;
-  left: 0px;
+  left: 0;
   top: 7.077px;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -517,8 +517,8 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #service {
@@ -533,8 +533,8 @@
   position: absolute;
   width: 86px;
   height: 20px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Dch_V {
@@ -556,15 +556,15 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #choose_box {
   position: absolute;
   width: 320px;
   height: 50px;
-  left: 0px;
+  left: 0;
   top: 31px;
   overflow: visible;
 }
@@ -582,8 +582,8 @@
   position: absolute;
   width: 320px;
   height: 50px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 #Mask_Group_9859 {
@@ -626,8 +626,8 @@
   overflow: visible;
   width: 162px;
   height: 42px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #hu_Yu_Cu {
   left: 37px;
@@ -661,8 +661,8 @@
   overflow: visible;
   width: 162px;
   height: 42px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Thanh_Ton {
   left: 38px;
@@ -702,12 +702,12 @@
   overflow: visible;
   width: 307px;
   height: 94px;
-  left: 0px;
+  left: 0;
   top: 28px;
 }
 #Ph_tng_-_Gi {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 91px;
@@ -726,8 +726,8 @@
   overflow: visible;
 }
 #Ca_t_lnh {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 89px;
@@ -742,7 +742,7 @@
 }
 #ID2000000 {
   left: 209px;
-  top: 0px;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 78px;
@@ -764,8 +764,8 @@
   overflow: visible;
 }
 #Cng_thay_ {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 93px;
@@ -780,7 +780,7 @@
 }
 #ID200000 {
   left: 222px;
-  top: 0px;
+  top: 0;
   position: absolute;
   overflow: visible;
   width: 64px;
@@ -805,12 +805,12 @@
   position: absolute;
   width: 336px;
   height: 105.732px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Tng_tin_sn_phm {
-  left: 0px;
+  left: 0;
   top: 27.732px;
   position: absolute;
   overflow: visible;
@@ -978,8 +978,8 @@
   overflow: visible;
   width: 150px;
   height: 30px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #Group_9836 {
   position: absolute;
@@ -1009,8 +1009,8 @@
   position: absolute;
   width: 21px;
   height: 21px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Momo {
@@ -1035,31 +1035,31 @@
   overflow: visible;
   width: 150px;
   height: 30px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #momo-label {
   position: absolute;
   width: 78px;
   height: 30px;
   left: 36px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 #Group_9834 {
   position: absolute;
   width: 30px;
   height: 30px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #Image_5 {
   position: absolute;
   width: 30px;
   height: 30px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #MOMO {
@@ -1103,14 +1103,14 @@
   overflow: visible;
   width: 364px;
   height: 135px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 #truong {
   position: absolute;
   width: 90px;
   height: 90px;
-  left: 0px;
+  left: 0;
   top: 35px;
   overflow: visible;
 }
@@ -1119,7 +1119,7 @@
   width: 119px;
   height: 20px;
   left: 1px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 #Thng_tin_th {
@@ -1141,8 +1141,8 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 #a_ch__Ca_hng_in_lnh_-_C_Kh_Ton {

@@ -46,8 +46,8 @@
   overflow: visible;
   width: 127px;
   height: 4px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #top-notibar {
@@ -63,8 +63,8 @@
   position: absolute;
   width: 1108.119px;
   height: 640.966px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -77,10 +77,10 @@
   position: absolute;
   width: 1108.119px;
   height: 640.966px;
-  transform: translate(0px, 0px) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
+  transform: translate(0px, 0) matrix(1, 0, 0, 1, 0, 0) rotate(180deg);
   transform-origin: center;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #Light_Status_Bar {
@@ -116,8 +116,8 @@
   overflow: visible;
   width: 20.726px;
   height: 10.677px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #Cap {
@@ -158,7 +158,7 @@
   width: 14.388px;
   height: 10.331px;
   left: 285.136px;
-  top: 0px;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -180,14 +180,14 @@
   position: absolute;
   width: 51px;
   height: 15px;
-  left: 0px;
+  left: 0;
   top: 0.675px;
   overflow: visible;
 }
 
 #_Time {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   position: absolute;
   overflow: hidden;
   width: 52px;
@@ -294,8 +294,8 @@
   position: absolute;
   width: 35.75px;
   height: 35.75px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -303,8 +303,8 @@
   position: absolute;
   width: 35.75px;
   height: 35.75px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -317,8 +317,8 @@
   position: absolute;
   width: 35.75px;
   height: 35.75px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -327,7 +327,7 @@
   width: 35.75px;
   height: 35.75px;
   left: 56px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -335,8 +335,8 @@
   position: absolute;
   width: 35.75px;
   height: 35.75px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -349,8 +349,8 @@
   position: absolute;
   width: 35.75px;
   height: 35.75px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -359,7 +359,7 @@
   width: 35.75px;
   height: 35.75px;
   left: 112px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -367,8 +367,8 @@
   position: absolute;
   width: 35.75px;
   height: 35.75px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -381,8 +381,8 @@
   position: absolute;
   width: 35.75px;
   height: 35.75px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -391,7 +391,7 @@
   width: 35.75px;
   height: 35.75px;
   left: 168px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -399,8 +399,8 @@
   position: absolute;
   width: 35.75px;
   height: 35.75px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -413,8 +413,8 @@
   position: absolute;
   width: 35.75px;
   height: 35.75px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -423,7 +423,7 @@
   width: 35.75px;
   height: 35.75px;
   left: 224px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -431,8 +431,8 @@
   position: absolute;
   width: 35.75px;
   height: 35.75px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -445,8 +445,8 @@
   position: absolute;
   width: 35.75px;
   height: 35.75px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -469,8 +469,8 @@
   overflow: visible;
   width: 361px;
   height: 202px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #Thng_thm_cho_th_Khng_bt_buc_ {
@@ -499,8 +499,8 @@
   position: absolute;
   width: 94.087px;
   height: 28px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -519,8 +519,8 @@
   position: absolute;
   width: 94.087px;
   height: 28px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -547,7 +547,7 @@
   width: 94.087px;
   height: 28px;
   left: 110px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -566,8 +566,8 @@
   position: absolute;
   width: 94.087px;
   height: 28px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -594,7 +594,7 @@
   width: 94.087px;
   height: 28px;
   left: 220px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -613,8 +613,8 @@
   position: absolute;
   width: 94.087px;
   height: 28px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -640,7 +640,7 @@
   position: absolute;
   width: 94.087px;
   height: 28px;
-  left: 0px;
+  left: 0;
   top: 40px;
   overflow: visible;
 }
@@ -660,8 +660,8 @@
   position: absolute;
   width: 94.087px;
   height: 28px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -707,8 +707,8 @@
   position: absolute;
   width: 94.087px;
   height: 28px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -754,8 +754,8 @@
   position: absolute;
   width: 94.087px;
   height: 28px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -799,8 +799,8 @@
   overflow: visible;
   width: 332px;
   height: 38px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #Gi_phn_hi {
@@ -840,8 +840,8 @@
   overflow: visible;
   width: 361px;
   height: 177px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #fixer-info {
@@ -872,15 +872,15 @@
   overflow: visible;
   width: 360px;
   height: 130px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #truong {
   position: absolute;
   width: 85px;
   height: 85px;
-  left: 0px;
+  left: 0;
   top: 33px;
   overflow: visible;
 }
@@ -936,7 +936,7 @@
   width: 106px;
   height: 19px;
   left: 1px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -960,8 +960,8 @@
   position: absolute;
   width: 19px;
   height: 19px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1087,13 +1087,13 @@
 }
 
 .Path_3058 {
-  filter: drop-shadow(0px -1px 0px rgba(2, 2, 2, 0.4));
+  filter: drop-shadow(0px -1px 0 rgba(2, 2, 2, 0.4));
   overflow: visible;
   position: absolute;
   width: 353.287px;
   height: 67.643px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1115,8 +1115,8 @@
   overflow: visible;
   width: 126px;
   height: 4px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 #Thong_TIn {
@@ -1136,8 +1136,8 @@
   position: absolute;
   width: 33.094px;
   height: 22.963px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1145,8 +1145,8 @@
   position: absolute;
   width: 33.094px;
   height: 22.963px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1154,8 +1154,8 @@
   position: absolute;
   width: 33.094px;
   height: 22.963px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1174,8 +1174,8 @@
   position: absolute;
   width: 34.594px;
   height: 24.463px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1212,7 +1212,7 @@
   width: 23.661px;
   height: 25.812px;
   left: 5.048px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -1251,7 +1251,7 @@
   position: absolute;
   width: 23.041px;
   height: 20.859px;
-  left: 0px;
+  left: 0;
   top: 2.151px;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -1272,12 +1272,12 @@
   width: 12.254px;
   height: 12.255px;
   left: 12.907px;
-  top: 0px;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Thng_bo {
-  left: 0px;
+  left: 0;
   top: 28.833px;
   position: absolute;
   overflow: visible;
@@ -1319,8 +1319,8 @@
   position: absolute;
   width: 24.231px;
   height: 29.531px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1357,7 +1357,7 @@
   width: 23.89px;
   height: 30.792px;
   left: 12.247px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -1374,8 +1374,8 @@
   position: absolute;
   width: 0.747px;
   height: 9.169px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1394,8 +1394,8 @@
   position: absolute;
   width: 0.825px;
   height: 9.247px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1412,8 +1412,8 @@
   position: absolute;
   width: 0.747px;
   height: 9.198px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1432,8 +1432,8 @@
   position: absolute;
   width: 0.825px;
   height: 9.276px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1442,7 +1442,7 @@
   width: 7.093px;
   height: 6.736px;
   left: 7.093px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -1450,8 +1450,8 @@
   position: absolute;
   width: 7.093px;
   height: 6.736px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1470,8 +1470,8 @@
   position: absolute;
   width: 7.214px;
   height: 6.815px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1480,7 +1480,7 @@
   width: 7.093px;
   height: 6.736px;
   left: 13.438px;
-  top: 0px;
+  top: 0;
   overflow: visible;
 }
 
@@ -1488,8 +1488,8 @@
   position: absolute;
   width: 7.093px;
   height: 6.736px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1508,8 +1508,8 @@
   position: absolute;
   width: 7.214px;
   height: 6.815px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1526,8 +1526,8 @@
   position: absolute;
   width: 7.093px;
   height: 6.736px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1546,8 +1546,8 @@
   position: absolute;
   width: 7.214px;
   height: 6.815px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1564,8 +1564,8 @@
   position: absolute;
   width: 7.093px;
   height: 6.736px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1584,8 +1584,8 @@
   position: absolute;
   width: 7.214px;
   height: 6.815px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1602,8 +1602,8 @@
   position: absolute;
   width: 0.747px;
   height: 2.887px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1622,8 +1622,8 @@
   position: absolute;
   width: 0.825px;
   height: 2.965px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1640,8 +1640,8 @@
   position: absolute;
   width: 0.747px;
   height: 2.887px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1660,8 +1660,8 @@
   position: absolute;
   width: 0.825px;
   height: 2.965px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1678,8 +1678,8 @@
   position: absolute;
   width: 3.733px;
   height: 7.217px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1698,8 +1698,8 @@
   position: absolute;
   width: 3.811px;
   height: 7.295px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1716,8 +1716,8 @@
   position: absolute;
   width: 11.199px;
   height: 0.962px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1736,8 +1736,8 @@
   position: absolute;
   width: 11.277px;
   height: 1.04px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1754,8 +1754,8 @@
   position: absolute;
   width: 0.748px;
   height: 0.962px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1774,8 +1774,8 @@
   position: absolute;
   width: 0.827px;
   height: 1.04px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1792,8 +1792,8 @@
   position: absolute;
   width: 2.24px;
   height: 4.554px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1812,8 +1812,8 @@
   position: absolute;
   width: 2.318px;
   height: 4.632px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1830,8 +1830,8 @@
   position: absolute;
   width: 10.825px;
   height: 7.956px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1850,8 +1850,8 @@
   position: absolute;
   width: 10.94px;
   height: 8.035px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1868,8 +1868,8 @@
   position: absolute;
   width: 9.332px;
   height: 2.406px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1888,8 +1888,8 @@
   position: absolute;
   width: 9.416px;
   height: 2.485px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1897,7 +1897,7 @@
   position: absolute;
   width: 4.479px;
   height: 13.953px;
-  left: 0px;
+  left: 0;
   top: 16.359px;
   overflow: visible;
 }
@@ -1906,8 +1906,8 @@
   position: absolute;
   width: 4.479px;
   height: 13.953px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1926,8 +1926,8 @@
   position: absolute;
   width: 4.558px;
   height: 14.031px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1944,8 +1944,8 @@
   position: absolute;
   width: 7.957px;
   height: 2.377px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -1964,8 +1964,8 @@
   position: absolute;
   width: 8.042px;
   height: 2.456px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -1982,8 +1982,8 @@
   position: absolute;
   width: 2.24px;
   height: 4.782px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -2002,8 +2002,8 @@
   position: absolute;
   width: 2.318px;
   height: 4.861px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -2020,8 +2020,8 @@
   position: absolute;
   width: 6.603px;
   height: 2.435px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -2040,8 +2040,8 @@
   position: absolute;
   width: 6.691px;
   height: 2.514px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -2058,8 +2058,8 @@
   position: absolute;
   width: 4.106px;
   height: 0.962px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -2078,8 +2078,8 @@
   position: absolute;
   width: 4.185px;
   height: 1.04px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -2096,8 +2096,8 @@
   position: absolute;
   width: 5.442px;
   height: 1.433px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -2116,8 +2116,8 @@
   position: absolute;
   width: 5.522px;
   height: 1.512px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -2134,8 +2134,8 @@
   position: absolute;
   width: 1.002px;
   height: 0.99px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -2154,8 +2154,8 @@
   position: absolute;
   width: 1.084px;
   height: 1.068px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -2172,8 +2172,8 @@
   position: absolute;
   width: 0.903px;
   height: 0.974px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -2192,8 +2192,8 @@
   position: absolute;
   width: 0.982px;
   height: 1.052px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -2210,8 +2210,8 @@
   position: absolute;
   width: 0.748px;
   height: 0.962px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   overflow: visible;
 }
 
@@ -2230,13 +2230,13 @@
   position: absolute;
   width: 0.827px;
   height: 1.04px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 #Mn_hnh_chnh {
-  left: 0px;
+  left: 0;
   top: 34.15px;
   position: absolute;
   overflow: visible;
