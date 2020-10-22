@@ -19,7 +19,7 @@
 #store-details {
   position: absolute;
   width: 360px;
-  height: 760px;
+  height: 839px;
   background-color: rgba(255, 255, 255, 1);
   overflow: hidden;
   --web-view-name: store-details;
@@ -98,172 +98,21 @@
   width: 360px;
   height: 521px;
   left: 0px;
-  top: 240px;
+  top: 239px;
   transform: matrix(1, 0, 0, 1, 0, 0);
-}
-
-#bottom-bar {
-  position: absolute;
-  width: 360px;
-  height: 60px;
-  left: 0px;
-  top: 701px;
-  overflow: visible;
-}
-
-#home-bg {
-  fill: rgba(255, 255, 255, 1);
-}
-
-.home-bg {
-  filter: drop-shadow(0px -1px 0px rgba(0, 0, 0, 0.702));
-  position: absolute;
-  overflow: visible;
-  width: 360px;
-  height: 60px;
-  left: 0px;
-  top: 1px;
-}
-
-#Home {
-  position: absolute;
-  width: 90px;
-  height: 59px;
-  left: 0px;
-  top: 0px;
-  overflow: visible;
-}
-
-#home-component {
-  opacity: 0.9;
-  fill: rgba(255, 255, 255, 1);
-}
-
-.home-component {
-  position: absolute;
-  overflow: visible;
-  width: 90px;
-  height: 59px;
-  left: 0px;
-  top: 0px;
-}
-
-#home-icon {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 25px;
-  top: 9.5px;
-  overflow: visible;
-}
-
-#history {
-  position: absolute;
-  width: 90px;
-  height: 59px;
-  left: 90px;
-  top: 0px;
-  overflow: visible;
-}
-
-#history-component {
-  opacity: 0.9;
-  fill: rgba(255, 255, 255, 1);
-}
-
-.history-component {
-  position: absolute;
-  overflow: visible;
-  width: 90px;
-  height: 59px;
-  left: 0px;
-  top: 0px;
-}
-
-#Mask_Group_9887 {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 25px;
-  top: 9.5px;
-  overflow: visible;
-}
-
-#notify {
-  position: absolute;
-  width: 90px;
-  height: 59px;
-  left: 180px;
-  top: 0px;
-  overflow: visible;
-}
-
-#notify-component {
-  opacity: 0.9;
-  fill: rgba(255, 255, 255, 1);
-}
-
-.notify-component {
-  position: absolute;
-  overflow: visible;
-  width: 90px;
-  height: 59px;
-  left: 0px;
-  top: 0px;
-}
-
-#notify-icon {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 25px;
-  top: 9.5px;
-  overflow: visible;
-}
-
-#info {
-  position: absolute;
-  width: 90px;
-  height: 59px;
-  left: 270px;
-  top: 0px;
-  overflow: visible;
-}
-
-#info-component {
-  opacity: 0.9;
-  fill: rgba(255, 255, 255, 1);
-}
-
-.info-component {
-  position: absolute;
-  overflow: visible;
-  width: 90px;
-  height: 59px;
-  left: 0px;
-  top: 0px;
-}
-
-#Mask_Group_9888 {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 25px;
-  top: 9.5px;
-  overflow: visible;
 }
 
 #Item1 {
   opacity: 0.92;
   position: absolute;
   width: 359.76px;
-  height: 185px;
+  height: 323px;
   left: 0px;
   top: 516px;
   overflow: hidden;
 }
 
-#Item1_cx {
+#Item1_cj {
   position: absolute;
   width: 154px;
   height: 34px;
@@ -282,7 +131,8 @@
   line-height: 35px;
   margin-top: -10.5px;
   text-align: left;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   color: rgba(64, 64, 64, 1);
@@ -311,7 +161,7 @@
   overflow: visible;
 }
 
-#Item1_c {
+#Item1_cn {
   position: absolute;
   width: 154px;
   height: 34px;
@@ -334,13 +184,14 @@
   line-height: 35px;
   margin-top: -10.5px;
   text-align: left;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   color: rgba(64, 64, 64, 1);
 }
 
-#Trung_bnh_210000_c {
+#Trung_bnh_210000_cp {
   left: 22px;
   top: 17px;
   position: absolute;
@@ -348,13 +199,15 @@
   width: 133px;
   white-space: nowrap;
   text-align: center;
-
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: lighter;
   font-size: 12px;
   color: rgba(41, 41, 41, 1);
   letter-spacing: 0.7142857360839844px;
 }
 
-#salary_c {
+#salary_cq {
   position: absolute;
   width: 14px;
   height: 14px;
@@ -363,7 +216,7 @@
   overflow: visible;
 }
 
-#Item1_da {
+#Item1_cr {
   position: absolute;
   width: 154px;
   height: 34px;
@@ -382,7 +235,161 @@
   line-height: 35px;
   margin-top: -10.5px;
   text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(64, 64, 64, 1);
+}
 
+#Trung_bnh_210000_ct {
+  left: 22px;
+  top: 17px;
+  position: absolute;
+  overflow: visible;
+  width: 133px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 12px;
+  color: rgba(41, 41, 41, 1);
+  letter-spacing: 0.7142857360839844px;
+}
+
+#salary_cu {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 0px;
+  top: 19px;
+  overflow: visible;
+}
+
+#Item1_cv {
+  position: absolute;
+  width: 154px;
+  height: 34px;
+  left: 19px;
+  top: 163px;
+  overflow: visible;
+}
+
+#Bo_dng_lo_si {
+  left: 1px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 154px;
+  height: 17px;
+  line-height: 35px;
+  margin-top: -10.5px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(64, 64, 64, 1);
+}
+
+#Trung_bnh_210000_cx {
+  left: 22px;
+  top: 17px;
+  position: absolute;
+  overflow: visible;
+  width: 133px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 12px;
+  color: rgba(41, 41, 41, 1);
+  letter-spacing: 0.7142857360839844px;
+}
+
+#salary_cy {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 0px;
+  top: 19px;
+  overflow: visible;
+}
+
+#Item1_cz {
+  position: absolute;
+  width: 154px;
+  height: 34px;
+  left: 19px;
+  top: 211px;
+  overflow: visible;
+}
+
+#Bo_dng_lo_si_c {
+  left: 1px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 154px;
+  height: 17px;
+  line-height: 35px;
+  margin-top: -10.5px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgba(64, 64, 64, 1);
+}
+
+#Trung_bnh_210000_c {
+  left: 22px;
+  top: 17px;
+  position: absolute;
+  overflow: visible;
+  width: 133px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 12px;
+  color: rgba(41, 41, 41, 1);
+  letter-spacing: 0.7142857360839844px;
+}
+
+#salary_c {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 0px;
+  top: 19px;
+  overflow: visible;
+}
+
+#Item1_c {
+  position: absolute;
+  width: 154px;
+  height: 34px;
+  left: 19px;
+  top: 259px;
+  overflow: visible;
+}
+
+#Bo_dng_lo_si_da {
+  left: 1px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 154px;
+  height: 17px;
+  line-height: 35px;
+  margin-top: -10.5px;
+  text-align: left;
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   color: rgba(64, 64, 64, 1);
@@ -411,16 +418,16 @@
   overflow: visible;
 }
 
-#Item1_db {
+#Item1_da {
   position: absolute;
   width: 154px;
   height: 34px;
   left: 19px;
-  top: 163px;
+  top: 307px;
   overflow: visible;
 }
 
-#Bo_dng_lo_si {
+#Bo_dng_lo_si_db {
   left: 1px;
   top: 0px;
   position: absolute;
@@ -430,13 +437,36 @@
   line-height: 35px;
   margin-top: -10.5px;
   text-align: left;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   color: rgba(64, 64, 64, 1);
 }
 
 #Trung_bnh_210000_db {
+  left: 22px;
+  top: 17px;
+  position: absolute;
+  overflow: visible;
+  width: 133px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 12px;
+  color: rgba(41, 41, 41, 1);
+  letter-spacing: 0.7142857360839844px;
+}
+
+#salary_db {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 0px;
+  top: 19px;
+  overflow: visible;
   left: 22px;
   top: 17px;
   position: absolute;
@@ -469,7 +499,8 @@
   line-height: 24px;
   margin-top: -4px;
   text-align: left;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   color: rgba(36, 39, 43, 1);
@@ -485,7 +516,8 @@
   line-height: 24px;
   margin-top: -4px;
   text-align: left;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   color: rgba(36, 39, 43, 1);
@@ -501,7 +533,8 @@
   line-height: 16px;
   margin-top: -2px;
   text-align: left;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   color: rgba(121, 121, 121, 1);
@@ -517,41 +550,36 @@
   line-height: 35px;
   margin-top: -10.5px;
   text-align: left;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   color: rgba(121, 121, 121, 1);
 }
 
-#ID999_nh_gi {
-  left: 152.701px;
-  top: 305px;
+#Group_10390 {
   position: absolute;
+  width: 75.072px;
+  height: 10px;
+  left: 80.063px;
+  top: 306px;
   overflow: visible;
-  width: 85px;
-  white-space: nowrap;
-  line-height: 16px;
-  margin-top: -2px;
-  text-align: left;
-
-  font-weight: normal;
-  font-size: 12px;
-  color: rgba(121, 121, 121, 1);
 }
 
 #ID49 {
-  left: 134.134px;
-  top: 305px;
+  left: 58.072px;
+  top: 0px;
   position: absolute;
-  overflow: visible;
+  overflow: hidden;
   width: 18px;
-  white-space: nowrap;
+  height: 10px;
   line-height: 16px;
-  margin-top: -2px;
+  margin-top: -3px;
   text-align: left;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 10px;
   color: rgba(121, 121, 121, 1);
 }
 
@@ -559,8 +587,8 @@
   position: absolute;
   width: 55px;
   height: 10px;
-  left: 80.063px;
-  top: 307px;
+  left: 0px;
+  top: 0px;
   overflow: hidden;
 }
 
@@ -573,7 +601,7 @@
   overflow: visible;
 }
 
-#star_dm {
+#star_dk {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -582,7 +610,7 @@
   overflow: visible;
 }
 
-#star_dm {
+#star_dk {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -600,7 +628,7 @@
   overflow: visible;
 }
 
-#star_dp {
+#star_dn {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -609,7 +637,7 @@
   overflow: visible;
 }
 
-#star_dp {
+#star_dn {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -627,7 +655,7 @@
   overflow: visible;
 }
 
-#star_ds {
+#star_dq {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -636,7 +664,7 @@
   overflow: visible;
 }
 
-#star_ds {
+#star_dq {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -654,7 +682,7 @@
   overflow: visible;
 }
 
-#star_dv {
+#star_dt {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -663,7 +691,7 @@
   overflow: visible;
 }
 
-#star_dv {
+#star_dt {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -681,7 +709,7 @@
   overflow: visible;
 }
 
-#star_dy {
+#star_dw {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -690,7 +718,7 @@
   overflow: visible;
 }
 
-#star_dy {
+#star_dw {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -713,17 +741,18 @@
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-#Vit_Nam {
+#nh_gi {
   left: 19px;
   top: 305px;
   position: absolute;
   overflow: visible;
-  width: 50px;
+  width: 52px;
   white-space: nowrap;
   line-height: 16px;
   margin-top: -2px;
   text-align: left;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   color: rgba(121, 121, 121, 1);
@@ -739,7 +768,8 @@
   line-height: 16px;
   margin-top: -2px;
   text-align: left;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   color: rgba(189, 189, 189, 1);
@@ -756,7 +786,8 @@
   line-height: 35px;
   margin-top: -8.5px;
   text-align: left;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: normal;
   font-size: 18px;
   color: rgba(48, 48, 48, 1);
@@ -822,7 +853,8 @@
   line-height: 35px;
   margin-top: -12.5px;
   text-align: center;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: bold;
   font-size: 10px;
   color: rgba(48, 48, 48, 1);
@@ -870,7 +902,8 @@
   line-height: 35px;
   margin-top: -12.5px;
   text-align: center;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: bold;
   font-size: 10px;
   color: rgba(48, 48, 48, 1);
@@ -885,7 +918,7 @@
   overflow: visible;
 }
 
-#Img_ec {
+#Img_ea {
   position: absolute;
   width: 60px;
   height: 78px;
@@ -898,7 +931,7 @@
   cursor: pointer;
 }
 
-#Rectangle_2365_ed {
+#Rectangle_2365_eb {
   fill: rgba(255, 255, 255, 1);
   stroke: rgba(112, 112, 112, 1);
   stroke-width: 1px;
@@ -908,7 +941,7 @@
   shape-rendering: auto;
 }
 
-.Rectangle_2365_ed {
+.Rectangle_2365_eb {
   position: absolute;
   overflow: visible;
   width: 60px;
@@ -927,7 +960,8 @@
   line-height: 35px;
   margin-top: -12.5px;
   text-align: center;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: bold;
   font-size: 10px;
   color: rgba(48, 48, 48, 1);
@@ -972,7 +1006,7 @@
   top: 0px;
 }
 
-#marius-ciocirlan-398931-unspla_ei {
+#marius-ciocirlan-398931-unspla_eg {
   fill: transparent;
   stroke: rgba(51, 191, 154, 1);
   stroke-width: 2px;
@@ -982,7 +1016,7 @@
   shape-rendering: auto;
 }
 
-.marius-ciocirlan-398931-unspla_ei {
+.marius-ciocirlan-398931-unspla_eg {
   overflow: visible;
   position: absolute;
   width: 33.364px;
@@ -1010,20 +1044,21 @@
 }
 
 #H_tr__min_ph {
-  left: 317px;
+  left: 312px;
   top: 293px;
   position: absolute;
   overflow: visible;
-  width: 21px;
+  width: 34px;
   white-space: nowrap;
   text-align: center;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: bold;
-  font-size: 5px;
+  font-size: 8px;
   color: rgba(121, 121, 121, 1);
 }
 
-#Img_el {
+#Img_ej {
   position: absolute;
   width: 60px;
   height: 78px;
@@ -1032,7 +1067,7 @@
   overflow: visible;
 }
 
-#Rectangle_2365_em {
+#Rectangle_2365_ek {
   fill: rgba(255, 255, 255, 1);
   stroke: rgba(112, 112, 112, 1);
   stroke-width: 1px;
@@ -1042,7 +1077,7 @@
   shape-rendering: auto;
 }
 
-.Rectangle_2365_em {
+.Rectangle_2365_ek {
   position: absolute;
   overflow: visible;
   width: 60px;
@@ -1061,7 +1096,8 @@
   line-height: 35px;
   margin-top: -12.5px;
   text-align: center;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: bold;
   font-size: 10px;
   color: rgba(48, 48, 48, 1);
@@ -1426,16 +1462,17 @@
 }
 
 #Bn_ {
-  left: 282.674px;
-  top: 293px;
+  left: 273.674px;
+  top: 291px;
   position: absolute;
   overflow: visible;
-  width: 17px;
+  width: 29px;
   white-space: nowrap;
   text-align: center;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: bold;
-  font-size: 5px;
+  font-size: 8px;
   color: rgba(121, 121, 121, 1);
 }
 
@@ -1458,7 +1495,8 @@
   line-height: 13px;
   margin-top: -0.5px;
   text-align: left;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   color: rgba(121, 121, 121, 1);
@@ -1474,7 +1512,8 @@
   line-height: 13px;
   margin-top: -0.5px;
   text-align: left;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   color: rgba(121, 121, 121, 1);
@@ -1530,7 +1569,8 @@
   width: 184px;
   white-space: nowrap;
   text-align: left;
-
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   color: rgba(255, 255, 255, 1);
