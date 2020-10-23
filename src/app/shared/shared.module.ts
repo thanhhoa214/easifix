@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BottomBarComponent } from './components/bottom-bar/bottom-bar.component';
-import { MaterialModule } from './material.module';
 import { HeaderComponent } from './components/header/header.component';
 import { RouterModule } from '@angular/router';
-import { CalendarComponent } from './components/calendar/calendar.component';
+import { IonicModule } from '@ionic/angular';
 
-const components = [BottomBarComponent, HeaderComponent, CalendarComponent];
+const components = [BottomBarComponent, HeaderComponent];
 @NgModule({
   declarations: [...components],
-  exports: [...components, MaterialModule],
-  imports: [CommonModule, RouterModule, MaterialModule],
+  exports: [...components],
+  imports: [CommonModule, RouterModule, IonicModule],
 })
 export class SharedModule {}
