@@ -1,0 +1,7 @@
+{
+  "name": "easifix",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
