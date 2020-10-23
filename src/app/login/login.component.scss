@@ -41,7 +41,7 @@
   width: 319px;
   height: 30px;
   left: 0;
-  top: 103px;
+  top: 93px;
 }
 #line_copy {
   position: absolute;
@@ -90,9 +90,20 @@
 #Group_9680 {
   position: absolute;
   width: 319px;
-  height: 62px;
+  height: 70px;
   left: 0;
   top: 0;
+}
+#phone-input {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 90px;
+  top: 25px;
+}
+#phone-input:focus {
+  outline: none;
+  border: none;
 }
 #line {
   position: absolute;

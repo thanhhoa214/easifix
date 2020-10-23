@@ -4,8 +4,9 @@ import { BottomBarComponent } from './components/bottom-bar/bottom-bar.component
 import { MaterialModule } from './material.module';
 import { HeaderComponent } from './components/header/header.component';
 import { RouterModule } from '@angular/router';
+import { CalendarComponent } from './components/calendar/calendar.component';
 
-const components = [BottomBarComponent, HeaderComponent];
+const components = [BottomBarComponent, HeaderComponent, CalendarComponent];
 @NgModule({
   declarations: [...components],
   exports: [...components, MaterialModule],
