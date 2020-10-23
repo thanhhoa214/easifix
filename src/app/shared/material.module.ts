@@ -19,6 +19,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTabsModule } from '@angular/material/tabs';
 import { MatNativeDateModule } from '@angular/material/core';
 import { CdkColumnDef } from '@angular/cdk/table';
 import { BreakpointObserver } from '@angular/cdk/layout';
@@ -39,6 +40,7 @@ const componentModules = [
   MatTooltipModule,
   MatCheckboxModule,
   MatMomentDateModule,
+  MatTabsModule,
 ];
 
 @NgModule({
