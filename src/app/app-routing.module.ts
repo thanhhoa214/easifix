@@ -28,10 +28,15 @@ const routes: Routes = [
         ],
       },
       { path: 'login', component: LoginComponent },
-      { path: 'notification', component: NotificationComponent },
       { path: 'profile', component: ProfileComponent },
       { path: 'setting', component: SettingComponent },
-      { path: 'promotion', component: PromotionComponent },
+      {
+        path: 'notification',
+        children: [
+          { path: 'promotion', component: PromotionComponent },
+          { path: '', component: NotificationComponent, pathMatch: 'full' },
+        ],
+      },
       { path: 'favorite', component: FavoriteComponent },
       { path: 'history', component: HistoryComponent },
       { path: '', pathMatch: 'full', redirectTo: 'home' },

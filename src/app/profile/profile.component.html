@@ -1,1 +1,34 @@
-<p>profile works!</p>
+<app-header title="Cá nhân"></app-header>
+<ion-content>
+    <ion-item lines="none">
+        <div class="w-100 d-flex flex-column justify-content-center align-items-center mt-5">
+            <img id="avatar" src="assets/user.svg" alt="Lỗi" srcset="assets/user.svg">
+            <br>
+            <p style="color: #009688;">
+                <ion-icon name="pencil-outline"></ion-icon>Chỉnh sửa thông tin
+            </p>
+        </div>
+    </ion-item>
+    <ion-list lines="full" class="ion-no-margin">
+        <ion-item>
+            <ion-label>Họ tên</ion-label>
+            <ion-input placeholder="Ví dụ: Nguyễn A" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Số điện thoại</ion-label>
+            <ion-input placeholder="Ví dụ:0123456789" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input placeholder="Ví dụ:abc@gmail.com" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item color="light">
+            <ion-input value="Địa chỉ " disabled></ion-input>
+        </ion-item>
+
+
+    </ion-list>
+</ion-content>
