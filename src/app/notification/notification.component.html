@@ -1,1 +1,31 @@
-<app-header></app-header>
+<app-header title="Thông Báo"></app-header>
+<ion-tabs id="noti-promo-tab">
+    <ion-tab-bar slot="top">
+
+        <ion-tab-button tab="schedule">
+            <ion-label>Thông báo</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="speakers">
+            <ion-label>Khuyễn mãi</ion-label>
+        </ion-tab-button>
+
+    </ion-tab-bar>
+</ion-tabs>
+
+<ion-content id="list">
+    <ion-list lines="full">
+        <ion-item *ngFor="let i of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]">
+            <ion-avatar slot="start">
+                <img src="assets/avatar.png">
+            </ion-avatar>
+            <ion-label>
+                <h2><strong>Dùng thử miễn phí</strong></h2>
+                <h3>
+                    <p class="text-secondary"> Mời bạn dùng thử dịch vụ với khuyến mãi </p>
+                    <p class="text-secondary"> EF40 khi đặt dịch vụ lần đầu </p>
+                </h3>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>
