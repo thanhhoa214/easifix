@@ -1,6 +1,7 @@
 ion-toolbar,
 ion-buttons {
   --background: transparent !important;
+  --color: var(--ion-color-primary-contrast);
 }
 ion-avatar {
   width: 2rem;

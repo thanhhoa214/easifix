@@ -1,33 +1,51 @@
+ion-avatar {
+  width: 4.5rem;
+  height: 4.5rem;
+}
 ion-searchbar {
   --color: var(--ion-color-primary-contrast);
-  --icon-color: var(--ion-color-primary-contrast);
+  --icon-color: var(--ion-color-step-750);
   --clear-button-color: var(--ion-color-step-750);
   --placeholder-color: var(--ion-color-step-450);
 }
-ion-slides {
-  height: 25vh;
-  width: 100%;
-}
+ion-card,
 ion-slide {
-  height: 100%;
   img {
     height: 100%;
-    max-width: 90%;
     object-fit: cover;
-    pointer-events: none;
   }
 }
 
-ion-card {
+ion-slides.promotions {
+  height: 20vh;
+  width: 100%;
+
+  ion-slide {
+    height: 100%;
+    img {
+      max-width: 90%;
+    }
+  }
+}
+
+ion-slides.nearby {
+  height: 4rem;
+
+  ion-card {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .information {
+    font-size: 0.7rem;
+  }
+}
+
+ion-card.category {
   width: 25%;
   height: 6rem;
   min-width: 6rem;
   min-height: 6rem;
-
-  img {
-    height: 100%;
-    object-fit: cover;
-  }
 }
 
 .badge.badge-warning {

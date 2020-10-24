@@ -1,1 +1,26 @@
-<p>booking works!</p>
+<app-header title="Toàn Đặng"></app-header>
+<ion-content
+  ><div
+    class="progress-bar progress-bar-striped"
+    role="progressbar"
+    style="width: 33%; height: 0.5rem"
+  ></div>
+  <h4>
+    <ion-icon name="start"></ion-icon>
+    <ion-text color="light"> Cam kết của Easifix </ion-text>
+  </h4>
+  <div class="col-11 mx-auto d-flex justify-content-center">
+    <div
+      *ngFor="let i of [1, 2, 3, 4, 5]"
+      class="mx-1 text-center d-flex flex-column justify-content-center"
+    >
+      <img
+        src="assets/slide-1.png"
+        alt=""
+        class="rounded-circle overflow-hidden"
+      />
+      <ion-text class="smallest mt-1">Bảo hành </ion-text>
+      <ion-text class="smallest"> dịch vụ</ion-text>
+    </div>
+  </div>
+</ion-content>
