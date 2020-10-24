@@ -1,20 +1,20 @@
 <app-header title="Thông Báo"></app-header>
-<ion-tabs id="noti-promo-tab">
-    <ion-tab-bar slot="top">
+<ion-content class="bg-white">
+    <ion-tabs id="noti-promo-tab">
+        <ion-tab-bar slot="top">
 
-        <ion-tab-button tab="notification">
-            <ion-label>Thông báo</ion-label>
-        </ion-tab-button>
+            <ion-tab-button tab="notification">
+                <ion-label>Thông báo</ion-label>
+            </ion-tab-button>
 
-        <ion-tab-button tab="promotion">
-            <ion-label>Khuyễn mãi</ion-label>
-        </ion-tab-button>
+            <ion-tab-button tab="promotion">
+                <ion-label>Khuyễn mãi</ion-label>
+            </ion-tab-button>
 
-    </ion-tab-bar>
-</ion-tabs>
+        </ion-tab-bar>
+    </ion-tabs>
 
-<ion-content id="list">
-    <ion-list lines="full">
+    <ion-list id="list" lines="full">
         <ion-item *ngFor="let i of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]">
             <ion-avatar slot="start">
                 <img src="assets/avatar.png">
