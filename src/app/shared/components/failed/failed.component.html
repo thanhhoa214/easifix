@@ -2,17 +2,17 @@
   <div class="border bg-white pb-4" id="body">
     <div class="mt-4">
       <p>
-        <strong>{{ 'thành công' | uppercase }}</strong>
+        <strong>{{ 'thất bại' | uppercase }}</strong>
       </p>
     </div>
     <ion-icon
-      name="checkmark-circle-outline"
+      name="close-circle-outline"
       style="zoom: 10"
-      color="primary"
+      color="danger"
     ></ion-icon>
-    <p>Bạn đã thanh toán thành công!</p>
+    <p>Bạn đã thanh toán thất bại!</p>
     <ion-button
-      color="primary"
+      color="danger"
       expand="block"
       class="mt-4 w-90 mx-auto"
       (click)="dismissModal()"

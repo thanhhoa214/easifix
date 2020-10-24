@@ -8,3 +8,10 @@ ion-content {
 .w-90 {
   width: 94%;
 }
+
+.my-custom-class .modal-wrapper {
+  background: #00000025;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,4 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { SuccessComponent } from '../shared/components/success/success.component';
+import { FailedComponent } from '../shared/components/failed/failed.component';
 
 @Component({
   selector: 'app-booking',
@@ -32,6 +35,7 @@ export class BookingComponent {
       icon: 'construct-outline',
     },
   ];
+  constructor(public modalController: ModalController) {}
 
   updateDay(index: number) {
     const newDays = this.days.map((_) => false);
@@ -42,5 +46,17 @@ export class BookingComponent {
     const newParts = this.parts.map((_) => false);
     newParts[index] = true;
     this.parts = newParts;
+  }
+
+  async openSuccessModal() {
+    const random = Math.round(Math.random() * 2) % 2;
+    console.log(random);
+
+    const modal = await this.modalController.create({
+      component: random ? SuccessComponent : FailedComponent,
+      backdropDismiss: true,
+      cssClass: 'my-custom-class',
+    });
+    return await modal.present();
   }
 }

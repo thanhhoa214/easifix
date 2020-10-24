@@ -1,13 +1,13 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-success',
-  templateUrl: './success.component.html',
-  styleUrls: ['./success.component.scss'],
+  selector: 'app-failed',
+  templateUrl: './failed.component.html',
+  styleUrls: ['./failed.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SuccessComponent {
+export class FailedComponent {
   constructor(public modalController: ModalController) {}
   dismissModal() {
     this.modalController.dismiss();

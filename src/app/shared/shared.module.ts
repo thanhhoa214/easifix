@@ -5,10 +5,16 @@ import { HeaderComponent } from './components/header/header.component';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { SuccessComponent } from './components/success/success.component';
+import { FailedComponent } from './components/failed/failed.component';
 
-const components = [BottomBarComponent, HeaderComponent, SuccessComponent];
+const components = [
+  BottomBarComponent,
+  HeaderComponent,
+  SuccessComponent,
+  FailedComponent,
+];
 @NgModule({
-  declarations: [...components, SuccessComponent],
+  declarations: [...components],
   exports: [...components],
   imports: [CommonModule, RouterModule, IonicModule],
 })
