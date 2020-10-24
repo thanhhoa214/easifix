@@ -12,6 +12,7 @@ import { NotificationComponent } from './notification/notification.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PromotionComponent } from './promotion/promotion.component';
 import { LayoutComponent } from './layout/layout.component';
+import { NotiComponent } from './noti/noti.component';
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -32,9 +33,11 @@ const routes: Routes = [
       { path: 'setting', component: SettingComponent },
       {
         path: 'notification',
+        component: NotiComponent,
         children: [
           { path: 'promotion', component: PromotionComponent },
-          { path: '', component: NotificationComponent, pathMatch: 'full' },
+          { path: 'notification', component: NotificationComponent },
+          { path: '', redirectTo: 'notification', pathMatch: 'full' },
         ],
       },
       { path: 'favorite', component: FavoriteComponent },

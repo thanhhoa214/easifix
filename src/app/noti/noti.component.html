@@ -1,0 +1,12 @@
+<app-header [title]="title"></app-header>
+<ion-tabs id="noti-promo-tab">
+  <ion-tab-bar slot="top">
+    <ion-tab-button tab="notification" (click)="title = 'Thông báo'">
+      <ion-label>Thông báo</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="promotion" (click)="title = 'Khuyến mãi'">
+      <ion-label>Khuyến mãi</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
