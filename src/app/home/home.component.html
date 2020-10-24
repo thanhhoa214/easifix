@@ -1,5 +1,5 @@
-<ion-item color="primary" lines="none" class="pt-3">
-  <ion-avatar slot="start">
+<ion-item color="primary" lines="none" detail="false" class="pt-3">
+  <ion-avatar slot="start" [routerLink]="['..', 'profile']">
     <img src="assets/avatar.png" />
   </ion-avatar>
   <div class="d-flex flex-column">
@@ -15,7 +15,7 @@
     class="promotions"
   >
     <ion-slide>
-      <img src="assets/banner-1.png" class="rounded-lg" />
+      <img src="assets/banner-3.jpeg" class="rounded-lg" />
     </ion-slide>
 
     <ion-slide>
@@ -26,33 +26,39 @@
       <img src="assets/banner-3.jpeg" class="rounded-lg" />
     </ion-slide>
   </ion-slides>
-  <div class="mx-3">
-    <h4>Gần đây</h4>
-    <ion-slides class="nearby" [options]="{ slidesPerView: 2.2 }">
-      <ion-slide *ngFor="let i of [1, 2, 3]">
-        <ion-card class="mr-2">
-          <img src="assets/banner-1.png" class="rounded-lg"
-        /></ion-card>
-        <div
-          class="d-flex flex-column justify-content-start align-items-start information"
+  <div>
+    <ion-card class="px-3 py-2"
+      ><h4>Gần đây</h4>
+      <ion-slides class="nearby" [options]="{ slidesPerView: 1.75 }">
+        <ion-slide
+          *ngFor="let i of [1, 2, 3]"
+          class="border rounded-lg mr-2 px-2"
         >
-          <b>Sửa máy giặt</b>
-          <span>Toàn Đặng</span>
-          <span>250.000đ</span>
-        </div>
-      </ion-slide>
-    </ion-slides>
-    <h4>Chúng tôi sẽ giúp bạn</h4>
-    <div class="d-flex justify-content-center flex-wrap mb-3">
-      <ion-card
-        *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]"
-        class="m-2 category"
-        routerLink="booking"
-      >
-        <img src="assets/banner-3.jpeg" />
-        <b class="smaller">Card Subtitle</b>
-        <div class="badge badge-warning">Hey</div>
-      </ion-card>
-    </div>
+          <ion-card class="ml-0 mr-2">
+            <img src="assets/banner-1.png" class="rounded-lg"
+          /></ion-card>
+          <div
+            class="d-flex flex-column justify-content-start align-items-start small"
+          >
+            <b>Sửa máy giặt</b>
+            <span class="mt-n1 small">Toàn Đặng</span>
+            <span>250.000đ</span>
+          </div>
+        </ion-slide>
+      </ion-slides></ion-card
+    >
+    <ion-card class="px-3 py-2">
+      <h4>Chúng tôi sẽ giúp bạn</h4>
+      <div class="d-flex justify-content-center flex-wrap mb-3">
+        <ion-card
+          *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]"
+          class="m-2 category"
+          routerLink="booking"
+        >
+          <img src="assets/banner-3.jpeg" />
+          <div class="badge badge-warning">Hot</div>
+        </ion-card>
+      </div></ion-card
+    >
   </div>
 </ion-content>
