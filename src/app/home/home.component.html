@@ -9,11 +9,7 @@
 </ion-item>
 <ion-searchbar placeholder="Bạn đang cần gì"></ion-searchbar>
 <ion-content>
-  <ion-slides
-    #sliders
-    (ionSlidesDidLoad)="afterslidesLoad(sliders)"
-    class="promotions"
-  >
+  <ion-slides #sliders (ionSlidesDidLoad)="afterslidesLoad(sliders)" class="promotions">
     <ion-slide>
       <img src="assets/banner-1.png" class="rounded-lg" />
     </ion-slide>
@@ -31,11 +27,8 @@
     <ion-slides class="nearby" [options]="{ slidesPerView: 2.2 }">
       <ion-slide *ngFor="let i of [1, 2, 3]">
         <ion-card class="mr-2">
-          <img src="assets/banner-1.png" class="rounded-lg"
-        /></ion-card>
-        <div
-          class="d-flex flex-column justify-content-start align-items-start information"
-        >
+          <img src="assets/banner-1.png" class="rounded-lg" /></ion-card>
+        <div class="d-flex flex-column justify-content-start align-items-start information">
           <b>Sửa máy giặt</b>
           <span>Toàn Đặng</span>
           <span>250.000đ</span>
@@ -44,11 +37,7 @@
     </ion-slides>
     <h4>Chúng tôi sẽ giúp bạn</h4>
     <div class="d-flex justify-content-center flex-wrap mb-3">
-      <ion-card
-        *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]"
-        class="m-1 category"
-        routerLink="booking"
-      >
+      <ion-card *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]" class="m-1 category" routerLink="booking">
         <img src="assets/banner-3.jpeg" />
         <b class="smaller">Card Subtitle</b>
         <div class="badge badge-warning">Hey</div>
