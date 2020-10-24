@@ -1,1 +1,62 @@
-<p>profile works!</p>
+<app-header title="Cá nhân"></app-header>
+<ion-content color="light">
+  <ion-item lines="none" color="light">
+    <div
+      class="w-100 d-flex flex-column justify-content-center align-items-center mt-5"
+    >
+      <ion-avatar size="large">
+        <img src="assets/avatar.png" alt="Lỗi" />
+      </ion-avatar>
+      <br />
+    </div>
+  </ion-item>
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-item color="light">
+      <ion-input value="Thông tin" disabled></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Họ tên</ion-label>
+      <ion-input value="Nhi Lê" class="text-right"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Số điện thoại</ion-label>
+      <ion-input value="0123456789" class="text-right"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input value="nhile@gmail.com" class="text-right"></ion-input>
+    </ion-item>
+
+    <ion-item color="light">
+      <ion-input value="Địa chỉ" disabled></ion-input>
+      <ion-icon name="plus"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox
+        [checked]="true"
+        #add1
+        (click)="add2.checked = false"
+      ></ion-checkbox>
+      <ion-input
+        value="2/2 Phan Văn Trị, Quận Gò Vập, TP.HCM"
+        class="text-right"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox
+        [checked]="false"
+        #add2
+        (click)="add1.checked = false"
+      ></ion-checkbox>
+      <ion-input
+        value="14 Phan Cao, Quận Bình Thạnh, TP.HCM"
+        class="text-right"
+      ></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-button expand="block">Cập nhật thông tin</ion-button>

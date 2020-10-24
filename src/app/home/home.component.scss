@@ -7,6 +7,7 @@ ion-searchbar {
   --icon-color: var(--ion-color-step-750);
   --clear-button-color: var(--ion-color-step-750);
   --placeholder-color: var(--ion-color-step-450);
+  width: 90%;
 }
 ion-card,
 ion-slide {
@@ -29,15 +30,11 @@ ion-slides.promotions {
 }
 
 ion-slides.nearby {
-  height: 4rem;
+  height: 5rem;
 
   ion-card {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-
-  .information {
-    font-size: 0.7rem;
+    width: 4rem;
+    height: 4rem;
   }
 }
 

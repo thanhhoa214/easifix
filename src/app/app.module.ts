@@ -17,6 +17,7 @@ import { SettingComponent } from './setting/setting.component';
 import { ProfileComponent } from './profile/profile.component';
 import { IonicModule } from '@ionic/angular';
 import { LayoutComponent } from './layout/layout.component';
+import { NotiComponent } from './noti/noti.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +34,15 @@ import { LayoutComponent } from './layout/layout.component';
     SettingComponent,
     ProfileComponent,
     LayoutComponent,
+    NotiComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    IonicModule.forRoot(),
+    IonicModule.forRoot({
+      mode: 'ios',
+    }),
   ],
   bootstrap: [AppComponent],
 })
