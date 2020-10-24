@@ -3,11 +3,13 @@ ion-avatar {
   height: 4.5rem;
 }
 ion-searchbar {
-  --color: var(--ion-color-primary-contrast);
-  --icon-color: var(--ion-color-step-750);
-  --clear-button-color: var(--ion-color-step-750);
-  --placeholder-color: var(--ion-color-step-450);
   width: 90%;
+  text-indent: 0.5rem;
+  --background: linear-gradient(
+    40deg,
+    rgba(51, 191, 154, 0.4) 36%,
+    rgba(255, 255, 255, 1) 110%
+  );
 }
 ion-card,
 ion-slide {

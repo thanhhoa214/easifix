@@ -1,1 +1,47 @@
-<p>login works!</p>
+<ion-content>
+  <div
+    class="h-100 d-flex flex-column justify-content-center align-items-center"
+  >
+    <h2>Đăng nhập</h2>
+    <div class="w-100 d-flex">
+      <ion-card class="w-100 m-3 p-3">
+        <div class="w-100 d-flex align-items-center">
+          <ion-icon
+            name="call-outline"
+            style="zoom: 1.5"
+            class="mr-1 border rounded-circle p-1"
+          ></ion-icon>
+          <b>Số điện thoại</b>
+        </div>
+        <div class="w-100 d-flex align-items-center">
+          <div class="badge badge-success p-2 mr-1">+84</div>
+          <ion-input
+            type="number"
+            placeholder="Điền số điện thoại của bạn"
+            maxlength="10"
+          ></ion-input>
+        </div>
+        <div class="w-100 d-flex align-items-center">
+          <ion-icon
+            name="finger-print-outline"
+            style="zoom: 1.5"
+            class="mr-1 border rounded-circle p-1"
+          ></ion-icon>
+          <b>Mật khẩu</b>
+        </div>
+        <ion-input
+          type="password"
+          placeholder="Điền mật khẩu của bạn"
+        ></ion-input>
+        <div class="d-flex justify-content-between">
+          <ion-text color="primary">Nhận OTP đăng nhập</ion-text>
+          <ion-text color="primary">Lấy lại mật khẩu?</ion-text>
+        </div>
+      </ion-card>
+    </div>
+    <ion-button expand="block" class="w-90" [routerLink]="['..', 'home']"
+      >Đăng nhập</ion-button
+    >
+    <span>Hoặc <ion-text color="primary"> tạo tài khoản mới </ion-text></span>
+  </div>
+</ion-content>
