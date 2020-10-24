@@ -1,5 +1,18 @@
-<app-header title="Test Success"></app-header>
-
-<ion-content>
-    <app-success></app-success>
-</ion-content>
+<ion-content class="bg-white">
+    <div class="d-flex justify-content-center flex-wrap mx-3" id="list">
+      <ion-card
+        id="card"
+        *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]"
+        class="m-2 category"
+      >
+        <img id="picture" src="assets/banner-3.jpeg" />
+        <div id="info-promo">
+          <strong>{{
+            'bảo trì sản phẩm - nhập EF123 để áp dụng' | uppercase
+          }}</strong>
+          <br />
+          <span>Từ ngày 08/10/2020 đến 31/10/2020</span>
+        </div>
+      </ion-card>
+    </div>
+  </ion-content>
