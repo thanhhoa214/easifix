@@ -14,8 +14,9 @@ import { PromotionComponent } from './promotion/promotion.component';
 import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
+  { path: 'welcome', component: WelcomeComponent },
   {
-    path: 'layout',
+    path: '',
     component: LayoutComponent,
     children: [
       {
@@ -36,9 +37,6 @@ const routes: Routes = [
       { path: '', pathMatch: 'full', redirectTo: 'home' },
     ],
   },
-
-  { path: 'welcome', component: WelcomeComponent },
-  { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];
 
 @NgModule({
