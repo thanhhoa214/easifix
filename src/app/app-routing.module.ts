@@ -11,19 +11,32 @@ import { HistoryComponent } from './history/history.component';
 import { NotificationComponent } from './notification/notification.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PromotionComponent } from './promotion/promotion.component';
-import { AppComponent } from './app.component';
+import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
-  { path: 'booking', component: BookingComponent },
-  { path: 'checkout', component: CheckoutComponent },
-  { path: 'favorite', component: FavoriteComponent },
-  { path: 'history', component: HistoryComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'notification', component: NotificationComponent },
-  { path: 'profile', component: ProfileComponent },
-  { path: 'setting', component: SettingComponent },
-  { path: 'promotion', component: PromotionComponent },
+  {
+    path: 'layout',
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'home',
+        children: [
+          { path: 'booking', component: BookingComponent },
+          { path: 'checkout', component: CheckoutComponent },
+          { path: '', component: HomeComponent, pathMatch: 'full' },
+        ],
+      },
+      { path: 'login', component: LoginComponent },
+      { path: 'notification', component: NotificationComponent },
+      { path: 'profile', component: ProfileComponent },
+      { path: 'setting', component: SettingComponent },
+      { path: 'promotion', component: PromotionComponent },
+      { path: 'favorite', component: FavoriteComponent },
+      { path: 'history', component: HistoryComponent },
+      { path: '', pathMatch: 'full', redirectTo: 'home' },
+    ],
+  },
+
   { path: 'welcome', component: WelcomeComponent },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
 ];

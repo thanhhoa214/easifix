@@ -1,25 +1,37 @@
+ion-searchbar {
+  --color: var(--ion-color-primary-contrast);
+  --icon-color: var(--ion-color-primary-contrast);
+  --clear-button-color: var(--ion-color-step-750);
+  --placeholder-color: var(--ion-color-step-450);
+}
 ion-slides {
-  height: 35vh;
+  height: 25vh;
   width: 100%;
 }
 ion-slide {
-  width: 100%;
+  height: 100%;
   img {
-    width: 100%;
+    height: 100%;
+    max-width: 90%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+}
+
+ion-card {
+  width: 25%;
+  height: 6rem;
+  min-width: 6rem;
+  min-height: 6rem;
+
+  img {
+    height: 100%;
     object-fit: cover;
   }
 }
-.swiper-slide {
-  display: block;
-}
 
-.swiper-slide h2 {
-  margin-top: 2.8rem;
-}
-
-.swiper-slide img {
-  max-height: 50%;
-  max-width: 80%;
-  margin: 60px 0 40px;
-  pointer-events: none;
+.badge.badge-warning {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
 }

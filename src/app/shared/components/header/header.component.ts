@@ -1,9 +1,4 @@
-import {
-  Component,
-  OnInit,
-  ChangeDetectionStrategy,
-  Input,
-} from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -11,10 +6,6 @@ import {
   styleUrls: ['./header.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent implements OnInit {
-  @Input() title = '';
-  @Input() backTo = '';
-  constructor() {}
-
-  ngOnInit(): void {}
+export class HeaderComponent {
+  @Input() title = 'My Title';
 }

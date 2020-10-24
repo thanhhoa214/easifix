@@ -1,38 +1,6 @@
-.full-size {
-  height: 100vh;
-}
-
-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: white;
-  z-index: 100;
-}
-
-:host ::ng-deep .mat-ink-bar {
-  background-color: #ee2925 !important;
-}
-
-.active-list-item {
-  color: red !important;
-}
-
-.tab-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-a {
-  width: 20%;
-}
-
-:host ::ng-deep .mat-tab-link {
-  padding-top: 0.5rem;
-}
-
-:host ::ng-deep .mat-tab-header-pagination {
-  display: none !important;
+img {
+  position: absolute;
+  transform: scale(2);
+  top: -5rem;
+  left: -5rem;
 }

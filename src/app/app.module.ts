@@ -16,6 +16,7 @@ import { NotificationComponent } from './notification/notification.component';
 import { SettingComponent } from './setting/setting.component';
 import { ProfileComponent } from './profile/profile.component';
 import { IonicModule } from '@ionic/angular';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { IonicModule } from '@ionic/angular';
     NotificationComponent,
     SettingComponent,
     ProfileComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
