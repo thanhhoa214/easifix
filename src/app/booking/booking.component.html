@@ -1,28 +1,165 @@
 <app-header title="Thông tin đơn hàng"></app-header>
-<ion-content>
-  <div
+<ion-toolbar
+  ><div
     class="progress-bar progress-bar-striped"
     role="progressbar"
     style="width: 33%; height: 0.5rem"
-  ></div>
-  <ion-card id="commitment">
+  ></div
+></ion-toolbar>
+<ion-content>
+  <ion-card class="commitment" class="py-3">
     <h6 class="ml-3 d-flex align-items-center">
-      <ion-icon name="newspaper-outline"></ion-icon>
+      <ion-icon name="newspaper-outline" style="zoom: 1.3"></ion-icon>
       <ion-text class="ml-1"> Cam kết của Easifix </ion-text>
     </h6>
     <div class="mx-auto d-flex justify-content-center">
       <div
-        *ngFor="let i of [1, 2, 3, 4, 5]"
-        class="mx-1 text-center d-flex flex-column justify-content-center"
+        *ngFor="let commit of commitments"
+        class="mx-2 text-center d-flex flex-column justify-content-center align-items-center commitment-item"
       >
-        <img
-          src="assets/slide-1.png"
-          alt=""
-          class="rounded-circle overflow-hidden"
-        />
-        <ion-text class="smallest mt-1">Bảo hành </ion-text>
-        <ion-text class="smallest"> dịch vụ</ion-text>
+        <ion-icon [name]="commit.icon" style="zoom: 3"></ion-icon>
+        <ion-text class="small mt-1">{{ commit.title[0] }} </ion-text>
+        <ion-text class="small"> {{ commit.title[1] }}</ion-text>
       </div>
     </div>
+  </ion-card>
+  <ion-card class="py-3">
+    <h6 class="ml-3 d-flex align-items-center">
+      <ion-icon name="newspaper-outline"></ion-icon>
+      <ion-text class="ml-1"> Dịch vụ yêu cầu</ion-text>
+    </h6>
+    <ion-item>
+      <ion-label> Bảo dưỡng máy giặt </ion-label>
+    </ion-item>
+    <ion-item lines="none" class="small">
+      <ion-checkbox color="primary"></ion-checkbox>
+      <ion-label class="d-flex align-items-center">
+        <span class="mx-1">Yêu cầu </span>
+        <ion-text color="primary"> <b>Kiểm tra dịch vụ</b> </ion-text>
+        <ion-icon
+          class="mx-1"
+          color="primary"
+          name="alert-circle-outline"
+          style="zoom: 2; z-index: 888"
+        ></ion-icon>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card class="calendar" class="py-3">
+    <h6 class="ml-3 d-flex align-items-center">
+      <ion-icon name="calendar-outline"></ion-icon>
+      <ion-text class="ml-1"> Chọn lịch</ion-text>
+    </h6>
+    <ion-item>
+      <ion-label> Tháng 10, 2020 </ion-label>
+      <ion-icon name="calendar-outline"></ion-icon>
+    </ion-item>
+    <ion-item lines="none" class="small">
+      <ion-button
+        [fill]="days[0] ? 'solid' : 'outline'"
+        class="rounded-circle"
+        style="width: 14%"
+        (click)="updateDay(0)"
+      >
+        T2
+      </ion-button>
+      <ion-button
+        [fill]="days[1] ? 'solid' : 'outline'"
+        class="rounded-circle"
+        style="width: 14%"
+        (click)="updateDay(1)"
+      >
+        T3
+      </ion-button>
+      <ion-button
+        [fill]="days[2] ? 'solid' : 'outline'"
+        class="rounded-circle"
+        style="width: 14%"
+        (click)="updateDay(2)"
+      >
+        T4
+      </ion-button>
+      <ion-button
+        [fill]="days[3] ? 'solid' : 'outline'"
+        class="rounded-circle"
+        style="width: 14%"
+        (click)="updateDay(3)"
+      >
+        T5
+      </ion-button>
+      <ion-button
+        [fill]="days[4] ? 'solid' : 'outline'"
+        class="rounded-circle"
+        style="width: 14%"
+        (click)="updateDay(4)"
+      >
+        T6
+      </ion-button>
+      <ion-button
+        [fill]="days[5] ? 'solid' : 'outline'"
+        class="rounded-circle"
+        style="width: 14%"
+        (click)="updateDay(5)"
+      >
+        T7
+      </ion-button>
+      <ion-button
+        [fill]="days[7] ? 'solid' : 'outline'"
+        class="rounded-circle"
+        style="width: 14%"
+        (click)="updateDay(7)"
+      >
+        CN
+      </ion-button>
+    </ion-item>
+  </ion-card>
+  <ion-card class="calendar" class="py-3">
+    <h6 class="ml-3 d-flex align-items-center">
+      <ion-icon name="alarm-outline"></ion-icon>
+      <ion-text class="ml-1"> Chọn thời gian</ion-text>
+    </h6>
+    <ion-item>
+      <ion-label> 6:30 đến 8:30</ion-label>
+      <ion-icon name="calendar-outline"></ion-icon>
+    </ion-item>
+    <ion-item lines="none" class="small">
+      <ion-button
+        [fill]="parts[0] ? 'solid' : 'outline'"
+        class="rounded-circle"
+        style="width: 33%"
+        (click)="updatePart(0)"
+      >
+        Sáng
+      </ion-button>
+      <ion-button
+        [fill]="parts[1] ? 'solid' : 'outline'"
+        class="rounded-circle"
+        style="width: 33%"
+        (click)="updatePart(1)"
+      >
+        Trưa
+      </ion-button>
+      <ion-button
+        [fill]="parts[2] ? 'solid' : 'outline'"
+        class="rounded-circle"
+        style="width: 33%"
+        (click)="updatePart(2)"
+      >
+        Tối
+      </ion-button>
+    </ion-item>
+  </ion-card>
+  <ion-card class="calendar" class="py-3">
+    <h6 class="ml-3 d-flex align-items-center">
+      <ion-icon name="alarm-outline"></ion-icon>
+      <ion-text class="ml-1"> Chọn thời gian</ion-text>
+    </h6>
+    <ion-item lines="none">
+      <ion-textarea
+        class="border rounded-lg small px-2"
+        cols="15"
+        style="height: 6rem"
+      ></ion-textarea>
+    </ion-item>
   </ion-card>
 </ion-content>
