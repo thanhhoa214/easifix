@@ -1,11 +1,22 @@
-<ion-item color="primary" lines="none" detail="false" class="pt-3">
-  <ion-avatar slot="start" [routerLink]="['..', 'profile']">
+<ion-item
+  lines="none"
+  detail="false"
+  class="pt-3 bg-transparent"
+  style="--background: transparent"
+>
+  <ion-avatar
+    slot="start"
+    [routerLink]="['..', 'profile']"
+    class="p-1 border mr-1"
+  >
     <img src="assets/avatar.png" />
   </ion-avatar>
-  <div class="d-flex flex-column">
-    <b>Chào Nhi Lê!</b>
-    <span>Chúc bạn ngày mới vui vẻ ❤️</span>
-  </div>
+  <ion-card class="p-2 ml-1 w-100"
+    ><div class="d-flex flex-column">
+      <b>Chào Nhi Lê!</b>
+      <span>Chúc bạn ngày mới vui vẻ ❤️</span>
+    </div></ion-card
+  >
 </ion-item>
 <ion-searchbar placeholder="Bạn đang cần gì" class="mx-auto"></ion-searchbar>
 <ion-content>
@@ -33,6 +44,12 @@
         <ion-slide
           *ngFor="let i of [1, 2, 3]"
           class="border rounded-lg mr-2 px-2"
+          [routerLink]="[
+            '..',
+            'notification',
+            'promotions',
+            'promotion-detail'
+          ]"
         >
           <ion-card class="ml-0 mr-2">
             <img src="assets/banner-1.png" class="rounded-lg"

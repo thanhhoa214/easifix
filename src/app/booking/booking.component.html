@@ -1,11 +1,4 @@
 <app-header title="Thông tin đơn hàng"></app-header>
-<ion-toolbar color="primary"
-  ><div
-    class="progress-bar progress-bar-striped"
-    role="progressbar"
-    style="width: 33%; height: 0.5rem"
-  ></div
-></ion-toolbar>
 <ion-content>
   <ion-card class="commitment" class="py-3">
     <h6 class="ml-3 d-flex align-items-center">
@@ -25,7 +18,7 @@
   </ion-card>
   <ion-card class="py-3">
     <h6 class="ml-3 d-flex align-items-center">
-      <ion-icon name="newspaper-outline"></ion-icon>
+      <ion-icon name="ribbon-outline" style="zoom: 1.3"></ion-icon>
       <ion-text class="ml-1"> Dịch vụ yêu cầu</ion-text>
     </h6>
     <ion-item>
@@ -47,7 +40,7 @@
   </ion-card>
   <ion-card class="calendar" class="py-3">
     <h6 class="ml-3 d-flex align-items-center">
-      <ion-icon name="calendar-outline"></ion-icon>
+      <ion-icon name="calendar-outline" style="zoom: 1.3"></ion-icon>
       <ion-text class="ml-1"> Chọn lịch</ion-text>
     </h6>
     <ion-item>
@@ -115,12 +108,12 @@
   </ion-card>
   <ion-card class="calendar" class="py-3">
     <h6 class="ml-3 d-flex align-items-center">
-      <ion-icon name="alarm-outline"></ion-icon>
+      <ion-icon name="alarm-outline" style="zoom: 1.3"></ion-icon>
       <ion-text class="ml-1"> Chọn thời gian</ion-text>
     </h6>
     <ion-item>
       <ion-label> 6:30 đến 8:30</ion-label>
-      <ion-icon name="calendar-outline"></ion-icon>
+      <ion-icon name="alarm-outline"></ion-icon>
     </ion-item>
     <ion-item lines="none" class="small">
       <ion-button
@@ -151,7 +144,7 @@
   </ion-card>
   <ion-card class="calendar" class="py-3">
     <h6 class="ml-3 d-flex align-items-center">
-      <ion-icon name="alarm-outline"></ion-icon>
+      <ion-icon name="reader-outline" style="zoom: 1.3"></ion-icon>
       <ion-text class="ml-1"> Ghi chú</ion-text>
     </h6>
     <ion-item lines="none">
@@ -159,7 +152,9 @@
         class="border rounded-lg small px-2"
         cols="15"
         style="height: 6rem"
+        placeholder="Dặn dò, hoặc ghi chú thêm về địa chỉ ..."
       ></ion-textarea>
     </ion-item>
   </ion-card>
 </ion-content>
+<ion-button expand="block" class="w-90 mx-auto">Xác nhận thanh toán</ion-button>

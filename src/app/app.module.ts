@@ -18,6 +18,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { IonicModule } from '@ionic/angular';
 import { LayoutComponent } from './layout/layout.component';
 import { NotiComponent } from './noti/noti.component';
+import { PromotionDetailComponent } from './promotion-detail/promotion-detail.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { NotiComponent } from './noti/noti.component';
     ProfileComponent,
     LayoutComponent,
     NotiComponent,
+    PromotionDetailComponent,
   ],
   imports: [
     BrowserModule,

@@ -13,9 +13,11 @@ import { ProfileComponent } from './profile/profile.component';
 import { PromotionComponent } from './promotion/promotion.component';
 import { LayoutComponent } from './layout/layout.component';
 import { NotiComponent } from './noti/noti.component';
+import { PromotionDetailComponent } from './promotion-detail/promotion-detail.component';
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
+  { path: 'login', component: LoginComponent },
   {
     path: '',
     component: LayoutComponent,
@@ -28,16 +30,22 @@ const routes: Routes = [
           { path: '', component: HomeComponent, pathMatch: 'full' },
         ],
       },
-      { path: 'login', component: LoginComponent },
       { path: 'profile', component: ProfileComponent },
       { path: 'setting', component: SettingComponent },
       {
         path: 'notification',
         component: NotiComponent,
         children: [
-          { path: 'promotion', component: PromotionComponent },
-          { path: 'notification', component: NotificationComponent },
-          { path: '', redirectTo: 'notification', pathMatch: 'full' },
+          {
+            path: 'promotions',
+            children: [
+              { path: 'list', component: PromotionComponent },
+              { path: 'promotion-detail', component: PromotionDetailComponent },
+              { path: '', redirectTo: 'list', pathMatch: 'full' },
+            ],
+          },
+          { path: 'notifications', component: NotificationComponent },
+          { path: '', redirectTo: 'notifications', pathMatch: 'full' },
         ],
       },
       { path: 'favorite', component: FavoriteComponent },
