@@ -20,7 +20,7 @@ import { HistoryCompletedComponent } from './history-completed/history-completed
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
   { path: 'login', component: LoginComponent },
- 
+
   {
     path: '',
     component: LayoutComponent,
@@ -34,7 +34,6 @@ const routes: Routes = [
         ],
       },
       { path: 'profile', component: ProfileComponent },
-      { path: 'checkout', component: CheckoutComponent },
       { path: 'setting', component: SettingComponent },
       {
         path: 'notification',

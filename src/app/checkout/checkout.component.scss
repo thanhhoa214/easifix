@@ -1,14 +1,29 @@
 ion-avatar {
-    height: 7rem;
-    width: 7rem;
-    border: 3px solid var(--ion-color-primary);
+  height: 4rem;
+  width: 4rem;
 }
 
 ion-content {
-    border-radius: 10px;
-    ;
+  border-radius: 10px;
 }
 
-#bg {
-    border-radius: 10px;
+#momo-button {
+  border: 2px solid #ae2070;
+  border-radius: 0.5rem;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+  b {
+    color: #ae2070 !important;
+  }
+}
+#momo-button.active {
+  --background: #ae2070;
+  --ion-color-base: #ae2070;
+  border: none;
+  b {
+    color: white !important;
+  }
 }

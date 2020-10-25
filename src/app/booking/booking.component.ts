@@ -20,7 +20,7 @@ export class BookingComponent {
     },
     {
       title: ['Bảo hiểm', 'hỏng, vỡ đồ'],
-      icon: 'hand-left-outline',
+      icon: 'shield-checkmark-outline',
     },
     {
       title: ['Đảm bảo', 'nhân thân'],
@@ -35,7 +35,6 @@ export class BookingComponent {
       icon: 'construct-outline',
     },
   ];
-  constructor(public modalController: ModalController) {}
 
   updateDay(index: number) {
     const newDays = this.days.map((_) => false);
@@ -46,17 +45,5 @@ export class BookingComponent {
     const newParts = this.parts.map((_) => false);
     newParts[index] = true;
     this.parts = newParts;
-  }
-
-  async openSuccessModal() {
-    const random = Math.round(Math.random() * 2) % 2;
-    console.log(random);
-
-    const modal = await this.modalController.create({
-      component: random ? SuccessComponent : FailedComponent,
-      backdropDismiss: true,
-      cssClass: 'my-custom-class',
-    });
-    return await modal.present();
   }
 }

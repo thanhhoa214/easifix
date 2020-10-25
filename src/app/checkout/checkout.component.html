@@ -1,71 +1,137 @@
 <app-header title="Đang xử lý"></app-header>
-<ion-content class="d-flex ">
-    <ion-item color="light">
-        <ion-icon name="document-text-outline"></ion-icon>
-        <ion-label class="pl-1">Thông tin thợ</ion-label>
+<ion-content class="d-flex">
+  <ion-card class="py-2">
+    <h6 class="ml-3 d-flex align-items-center">
+      <ion-icon name="person-outline" style="zoom: 1.3"></ion-icon>
+      <ion-text class="ml-1"> Thông tin kỹ thuật viên</ion-text>
+    </h6>
+    <ion-item lines="none">
+      <ion-avatar class="mr-1 p-1 border">
+        <img src="assets/avatar-8.jpg" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Vũ Hữu Trường</h2>
+        <p class="text-monospace">0123456789</p>
+        <p class="text-secondary">
+          Địa chỉ: 55B Trần Quang Khải, <br />Quận 1, TP.HCM
+        </p>
+      </ion-label>
     </ion-item>
-    <div>
-        <ion-item lines="none" class="m-3 w-auto">
-            <ion-avatar class="mr-3">
-                <img src="assets/avatar.png">
-            </ion-avatar>
-            <ion-label>
-                <h2>Vũ Hữu Trường</h2>
-                <p>Điện thoại: 0325370xxx</p>
-                <p>Địa chỉ: Cửa hàng điện lạnh<br />Cơ khí Toàn Đặng, 55B Trần Quang Khải,<br /> Quận 1, Tp Hcm</p>
-            </ion-label>
-        </ion-item>
-    </div>
+  </ion-card>
+  <ion-card class="py-2">
+    <h6 class="ml-3 d-flex align-items-center">
+      <ion-icon name="ribbon-outline" style="zoom: 1.3"></ion-icon>
+      <ion-text class="ml-1"> Dịch vụ yêu cầu</ion-text>
+    </h6>
+    <ion-item>
+      <ion-label> Bảo dưỡng máy giặt </ion-label>
+    </ion-item>
+    <ion-item lines="none" class="small">
+      <ion-checkbox
+        [checked]="true"
+        [disabled]="true"
+        color="primary"
+      ></ion-checkbox>
+      <ion-label class="d-flex align-items-center">
+        <span class="mx-1">Yêu cầu </span>
+        <ion-text color="primary"> <b>Kiểm tra dịch vụ</b> </ion-text>
+      </ion-label>
+    </ion-item>
+  </ion-card>
 
-    <ion-item color="light">
-        <ion-icon name="build-outline"></ion-icon>
-        <ion-label class="pl-1">Dịch vụ</ion-label>
+  <ion-card class="pt-3">
+    <h6 class="ml-3 d-flex align-items-center">
+      <ion-icon name="reader-outline" style="zoom: 1.3"></ion-icon>
+      <ion-text
+        class="ml-1 w-100 d-flex justify-content-between align-items-end"
+      >
+        <span>Chi tiết dịch vụ</span>
+        <small class="pr-2">(phụ tùng, phụ phí)</small>
+      </ion-text>
+    </h6>
+    <ion-item class="ml-1 smaller text-secondary">
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-text class="ml-1"> Kiểm tra dịch vụ </ion-text>
+      <ion-text slot="end">50.000đ</ion-text>
     </ion-item>
-
-    <ion-item class="m-3 w-auto" lines="none">
-        <ion-item lines="none">
-            <ion-select placeholder="Mời lựa chọn">
-                <ion-select-option value="service1">Sửa tủ lạnh - Điện lạnh Toàn Đặng</ion-select-option>
-            </ion-select>
-        </ion-item>
+    <ion-item class="ml-1 smaller text-secondary">
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-text class="ml-1"> Nắp máy giặt </ion-text>
+      <ion-text slot="end">300.000đ</ion-text>
     </ion-item>
-    <ion-item id="bg" lines="none" class="ml-5 mr-3 mb-1 w-auto" style="--background: transparent">
-        <ion-label class="w-100" style="font-weight: bold;">Phụ tùng - giá</ion-label>
+    <ion-item class="ml-1 smaller text-secondary">
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-text class="ml-1"> Công sửa chữa </ion-text>
+      <ion-text slot="end">50.000đ</ion-text>
     </ion-item>
-    <ion-list class="ml-5 mr-3 w-auto">
-        <ion-item>
-            <ion-label>Cửa tủ</ion-label>
-            <ion-label class="mr-0">2.000.000</ion-label>
-        </ion-item>
-        <ion-item>
-            <ion-label>Tiền công</ion-label>
-            <ion-label class="mr-0">200.000</ion-label>
-        </ion-item>
-    </ion-list>
-    <ion-item class="m-3 w-auto" lines="none">
-        <ion-label>Mã khuyến mãi</ion-label>
-        <!-- Default Input -->
-        <ion-input class="mr-0 ml-1" placeholder="Vui lòng nhập mã"></ion-input>
+    <ion-item class="ml-1 smaller text-secondary">
+      <ion-icon name="pricetags-outline"></ion-icon>
+      <ion-text class="ml-1"> <b>Mã giảm giá</b> </ion-text>
+      <div slot="end" class="d-flex align-items-center">
+        <ion-input
+          class="text-right"
+          placeholder="Nhập mã giảm giá"
+          value=""
+          #promotionInput
+        ></ion-input>
+        <ion-icon
+          name="checkmark-done-circle-outline"
+          color="primary"
+          *ngIf="promotionInput.value == 'PASS_HCI'"
+        ></ion-icon>
+        <ion-icon
+          name="close-circle-outline"
+          color="danger"
+          *ngIf="
+            promotionInput.value !== '' && promotionInput.value !== 'PASS_HCI'
+          "
+        ></ion-icon>
+      </div>
     </ion-item>
-    <ion-item class="m-3 w-auto" lines="none">
-        <ion-label>Tổng tiền</ion-label>
-        <!-- Default Input -->
-        <ion-label class="mr-0">2.200.000</ion-label>
+    <ion-item
+      class="ml-4 smaller text-secondary"
+      *ngIf="promotionInput.value == 'PASS_HCI'"
+    >
+      <ion-text class="ml-1 text-right" color="danger">
+        Mã áp dụng giảm 50%
+      </ion-text>
+      <ion-text color="danger" slot="end">-200.000đ</ion-text>
     </ion-item>
-    <ion-item class="m-3 w-auto" lines="none">
-        <ion-label>Khuyến mãi</ion-label>
-        <!-- Default Input -->
-        <ion-label class="mr-0">0</ion-label>
+    <ion-item class="smaller" color="primary">
+      <ion-icon name="calculator-outline"></ion-icon>
+      <ion-text class="ml-1"> <b>TỔNG TIỀN</b> </ion-text>
+      <ion-text slot="end"
+        ><b
+          >{{ promotionInput.value == 'PASS_HCI' ? '200.000đ' : '400.000đ' }}
+        </b></ion-text
+      >
     </ion-item>
-    <hr class="w-100" style="border: solid black 0.5px;">
-    <ion-item class="m-3 w-auto" lines="none">
-        <ion-label>Thanh toán</ion-label>
-        <!-- Default Input -->
-        <ion-label class="mr-0">2.200.000</ion-label>
-    </ion-item>
-    <ion-item class="m-3 w-auto d-flex flex-column justify-content-center" style="--background: transparent">
-        <ion-button class="w-50">
-            <img src="assets\Image 5.png" alt=""> MOMO</ion-button>
-        <ion-button class="w-50">TIỀN MẶT</ion-button>
-    </ion-item>
+  </ion-card>
+  <div class="d-flex justify-content-between mx-3">
+    <ion-button
+      class="w-50"
+      color="momo"
+      id="momo-button"
+      [class.active]="activeButton === 'momo'"
+      (click)="updateMethod('momo')"
+    >
+      <img src="assets/momo.png" /> <b class="mx-2">MOMO</b>
+    </ion-button>
+    <ion-button
+      class="w-50"
+      *ngIf="activeButton === 'momo'"
+      fill="outline"
+      (click)="updateMethod('cash')"
+      >TIỀN MẶT</ion-button
+    >
+    <ion-button
+      class="w-50"
+      *ngIf="activeButton !== 'momo'"
+      (click)="updateMethod('cash')"
+      >TIỀN MẶT</ion-button
+    >
+  </div>
 </ion-content>
+<ion-button expand="block" class="w-90 mx-auto" (click)="openSuccessModal()"
+  >Thanh toán</ion-button
+>

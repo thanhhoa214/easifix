@@ -28,19 +28,19 @@
     <ion-slide
       [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
     >
-      <img src="assets/banner-10.jpg" class="rounded-lg" />
+      <img src="assets/promotion-5.jpg" class="rounded-lg" />
     </ion-slide>
 
     <ion-slide
       [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
     >
-      <img src="assets/banner-11.jpg" class="rounded-lg" />
+      <img src="assets/promotion-2.png" class="rounded-lg" />
     </ion-slide>
 
     <ion-slide
       [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
     >
-      <img src="assets/banner-13.png" class="rounded-lg" />
+      <img src="assets/promotion-3.png" class="rounded-lg" />
     </ion-slide>
   </ion-slides>
   <div>
@@ -48,19 +48,19 @@
       <h4>Đã đặt gần đây</h4>
       <ion-slides class="nearby" [options]="{ slidesPerView: 1.75 }">
         <ion-slide
-          *ngFor="let i of [1, 2, 3]"
+          *ngFor="let item of nearbys"
           class="border rounded-lg mr-2 pr-1"
           routerLink="booking"
         >
           <ion-card class="ml-0 mr-2">
-            <img src="assets/047-washing machine.svg" class="rounded-lg"
+            <img [src]="'assets/' + item.src" class="rounded-lg"
           /></ion-card>
           <div
             class="d-flex flex-column justify-content-start align-items-start small"
           >
-            <b>Sửa máy giặt</b>
-            <span class="mt-n1 small">Toàn Đặng</span>
-            <span>250.000đ</span>
+            <b>{{ item.title }}</b>
+            <span class="mt-n1 small">{{ item.fixer }}</span>
+            <span>{{ item.price }}</span>
           </div>
         </ion-slide>
       </ion-slides>
@@ -74,7 +74,11 @@
           routerLink="booking"
         >
           <img [src]="'assets/' + category.src" />
-          <div class="badge badge-warning" *ngIf="category.badge">
+          <div
+            [class.badge-danger]="category.badge === 'giảm 50%'"
+            class="badge badge-warning"
+            *ngIf="category.badge"
+          >
             {{ category.badge }}
           </div>
         </ion-card>

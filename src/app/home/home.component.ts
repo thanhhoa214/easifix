@@ -8,6 +8,26 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   constructor() {}
+  nearbys: { src: string; title: string; fixer: string; price: string }[] = [
+    {
+      src: '047-washing machine.svg',
+      title: 'Sửa máy giặt',
+      fixer: 'Phạm Mạnh Long',
+      price: '100.000đ',
+    },
+    {
+      src: '002-air-conditioner.svg',
+      title: 'Sửa máy lạnh',
+      fixer: 'Trần Đạt',
+      price: '250.000đ',
+    },
+    {
+      src: '019-microwave.svg',
+      title: 'Sửa lò vi sóng',
+      fixer: 'Lê Văn Tân',
+      price: '150.000đ',
+    },
+  ];
   categories: { src: string; badge: string }[] = [
     {
       src: '002-air-conditioner.svg',
@@ -18,8 +38,8 @@ export class HomeComponent implements OnInit {
       badge: '',
     },
     {
-      src: '010-fridge.svg',
-      badge: 'Hot',
+      src: '047-washing machine.svg',
+      badge: 'giảm 50%',
     },
     {
       src: '045-television.svg',
@@ -35,11 +55,11 @@ export class HomeComponent implements OnInit {
     },
     {
       src: '024-oven.svg',
-      badge: 'Discount',
+      badge: '',
     },
     {
-      src: '039-speaker.svg',
-      badge: '',
+      src: '010-fridge.svg',
+      badge: 'giảm 20%',
     },
     {
       src: '043-toaster.svg',

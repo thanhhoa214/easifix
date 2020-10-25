@@ -156,6 +156,9 @@
     </ion-item>
   </ion-card>
 </ion-content>
-<ion-button expand="block" class="w-90 mx-auto" (click)="openSuccessModal()"
+<ion-button
+  expand="block"
+  class="w-90 mx-auto"
+  [routerLink]="['..', 'checkout']"
   >Xác nhận thanh toán</ion-button
 >
