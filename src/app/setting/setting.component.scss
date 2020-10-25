@@ -1,11 +1,5 @@
-ion-icon {
-    color: #009688;
-}
-
-ion-label {
-    font-size: 20px;
-}
-
-ion-item {
-    height: 60px;
+ion-avatar {
+  width: 9rem;
+  height: 9rem;
+  border: 3px solid var(--ion-color-primary);
 }

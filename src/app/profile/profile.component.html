@@ -1,16 +1,9 @@
 <app-header title="Thông tin của bạn"></app-header>
 <ion-content>
-  <ion-item lines="none" style="--background: transparent">
-    <div
-      class="w-100 d-flex flex-column justify-content-center align-items-center mt-2"
-    >
-      <ion-avatar size="large" class="p-1 border">
-        <img src="assets/avatar.png" alt="Lỗi" />
-      </ion-avatar>
-      <br />
-    </div>
-  </ion-item>
-  <ion-list lines="full" class="ion-no-margin">
+  <ion-avatar size="large" class="p-1 border mx-auto">
+    <img src="assets/avatar.png" alt="Lỗi" />
+  </ion-avatar>
+  <ion-list lines="full">
     <ion-item color="light">
       <ion-input value="Thông tin" disabled></ion-input>
     </ion-item>
@@ -41,8 +34,8 @@
         (click)="add2.checked = false"
       ></ion-checkbox>
       <ion-input
-        value="2/2 Phan Văn Trị, Quận Gò Vập, TP.HCM"
-        class="text-right"
+        value="2/2 Phan Văn Trị, Quận Gò Vấp, TP.HCM"
+        class="text-right small"
       ></ion-input>
     </ion-item>
 
@@ -54,7 +47,7 @@
       ></ion-checkbox>
       <ion-input
         value="14 Phan Cao, Quận Bình Thạnh, TP.HCM"
-        class="text-right"
+        class="text-right small"
       ></ion-input>
     </ion-item>
   </ion-list>

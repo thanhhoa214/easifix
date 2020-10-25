@@ -28,28 +28,28 @@
     <ion-slide
       [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
     >
-      <img src="assets/banner-3.jpeg" class="rounded-lg" />
+      <img src="assets/banner-10.jpg" class="rounded-lg" />
     </ion-slide>
 
     <ion-slide
       [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
     >
-      <img src="assets/banner-2.jpg" class="rounded-lg" />
+      <img src="assets/banner-11.jpg" class="rounded-lg" />
     </ion-slide>
 
     <ion-slide
       [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
     >
-      <img src="assets/banner-3.jpeg" class="rounded-lg" />
+      <img src="assets/banner-13.png" class="rounded-lg" />
     </ion-slide>
   </ion-slides>
   <div>
     <ion-card class="px-3 py-2">
-      <h4>Gần đây</h4>
+      <h4>Đã đặt gần đây</h4>
       <ion-slides class="nearby" [options]="{ slidesPerView: 1.75 }">
         <ion-slide
           *ngFor="let i of [1, 2, 3]"
-          class="border rounded-lg mr-2 px-2"
+          class="border rounded-lg mr-2 pr-1"
           routerLink="booking"
         >
           <ion-card class="ml-0 mr-2">
@@ -69,12 +69,14 @@
       <h4>Chúng tôi sẽ giúp bạn</h4>
       <div class="d-flex justify-content-center flex-wrap mb-3">
         <ion-card
-          *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]"
-          class="m-2 category"
+          *ngFor="let category of categories"
+          class="my-2 mx-1 category"
           routerLink="booking"
         >
-          <img src="assets/010-fridge.svg" />
-          <div class="badge badge-warning">Hot</div>
+          <img [src]="'assets/' + category.src" />
+          <div class="badge badge-warning" *ngIf="category.badge">
+            {{ category.badge }}
+          </div>
         </ion-card>
       </div>
     </ion-card>

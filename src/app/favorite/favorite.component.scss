@@ -1,17 +1,14 @@
-ion-slide,
-div {
-    span {
-        color: #d9dadb;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-    b {
-        font-size: 16px;
-    }
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
-ion-content,
-div {
-    background-color: #ffffff;
+ion-card {
+  width: 6rem;
+  height: 6rem;
+}
+
+.small {
+  font-size: 0.8rem;
 }
