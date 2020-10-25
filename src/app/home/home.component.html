@@ -1,81 +1,57 @@
-<ion-item
-  lines="none"
-  detail="false"
-  class="pt-3 bg-transparent"
-  style="--background: transparent"
->
-  <ion-avatar
-    slot="start"
-    [routerLink]="['..', 'profile']"
-    class="p-1 border mr-1"
-  >
+<ion-item lines="none" detail="false" class="pt-3 bg-transparent" style="--background: transparent">
+  <ion-avatar slot="start" [routerLink]="['..', 'profile']" class="p-1 border mr-1">
     <img src="assets/avatar.png" />
   </ion-avatar>
-  <ion-card class="p-2 ml-1 w-100"
-    ><div class="d-flex flex-column">
+  <ion-card class="p-2 ml-1 w-100">
+    <div class="d-flex flex-column">
       <b>Chào Nhi Lê!</b>
       <span>Chúc bạn ngày mới vui vẻ ❤️</span>
-    </div></ion-card
-  >
+    </div>
+  </ion-card>
 </ion-item>
 <ion-searchbar placeholder="Bạn đang cần gì" class="mx-auto"></ion-searchbar>
 <ion-content>
-  <ion-slides
-    #sliders
-    (ionSlidesDidLoad)="afterslidesLoad(sliders)"
-    class="promotions"
-  >
+  <ion-slides #sliders (ionSlidesDidLoad)="afterslidesLoad(sliders)" class="promotions">
     <ion-slide>
-      <img src="assets/banner-3.jpeg" class="rounded-lg" />
+      <img src="assets/Banner.png" class="rounded-lg" />
     </ion-slide>
 
     <ion-slide>
-      <img src="assets/banner-2.jpg" class="rounded-lg" />
+      <img src="assets/Banner.png" class="rounded-lg" />
     </ion-slide>
 
     <ion-slide>
-      <img src="assets/banner-3.jpeg" class="rounded-lg" />
+      <img src="assets/Banner.png" class="rounded-lg" />
     </ion-slide>
   </ion-slides>
   <div>
-    <ion-card class="px-3 py-2"
-      ><h4>Gần đây</h4>
+    <ion-card class="px-3 py-2">
+      <h4>Gần đây</h4>
       <ion-slides class="nearby" [options]="{ slidesPerView: 1.75 }">
-        <ion-slide
-          *ngFor="let i of [1, 2, 3]"
-          class="border rounded-lg mr-2 px-2"
-          [routerLink]="[
+        <ion-slide *ngFor="let i of [1, 2, 3]" class="border rounded-lg mr-2 px-2" [routerLink]="[
             '..',
             'notification',
             'promotions',
             'promotion-detail'
-          ]"
-        >
+          ]">
           <ion-card class="ml-0 mr-2">
-            <img src="assets/banner-1.png" class="rounded-lg"
-          /></ion-card>
-          <div
-            class="d-flex flex-column justify-content-start align-items-start small"
-          >
+            <img src="assets/047-washing machine.svg" class="rounded-lg" /></ion-card>
+          <div class="d-flex flex-column justify-content-start align-items-start small">
             <b>Sửa máy giặt</b>
             <span class="mt-n1 small">Toàn Đặng</span>
             <span>250.000đ</span>
           </div>
         </ion-slide>
-      </ion-slides></ion-card
-    >
+      </ion-slides>
+    </ion-card>
     <ion-card class="px-3 py-2">
       <h4>Chúng tôi sẽ giúp bạn</h4>
       <div class="d-flex justify-content-center flex-wrap mb-3">
-        <ion-card
-          *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]"
-          class="m-2 category"
-          routerLink="booking"
-        >
-          <img src="assets/banner-3.jpeg" />
+        <ion-card *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]" class="m-2 category" routerLink="booking">
+          <img src="assets/010-fridge.svg" />
           <div class="badge badge-warning">Hot</div>
         </ion-card>
-      </div></ion-card
-    >
+      </div>
+    </ion-card>
   </div>
 </ion-content>
