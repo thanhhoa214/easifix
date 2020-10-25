@@ -25,15 +25,21 @@
     (ionSlidesDidLoad)="afterslidesLoad(sliders)"
     class="promotions"
   >
-    <ion-slide>
+    <ion-slide
+      [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
+    >
       <img src="assets/banner-3.jpeg" class="rounded-lg" />
     </ion-slide>
 
-    <ion-slide>
+    <ion-slide
+      [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
+    >
       <img src="assets/banner-2.jpg" class="rounded-lg" />
     </ion-slide>
 
-    <ion-slide>
+    <ion-slide
+      [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
+    >
       <img src="assets/banner-3.jpeg" class="rounded-lg" />
     </ion-slide>
   </ion-slides>
@@ -44,12 +50,7 @@
         <ion-slide
           *ngFor="let i of [1, 2, 3]"
           class="border rounded-lg mr-2 px-2"
-          [routerLink]="[
-            '..',
-            'notification',
-            'promotions',
-            'promotion-detail'
-          ]"
+          routerLink="booking"
         >
           <ion-card class="ml-0 mr-2">
             <img src="assets/banner-1.png" class="rounded-lg"

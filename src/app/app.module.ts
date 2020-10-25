@@ -19,6 +19,8 @@ import { IonicModule } from '@ionic/angular';
 import { LayoutComponent } from './layout/layout.component';
 import { NotiComponent } from './noti/noti.component';
 import { PromotionDetailComponent } from './promotion-detail/promotion-detail.component';
+import { HistoryCompletedComponent } from './history-completed/history-completed.component';
+import { HistoryProcessingComponent } from './history-processing/history-processing.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { PromotionDetailComponent } from './promotion-detail/promotion-detail.co
     LayoutComponent,
     NotiComponent,
     PromotionDetailComponent,
+    HistoryCompletedComponent,
+    HistoryProcessingComponent,
   ],
   imports: [
     BrowserModule,
