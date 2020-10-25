@@ -1,6 +1,12 @@
-#picture {
-  width: 100%;
+.img-wrapper {
   height: 6.5rem;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    transform: translate(0, -25%);
+  }
 }
 
 #info-promo {
