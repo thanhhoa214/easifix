@@ -5,11 +5,7 @@ ion-avatar {
 ion-searchbar {
   width: 90%;
   text-indent: 0.5rem;
-  --background: linear-gradient(
-    40deg,
-    rgba(51, 191, 154, 0.4) 36%,
-    rgba(255, 255, 255, 1) 110%
-  );
+  --background: linear-gradient(40deg, rgba(51, 191, 154, 0.4) 36%, rgba(255, 255, 255, 1) 110%);
 }
 ion-card,
 ion-slide {
@@ -51,4 +47,10 @@ ion-card.category {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
+}
+ion-card {
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
