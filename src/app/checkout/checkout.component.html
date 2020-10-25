@@ -1,1 +1,71 @@
-<p>checkout works!</p>
+<app-header title="Đang xử lý"></app-header>
+<ion-content class="d-flex ">
+    <ion-item color="light">
+        <ion-icon name="document-text-outline"></ion-icon>
+        <ion-label class="pl-1">Thông tin thợ</ion-label>
+    </ion-item>
+    <div>
+        <ion-item lines="none" class="m-3 w-auto">
+            <ion-avatar class="mr-3">
+                <img src="assets/avatar.png">
+            </ion-avatar>
+            <ion-label>
+                <h2>Vũ Hữu Trường</h2>
+                <p>Điện thoại: 0325370xxx</p>
+                <p>Địa chỉ: Cửa hàng điện lạnh<br />Cơ khí Toàn Đặng, 55B Trần Quang Khải,<br /> Quận 1, Tp Hcm</p>
+            </ion-label>
+        </ion-item>
+    </div>
+
+    <ion-item color="light">
+        <ion-icon name="build-outline"></ion-icon>
+        <ion-label class="pl-1">Dịch vụ</ion-label>
+    </ion-item>
+
+    <ion-item class="m-3 w-auto" lines="none">
+        <ion-item lines="none">
+            <ion-select placeholder="Mời lựa chọn">
+                <ion-select-option value="service1">Sửa tủ lạnh - Điện lạnh Toàn Đặng</ion-select-option>
+            </ion-select>
+        </ion-item>
+    </ion-item>
+    <ion-item id="bg" lines="none" class="ml-5 mr-3 mb-1 w-auto" style="--background: transparent">
+        <ion-label class="w-100" style="font-weight: bold;">Phụ tùng - giá</ion-label>
+    </ion-item>
+    <ion-list class="ml-5 mr-3 w-auto">
+        <ion-item>
+            <ion-label>Cửa tủ</ion-label>
+            <ion-label class="mr-0">2.000.000</ion-label>
+        </ion-item>
+        <ion-item>
+            <ion-label>Tiền công</ion-label>
+            <ion-label class="mr-0">200.000</ion-label>
+        </ion-item>
+    </ion-list>
+    <ion-item class="m-3 w-auto" lines="none">
+        <ion-label>Mã khuyến mãi</ion-label>
+        <!-- Default Input -->
+        <ion-input class="mr-0 ml-1" placeholder="Vui lòng nhập mã"></ion-input>
+    </ion-item>
+    <ion-item class="m-3 w-auto" lines="none">
+        <ion-label>Tổng tiền</ion-label>
+        <!-- Default Input -->
+        <ion-label class="mr-0">2.200.000</ion-label>
+    </ion-item>
+    <ion-item class="m-3 w-auto" lines="none">
+        <ion-label>Khuyến mãi</ion-label>
+        <!-- Default Input -->
+        <ion-label class="mr-0">0</ion-label>
+    </ion-item>
+    <hr class="w-100" style="border: solid black 0.5px;">
+    <ion-item class="m-3 w-auto" lines="none">
+        <ion-label>Thanh toán</ion-label>
+        <!-- Default Input -->
+        <ion-label class="mr-0">2.200.000</ion-label>
+    </ion-item>
+    <ion-item class="m-3 w-auto d-flex flex-column justify-content-center" style="--background: transparent">
+        <ion-button class="w-50">
+            <img src="assets\Image 5.png" alt=""> MOMO</ion-button>
+        <ion-button class="w-50">TIỀN MẶT</ion-button>
+    </ion-item>
+</ion-content>
