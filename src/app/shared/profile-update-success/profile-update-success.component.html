@@ -1,0 +1,23 @@
+<div class="h-100 d-flex justify-content-center align-items-center">
+  <div class="border bg-white pb-4" id="body">
+    <div class="mt-4">
+      <p>
+        <strong>{{ 'thành công' | uppercase }}</strong>
+      </p>
+    </div>
+    <ion-icon
+      name="checkmark-circle-outline"
+      style="zoom: 10"
+      color="primary"
+    ></ion-icon>
+    <p>Cập nhật thông tin thành công!</p>
+    <ion-button
+      color="primary"
+      expand="block"
+      class="mt-4 w-90 mx-auto"
+      (click)="dismissModal()"
+    >
+      <ion-title>OK</ion-title>
+    </ion-button>
+  </div>
+</div>

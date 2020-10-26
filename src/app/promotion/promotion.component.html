@@ -7,7 +7,7 @@
       [routerLink]="['..', 'promotion-detail']"
     >
       <div class="img-wrapper">
-        <img src="assets/promotion-2.png" />
+        <img [src]="'assets/promotion-' + ((i % 3) + 1) + '.png'" />
       </div>
       <div id="info-promo">
         <b

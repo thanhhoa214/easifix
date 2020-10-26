@@ -4,13 +4,29 @@
       *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
     >
       <ion-thumbnail slot="start" class="p-2">
-        <img src="assets/giftbox.svg" />
+        <img [src]="i % 6 ? 'assets/giftbox.svg' : 'assets/message.svg'" />
       </ion-thumbnail>
       <ion-label>
-        <h2><strong>Dùng thử miễn phí</strong></h2>
+        <h2>
+          <strong>{{
+            i % 6 == 0
+              ? 'Bạn nhận được tin nhắn'
+              : i % 3 == 0
+              ? 'Dùng thử miễn phí'
+              : 'Bạn được giảm ' + ((i % 5) + 1) + '0% hóa đơn'
+          }}</strong>
+        </h2>
         <h3>
-          <p class="text-secondary">Mời bạn dùng thử dịch vụ với khuyến mãi</p>
-          <p class="text-secondary">EF40 khi đặt dịch vụ lần đầu</p>
+          <p class="text-secondary">
+            {{
+              i % 6 == 0
+                ? 'Đoàn Văn Hậu đã nhắn tin cho bạn'
+                : i % 3 == 0
+                ? 'Dùng thử miễn phí'
+                : 'EF40 được giảm 50% phí'
+            }}
+          </p>
+          <p class="text-secondary">sửa chữa trong lần đầu sử dụng ứng dụng</p>
         </h3>
       </ion-label>
     </ion-item>

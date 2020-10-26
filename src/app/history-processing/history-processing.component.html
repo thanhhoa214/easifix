@@ -1,13 +1,23 @@
 <ion-content color="light">
   <ion-list>
-    <ion-item color="light" *ngFor="let i of [1, 2, 3, 4]">
-      <img src="assets/avatar-2.jpg" class="rounded-lg my-3 mx-2" />
+    <ion-item color="light" *ngFor="let i of [3, 4, 1, 2]">
+      <img
+        [src]="'assets/avatar-' + (i - 1) + '.jpg'"
+        class="rounded-lg my-3 mx-2"
+      />
       <div class="d-flex flex-column">
         <div>
           <ion-text>
-            <h4 class="my-0"><b>Võ Đại Nhân</b></h4>
+            <h4 class="my-0" *ngIf="i == 3"><b>Võ Đại Nhân</b></h4>
+            <h4 class="my-0" *ngIf="i == 4"><b>Uyên Nhi</b></h4>
+            <h4 class="my-0" *ngIf="i == 1"><b>Trường Vũ</b></h4>
+            <h4 class="my-0" *ngIf="i == 2"><b>Thanh Uyên</b></h4>
           </ion-text>
-          <p class="mb-0 small">55B Trần Quang Khải, Q1, Tp.HCM</p>
+
+          <p class="mb-0 small">
+            55B {{ i % 3 ? 'Trần Quang Khải, Q1' : 'Nguyễn Trường Tộ, Q3' }},
+            Tp.HCM
+          </p>
           <ion-text color="medium">120,000đ</ion-text>
         </div>
       </div>

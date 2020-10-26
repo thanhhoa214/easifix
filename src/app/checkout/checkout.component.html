@@ -91,13 +91,14 @@
     <ion-item
       class="ml-4 smaller text-secondary"
       *ngIf="promotionInput.value == 'PASS_HCI'"
+      lines="none"
     >
       <ion-text class="ml-1 text-right" color="danger">
         Mã áp dụng giảm 50%
       </ion-text>
       <ion-text color="danger" slot="end">-200.000đ</ion-text>
     </ion-item>
-    <ion-item class="smaller" color="primary">
+    <ion-item class="smaller" color="primary" lines="none">
       <ion-icon name="calculator-outline"></ion-icon>
       <ion-text class="ml-1"> <b>TỔNG TIỀN</b> </ion-text>
       <ion-text slot="end"
@@ -122,13 +123,13 @@
       *ngIf="activeButton === 'momo'"
       fill="outline"
       (click)="updateMethod('cash')"
-      >TIỀN MẶT</ion-button
+      ><b>TIỀN MẶT</b></ion-button
     >
     <ion-button
       class="w-50"
       *ngIf="activeButton !== 'momo'"
       (click)="updateMethod('cash')"
-      >TIỀN MẶT</ion-button
+      ><b>TIỀN MẶT</b></ion-button
     >
   </div>
 </ion-content>
