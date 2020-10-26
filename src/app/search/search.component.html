@@ -40,8 +40,8 @@
 
     <!-- Search 2 -->
     <b class="pl-3"> Gần đây: </b>
-    <ion-slides class="mb-1">
-        <ion-slide class="border rounded mr-2 " *ngFor="let i of [1,2,3,4,5]">
+    <ion-slides class="mb-1 nearby" [options]="{ slidesPerView: 3 }">
+        <ion-slide class="rounded-2 mr-2 " *ngFor="let i of [1,2,3,4,5]">
             <ion-button Color=" #f2f2f2">Thay màn hình</ion-button>
         </ion-slide>
     </ion-slides>
@@ -73,7 +73,7 @@
             </ion-item>
 
             <ion-item slot="end">
-                <ion-slides class="mb-1">
+                <ion-slides class="mb-1 nearby" [options]="{ slidesPerView: 1.75 }">
                     <ion-slide class="border rounded mr-2" *ngFor="let i of [1,2,3,4,5]">
                         <ion-thumbnail slot="start" class="mr-2">
                             <img src="assets/avatar-0.jpg" />
@@ -91,6 +91,6 @@
         </div>
     </ion-list>
 
-    
+
 
 </ion-content>
