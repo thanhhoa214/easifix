@@ -1,63 +1,66 @@
 ion-avatar {
-  width: 4.5rem;
-  height: 4.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
 }
+
 ion-searchbar {
-  width: 90%;
-  text-indent: 0.5rem;
-  --background: linear-gradient(
-    40deg,
-    rgba(51, 191, 154, 0.4) 36%,
-    rgba(255, 255, 255, 1) 110%
-  );
+    width: 90%;
+    text-indent: 0.5rem;
+    --background: linear-gradient( 40deg, rgba(51, 191, 154, 0.4) 36%, rgba(255, 255, 255, 1) 110%);
 }
+
 ion-card,
 ion-slide {
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 ion-slides.promotions {
-  height: 20vh;
-  width: 100%;
-
-  ion-slide {
-    img {
-      max-width: 90%;
+    height: 20vh;
+    width: 100%;
+    ion-slide {
+        img {
+            max-width: 90%;
+        }
     }
-  }
+}
+
+#toolIcon {
+    height: 50px;
+    width: 50px;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 ion-slides.nearby {
-  height: 5rem;
-
-  ion-card {
-    width: 4rem;
-    height: 4rem;
-    img {
-      width: 90%;
-      transform: translateY(10%);
+    height: 5rem;
+    ion-card {
+        width: 4rem;
+        height: 4rem;
+        img {
+            width: 90%;
+            transform: translateY(10%);
+        }
     }
-  }
 }
 
 ion-card.category {
-  width: 30%;
-  height: 7rem;
-  min-width: 4rem;
-  min-height: 4rem;
-
-  img {
-    width: 90%;
-    transform: translate(5%, 5%);
-  }
+    width: 30%;
+    height: 7rem;
+    min-width: 4rem;
+    min-height: 4rem;
+    img {
+        width: 90%;
+        transform: translate(5%, 5%);
+    }
 }
 
 .badge.badge-warning {
-  position: absolute;
-  top: 0.2rem;
-  right: 0.2rem;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
 }

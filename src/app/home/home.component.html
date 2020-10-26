@@ -1,91 +1,256 @@
-<ion-item
-  lines="none"
-  detail="false"
-  class="pt-3 bg-transparent"
-  style="--background: transparent"
->
-  <ion-avatar
-    slot="start"
-    [routerLink]="['..', 'profile']"
-    class="p-1 border mr-1"
-  >
-    <img src="assets/avatar.png" />
-  </ion-avatar>
-  <ion-card class="p-2 ml-1 w-100">
-    <div class="d-flex flex-column">
-      <b>Chào Nhi Lê!</b>
-      <span>Chúc bạn ngày mới vui vẻ ❤️</span>
-    </div>
-  </ion-card>
+<ion-item lines="none" detail="false" class="pt-3 bg-transparent" style="--background: transparent">
+    <ion-avatar slot="start" [routerLink]="['..', 'profile']" class="p-1 border mr-1">
+        <img src="assets/avatar.png" />
+    </ion-avatar>
+    <ion-card class="p-2 ml-1 w-100">
+        <div class="d-flex flex-column">
+            <b>Chào Nhi Lê!</b>
+            <span>Chúc bạn ngày mới vui vẻ ❤️</span>
+        </div>
+    </ion-card>
 </ion-item>
-<ion-searchbar
-  placeholder="Bạn đang gặp vấn đề gì ?"
-  class="mx-auto"
-></ion-searchbar>
+<ion-searchbar placeholder="Bạn đang gặp vấn đề gì ?" class="mx-auto"></ion-searchbar>
+
 <ion-content>
-  <ion-slides
-    #sliders
-    (ionSlidesDidLoad)="afterslidesLoad(sliders)"
-    class="promotions"
-  >
-    <ion-slide
-      [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
-    >
-      <img src="assets/promotion-5.jpg" class="rounded-lg" />
-    </ion-slide>
+    <ion-item class="d-flex flex-column justify-content-start align-items-start small pb-1" lines="none">
+        <img id="toolIcon" src="assets/002-air-conditioner.svg" alt="Lỗi">
+        <img id="toolIcon" src="assets/006-cleaner.svg" alt="Lỗi">
+        <img id="toolIcon" src="assets/047-washing machine.svg" alt="Lỗi">
+        <img id="toolIcon" src="assets/045-television.svg" alt="Lỗi">
+        <img id="toolIcon" src="assets/017-lamp.svg" alt="Lỗi">
+        <img id="toolIcon" src="assets/019-microwave.svg" alt="Lỗi">
+        <img id="toolIcon" src="assets/024-oven.svg" alt="Lỗi">
+        <img id="toolIcon" src="assets/010-fridge.svg" alt="Lỗi">
+        <img id="toolIcon" src="assets/043-toaster.svg" alt="Lỗi">
+    </ion-item>
 
-    <ion-slide
-      [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
-    >
-      <img src="assets/promotion-2.png" class="rounded-lg" />
-    </ion-slide>
 
-    <ion-slide
-      [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
-    >
-      <img src="assets/promotion-3.png" class="rounded-lg" />
-    </ion-slide>
-  </ion-slides>
-  <div>
-    <ion-card class="px-3 py-2">
-      <h4>Đã đặt gần đây</h4>
-      <ion-slides class="nearby" [options]="{ slidesPerView: 1.75 }">
-        <ion-slide
-          *ngFor="let item of nearbys"
-          class="border rounded-lg mr-2 pr-1"
-          routerLink="booking"
-        >
-          <ion-card class="ml-0 mr-2">
-            <img [src]="'assets/' + item.src" class="rounded-lg"
-          /></ion-card>
-          <div
-            class="d-flex flex-column justify-content-start align-items-start small"
-          >
-            <b>{{ item.title }}</b>
-            <span class="mt-n1 small">{{ item.fixer }}</span>
-            <span>{{ item.price }}</span>
-          </div>
+
+    <ion-slides #sliders (ionSlidesDidLoad)="afterslidesLoad(sliders)" class="promotions">
+        <ion-slide [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']">
+            <img src="assets/promotion-5.jpg" class="rounded-lg" />
         </ion-slide>
-      </ion-slides>
-    </ion-card>
-    <ion-card class="px-3 py-2">
-      <h4>Chúng tôi sẽ giúp bạn</h4>
-      <div class="d-flex justify-content-center flex-wrap mb-3">
-        <ion-card
-          *ngFor="let category of categories"
-          class="my-2 mx-1 category"
-          routerLink="booking"
-        >
-          <img [src]="'assets/' + category.src" />
-          <div
-            [class.badge-danger]="category.badge === 'giảm 50%'"
-            class="badge badge-warning"
-            *ngIf="category.badge"
-          >
-            {{ category.badge }}
-          </div>
+
+        <ion-slide [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']">
+            <img src="assets/promotion-2.png" class="rounded-lg" />
+        </ion-slide>
+
+        <ion-slide [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']">
+            <img src="assets/promotion-3.png" class="rounded-lg" />
+        </ion-slide>
+    </ion-slides>
+    <div>
+        <ion-card class="px-3 py-2">
+            <h4>Đã đặt gần đây</h4>
+            <ion-slides class="nearby" [options]="{ slidesPerView: 1.75 }">
+                <ion-slide *ngFor="let item of nearbys" class="border rounded-lg mr-2 pr-1" routerLink="booking">
+                    <ion-card class="ml-0 mr-2">
+                        <img [src]="'assets/' + item.src" class="rounded-lg" /></ion-card>
+                    <div class="d-flex flex-column justify-content-start align-items-start small">
+                        <b>{{ item.title }}</b>
+                        <span class="mt-n1 small">{{ item.fixer }}</span>
+                        <span>{{ item.price }}</span>
+                    </div>
+                </ion-slide>
+            </ion-slides>
         </ion-card>
-      </div>
-    </ion-card>
-  </div>
+        <ion-item class="mb-3 px-3 py-2" lines="none">
+            <div>
+                <ion-label class="font-weight-bold">Máy lạnh</ion-label>
+                <ion-slides pager="false" [options]="slideOpts">
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/002-air-conditioner.svg " />
+                            <ion-label class="font-weight-bold">Bơm ga máy lạnh</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/002-air-conditioner.svg " />
+                            <ion-label class="font-weight-bold">Bơm ga máy lạnh</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+                <!-- SỬA CHỖ NÀY GIÚP NHA   -->
+            </div>
+        </ion-item>
+        <ion-item class="mb-3 px-3 py-2" lines="none">
+            <div>
+                <ion-label class="font-weight-bold">Máy hút bụi</ion-label>
+                <ion-slides pager="false" [options]="slideOpts">
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/006-cleaner.svg" />
+                            <ion-label class="font-weight-bold">Thay lọc bụi</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/006-cleaner.svg" />
+                            <ion-label class="font-weight-bold">Thay lọc bụi</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+                <!-- SỬA CHỖ NÀY GIÚP NHA   -->
+            </div>
+        </ion-item>
+        <ion-item class="mb-3 px-3 py-2" lines="none">
+            <div>
+                <ion-label class="font-weight-bold">Máy giặt</ion-label>
+                <ion-slides pager="false" [options]="slideOpts">
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/047-washing machine.svg" />
+                            <ion-label class="font-weight-bold">Vệ sinh lồng giặt</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/047-washing machine.svg" />
+                            <ion-label class="font-weight-bold">Vệ sinh lồng giặt</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+                <!-- SỬA CHỖ NÀY GIÚP NHA   -->
+            </div>
+        </ion-item>
+        <ion-item class="mb-3 px-3 py-2" lines="none">
+            <div>
+                <ion-label class="font-weight-bold">Tivi</ion-label>
+                <ion-slides pager="false" [options]="slideOpts">
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/045-television.svg" />
+                            <ion-label class="font-weight-bold">Sửa tắt âm thanh</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/045-television.svg" />
+                            <ion-label class="font-weight-bold">Sửa tắt âm thanh</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+                <!-- SỬA CHỖ NÀY GIÚP NHA   -->
+            </div>
+        </ion-item>
+        <ion-item class="mb-3 px-3 py-2" lines="none">
+            <div>
+                <ion-label class="font-weight-bold">Bóng đèn</ion-label>
+                <ion-slides pager="false" [options]="slideOpts">
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/017-lamp.svg" />
+                            <ion-label class="font-weight-bold">Sửa đèn chập chờn</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/017-lamp.svg" />
+                            <ion-label class="font-weight-bold">Sửa đèn chập chờn</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+                <!-- SỬA CHỖ NÀY GIÚP NHA   -->
+            </div>
+        </ion-item>
+        <ion-item class="mb-3 px-3 py-2" lines="none">
+            <div>
+                <ion-label class="font-weight-bold">Lò vi sóng</ion-label>
+                <ion-slides pager="false" [options]="slideOpts">
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/019-microwave.svg" />
+                            <ion-label class="font-weight-bold">Sửa lò không nóng</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/019-microwave.svg" />
+                            <ion-label class="font-weight-bold">Sửa lò không nóng</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+                <!-- SỬA CHỖ NÀY GIÚP NHA   -->
+            </div>
+        </ion-item>
+        <ion-item class="mb-3 px-3 py-2" lines="none">
+            <div>
+                <ion-label class="font-weight-bold">Lò nướng</ion-label>
+                <ion-slides pager="false" [options]="slideOpts">
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/024-oven.svg" />
+                            <ion-label class="font-weight-bold">Sửa lỗ thông gió</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/024-oven.svg" />
+                            <ion-label class="font-weight-bold">Sửa quạt hút nhiệt</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+                <!-- SỬA CHỖ NÀY GIÚP NHA   -->
+            </div>
+        </ion-item>
+        <ion-item class="mb-3 px-3 py-2" lines="none">
+            <div>
+                <ion-label class="font-weight-bold">Tủ lạnh</ion-label>
+                <ion-slides pager="false" [options]="slideOpts">
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/010-fridge.svg" />
+                            <ion-label class="font-weight-bold">Bơm ga tủ lạnh</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/010-fridge.svg" />
+                            <ion-label class="font-weight-bold">Bơm ga tủ lạnh</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+                <!-- SỬA CHỖ NÀY GIÚP NHA   -->
+            </div>
+        </ion-item>
+        <ion-item class="mb-3 px-3 py-2" lines="none">
+            <div>
+                <ion-label class="font-weight-bold">Máy nướng</ion-label>
+                <ion-slides pager="false" [options]="slideOpts">
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/015-heater.svg" />
+                            <ion-label class="font-weight-bold">Thay vỉ nướng</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                    <ion-slide class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="w-50 h-50 overflow-scroll d-flex flex-column justify-content-center align-items-center " style="border: solid black 1px;">
+                            <img style="height: 30%; width: 40%; " src="assets/015-heater.svg" />
+                            <ion-label class="font-weight-bold">Thay vỉ nướng</ion-label>
+                            <ion-label class="font-weight-light">Đặt ngay</ion-label>
+                        </div>
+                    </ion-slide>
+                </ion-slides>
+                <!-- SỬA CHỖ NÀY GIÚP NHA   -->
+            </div>
+        </ion-item>
+    </div>
 </ion-content>
