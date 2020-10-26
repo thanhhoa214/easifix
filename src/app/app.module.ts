@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import { LOCALE_ID, NgModule } from '@angular/core';
+import '@angular/common/locales/global/vi';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
@@ -53,5 +53,6 @@ import { SearchComponent } from './search/search.component';
     }),
   ],
   bootstrap: [AppComponent],
+  providers: [{ provide: LOCALE_ID, useValue: 'vi' }],
 })
 export class AppModule {}

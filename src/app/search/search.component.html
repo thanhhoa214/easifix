@@ -1,96 +1,99 @@
 <ion-content class="bg-white">
-    <div id="back-btn">
-        <ion-icon name="chevron-back-outline" style="width: 1.5rem;
-        height: 1.5rem;"></ion-icon>
-    </div>
-    <ion-searchbar placeholder="Bạn đang gặp vấn đề gì ?" class="mx-auto"></ion-searchbar>
-    <!-- search 1 -->
-    <!-- <div id="content" class="text-secondary">
-        <span style="margin-left: 1rem; margin-top: 1rem;"> Lịch sử tìm kiếm</span>
-        <ion-item detail class="center" lines="full" *ngFor="let i of [1, 2, 3]">
-            <ion-label class="pl-1">Sửa máy lạnh</ion-label>
-        </ion-item>
+  <div id="back-btn">
+    <ion-icon
+      name="chevron-back-outline"
+      style="width: 1.5rem; height: 1.5rem"
+    ></ion-icon>
+  </div>
+  <ion-searchbar
+    placeholder="Bạn đang gặp vấn đề gì ?"
+    class="mx-auto"
+    #searchBar
+  ></ion-searchbar>
+  <ng-container *ngIf="!searchBar.value">
+    <div id="content" class="text-secondary">
+      <span class="py-3 ml-3"> Lịch sử tìm kiếm</span>
+      <ion-item
+        [detail]="false"
+        class="center"
+        lines="full"
+        *ngFor="let i of [1, 2, 3]"
+      >
+        <ion-label class="pl-1">Sửa máy lạnh</ion-label>
+        <ion-icon slot="end" name="close"></ion-icon>
+      </ion-item>
     </div>
     <div id="content" class="text-secondary">
-        <span style="margin-left: 1rem; margin-top: 1rem;"> Phổ biến</span>
-        <ion-list lines="full">
-            <ion-item *ngFor="let i of [1, 2, 3, 4, 5]">
-                <ion-thumbnail slot="start">
-                    <img src="assets/avatar-0.jpg" />
-                </ion-thumbnail>
-                <ion-label>
-                    <h2>
-                        <strong>Thay màn hình tivi - Trường Vũ</strong>
-                    </h2>
-                    <h3>
-                        <p class="text-secondary">
-                            Sửa nhanh, chất lượng, giá bình dân
-                        </p>
-                        <p class="text-dark">
-                            Giá: 500.000 - 2.000.000 (VND)
-                        </p>
-                        <p class="text-secondary">
-                            2,6 km - 10 phút
-                        </p>
-                    </h3>
-                </ion-label>
-            </ion-item>
-        </ion-list>
-    </div>-->
+      <span class="py-3 ml-3"> Phổ biến</span>
+      <ion-list lines="full">
+        <ion-item *ngFor="let i of [1, 2, 3, 4, 5]">
+          <ion-thumbnail slot="start">
+            <img src="assets/avatar-0.jpg" />
+          </ion-thumbnail>
+          <ion-label>
+            <h2>
+              <strong>Thay màn hình tivi - Trường Vũ</strong>
+            </h2>
+            <h3>
+              <p class="text-secondary">Sửa nhanh, chất lượng, giá bình dân</p>
+              <p class="text-dark">Giá: 500.000 - 2.000.000 (VND)</p>
+              <p class="text-secondary">2,6 km - 10 phút</p>
+            </h3>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ng-container>
 
+  <ng-container *ngIf="searchBar.value">
     <!-- Search 2 -->
     <b class="pl-3"> Gần đây: </b>
     <ion-slides class="mb-1 nearby" [options]="{ slidesPerView: 3 }">
-        <ion-slide class="rounded-2 mr-2 " *ngFor="let i of [1,2,3,4,5]">
-            <ion-button Color=" #f2f2f2">Thay màn hình</ion-button>
-        </ion-slide>
+      <ion-slide class="rounded-2 mr-2" *ngFor="let i of [1, 2, 3, 4, 5]">
+        <ion-button color=" #f2f2f2">Thay màn hình</ion-button>
+      </ion-slide>
     </ion-slides>
 
-    <ion-list lines="none" *ngFor="let i of [1,2]">
+    <ion-list lines="none" *ngFor="let i of [1, 2]">
+      <div id="content" class="pt-2">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="assets/avatar-0.jpg" />
+          </ion-thumbnail>
+          <ion-label>
+            <h2>
+              <strong>Sửa chữa Trường Vũ</strong>
+            </h2>
+            <h3>
+              <p class="text-secondary">55B, Trần Quang Khải, Q1, Tp.HCM</p>
+              <p class="text-secondary">2,6 km - 10 phút</p>
+              <p class="text-secondary">
+                Đánh giá: 3.9
+                <ion-icon name="star" style="color: #ffd534"></ion-icon>
+              </p>
+            </h3>
+          </ion-label>
+        </ion-item>
 
-        <div id="content" class="pt-2">
-
-            <ion-item>
-                <ion-thumbnail slot="start">
-                    <img src="assets/avatar-0.jpg" />
-                </ion-thumbnail>
-                <ion-label>
-                    <h2>
-                        <strong>Sửa chữa Trường Vũ</strong>
-                    </h2>
-                    <h3>
-                        <p class="text-secondary">
-                            55B, Trần Quang Khải, Q1, Tp.HCM
-                        </p>
-                        <p class="text-secondary">
-                            2,6 km - 10 phút
-                        </p>
-                        <p class="text-secondary">
-                            Đánh giá: 3.9 <ion-icon name="star" style="color: #ffd534;"></ion-icon>
-                        </p>
-                    </h3>
-                </ion-label>
-            </ion-item>
-
-            <ion-item slot="end">
-                <ion-slides class="mb-1 nearby" [options]="{ slidesPerView: 1.75 }">
-                    <ion-slide class="border rounded mr-2" *ngFor="let i of [1,2,3,4,5]">
-                        <ion-thumbnail slot="start" class="mr-2">
-                            <img src="assets/avatar-0.jpg" />
-                        </ion-thumbnail>
-                        <div>
-                            <small>
-                                <span>Thay màn hình ti vi LG-42</span><br>
-                                <span class="text-secondary">Giá 1.000.000 (VND)</span>
-                            </small>
-                        </div>
-                    </ion-slide>
-                </ion-slides>
-            </ion-item>
-
-        </div>
+        <ion-item slot="end">
+          <ion-slides class="mb-1 nearby" [options]="{ slidesPerView: 1.75 }">
+            <ion-slide
+              class="border rounded mr-2"
+              *ngFor="let i of [1, 2, 3, 4, 5]"
+            >
+              <ion-thumbnail slot="start" class="mr-2">
+                <img src="assets/avatar-0.jpg" />
+              </ion-thumbnail>
+              <div>
+                <small>
+                  <span>Thay màn hình ti vi LG-42</span><br />
+                  <span class="text-secondary">Giá 1.000.000 (VND)</span>
+                </small>
+              </div>
+            </ion-slide>
+          </ion-slides>
+        </ion-item>
+      </div>
     </ion-list>
-
-
-
+  </ng-container>
 </ion-content>
