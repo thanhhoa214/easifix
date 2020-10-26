@@ -16,6 +16,7 @@ import { NotiComponent } from './noti/noti.component';
 import { PromotionDetailComponent } from './promotion-detail/promotion-detail.component';
 import { HistoryProcessingComponent } from './history-processing/history-processing.component';
 import { HistoryCompletedComponent } from './history-completed/history-completed.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -33,6 +34,7 @@ const routes: Routes = [
           { path: '', component: HomeComponent, pathMatch: 'full' },
         ],
       },
+      { path: 'search', component: SearchComponent },
       { path: 'profile', component: ProfileComponent },
       { path: 'setting', component: SettingComponent },
       {

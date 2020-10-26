@@ -21,6 +21,7 @@ import { NotiComponent } from './noti/noti.component';
 import { PromotionDetailComponent } from './promotion-detail/promotion-detail.component';
 import { HistoryCompletedComponent } from './history-completed/history-completed.component';
 import { HistoryProcessingComponent } from './history-processing/history-processing.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { HistoryProcessingComponent } from './history-processing/history-process
     PromotionDetailComponent,
     HistoryCompletedComponent,
     HistoryProcessingComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
