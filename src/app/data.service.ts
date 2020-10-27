@@ -69,10 +69,10 @@ const services: Service[] = [
   { name: 'Hệ thống làm nóng bị mài mòn', price: 450000 },
   { name: 'Lò nướng không đạt nhiệt độ cài đặt', price: 450000 },
   { name: 'Vệ sinh lò nướng', price: 50000 },
-  { name: 'Vệ sinh quạt ', price: 50000 },
+  { name: 'Vệ sinh loa', price: 50000 },
   { name: 'Thay tụ điện', price: 500000 },
   { name: 'Hư cuộn dây đồng', price: 500000 },
-  { name: 'Thay dầu', price: 50000 },
+  { name: 'Thay jack cắm', price: 520000 },
   { name: 'Sửa nguồn', price: 650000 },
   { name: 'Sửa điều khiển', price: 650000 },
   { name: 'Thay thế motor', price: 50000 },
@@ -119,7 +119,7 @@ const categories: Category[] = [
     services: services.filter((_, index) => index >= 58 && index < 67),
   },
   {
-    name: 'Sửa quạt trần',
+    name: 'Sửa loa vi tính',
     thumbnail: 'cate-8.svg',
     services: services.filter((_, index) => index >= 67 && index < 73),
   },
@@ -144,7 +144,7 @@ export class DataService {
       },
       {
         id: '2',
-        name: 'Phạm Thành Long',
+        name: 'Phạm Long',
         avatar: 'avatar-1.png',
         address: '75B Nguyễn Kiệm',
         province: 'Q2, TP.HCM',
@@ -164,7 +164,7 @@ export class DataService {
         avatar: 'avatar-3.png',
         address: '32 Nhà Gỗ',
         province: 'Tân Bình, TP.HCM',
-        categories: categories.filter((_, index) => index < 6),
+        categories: categories.filter((_, index) => index > 2 && index < 6),
       },
       {
         id: '5',
@@ -172,7 +172,7 @@ export class DataService {
         avatar: 'avatar-4.png',
         address: '32 Phan Tôn',
         province: 'Q4, TP.HCM',
-        categories: categories.filter((_, index) => index < 7),
+        categories: categories.filter((_, index) => index > 5 && index < 7),
       },
       {
         id: '6',
@@ -180,7 +180,7 @@ export class DataService {
         avatar: 'avatar-5.png',
         address: '32 Võ Văn Ngân',
         province: 'Thủ Đức, TP.HCM',
-        categories: categories.filter((_, index) => index < 9),
+        categories: categories.filter((_, index) => index > 2 && index < 8),
       },
       {
         id: '7',
