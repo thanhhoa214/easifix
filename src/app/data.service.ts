@@ -1,230 +1,53 @@
 import { Injectable } from '@angular/core';
-import { Service, User, Category } from './data.model';
-
-const services: Service[] = [
-  { id: 'XXXXXXX', name: 'Sửa board', price: 50000 },
-  { id: 'XXXXXXX', name: 'Sửa cốt máy giặt', price: 250000 },
-  { id: 'XXXXXXX', name: 'Sửa motor xả nước', price: 450000 },
-  { id: 'XXXXXXX', name: 'Sửa van nước cấp', price: 240000 },
-  { id: 'XXXXXXX', name: 'Sửa phao cảm biến', price: 350000 },
-  { id: 'XXXXXXX', name: 'Sửa ty treo', price: 90000 },
-  { id: 'XXXXXXX', name: 'Sửa motor', price: 30000 },
-  { id: 'XXXXXXX', name: 'Vệ sinh máy', price: 90000 },
-  { id: 'XXXXXXX', name: 'Sửa dây curoa ', price: 40000 },
-  { id: 'XXXXXXX', name: 'Sửa tụ máy', price: 50000 },
-  { id: 'XXXXXXX', name: 'Hư cao áp ', price: 200000 },
-  { id: 'XXXXXXX', name: 'Hư nguồn ', price: 250000 },
-  { id: 'XXXXXXX', name: 'Hư bo khiển', price: 300000 },
-  { id: 'XXXXXXX', name: 'Thay cổng HDMI', price: 350000 },
-  { id: 'XXXXXXX', name: 'Thay mắt thần', price: 530000 },
-  { id: 'XXXXXXX', name: 'Thay loa tivi', price: 570000 },
-  { id: 'XXXXXXX', name: 'Thay phim màn hình', price: 250000 },
-  { id: 'XXXXXXX', name: 'Thay đèn LED cho', price: 950000 },
-  { id: 'XXXXXXX', name: 'Thay màn hình', price: 650000 },
-  { id: 'XXXXXXX', name: 'Vệ sinh tivi', price: 60000 },
-  { id: 'XXXXXXX', name: 'Thay ron', price: 580000 },
-  { id: 'XXXXXXX', name: 'Vệ sinh tủ lạnh', price: 540000 },
-  { id: 'XXXXXXX', name: 'Thay thế các linh kiện', price: 450000 },
-  { id: 'XXXXXXX', name: 'Sửa tủ đông', price: 80000 },
-  { id: 'XXXXXXX', name: 'Sửa tủ mát', price: 840000 },
-  { id: 'XXXXXXX', name: 'Thay quạt dàn nóng', price: 70000 },
-  { id: 'XXXXXXX', name: 'Thay block tủ lạnh', price: 70000 },
-  { id: 'XXXXXXX', name: 'Hàn dàn + nạp gas', price: 45000 },
-  { id: 'XXXXXXX', name: 'Thay điện trở', price: 45000 },
-  { id: 'XXXXXXX', name: 'Sửa board', price: 45000 },
-  { id: 'XXXXXXX', name: 'Sửa mất nguồn', price: 453000 },
-  { id: 'XXXXXXX', name: 'Sửa board dàn lạnh (mono)', price: 730000 },
-  { id: 'XXXXXXX', name: 'Sửa board dàn lạnh (inverter)', price: 730000 },
-  { id: 'XXXXXXX', name: 'Thay cảm biến to phòng/dàn', price: 73000 },
-  { id: 'XXXXXXX', name: 'Thay mắt nhận tín hiệu', price: 710000 },
-  { id: 'XXXXXXX', name: 'Thay tụ quạt dàn lạnh', price: 70000 },
-  { id: 'XXXXXXX', name: 'Thay mô tơ lá đảo gió', price: 370000 },
-  { id: 'XXXXXXX', name: 'Thay tụ quạt dàn nóng', price: 670000 },
-  { id: 'XXXXXXX', name: 'Nạp ga', price: 80000 },
-  { id: 'XXXXXXX', name: 'Vệ sinh máy lạnh', price: 280000 },
-  { id: 'XXXXXXX', name: 'Thay cục sóng', price: 840000 },
-  { id: 'XXXXXXX', name: 'Sửa board', price: 82000 },
-  { id: 'XXXXXXX', name: 'Thay cầu chì', price: 86000 },
-  { id: 'XXXXXXX', name: 'Thay Timer', price: 18000 },
-  { id: 'XXXXXXX', name: 'Sơn + xử lý rỉ sét', price: 98000 },
-  { id: 'XXXXXXX', name: 'Lá chắn sóng', price: 88000 },
-  { id: 'XXXXXXX', name: 'Moter đĩa', price: 84000 },
-  { id: 'XXXXXXX', name: 'Đĩa thuỷ tinh lò vi sóng', price: 100000 },
-  { id: 'XXXXXXX', name: 'Biến áp', price: 100000 },
-  { id: 'XXXXXXX', name: 'Tụ lò vi sóng', price: 150000 },
-  { id: 'XXXXXXX', name: 'Không nhận nồi', price: 120000 },
-  { id: 'XXXXXXX', name: 'Sửa dây', price: 100000 },
-  { id: 'XXXXXXX', name: 'Sửa cảm ứng', price: 80000 },
-  { id: 'XXXXXXX', name: 'Thay quạt', price: 80000 },
-  { id: 'XXXXXXX', name: 'Vùng nấu không hoạt động', price: 300000 },
-  { id: 'XXXXXXX', name: 'Bếp từ kêu to', price: 300000 },
-  { id: 'XXXXXXX', name: 'Lỗi treo máy', price: 300000 },
-  { id: 'XXXXXXX', name: 'Sửa nguồn', price: 300000 },
-  { id: 'XXXXXXX', name: 'Thay thanh nhiệt lò nướng', price: 300000 },
-  { id: 'XXXXXXX', name: 'Thay kính lò nướng', price: 50000 },
-  { id: 'XXXXXXX', name: 'Sửa nguồn', price: 50000 },
-  { id: 'XXXXXXX', name: 'Sửa đèn tín hiệu', price: 450000 },
-  { id: 'XXXXXXX', name: 'Sửa đèn trong lò', price: 450000 },
-  { id: 'XXXXXXX', name: 'Hệ thống đánh lửa có vấn đề', price: 450000 },
-  { id: 'XXXXXXX', name: 'Hệ thống làm nóng bị mài mòn', price: 450000 },
-  { id: 'XXXXXXX', name: 'Lò nướng không đạt nhiệt độ cài đặt', price: 450000 },
-  { id: 'XXXXXXX', name: 'Vệ sinh lò nướng', price: 50000 },
-  { id: 'XXXXXXX', name: 'Vệ sinh loa', price: 50000 },
-  { id: 'XXXXXXX', name: 'Thay tụ điện', price: 500000 },
-  { id: 'XXXXXXX', name: 'Hư cuộn dây đồng', price: 500000 },
-  { id: 'XXXXXXX', name: 'Thay jack cắm', price: 520000 },
-  { id: 'XXXXXXX', name: 'Sửa nguồn', price: 650000 },
-  { id: 'XXXXXXX', name: 'Sửa điều khiển', price: 650000 },
-  { id: 'XXXXXXX', name: 'Thay thế motor', price: 50000 },
-  { id: 'XXXXXXX', name: 'Sửa mạch điều khiển', price: 750000 },
-  { id: 'XXXXXXX', name: 'Sửa nguồn điện', price: 73000 },
-  { id: 'XXXXXXX', name: 'Máy hút bị yếu', price: 350000 },
-  { id: 'XXXXXXX', name: 'Máy chạy nhưng không hút', price: 50000 },
-];
-
-const categories: Category[] = [
-  {
-    id: 'XXXXXXX',
-    name: 'Sửa máy giặt',
-    thumbnail: 'cate-1.svg',
-    services: services.filter((_, index) => index < 10),
-  },
-  {
-    id: 'XXXXXXX',
-    name: 'Sửa tivi',
-    thumbnail: 'cate-2.svg',
-    services: services.filter((_, index) => index >= 10 && index < 20),
-  },
-  {
-    id: 'XXXXXXX',
-    name: 'Sửa tủ lạnh',
-    thumbnail: 'cate-3.svg',
-    services: services.filter((_, index) => index >= 20 && index < 30),
-  },
-  {
-    id: 'XXXXXXX',
-    name: 'Sửa máy lạnh',
-    thumbnail: 'cate-4.svg',
-    services: services.filter((_, index) => index >= 30 && index < 40),
-  },
-  {
-    id: 'XXXXXXX',
-    name: 'Sửa lò vi sóng',
-    thumbnail: 'cate-5.svg',
-    services: services.filter((_, index) => index >= 40 && index < 50),
-  },
-  {
-    id: 'XXXXXXX',
-    name: 'Sửa máy nướng',
-    thumbnail: 'cate-6.svg',
-    services: services.filter((_, index) => index >= 50 && index < 58),
-  },
-  {
-    id: 'XXXXXXX',
-    name: 'Sửa lò nướng',
-    thumbnail: 'cate-7.svg',
-    services: services.filter((_, index) => index >= 58 && index < 67),
-  },
-  {
-    id: 'XXXXXXX',
-    name: 'Sửa loa vi tính',
-    thumbnail: 'cate-8.svg',
-    services: services.filter((_, index) => index >= 67 && index < 73),
-  },
-  {
-    id: 'XXXXXXX',
-    name: 'Sửa máy hút bụi',
-    thumbnail: 'cate-9.svg',
-    services: services.filter((_, index) => index >= 73 && index < 78),
-  },
-];
+import { Service, User, Category, LSItemName } from './data.model';
+import { DATABASE } from './data';
 
 @Injectable({ providedIn: 'root' })
 export class DataService {
+  constructor() {
+    this._setEncode(LSItemName.SERVICES, DATABASE.services);
+    this._setEncode(LSItemName.CATEGORIES, DATABASE.categories);
+    this._setEncode(LSItemName.USERS, DATABASE.users);
+    this._setEncode(LSItemName.SEARCH_HISTORY, DATABASE.searchHistory);
+  }
+
   getUsers(): User[] {
-    return [
-      {
-        id: '1',
-        name: 'Võ Thành Nhân',
-        avatar: 'avatar-0.jpg',
-        address: '55B Trần Quang Khải',
-        province: 'Q1, TP.HCM',
-        categories: categories.filter((_, index) => index < 8),
-      },
-      {
-        id: '2',
-        name: 'Phạm Long',
-        avatar: 'avatar-1.png',
-        address: '75B Nguyễn Kiệm',
-        province: 'Q2, TP.HCM',
-        categories: categories.filter((_, index) => index < 4),
-      },
-      {
-        id: '3',
-        name: 'Dương Nguyên',
-        avatar: 'avatar-2.jpg',
-        address: '32 Dương Lâm',
-        province: 'Gò Vấp, TP.HCM',
-        categories: categories.filter((_, index) => index < 9),
-      },
-      {
-        id: '3',
-        name: 'Đỗ Đạt',
-        avatar: 'avatar-3.png',
-        address: '32 Nhà Gỗ',
-        province: 'Tân Bình, TP.HCM',
-        categories: categories.filter((_, index) => index > 2 && index < 6),
-      },
-      {
-        id: '5',
-        name: 'Đặng Nhân',
-        avatar: 'avatar-4.png',
-        address: '32 Phan Tôn',
-        province: 'Q4, TP.HCM',
-        categories: categories.filter((_, index) => index > 5 && index < 7),
-      },
-      {
-        id: '6',
-        name: 'Hà Tâm',
-        avatar: 'avatar-5.png',
-        address: '32 Võ Văn Ngân',
-        province: 'Thủ Đức, TP.HCM',
-        categories: categories.filter((_, index) => index > 2 && index < 8),
-      },
-      {
-        id: '7',
-        name: 'Lê Văn Đạt',
-        avatar: 'avatar-6.png',
-        address: '4 Lê Văn Việt',
-        province: 'Q9, TP.HCM',
-        categories: categories.filter((_, index) => index < 6),
-      },
-      {
-        id: '8',
-        name: 'Đỗ Trương Đông',
-        avatar: 'avatar-7.png',
-        address: '30 Man Thiện',
-        province: 'Q9, TP.HCM',
-        categories: categories.filter((_, index) => index < 9),
-      },
-      {
-        id: '9',
-        name: 'Hà Mẫn Đạt',
-        avatar: 'avatar-8.png',
-        address: '20 Lã Xuân Oai',
-        province: 'Q9, TP.HCM',
-        categories: categories.filter((_, index) => index < 5),
-      },
-    ];
+    return DATABASE.users;
   }
 
   getServices(): Service[] {
-    return services;
+    return DATABASE.services;
   }
 
   getCategories(): Category[] {
-    return categories;
+    return DATABASE.categories;
   }
 
+  getSearchHistory() {
+    return this._getEncode(LSItemName.SEARCH_HISTORY);
+  }
+
+  writeSearchHistory(keyword: string): void {
+    const searchItems = this._getEncode(LSItemName.SEARCH_HISTORY) ?? [];
+    searchItems.push(keyword);
+    this._setEncode(LSItemName.SEARCH_HISTORY, searchItems);
+  }
+
+  removeSearchHistory(keyword: string): void {
+    let searchItems = this._getEncode(LSItemName.SEARCH_HISTORY) ?? [];
+    searchItems = searchItems.filter((item) => item !== keyword);
+    this._setEncode(LSItemName.SEARCH_HISTORY, searchItems);
+  }
+
+  private _getEncode(localStorageItemName: LSItemName) {
+    const raw = localStorage.getItem(localStorageItemName);
+    return raw ? JSON.parse(raw) : undefined;
+  }
+  private _setEncode(localStorageItemName: LSItemName, value: any) {
+    localStorage.setItem(
+      localStorageItemName,
+      value ? JSON.stringify(value) : undefined
+    );
+  }
   // getOrders(): Order[] {}
 }

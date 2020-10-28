@@ -1,4 +1,5 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Router } from '@angular/router';
 import { Category, Service, User } from '../data.model';
 import { DataService } from '../data.service';
 
@@ -13,7 +14,7 @@ export class HomeComponent {
   categories: Category[] = [];
   services: Service[] = [];
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService, private router: Router) {
     this.nearbyUsers = this.dataService.getUsers().slice(0, 6);
     this.categories = this.dataService.getCategories();
     this.services = this.dataService.getServices();
@@ -21,5 +22,11 @@ export class HomeComponent {
 
   afterslidesLoad(slides) {
     slides.startAutoplay();
+  }
+
+  goToSearch(value: string) {
+    this.router.navigate(['..', 'search'], {
+      queryParams: { q: value },
+    });
   }
 }

@@ -22,6 +22,7 @@ import { PromotionDetailComponent } from './promotion-detail/promotion-detail.co
 import { HistoryCompletedComponent } from './history-completed/history-completed.component';
 import { HistoryProcessingComponent } from './history-processing/history-processing.component';
 import { SearchComponent } from './search/search.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { SearchComponent } from './search/search.component';
     IonicModule.forRoot({
       mode: 'ios',
     }),
+    ReactiveFormsModule,
   ],
   bootstrap: [AppComponent],
   providers: [{ provide: LOCALE_ID, useValue: 'vi' }],

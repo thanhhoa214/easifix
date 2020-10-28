@@ -26,3 +26,11 @@ export interface Order {
   services: string[];
   total: number;
 }
+
+export const enum LSItemName {
+  SERVICES = 'db-services',
+  CATEGORIES = 'db-categories',
+  USERS = 'db-users',
+  ORDERS = 'db-orders,',
+  SEARCH_HISTORY = 'db-search-history',
+}
