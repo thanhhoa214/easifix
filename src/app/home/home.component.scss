@@ -1,3 +1,7 @@
+ion-avatar {
+  width: 4.5rem;
+  height: 4.5rem;
+}
 ion-searchbar {
   width: 90%;
   text-indent: 0.5rem;
@@ -72,6 +76,7 @@ ion-card.category {
       img {
         width: 80% !important;
         height: 80% !important;
+        max-width: 100% !important;
         transform: translateY(10%);
       }
     }
