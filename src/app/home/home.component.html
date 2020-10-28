@@ -29,87 +29,20 @@
     class="d-flex justify-content-center align-items-center"
     id="category-horizontal"
   >
-    <ion-slides #sliders [options]="{ slidesPerView: 3.8 }" class="promotions">
+    <ion-slides #sliders [options]="{ slidesPerView: 3.7 }" class="promotions">
       <ion-slide
         [routerLink]="['..', 'search']"
         class="d-flex flex-column justify-content-center"
+        *ngFor="let category of categories"
       >
         <ion-avatar class="p-1 border bg-light">
-          <img src="assets/002-air-conditioner.svg" alt="Lỗi" />
+          <img
+            [src]="'assets/' + category.thumbnail"
+            [alt]="category.name"
+            class="mx-auto"
+          />
         </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide
-        [routerLink]="['..', 'search']"
-        class="d-flex flex-column justify-content-center"
-      >
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/006-cleaner.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide
-        [routerLink]="['..', 'search']"
-        class="d-flex flex-column justify-content-center"
-      >
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/047-washing machine.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide
-        [routerLink]="['..', 'search']"
-        class="d-flex flex-column justify-content-center"
-      >
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/045-television.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide
-        [routerLink]="['..', 'search']"
-        class="d-flex flex-column justify-content-center"
-      >
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/017-lamp.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide
-        [routerLink]="['..', 'search']"
-        class="d-flex flex-column justify-content-center"
-      >
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/019-microwave.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide
-        [routerLink]="['..', 'search']"
-        class="d-flex flex-column justify-content-center"
-      >
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/024-oven.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide
-        [routerLink]="['..', 'search']"
-        class="d-flex flex-column justify-content-center"
-      >
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/010-fridge.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide
-        [routerLink]="['..', 'search']"
-        class="d-flex flex-column justify-content-center"
-      >
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/043-toaster.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
+        <small>{{ category.name }}</small>
       </ion-slide>
     </ion-slides>
   </div>
