@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { Category, User } from '../data.model';
+import { Category, Service, User } from '../data.model';
 import { DataService } from '../data.service';
 
 @Component({
@@ -11,10 +11,12 @@ import { DataService } from '../data.service';
 export class HomeComponent {
   nearbyUsers: User[] = [];
   categories: Category[] = [];
+  services: Service[] = [];
 
   constructor(private dataService: DataService) {
     this.nearbyUsers = this.dataService.getUsers().slice(0, 6);
     this.categories = this.dataService.getCategories();
+    this.services = this.dataService.getServices();
   }
 
   afterslidesLoad(slides) {

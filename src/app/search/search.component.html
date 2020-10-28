@@ -1,15 +1,14 @@
 <ion-content class="bg-white">
-  <div id="back-btn">
-    <ion-icon
-      name="chevron-back-outline"
-      style="width: 1.5rem; height: 1.5rem"
-    ></ion-icon>
+  <div class="d-flex justify-content-between">
+    <div id="back-btn" [routerLink]="['..']">
+      <ion-icon name="chevron-back-outline" style="zoom: 1.5"></ion-icon>
+    </div>
+    <ion-searchbar
+      placeholder="Bạn đang gặp vấn đề gì ?"
+      class="mx-auto"
+      #searchBar
+    ></ion-searchbar>
   </div>
-  <ion-searchbar
-    placeholder="Bạn đang gặp vấn đề gì ?"
-    class="mx-auto"
-    #searchBar
-  ></ion-searchbar>
   <ng-container *ngIf="!searchBar.value">
     <div id="content" class="text-secondary">
       <span class="py-3 ml-3"> Lịch sử tìm kiếm</span>

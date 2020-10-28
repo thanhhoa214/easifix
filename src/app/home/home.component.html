@@ -21,7 +21,7 @@
 <ion-searchbar
   placeholder="Bạn đang gặp vấn đề gì ?"
   class="mx-auto"
-  [routerLink]="['...', 'search']"
+  [routerLink]="['..', 'search']"
 ></ion-searchbar>
 
 <ion-content>
@@ -115,11 +115,11 @@
   </div>
 
   <div>
-    <ion-card class="px-3 py-2">
+    <!-- <ion-card class="px-3 py-2">
       <h4>Đã đặt gần đây</h4>
       <ion-slides class="nearby" [options]="{ slidesPerView: 1.75 }">
         <ion-slide
-          *ngFor="let user of nearbyUsers"
+          *ngFor="let user of nearbyUsers; index as index"
           class="border rounded-lg mr-2 pr-1"
           routerLink="booking"
         >
@@ -129,17 +129,17 @@
           <div
             class="d-flex flex-column justify-content-start align-items-start small"
           >
-            <b>{{ user.categories[user.id].name }}</b>
+            <b>{{ user.categories[index].name }}</b>
             <span class="mt-n1 small">{{ user.name }}</span>
             <span>{{
-              user.categories[user.id].services[0].price +
-                user.categories[user.id].services[2].price
+              user.categories[index].services[0].price +
+                user.categories[index].services[1].price
                 | currency: 'đ':'code':'4.0-0'
             }}</span>
           </div>
         </ion-slide>
       </ion-slides>
-    </ion-card>
+    </ion-card> -->
     <ion-slides
       #sliders
       (ionSlidesDidLoad)="afterslidesLoad(sliders)"
