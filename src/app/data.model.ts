@@ -8,12 +8,14 @@ export interface User {
 }
 
 export interface Category {
+  id: string;
   name: string;
   thumbnail: string;
   services?: Service[];
 }
 
 export interface Service {
+  id: string;
   name: string;
   price: number;
 }

@@ -2,7 +2,6 @@ ion-avatar {
   width: 4.5rem;
   height: 4.5rem;
 }
-
 ion-searchbar {
   width: 90%;
   text-indent: 0.5rem;
@@ -70,11 +69,16 @@ ion-card.category {
 }
 
 #category-horizontal {
-  ion-card {
-    width: 2rem;
-    height: 2rem;
-    img {
-      object-fit: contain;
+  ion-slide {
+    ion-avatar {
+      width: 4rem;
+      height: 4rem;
+      img {
+        width: 80% !important;
+        height: 80% !important;
+        max-width: 100% !important;
+        transform: translateY(10%);
+      }
     }
   }
 }

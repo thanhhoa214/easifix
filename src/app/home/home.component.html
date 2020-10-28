@@ -1,5 +1,14 @@
-<ion-item lines="none" detail="false" class="pt-3 bg-transparent" style="--background: transparent">
-  <ion-avatar slot="start" [routerLink]="['..', 'profile']" class="p-1 border mr-1">
+<ion-item
+  lines="none"
+  detail="false"
+  class="pt-3 bg-transparent"
+  style="--background: transparent"
+>
+  <ion-avatar
+    slot="start"
+    [routerLink]="['..', 'profile']"
+    class="p-1 border mr-1"
+  >
     <img src="assets/avatar.png" />
   </ion-avatar>
   <ion-card class="p-2 ml-1 w-100">
@@ -9,79 +18,56 @@
     </div>
   </ion-card>
 </ion-item>
-<ion-searchbar placeholder="Bạn đang gặp vấn đề gì ?" class="mx-auto" [routerLink]="['..', 'search']"></ion-searchbar>
+<ion-searchbar
+  placeholder="Bạn đang gặp vấn đề gì ?"
+  class="mx-auto"
+  [routerLink]="['..', 'search']"
+></ion-searchbar>
 
 <ion-content>
-  <div class="d-flex justify-content-center align-items-center" id="category-horizontal">
-    <ion-slides #sliders [options]="{ slidesPerView: 3.8 }" class="promotions">
-      <ion-slide [routerLink]="['..', 'search']" class="d-flex flex-column justify-content-center">
+  <div
+    class="d-flex justify-content-center align-items-center"
+    id="category-horizontal"
+  >
+    <ion-slides #sliders [options]="{ slidesPerView: 3.7 }" class="promotions">
+      <ion-slide
+        *ngFor="let category of categories"
+        [routerLink]="['..', 'search', category.id]"
+        class="d-flex flex-column justify-content-center"
+      >
         <ion-avatar class="p-1 border bg-light">
-          <img src="assets/002-air-conditioner.svg" alt="Lỗi" />
+          <img
+            [src]="'assets/' + category.thumbnail"
+            [alt]="category.name"
+            class="mx-auto"
+          />
         </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide [routerLink]="['..', 'search']" class="d-flex flex-column justify-content-center">
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/006-cleaner.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide [routerLink]="['..', 'search']" class="d-flex flex-column justify-content-center">
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/047-washing machine.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide [routerLink]="['..', 'search']" class="d-flex flex-column justify-content-center">
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/045-television.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide [routerLink]="['..', 'search']" class="d-flex flex-column justify-content-center">
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/017-lamp.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide [routerLink]="['..', 'search']" class="d-flex flex-column justify-content-center">
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/019-microwave.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide [routerLink]="['..', 'search']" class="d-flex flex-column justify-content-center">
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/024-oven.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide [routerLink]="['..', 'search']" class="d-flex flex-column justify-content-center">
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/010-fridge.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
-      </ion-slide>
-      <ion-slide [routerLink]="['..', 'search']" class="d-flex flex-column justify-content-center">
-        <ion-avatar class="p-1 border bg-light">
-          <img src="assets/043-toaster.svg" alt="Lỗi" />
-        </ion-avatar>
-        <small>Sửa máy giặt</small>
+        <small>{{ category.name }}</small>
       </ion-slide>
     </ion-slides>
   </div>
 
   <div>
-    <ion-slides #sliders (ionSlidesDidLoad)="afterslidesLoad(sliders)" class="promotions mb-2">
-      <ion-slide [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']">
+    <ion-slides
+      #sliders
+      (ionSlidesDidLoad)="afterslidesLoad(sliders)"
+      class="promotions mb-2"
+    >
+      <ion-slide
+        [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
+      >
         <img src="assets/promotion-5.jpg" class="rounded-lg" />
       </ion-slide>
 
-      <ion-slide [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']">
+      <ion-slide
+        [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
+      >
         <img src="assets/promotion-2.png" class="rounded-lg" />
       </ion-slide>
 
-      <ion-slide [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']">
+      <ion-slide
+        [routerLink]="['..', 'notification', 'promotions', 'promotion-detail']"
+      >
         <img src="assets/promotion-3.png" class="rounded-lg" />
       </ion-slide>
     </ion-slides>
@@ -93,11 +79,14 @@
         </div>
         <ion-item slot="end">
           <ion-slides class="nearby" [options]="{ slidesPerView: 1.75 }">
-            <ion-slide class="border rounded mr-2" *ngFor="let i of [1, 2, 3, 4, 5]">
+            <ion-slide
+              class="border rounded mr-2"
+              *ngFor="let i of [1, 2, 3, 4, 5]"
+            >
               <ion-thumbnail slot="start">
                 <img src="assets/avatar-0.jpg" />
               </ion-thumbnail>
-              <div class="ml-2" style="text-align: left;">
+              <div class="ml-2" style="text-align: left">
                 <ion-label>
                   <p><b>Thay màn hình tivi</b></p>
                   <p class="text-secondary">Trường Vũ</p>
@@ -109,6 +98,5 @@
         </ion-item>
       </div>
     </ion-list>
-
   </div>
 </ion-content>
