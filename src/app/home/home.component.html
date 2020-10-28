@@ -31,9 +31,9 @@
   >
     <ion-slides #sliders [options]="{ slidesPerView: 3.7 }" class="promotions">
       <ion-slide
-        [routerLink]="['..', 'search']"
-        class="d-flex flex-column justify-content-center"
         *ngFor="let category of categories"
+        [routerLink]="['..', 'search', category.id]"
+        class="d-flex flex-column justify-content-center"
       >
         <ion-avatar class="p-1 border bg-light">
           <img

@@ -34,7 +34,10 @@ const routes: Routes = [
           { path: '', component: HomeComponent, pathMatch: 'full' },
         ],
       },
-      { path: 'search', component: SearchComponent },
+      {
+        path: 'search',
+        children: [{ path: '**', component: SearchComponent }],
+      },
       { path: 'profile', component: ProfileComponent },
       { path: 'setting', component: SettingComponent },
       {
