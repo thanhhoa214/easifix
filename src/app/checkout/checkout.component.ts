@@ -18,10 +18,10 @@ export class CheckoutComponent implements OnInit {
   category: Category;
 
   constructor(
-    private modalController: ModalController,
+    private _modalController: ModalController,
     private _dataService: DataService,
     private _activatedRoute: ActivatedRoute,
-    private router: Router
+    private _router: Router
   ) {}
 
   ngOnInit() {
@@ -40,14 +40,14 @@ export class CheckoutComponent implements OnInit {
     const random = Math.round(Math.random() * 2) % 2;
     console.log(random);
 
-    const modal = await this.modalController.create({
+    const modal = await this._modalController.create({
       component: random ? SuccessComponent : FailedComponent,
       backdropDismiss: true,
       cssClass: 'my-custom-class',
     });
     await modal.present();
     if (random) {
-      this.router.navigateByUrl('/home');
+      this._router.navigateByUrl('/home');
     }
   }
 
