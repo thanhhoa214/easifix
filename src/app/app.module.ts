@@ -23,6 +23,7 @@ import { HistoryCompletedComponent } from './history-completed/history-completed
 import { HistoryProcessingComponent } from './history-processing/history-processing.component';
 import { SearchComponent } from './search/search.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SuccessMomoComponent } from './success-momo/success-momo.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HistoryCompletedComponent,
     HistoryProcessingComponent,
     SearchComponent,
+    SuccessMomoComponent,
   ],
   imports: [
     BrowserModule,
