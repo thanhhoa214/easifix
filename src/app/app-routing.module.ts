@@ -17,9 +17,11 @@ import { PromotionDetailComponent } from './promotion-detail/promotion-detail.co
 import { HistoryProcessingComponent } from './history-processing/history-processing.component';
 import { HistoryCompletedComponent } from './history-completed/history-completed.component';
 import { SearchComponent } from './search/search.component';
+import { SuccessMomoComponent } from './success-momo/success-momo.component';
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
+  { path: 'success-momo', component: SuccessMomoComponent },
   { path: 'login', component: LoginComponent },
 
   {
