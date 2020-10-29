@@ -48,6 +48,31 @@
   </div>
 
   <div>
+    <!-- <ion-card class="px-3 py-2">
+      <h4>Đã đặt gần đây</h4>
+      <ion-slides class="nearby" [options]="{ slidesPerView: 1.75 }">
+        <ion-slide
+          *ngFor="let user of nearbyUsers; index as index"
+          class="border rounded-lg mr-2 pr-1"
+          routerLink="booking"
+        >
+          <ion-card class="ml-1 mr-2">
+            <img [src]="'assets/' + user.avatar" class="rounded-lg"
+          /></ion-card>
+          <div
+            class="d-flex flex-column justify-content-start align-items-start small"
+          >
+            <b>{{ user.categories[index].name }}</b>
+            <span class="mt-n1 small">{{ user.name }}</span>
+            <span>{{
+              user.categories[index].services[0].price +
+                user.categories[index].services[1].price
+                | currency: 'đ':'code':'4.0-0'
+            }}</span>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </ion-card> -->
     <ion-slides
       #sliders
       (ionSlidesDidLoad)="afterslidesLoad(sliders)"
@@ -72,27 +97,33 @@
       </ion-slide>
     </ion-slides>
 
-    <ion-list lines="none" *ngFor="let i of [1, 2]">
+    <ion-list lines="none" *ngFor="let category of categories">
       <div id="content">
         <div class="ml-4">
-          <ion-label class="font-weight-bold">Máy lạnh</ion-label>
+          <ion-label class="font-weight-bold">{{ category.name }}</ion-label>
         </div>
         <ion-item slot="end">
           <ion-slides class="nearby" [options]="{ slidesPerView: 1.75 }">
             <ion-slide
-              class="border rounded mr-2"
-              *ngFor="let i of [1, 2, 3, 4, 5]"
+              *ngFor="let service of category.services"
+              class="border rounded-lg mr-2 pr-1"
             >
-              <ion-thumbnail slot="start">
-                <img src="assets/avatar-0.jpg" />
-              </ion-thumbnail>
-              <div class="ml-2" style="text-align: left">
-                <ion-label>
-                  <p><b>Thay màn hình tivi</b></p>
-                  <p class="text-secondary">Trường Vũ</p>
-                  <p class="text-secondary">Giá 1.000.000</p>
-                </ion-label>
-              </div>
+              <ng-container *ngIf="nearbyUsers[getRandom()] as user">
+                <ion-card class="mx-2">
+                  <img [src]="'assets/' + user.avatar" />
+                  /></ion-card
+                >
+                <div
+                  class="d-flex flex-column justify-content-start align-items-start text-left small"
+                  (click)="goToBooking(user.id, category.id, service.id)"
+                >
+                  <b>{{ service.name }}</b>
+                  <span class="mt-n1 small">{{ user.name }}</span>
+                  <span>
+                    {{ service.price | currency: '':'VND':'4.0-0' }}
+                  </span>
+                </div>
+              </ng-container>
             </ion-slide>
           </ion-slides>
         </ion-item>

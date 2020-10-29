@@ -3,6 +3,7 @@ export interface User {
   name: string;
   avatar: string;
   address: string;
+  rating?: number;
   province?: string;
   categories: Category[];
 }
@@ -12,12 +13,14 @@ export interface Category {
   name: string;
   thumbnail: string;
   services?: Service[];
+  userId?: string;
 }
 
 export interface Service {
   id: string;
   name: string;
   price: number;
+  categoryId?: string;
 }
 
 export interface Order {

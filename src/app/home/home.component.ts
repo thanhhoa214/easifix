@@ -15,7 +15,7 @@ export class HomeComponent {
   services: Service[] = [];
 
   constructor(private dataService: DataService, private router: Router) {
-    this.nearbyUsers = this.dataService.getUsers().slice(0, 6);
+    this.nearbyUsers = this.dataService.getUsers();
     this.categories = this.dataService.getCategories();
     this.services = this.dataService.getServices();
   }
@@ -28,5 +28,15 @@ export class HomeComponent {
     this.router.navigate(['..', 'search'], {
       queryParams: { q: value },
     });
+  }
+
+  goToBooking(user: string, category: string, service: string) {
+    this.router.navigate(['home', 'booking'], {
+      queryParams: { user, category, service },
+    });
+  }
+
+  getRandom() {
+    return Math.floor(Math.random() * 9);
   }
 }

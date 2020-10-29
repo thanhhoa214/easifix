@@ -22,7 +22,10 @@
       <ion-text class="ml-1"> Dịch vụ yêu cầu</ion-text>
     </h6>
     <ion-item lines="none">
-      <ion-label> Bảo dưỡng máy giặt </ion-label>
+      <ion-label
+        ><b class="small font-weight-bold">[{{ category.name }}]</b><br />
+        {{ service.name }}
+      </ion-label>
     </ion-item>
     <ion-item lines="none" class="small">
       <ion-checkbox color="primary"></ion-checkbox>
@@ -43,7 +46,7 @@
       <ion-text class="ml-1"> Chọn lịch</ion-text>
     </h6>
     <ion-item>
-      <ion-label> Tháng 10, 2020 </ion-label>
+      <ion-label> Ngày {{ dateNow }} Tháng {{ monthNow }}, 2020 </ion-label>
       <ion-icon name="calendar-outline"></ion-icon>
     </ion-item>
     <ion-item lines="none" class="small">
@@ -53,7 +56,7 @@
         style="width: 14%"
         (click)="updateDay(0)"
       >
-        T2
+        T6
       </ion-button>
       <ion-button
         [fill]="days[1] ? 'solid' : 'outline'"
@@ -61,7 +64,7 @@
         style="width: 14%"
         (click)="updateDay(1)"
       >
-        T3
+        T7
       </ion-button>
       <ion-button
         [fill]="days[2] ? 'solid' : 'outline'"
@@ -69,7 +72,7 @@
         style="width: 14%"
         (click)="updateDay(2)"
       >
-        T4
+        CN
       </ion-button>
       <ion-button
         [fill]="days[3] ? 'solid' : 'outline'"
@@ -77,7 +80,7 @@
         style="width: 14%"
         (click)="updateDay(3)"
       >
-        T5
+        T2
       </ion-button>
       <ion-button
         [fill]="days[4] ? 'solid' : 'outline'"
@@ -85,7 +88,7 @@
         style="width: 14%"
         (click)="updateDay(4)"
       >
-        T6
+        T3
       </ion-button>
       <ion-button
         [fill]="days[5] ? 'solid' : 'outline'"
@@ -93,15 +96,15 @@
         style="width: 14%"
         (click)="updateDay(5)"
       >
-        T7
+        T4
       </ion-button>
       <ion-button
-        [fill]="days[7] ? 'solid' : 'outline'"
+        [fill]="days[6] ? 'solid' : 'outline'"
         class="rounded-circle"
         style="width: 14%"
-        (click)="updateDay(7)"
+        (click)="updateDay(6)"
       >
-        CN
+        T5
       </ion-button>
     </ion-item>
   </ion-card>
@@ -156,9 +159,6 @@
     </ion-item>
   </ion-card>
 </ion-content>
-<ion-button
-  expand="block"
-  class="w-90 mx-auto"
-  [routerLink]="['..', 'checkout']"
+<ion-button expand="block" class="w-90 mx-auto" (click)="gotToCheckout()"
   >Xác nhận thanh toán</ion-button
 >

@@ -26,6 +26,17 @@ export class DataService {
   getSearchHistory() {
     return this._getEncode(LSItemName.SEARCH_HISTORY);
   }
+  getService(userId: string, categoryId: string, serviceId: string): Service {
+    return DATABASE.users
+      .find((user) => user.id === userId)
+      .categories.find((category) => category.id === categoryId)
+      .services.find((service) => service.id === serviceId);
+  }
+  getCategory(userId: string, categoryId: string): Category {
+    return DATABASE.users
+      .find((user) => user.id === userId)
+      .categories.find((category) => category.id === categoryId);
+  }
 
   writeSearchHistory(keyword: string): void {
     const searchItems = this._getEncode(LSItemName.SEARCH_HISTORY) ?? [];

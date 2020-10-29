@@ -24,7 +24,10 @@
       <ion-text class="ml-1"> Dịch vụ yêu cầu</ion-text>
     </h6>
     <ion-item>
-      <ion-label> Bảo dưỡng máy giặt </ion-label>
+      <ion-label
+        ><b class="small font-weight-bold">[{{ category.name }}]</b><br />
+        {{ service.name }}
+      </ion-label>
     </ion-item>
     <ion-item lines="none" class="small">
       <ion-checkbox

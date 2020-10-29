@@ -40,14 +40,22 @@ ion-slides.promotions {
 // }
 
 ion-slides.nearby {
-  height: 5rem;
+  height: 5.5rem;
+  ion-slide {
+    justify-content: start;
+  }
   ion-card {
+    min-width: 4rem;
     width: 4rem;
     height: 4rem;
+
     img {
-      object-fit: contain;
+      object-fit: cover;
       width: 100%;
     }
+  }
+  .d-flex.flex-column {
+    max-width: 10rem;
   }
 }
 
