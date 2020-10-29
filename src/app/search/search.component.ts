@@ -84,8 +84,7 @@ export class SearchComponent {
     return Math.round(Math.random() * 5) + 1;
   }
   goToBooking(user: string, category: string, service: string) {
-    this._router.navigateByUrl('/home/booking', {
-      queryParams: { user, category, service },
-    });
+    localStorage.setItem('data', JSON.stringify({ user, category, service }));
+    this._router.navigateByUrl('/home/booking');
   }
 }

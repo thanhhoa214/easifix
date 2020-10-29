@@ -1,0 +1,16 @@
+h3 {
+  color: white;
+}
+
+ion-toolbar {
+  background: #ab0b66;
+  border-width: 0.5px;
+}
+
+.full-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+}

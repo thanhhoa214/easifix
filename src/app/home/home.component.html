@@ -29,7 +29,7 @@
     class="d-flex justify-content-center align-items-center"
     id="category-horizontal"
   >
-    <ion-slides #sliders [options]="{ slidesPerView: 3.7 }" class="promotions">
+    <ion-slides #sliders [options]="{ slidesPerView: 3.8 }" class="promotions">
       <ion-slide
         *ngFor="let category of categories"
         (click)="goToSearch(category.name)"
@@ -48,31 +48,6 @@
   </div>
 
   <div>
-    <!-- <ion-card class="px-3 py-2">
-      <h4>Đã đặt gần đây</h4>
-      <ion-slides class="nearby" [options]="{ slidesPerView: 1.75 }">
-        <ion-slide
-          *ngFor="let user of nearbyUsers; index as index"
-          class="border rounded-lg mr-2 pr-1"
-          routerLink="booking"
-        >
-          <ion-card class="ml-1 mr-2">
-            <img [src]="'assets/' + user.avatar" class="rounded-lg"
-          /></ion-card>
-          <div
-            class="d-flex flex-column justify-content-start align-items-start small"
-          >
-            <b>{{ user.categories[index].name }}</b>
-            <span class="mt-n1 small">{{ user.name }}</span>
-            <span>{{
-              user.categories[index].services[0].price +
-                user.categories[index].services[1].price
-                | currency: 'đ':'code':'4.0-0'
-            }}</span>
-          </div>
-        </ion-slide>
-      </ion-slides>
-    </ion-card> -->
     <ion-slides
       #sliders
       (ionSlidesDidLoad)="afterslidesLoad(sliders)"

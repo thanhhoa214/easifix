@@ -7,7 +7,5 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LayoutComponent implements OnInit {
-  constructor() {}
-
   ngOnInit(): void {}
 }

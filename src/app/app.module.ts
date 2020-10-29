@@ -24,7 +24,8 @@ import { HistoryProcessingComponent } from './history-processing/history-process
 import { SearchComponent } from './search/search.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SuccessMomoComponent } from './success-momo/success-momo.component';
-
+import { IonicRatingModule } from 'ionic-rating';
+import { SuccessComponent } from './success/success.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +47,7 @@ import { SuccessMomoComponent } from './success-momo/success-momo.component';
     HistoryProcessingComponent,
     SearchComponent,
     SuccessMomoComponent,
+    SuccessComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,6 +56,7 @@ import { SuccessMomoComponent } from './success-momo/success-momo.component';
     IonicModule.forRoot({
       mode: 'ios',
     }),
+    IonicRatingModule,
     ReactiveFormsModule,
   ],
   bootstrap: [AppComponent],

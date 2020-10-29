@@ -55,17 +55,14 @@
     <ion-item class="ml-1 smaller text-secondary">
       <ion-icon name="add-circle-outline"></ion-icon>
       <ion-text class="ml-1"> Kiểm tra dịch vụ </ion-text>
-      <ion-text slot="end">50.000đ</ion-text>
+      <ion-text slot="end">{{ checkFee | currency: '':'đ':'4.0-0' }}</ion-text>
     </ion-item>
     <ion-item class="ml-1 smaller text-secondary">
       <ion-icon name="add-circle-outline"></ion-icon>
-      <ion-text class="ml-1"> Nắp máy giặt </ion-text>
-      <ion-text slot="end">300.000đ</ion-text>
-    </ion-item>
-    <ion-item class="ml-1 smaller text-secondary">
-      <ion-icon name="add-circle-outline"></ion-icon>
-      <ion-text class="ml-1"> Công sửa chữa </ion-text>
-      <ion-text slot="end">50.000đ</ion-text>
+      <ion-text class="ml-1"> {{ service.name }} </ion-text>
+      <ion-text slot="end">{{
+        service.price | currency: '':'đ':'4.0-0'
+      }}</ion-text>
     </ion-item>
     <ion-item class="ml-1 smaller text-secondary">
       <ion-icon name="pricetags-outline"></ion-icon>
@@ -99,14 +96,21 @@
       <ion-text class="ml-1 text-right" color="danger">
         Mã áp dụng giảm 50%
       </ion-text>
-      <ion-text color="danger" slot="end">-200.000đ</ion-text>
+      <ion-text color="danger" slot="end"
+        >-{{ getTotal(service.price) / 2 | currency: '':'đ':'4.0-0' }}</ion-text
+      >
     </ion-item>
     <ion-item class="smaller" color="primary" lines="none">
       <ion-icon name="calculator-outline"></ion-icon>
       <ion-text class="ml-1"> <b>TỔNG TIỀN</b> </ion-text>
       <ion-text slot="end"
         ><b
-          >{{ promotionInput.value == 'PASS_HCI' ? '200.000đ' : '400.000đ' }}
+          >{{
+            (promotionInput.value == 'PASS_HCI'
+              ? getTotal(service.price) / 2
+              : getTotal(service.price)
+            ) | currency: '':'đ':'4.0-0'
+          }}
         </b></ion-text
       >
     </ion-item>
@@ -136,6 +140,9 @@
     >
   </div>
 </ion-content>
-<ion-button expand="block" class="w-90 mx-auto" (click)="openSuccessModal()"
+<ion-button
+  expand="block"
+  class="w-90 mx-auto"
+  [routerLink]="['..', activeButton ? 'momo' : 'success']"
   >Thanh toán</ion-button
 >

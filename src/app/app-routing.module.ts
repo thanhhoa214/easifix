@@ -18,10 +18,10 @@ import { HistoryProcessingComponent } from './history-processing/history-process
 import { HistoryCompletedComponent } from './history-completed/history-completed.component';
 import { SearchComponent } from './search/search.component';
 import { SuccessMomoComponent } from './success-momo/success-momo.component';
+import { SuccessComponent } from './success/success.component';
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
-  { path: 'success-momo', component: SuccessMomoComponent },
   { path: 'login', component: LoginComponent },
 
   {
@@ -32,7 +32,9 @@ const routes: Routes = [
         path: 'home',
         children: [
           { path: 'booking', component: BookingComponent },
+          { path: 'momo', component: SuccessMomoComponent },
           { path: 'checkout', component: CheckoutComponent },
+          { path: 'success', component: SuccessComponent },
           { path: '', component: HomeComponent, pathMatch: 'full' },
         ],
       },

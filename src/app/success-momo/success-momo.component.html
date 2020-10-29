@@ -1,57 +1,116 @@
+<img
+  src="assets/momo-payment.jpeg"
+  alt=""
+  class="full-page"
+  *ngIf="imgSrc1Hide"
+  [routerLink]="['..', 'success']"
+/>
 <ion-content class="d-flex justify-content-center align-items-center">
-    <div style="width: 100%; height: 200px; border: 1px solid black; background-color: #31523D; text-align: center; " class="align-content-center justify-content-center p-5">
-        <ion-icon style="font-size: 80px; color: white;" name="checkmark-circle-outline" color="primary"></ion-icon>
-        <h3>Giao dịch thành công</h3>
+  <div
+    style="
+      width: 100%;
+      height: 200px;
+      border: 1px solid black;
+      background-color: #31523d;
+      text-align: center;
+    "
+    class="align-content-center justify-content-center p-5"
+  >
+    <ion-icon
+      style="font-size: 80px; color: white"
+      name="checkmark-circle-outline"
+      color="primary"
+    ></ion-icon>
+    <h3>Giao dịch thành công</h3>
+  </div>
+  <ion-item>
+    <div>
+      <p style="font-size: 18px; font-weight: bold; color: #4e4e4e">
+        Bạn đã chuyển thành công số tiền 40.805đ đến Thanh(FU)
+      </p>
+      <p style="font-size: 18px; font-weight: bold; color: #4e4e4e">
+        (0325370123)
+      </p>
     </div>
+  </ion-item>
+
+  <ion-list>
     <ion-item>
-        <div>
-            <p style="font-size: 18px; font-weight:bold; color: #4E4E4E;">Bạn đã chuyển thành công số tiền 40.805đ đến Thanh(FU)</p>
-            <p style="font-size: 18px; font-weight:bold; color: #4E4E4E;">(0325370123)</p>
-        </div>
-    </ion-item>
-
-    <ion-list>
-        <ion-item>
-            <ion-label class="ml-0">Số dư ví</ion-label>
-            <p class="mr-0">40.805đ</p>
-        </ion-item>
-        <ion-item>
-            <ion-label class="ml-0">Chuyển đến</ion-label>
-            <p class="mr-0">Thnah(FU)</p>
-        </ion-item>
-        <ion-item>
-            <ion-label class="ml-0">Số dư ví</ion-label>
-            <p class="mr-0" style="color:teal">7801725043 <span><ion-icon name="chevron-forward-outline"></ion-icon></span></p>
-        </ion-item>
-        <ion-item>
-            <!-- Chỗ này là slider ấy Hoà -->
-        </ion-item>
-    </ion-list>
-
-    <ion-item class="mt-2" lines="none">
-        <p style="font-size: 16px; font-weight:bold; color: #4E4E4E; text-align: justify;">Bạn vui lòng đánh giá mức độ hài lòng của trải <span style="text-align: justify;">nghiệm</span></p>
-
+      <ion-label class="ml-0">Số dư ví</ion-label>
+      <p class="mr-0">40.805đ</p>
     </ion-item>
     <ion-item>
-        <div style="text-align: center;" class="d-flex justify-content-center align-content-center">
-            <ion-icon name="star" class="mr-1" style="font-size: 40px; color: #FBC02D;"></ion-icon>
-            <ion-icon name="star" class="mr-1" style="font-size: 40px; color: #FBC02D;"></ion-icon>
-            <ion-icon name="star" class="mr-1" style="font-size: 40px; color: #FBC02D;"></ion-icon>
-            <ion-icon name="star" class="mr-1" style="font-size: 40px; color: #FBC02D;"></ion-icon>
-            <ion-icon name="star" class="mr-1" style="font-size: 40px; color: #FBC02D;"></ion-icon>
-        </div>
+      <ion-label class="ml-0">Chuyển đến</ion-label>
+      <p class="mr-0">Thnah(FU)</p>
     </ion-item>
     <ion-item>
-
-        <ion-textarea auto-grow="true" placeholder="Vui lòng cho Momo biết lý do bạn đánh giá như trên để chúng tôi có thể cải thiện dịch vụ tốt hơn"></ion-textarea>
-
+      <ion-label class="ml-0">Số dư ví</ion-label>
+      <p class="mr-0" style="color: teal">
+        7801725043
+        <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
+      </p>
     </ion-item>
+    <ion-item>
+      <!-- Chỗ này là slider ấy Hoà -->
+    </ion-item>
+  </ion-list>
+
+  <ion-item class="mt-2" lines="none">
+    <p
+      style="
+        font-size: 16px;
+        font-weight: bold;
+        color: #4e4e4e;
+        text-align: justify;
+      "
+    >
+      Bạn vui lòng đánh giá mức độ hài lòng của trải
+      <span style="text-align: justify">nghiệm</span>
+    </p>
+  </ion-item>
+  <ion-item>
+    <div
+      style="text-align: center"
+      class="d-flex justify-content-center align-content-center"
+    >
+      <ion-icon
+        name="star"
+        class="mr-1"
+        style="font-size: 40px; color: #fbc02d"
+      ></ion-icon>
+      <ion-icon
+        name="star"
+        class="mr-1"
+        style="font-size: 40px; color: #fbc02d"
+      ></ion-icon>
+      <ion-icon
+        name="star"
+        class="mr-1"
+        style="font-size: 40px; color: #fbc02d"
+      ></ion-icon>
+      <ion-icon
+        name="star"
+        class="mr-1"
+        style="font-size: 40px; color: #fbc02d"
+      ></ion-icon>
+      <ion-icon
+        name="star"
+        class="mr-1"
+        style="font-size: 40px; color: #fbc02d"
+      ></ion-icon>
+    </div>
+  </ion-item>
+  <ion-item>
+    <ion-textarea
+      auto-grow="true"
+      placeholder="Vui lòng cho Momo biết lý do bạn đánh giá như trên để chúng tôi có thể cải thiện dịch vụ tốt hơn"
+    ></ion-textarea>
+  </ion-item>
 </ion-content>
 <ion-footer>
-    <div>
-        <ion-toolbar color="Tint">
-            <ion-title>Màn hình chính</ion-title>
-        </ion-toolbar>
-    </div>
-
+  <div>
+    <ion-toolbar color="momo">
+      <ion-title>Màn hình chính</ion-title>
+    </ion-toolbar>
+  </div>
 </ion-footer>

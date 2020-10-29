@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 import { Category, Service } from '../data.model';
 import { DataService } from '../data.service';
@@ -16,21 +16,18 @@ export class CheckoutComponent implements OnInit {
   activeButton = 'momo';
   service: Service;
   category: Category;
+  checkFee = 50000;
 
   constructor(
     private _modalController: ModalController,
     private _dataService: DataService,
-    private _activatedRoute: ActivatedRoute,
     private _router: Router
   ) {}
 
   ngOnInit() {
-    const {
-      user,
-      category,
-      service,
-    } = this._activatedRoute.snapshot.queryParams;
-    console.log(this._activatedRoute.snapshot.queryParams);
+    const { user, category, service } = JSON.parse(
+      localStorage.getItem('data')
+    );
 
     this.service = this._dataService.getService(user, category, service);
     this.category = this._dataService.getCategory(user, category);
@@ -53,5 +50,9 @@ export class CheckoutComponent implements OnInit {
 
   updateMethod(method: string) {
     this.activeButton = method;
+  }
+
+  getTotal(fee: number): number {
+    return this.checkFee + fee;
   }
 }

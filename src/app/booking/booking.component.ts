@@ -23,11 +23,9 @@ export class BookingComponent implements OnInit {
     private _router: Router
   ) {}
   ngOnInit() {
-    const {
-      user,
-      category,
-      service,
-    } = this._activatedRoute.snapshot.queryParams;
+    const { user, category, service } = JSON.parse(
+      localStorage.getItem('data')
+    );
     this.service = this._dataService.getService(user, category, service);
     this.category = this._dataService.getCategory(user, category);
   }
@@ -88,13 +86,6 @@ export class BookingComponent implements OnInit {
     this.parts = newParts;
   }
   gotToCheckout() {
-    const {
-      user,
-      category,
-      service,
-    } = this._activatedRoute.snapshot.queryParams;
-    this._router.navigateByUrl('/home/checkout', {
-      queryParams: { user, category, service },
-    });
+    this._router.navigateByUrl('/home/checkout');
   }
 }

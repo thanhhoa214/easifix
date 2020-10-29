@@ -31,9 +31,8 @@ export class HomeComponent {
   }
 
   goToBooking(user: string, category: string, service: string) {
-    this.router.navigate(['home', 'booking'], {
-      queryParams: { user, category, service },
-    });
+    localStorage.setItem('data', JSON.stringify({ user, category, service }));
+    this.router.navigate(['home', 'booking']);
   }
 
   getRandom() {
