@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { SuccessComponent } from './components/success/success.component';
 import { FailedComponent } from './components/failed/failed.component';
 import { ProfileUpdateSuccessComponent } from './profile-update-success/profile-update-success.component';
+import { SearchPopupComponent } from './components/search-popup/search-popup.component';
 
 const components = [
   BottomBarComponent,
@@ -15,7 +16,7 @@ const components = [
   FailedComponent,
 ];
 @NgModule({
-  declarations: [...components, ProfileUpdateSuccessComponent],
+  declarations: [...components, ProfileUpdateSuccessComponent, SearchPopupComponent],
   exports: [...components],
   imports: [CommonModule, RouterModule, IonicModule],
 })

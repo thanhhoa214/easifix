@@ -19,10 +19,16 @@ import { HistoryCompletedComponent } from './history-completed/history-completed
 import { SearchComponent } from './search/search.component';
 import { SuccessMomoComponent } from './success-momo/success-momo.component';
 import { SuccessComponent } from './success/success.component';
+import { SearchPopupComponent } from './shared/components/search-popup/search-popup.component';
+import { FixerProfileComponent } from './fixer-profile/fixer-profile.component';
+import { FixerFeedbackComponent } from './fixer-feedback/fixer-feedback.component';
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'search-popup', component: SearchPopupComponent },
+  { path: 'fixer-profile', component: FixerProfileComponent },
+  { path: 'fixer-feedback', component: FixerFeedbackComponent },
 
   {
     path: '',

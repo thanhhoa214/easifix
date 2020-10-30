@@ -26,6 +26,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SuccessMomoComponent } from './success-momo/success-momo.component';
 import { IonicRatingModule } from 'ionic-rating';
 import { SuccessComponent } from './success/success.component';
+import { FixerProfileComponent } from './fixer-profile/fixer-profile.component';
+import { FixerFeedbackComponent } from './fixer-feedback/fixer-feedback.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,6 +50,8 @@ import { SuccessComponent } from './success/success.component';
     SearchComponent,
     SuccessMomoComponent,
     SuccessComponent,
+    FixerProfileComponent,
+    FixerFeedbackComponent,
   ],
   imports: [
     BrowserModule,

@@ -6,3 +6,8 @@ ion-avatar {
   height: 9rem;
   border: 3px solid var(--ion-color-primary);
 }
+ion-rating {
+  ion-button {
+    background: transparent !important;
+  }
+}
