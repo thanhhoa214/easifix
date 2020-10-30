@@ -33,8 +33,5 @@ export class NotificationComponent implements OnInit {
     this.totalPrice = parseInt(localStorage.getItem('totalPrice'));
     this.service = this._dataService.getService(user, category, service);
     this.category = this._dataService.getCategory(user, category);
-    if (!this.user || !this.category || !this.service) {
-      this._router.navigateByUrl('/home');
-    }
   }
 }

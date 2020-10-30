@@ -1,6 +1,6 @@
 <ion-content class="bg-white">
   <ion-list id="list" lines="full">
-    <ion-item *ngIf="notiNumber$ | async">
+    <ion-item *ngIf="(notiNumber$ | async) && user && category && service">
       <ion-thumbnail slot="start" class="p-2">
         <img src="assets/message.svg" />
       </ion-thumbnail>
