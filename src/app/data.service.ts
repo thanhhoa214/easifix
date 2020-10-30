@@ -22,6 +22,9 @@ export class DataService {
   getCategories(): Category[] {
     return DATABASE.categories;
   }
+  getPredictions(): string[] {
+    return DATABASE.predicts;
+  }
 
   getSearchHistory() {
     return this._getEncode(LSItemName.SEARCH_HISTORY);

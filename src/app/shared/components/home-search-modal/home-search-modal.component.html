@@ -1,26 +1,22 @@
-<ion-card>
-  <ion-input>Hello</ion-input>
-  <ion-item lines="none" class="small">
+<ion-card class="p-2">
+  <ion-input
+    [formControl]="search"
+    class="mx-2"
+    placeholder="Tìm kiếm ..."
+  ></ion-input>
+  <div class="d-flex flex-wrap" id="predictions">
     <ion-button
-      [fill]="parts[0] ? 'solid' : 'outline'"
+      fill="outline"
+      size="small"
       class="rounded-circle"
-      (click)="updatePart(0)"
+      (click)="setSearchValue(item)"
+      *ngFor="let item of getPredictions()"
     >
-      Sáng
+      {{ item }}
     </ion-button>
-    <ion-button
-      [fill]="parts[1] ? 'solid' : 'outline'"
-      class="rounded-circle"
-      (click)="updatePart(1)"
-    >
-      Trưa
-    </ion-button>
-    <ion-button
-      [fill]="parts[2] ? 'solid' : 'outline'"
-      class="rounded-circle"
-      (click)="updatePart(2)"
-    >
-      Tối
-    </ion-button>
-  </ion-item>
+  </div>
+
+  <ion-button expand="block" class="w-100 mx-auto" (click)="goToSearch()"
+    >Tìm kiếm</ion-button
+  >
 </ion-card>

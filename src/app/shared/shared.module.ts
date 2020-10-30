@@ -7,16 +7,20 @@ import { IonicModule } from '@ionic/angular';
 import { SuccessComponent } from './components/success/success.component';
 import { FailedComponent } from './components/failed/failed.component';
 import { ProfileUpdateSuccessComponent } from './profile-update-success/profile-update-success.component';
+import { HomeSearchModalComponent } from './components/home-search-modal/home-search-modal.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const components = [
   BottomBarComponent,
   HeaderComponent,
   SuccessComponent,
   FailedComponent,
+  ProfileUpdateSuccessComponent,
+  HomeSearchModalComponent,
 ];
 @NgModule({
-  declarations: [...components, ProfileUpdateSuccessComponent],
+  declarations: [...components],
   exports: [...components],
-  imports: [CommonModule, RouterModule, IonicModule],
+  imports: [CommonModule, RouterModule, IonicModule, ReactiveFormsModule],
 })
 export class SharedModule {}
