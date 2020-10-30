@@ -3,14 +3,11 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 @Component({
   selector: 'app-fixer-feedback',
   templateUrl: './fixer-feedback.component.html',
-  styleUrls: ['./fixer-feedback.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./fixer-feedback.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FixerFeedbackComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
