@@ -84,10 +84,12 @@
               class="border rounded-lg mr-2 pr-1"
             >
               <ng-container *ngIf="nearbyUsers[getRandom()] as user">
-                <ion-card class="mx-2">
-                  <img [src]="'assets/' + user.avatar" />
-                  /></ion-card
+                <ion-card
+                  class="mx-2"
+                  (click)="goToBooking(user.id, category.id, service.id)"
                 >
+                  <img [src]="'assets/' + user.avatar" />
+                </ion-card>
                 <div
                   class="d-flex flex-column justify-content-start align-items-start text-left small"
                   (click)="goToBooking(user.id, category.id, service.id)"

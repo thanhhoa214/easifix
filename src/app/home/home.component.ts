@@ -32,6 +32,8 @@ export class HomeComponent {
 
   goToBooking(user: string, category: string, service: string) {
     localStorage.setItem('data', JSON.stringify({ user, category, service }));
+    console.log(localStorage.getItem('data'));
+
     this.router.navigate(['home', 'booking']);
   }
 

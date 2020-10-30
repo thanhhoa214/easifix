@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
-import { Category, Service } from '../data.model';
+import { Category, Service, User } from '../data.model';
 import { DataService } from '../data.service';
 import { FailedComponent } from '../shared/components/failed/failed.component';
 import { SuccessComponent } from '../shared/components/success/success.component';
@@ -14,6 +14,7 @@ import { SuccessComponent } from '../shared/components/success/success.component
 })
 export class CheckoutComponent implements OnInit {
   activeButton = 'momo';
+  user: User;
   service: Service;
   category: Category;
   checkFee = 50000;
@@ -28,7 +29,7 @@ export class CheckoutComponent implements OnInit {
     const { user, category, service } = JSON.parse(
       localStorage.getItem('data')
     );
-
+    this.user = this._dataService.getUser(user);
     this.service = this._dataService.getService(user, category, service);
     this.category = this._dataService.getCategory(user, category);
   }
@@ -54,5 +55,10 @@ export class CheckoutComponent implements OnInit {
 
   getTotal(fee: number): number {
     return this.checkFee + fee;
+  }
+  gotToPayment(total: number) {
+    const des = this.activeButton ? 'momo' : 'success';
+    this._router.navigateByUrl('/home/' + des);
+    localStorage.setItem('totalPrice', total + '');
   }
 }

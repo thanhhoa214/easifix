@@ -37,6 +37,9 @@ export class DataService {
       .find((user) => user.id === userId)
       .categories.find((category) => category.id === categoryId);
   }
+  getUser(userId: string): User {
+    return DATABASE.users.find((user) => user.id === userId);
+  }
 
   writeSearchHistory(keyword: string): void {
     const searchItems = this._getEncode(LSItemName.SEARCH_HISTORY) ?? [];

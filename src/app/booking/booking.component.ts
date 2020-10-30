@@ -1,7 +1,8 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Category, Service } from '../data.model';
 import { DataService } from '../data.service';
+import { BottomBarService } from '../layout/bottombar.service';
 
 @Component({
   selector: 'app-booking',
@@ -17,10 +18,13 @@ export class BookingComponent implements OnInit {
   dateNow: number = 30;
   monthNow: number = 10;
 
+  time = ['7:30 đến 9:00', '14:00 đến 15:30', '18:30 đến 20:00'];
+  timeHour = '';
+
   constructor(
     private _dataService: DataService,
-    private _activatedRoute: ActivatedRoute,
-    private _router: Router
+    private _router: Router,
+    private _bottomBarService: BottomBarService
   ) {}
   ngOnInit() {
     const { user, category, service } = JSON.parse(
@@ -28,6 +32,8 @@ export class BookingComponent implements OnInit {
     );
     this.service = this._dataService.getService(user, category, service);
     this.category = this._dataService.getCategory(user, category);
+    this.timeHour = this.time[0];
+    this._bottomBarService.pushProcessingNotification();
   }
 
   commitments = [
@@ -82,6 +88,7 @@ export class BookingComponent implements OnInit {
   }
   updatePart(index: number) {
     const newParts = this.parts.map((_) => false);
+    this.timeHour = this.time[index];
     newParts[index] = true;
     this.parts = newParts;
   }

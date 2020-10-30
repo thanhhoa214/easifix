@@ -55,6 +55,7 @@ import { SuccessComponent } from './success/success.component';
     SharedModule,
     IonicModule.forRoot({
       mode: 'ios',
+      animated: false,
     }),
     IonicRatingModule,
     ReactiveFormsModule,

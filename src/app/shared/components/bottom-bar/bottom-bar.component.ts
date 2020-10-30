@@ -10,10 +10,14 @@ import { BottomBarService } from 'src/app/layout/bottombar.service';
 })
 export class BottomBarComponent implements OnInit {
   isBottomBarVisible$: Observable<boolean>;
+  notiNumber$: Observable<number>;
+  processNotiNumber$: Observable<number>;
 
   constructor(private _bottomBarService: BottomBarService) {}
 
   ngOnInit(): void {
     this.isBottomBarVisible$ = this._bottomBarService.isVisible$;
+    this.notiNumber$ = this._bottomBarService.notfication$;
+    this.processNotiNumber$ = this._bottomBarService.processingNotfication$;
   }
 }
