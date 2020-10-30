@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Category, Service, User } from '../data.model';
 import { DataService } from '../data.service';
@@ -19,7 +20,8 @@ export class NotificationComponent implements OnInit {
 
   constructor(
     private _bottomBarService: BottomBarService,
-    private _dataService: DataService
+    private _dataService: DataService,
+    private _router: Router
   ) {}
 
   ngOnInit(): void {
@@ -31,6 +33,8 @@ export class NotificationComponent implements OnInit {
     this.totalPrice = parseInt(localStorage.getItem('totalPrice'));
     this.service = this._dataService.getService(user, category, service);
     this.category = this._dataService.getCategory(user, category);
-    console.log(this.user, this.category, this.service);
+    if (!this.user || !this.category || !this.service) {
+      this._router.navigateByUrl('/home');
+    }
   }
 }

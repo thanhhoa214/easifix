@@ -1,1 +1,26 @@
-<p>home-search-modal works!</p>
+<ion-card>
+  <ion-input>Hello</ion-input>
+  <ion-item lines="none" class="small">
+    <ion-button
+      [fill]="parts[0] ? 'solid' : 'outline'"
+      class="rounded-circle"
+      (click)="updatePart(0)"
+    >
+      Sáng
+    </ion-button>
+    <ion-button
+      [fill]="parts[1] ? 'solid' : 'outline'"
+      class="rounded-circle"
+      (click)="updatePart(1)"
+    >
+      Trưa
+    </ion-button>
+    <ion-button
+      [fill]="parts[2] ? 'solid' : 'outline'"
+      class="rounded-circle"
+      (click)="updatePart(2)"
+    >
+      Tối
+    </ion-button>
+  </ion-item>
+</ion-card>

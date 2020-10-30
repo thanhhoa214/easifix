@@ -32,6 +32,9 @@ export class CheckoutComponent implements OnInit {
     this.user = this._dataService.getUser(user);
     this.service = this._dataService.getService(user, category, service);
     this.category = this._dataService.getCategory(user, category);
+    if (!this.user || !this.category || !this.service) {
+      this._router.navigateByUrl('/home');
+    }
   }
 
   async openSuccessModal() {
