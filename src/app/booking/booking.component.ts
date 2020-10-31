@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Category, Service } from '../data.model';
+import { Category, Service, User } from '../data.model';
 import { DataService } from '../data.service';
 import { BottomBarService } from '../layout/bottombar.service';
 
@@ -13,6 +13,7 @@ import { BottomBarService } from '../layout/bottombar.service';
 export class BookingComponent implements OnInit {
   days = [true, false, false, false, false, false, false];
   parts = [true, false, false];
+  user: User;
   service: Service;
   category: Category;
   dateNow: number = 30;
@@ -30,6 +31,7 @@ export class BookingComponent implements OnInit {
     const { user, category, service } = JSON.parse(
       localStorage.getItem('data')
     );
+    this.user = this._dataService.getUser(user);
     this.service = this._dataService.getService(user, category, service);
     this.category = this._dataService.getCategory(user, category);
     this.timeHour = this.time[0];

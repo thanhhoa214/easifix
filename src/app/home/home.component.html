@@ -20,7 +20,7 @@
 </ion-item>
 <ion-searchbar
   placeholder="Bạn đang gặp vấn đề gì ?"
-  class="mx-auto"
+  class="mx-auto mt-n2"
   [routerLink]="['..', 'search']"
 ></ion-searchbar>
 
@@ -72,39 +72,48 @@
       </ion-slide>
     </ion-slides>
 
-    <ion-list lines="none" *ngFor="let category of categories">
-      <div id="content">
-        <div class="ml-4">
-          <ion-label class="font-weight-bold">{{ category.name }}</ion-label>
-        </div>
-        <ion-item slot="end">
-          <ion-slides class="nearby" [options]="{ slidesPerView: 1.75 }">
-            <ion-slide
-              *ngFor="let service of category.services"
-              class="border rounded-lg mr-2 pr-1"
-            >
-              <ng-container *ngIf="nearbyUsers[getRandom()] as user">
-                <ion-card
-                  class="mx-2"
-                  (click)="goToBooking(user.id, category.id, service.id)"
-                >
-                  <img [src]="'assets/' + user.avatar" />
-                </ion-card>
+    <div *ngFor="let category of categories">
+      <div class="mx-3 py-2 d-flex justify-content-between">
+        <ion-label class="font-weight-bold">{{ category.name }}</ion-label>
+        <ion-text color="primary" (click)="goToSearch(category.name)"
+          >Xem thêm</ion-text
+        >
+      </div>
+      <ion-list>
+        <ng-container *ngFor="let service of category.services; index as index">
+          <ion-item *ngIf="index < 3">
+            <ng-container *ngIf="nearbyUsers[getRandom()] as user">
+              <ion-thumbnail slot="start" class="rounded-lg">
+                <img [src]="'assets/' + user.avatar" />
+              </ion-thumbnail>
+              <ion-label>
+                <h2 class="d-flex justify-content-between">
+                  <strong> {{ service.name }}</strong>
+                  <div>
+                    <ion-icon
+                      name="star"
+                      *ngFor="let i of getArray(user.rating)"
+                      color="warning"
+                    ></ion-icon>
+                  </div>
+                </h2>
+
                 <div
-                  class="d-flex flex-column justify-content-start align-items-start text-left small"
+                  class="d-flex flex-column text-left"
                   (click)="goToBooking(user.id, category.id, service.id)"
                 >
-                  <b>{{ service.name }}</b>
-                  <span class="mt-n1 small">{{ user.name }}</span>
+                  <span>{{ user.name }}</span>
+                  <!-- <span class="mt-n1 small">{{ user.name }}</span> -->
+
                   <span>
                     {{ service.price | currency: '':'VND':'4.0-0' }}
                   </span>
                 </div>
-              </ng-container>
-            </ion-slide>
-          </ion-slides>
-        </ion-item>
-      </div>
-    </ion-list>
+              </ion-label>
+            </ng-container>
+          </ion-item>
+        </ng-container>
+      </ion-list>
+    </div>
   </div>
 </ion-content>

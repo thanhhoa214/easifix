@@ -17,7 +17,7 @@ export class CheckoutComponent implements OnInit {
   user: User;
   service: Service;
   category: Category;
-  checkFee = 50000;
+  checkFee = 30000;
 
   constructor(
     private _modalController: ModalController,
@@ -61,7 +61,7 @@ export class CheckoutComponent implements OnInit {
   }
   gotToPayment(total: number) {
     const des = this.activeButton ? 'momo' : 'success';
-    this._router.navigateByUrl('/home/' + des);
+    this._router.navigateByUrl('/' + des);
     localStorage.setItem('totalPrice', total + '');
   }
 }

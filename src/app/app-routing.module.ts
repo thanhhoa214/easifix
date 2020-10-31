@@ -29,6 +29,8 @@ const routes: Routes = [
   { path: 'search-popup', component: HomeSearchModalComponent },
   { path: 'fixer-profile', component: FixerProfileComponent },
   { path: 'fixer-feedback', component: FixerFeedbackComponent },
+  { path: 'momo', component: SuccessMomoComponent },
+  { path: 'success', component: SuccessComponent },
 
   {
     path: '',
@@ -38,9 +40,7 @@ const routes: Routes = [
         path: 'home',
         children: [
           { path: 'booking', component: BookingComponent },
-          { path: 'momo', component: SuccessMomoComponent },
           { path: 'checkout', component: CheckoutComponent },
-          { path: 'success', component: SuccessComponent },
           { path: '', component: HomeComponent, pathMatch: 'full' },
         ],
       },

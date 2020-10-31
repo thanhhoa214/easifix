@@ -19,17 +19,17 @@
     </ion-item>
   </ion-card>
   <ion-card class="py-2">
-    <h6 class="ml-3 d-flex align-items-center">
+    <h6 class="ml-3 mb-1 d-flex align-items-center">
       <ion-icon name="ribbon-outline" style="zoom: 1.3"></ion-icon>
       <ion-text class="ml-1"> Dịch vụ yêu cầu</ion-text>
     </h6>
-    <ion-item>
+    <ion-item lines="none">
       <ion-label
         ><b class="small font-weight-bold">[{{ category.name }}]</b><br />
         {{ service.name }}
       </ion-label>
     </ion-item>
-    <ion-item lines="none" class="small">
+    <!-- <ion-item lines="none" class="small">
       <ion-checkbox
         [checked]="true"
         [disabled]="true"
@@ -39,7 +39,7 @@
         <span class="mx-1">Yêu cầu </span>
         <ion-text color="primary"> <b>Kiểm tra dịch vụ</b> </ion-text>
       </ion-label>
-    </ion-item>
+    </ion-item> -->
   </ion-card>
 
   <ion-card class="pt-3">

@@ -59,14 +59,14 @@ const services: Service[] = [
   { id: '56', name: 'Bếp từ kêu to', price: 300000 },
   { id: '57', name: 'Lỗi treo máy', price: 300000 },
   { id: '58', name: 'Sửa nguồn', price: 300000 },
-  { id: '59', name: 'Thay thanh nhiệt lò nướng', price: 300000 },
+  { id: '59', name: 'Thay thanh nhiệt', price: 300000 },
   { id: '60', name: 'Thay kính lò nướng', price: 50000 },
   { id: '61', name: 'Sửa nguồn', price: 50000 },
   { id: '62', name: 'Sửa đèn tín hiệu', price: 450000 },
   { id: '63', name: 'Sửa đèn trong lò', price: 450000 },
-  { id: '64', name: 'Hệ thống đánh lửa có vấn đề', price: 450000 },
-  { id: '65', name: 'Hệ thống làm nóng bị mài mòn', price: 450000 },
-  { id: '66', name: 'Lò nướng không đạt nhiệt độ cài đặt', price: 450000 },
+  { id: '64', name: 'Đánh lửa có vấn đề', price: 450000 },
+  { id: '65', name: 'Làm nóng bị mài mòn', price: 450000 },
+  { id: '66', name: 'Nhiệt độ không đúng', price: 450000 },
   { id: '67', name: 'Vệ sinh lò nướng', price: 50000 },
   { id: '68', name: 'Vệ sinh lò', price: 50000 },
   { id: '69', name: 'Thay tụ điện', price: 500000 },
@@ -141,6 +141,8 @@ const categories: Category[] = [
 const users: User[] = [
   {
     id: '1',
+    distance: 5,
+    time: 34,
     phone: '0909123123',
     rating: 4.7,
     name: 'Võ Thành Nhân',
@@ -151,6 +153,8 @@ const users: User[] = [
   },
   {
     id: '2',
+    distance: 4.3,
+    time: 30,
     phone: '0909123675',
     rating: 4.5,
     name: 'Phạm Long',
@@ -161,6 +165,8 @@ const users: User[] = [
   },
   {
     id: '3',
+    distance: 1.2,
+    time: 20,
     phone: '0909134123',
     rating: 3,
     name: 'Dương Nguyên',
@@ -171,6 +177,8 @@ const users: User[] = [
   },
   {
     id: '4',
+    distance: 3.2,
+    time: 25,
     phone: '0909657763',
     rating: 3.5,
     name: 'Đỗ Đạt',
@@ -181,6 +189,8 @@ const users: User[] = [
   },
   {
     id: '5',
+    distance: 5.3,
+    time: 20,
     phone: '0909123123',
     rating: 5,
     name: 'Đặng Nhân',
@@ -191,6 +201,8 @@ const users: User[] = [
   },
   {
     id: '6',
+    distance: 3,
+    time: 32,
     phone: '0909123123',
     rating: 4,
     name: 'Hà Tâm',
@@ -201,6 +213,8 @@ const users: User[] = [
   },
   {
     id: '7',
+    distance: 3.8,
+    time: 35,
     phone: '0909123123',
     rating: 4,
     name: 'Lê Văn Đạt',
@@ -211,6 +225,8 @@ const users: User[] = [
   },
   {
     id: '8',
+    distance: 8.2,
+    time: 45,
     phone: '0909123123',
     rating: 5,
     name: 'Đỗ Trương Đông',
@@ -221,6 +237,8 @@ const users: User[] = [
   },
   {
     id: '9',
+    distance: 9.2,
+    time: 50,
     phone: '0909123123',
     rating: 4,
     name: 'Hà Mẫn Đạt',

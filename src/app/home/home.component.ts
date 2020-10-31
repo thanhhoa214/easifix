@@ -1,7 +1,8 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
-import { Category, Service, User } from '../data.model';
+import { Category, User } from '../data.model';
 import { DataService } from '../data.service';
+import { Utils } from '../shared/utils';
 
 @Component({
   selector: 'app-home',
@@ -9,15 +10,14 @@ import { DataService } from '../data.service';
   styleUrls: ['./home.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent {
+export class HomeComponent extends Utils {
   nearbyUsers: User[] = [];
   categories: Category[] = [];
-  services: Service[] = [];
 
   constructor(private dataService: DataService, private router: Router) {
+    super();
     this.nearbyUsers = this.dataService.getUsers();
     this.categories = this.dataService.getCategories();
-    this.services = this.dataService.getServices();
   }
 
   afterslidesLoad(slides) {
@@ -32,8 +32,6 @@ export class HomeComponent {
 
   goToBooking(user: string, category: string, service: string) {
     localStorage.setItem('data', JSON.stringify({ user, category, service }));
-    console.log(localStorage.getItem('data'));
-
     this.router.navigate(['home', 'booking']);
   }
 

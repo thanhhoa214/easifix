@@ -4,8 +4,10 @@ export interface User {
   name: string;
   avatar: string;
   address: string;
-  rating?: number;
   province?: string;
+  distance: number;
+  time: number;
+  rating?: number;
   categories: Category[];
 }
 

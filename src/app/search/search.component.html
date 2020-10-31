@@ -16,13 +16,16 @@
       #searchBar
     ></ion-searchbar>
   </div>
-  <ng-container *ngIf="!searchBar.value">
+  <ng-container *ngIf="!searchBar?.value">
     <div
       id="content"
       class="text-secondary"
       *ngIf="getSearchHistory()?.length > 0"
     >
-      <span class="py-3 ml-3"> Lịch sử tìm kiếm</span>
+      <div class="d-flex align-items-center py-1 ml-3">
+        <ion-icon name="checkmark-circle" style="zoom: 1.4"></ion-icon>
+        <span class="ml-1"> Lịch sử tìm kiếm</span>
+      </div>
       <ion-item
         [detail]="false"
         class="center"
@@ -38,12 +41,12 @@
         ></ion-icon>
       </ion-item>
     </div>
-    <ion-list lines="none" *ngFor="let category of categories">
+    <!-- <ion-list lines="none" *ngFor="let category of categories">
       <div id="content">
         <div class="ml-4">
           <ion-label class="font-weight-bold">{{ category.name }}</ion-label>
-        </div>
-        <ion-item slot="end">
+        </div> -->
+    <!-- <ion-item slot="end">
           <ion-slides class="nearby" [options]="{ slidesPerView: 1.75 }">
             <ion-slide
               *ngFor="let service of category.services"
@@ -66,24 +69,51 @@
               </ng-container>
             </ion-slide>
           </ion-slides>
-        </ion-item>
+        </ion-item> -->
+    <!-- </div>
+    </ion-list> -->
+    <div id="content" class="text-secondary mt-2">
+      <div class="py-1 ml-3 d-flex align-items-center">
+        <ion-icon name="location" style="zoom: 1.4"></ion-icon>
+        <span class="pl-1">Gần bạn nhất</span>
       </div>
-    </ion-list>
-    <div id="content" class="text-secondary">
-      <span class="py-3 ml-3"> Phổ biến</span>
       <ion-list lines="full">
-        <ion-item *ngFor="let i of [1, 2, 3, 4, 5]">
+        <ion-item
+          *ngFor="let user of getRecommendedUsers(); index as index"
+          [detail]="true"
+          (click)="goToFixerProfile(user.id)"
+        >
           <ion-thumbnail slot="start">
-            <img src="assets/avatar-0.jpg" />
+            <img [src]="'assets/' + user.avatar" />
           </ion-thumbnail>
           <ion-label>
-            <h2>
-              <strong>Thay màn hình tivi - Trường Vũ</strong>
+            <h2 class="d-flex justify-content-between">
+              <strong>{{ user.name }}</strong>
+              <span>
+                <ion-icon
+                  name="star"
+                  *ngFor="let i of getArray(user.rating)"
+                  color="warning"
+                ></ion-icon>
+              </span>
             </h2>
             <h3>
-              <p class="text-secondary">Sửa nhanh, chất lượng, giá bình dân</p>
-              <p class="text-dark">Giá: 500.000 - 2.000.000 (VND)</p>
-              <p class="text-secondary">2,6 km - 10 phút</p>
+              <p class="text-secondary">
+                {{
+                  index % 2
+                    ? 'Gần bạn nhất, chất lượng, giá bình dân'
+                    : index % 3
+                    ? 'Sửa nhanh, giá rẻ'
+                    : 'Tận tình, nhanh chóng, đảm bảo chất lượng'
+                }}
+              </p>
+              <p class="text-dark" *ngIf="getMinAndMaxPrice(user.id) as minmax">
+                Mức giá: {{ minmax.min | currency: '':'đ':'4.0-0' }} -
+                {{ minmax.max | currency: '':'đ':'4.0-0' }}
+              </p>
+              <p class="text-secondary">
+                {{ user.distance }} km - {{ user.time }} phút
+              </p>
             </h3>
           </ion-label>
         </ion-item>
@@ -115,7 +145,7 @@
       <ng-container *ngIf="getServices(user) as services"
         ><ion-list lines="none" *ngIf="services?.length > 0">
           <div class="pt-2 bg-light mt-1 border-top">
-            <ion-item>
+            <ion-item (click)="goToFixerProfile(user.id)">
               <ion-thumbnail slot="start" class="rounded-lg">
                 <img [src]="'assets/' + user.avatar" />
               </ion-thumbnail>
