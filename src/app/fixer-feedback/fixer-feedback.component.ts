@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-fixer-feedback',
@@ -7,7 +8,13 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FixerFeedbackComponent implements OnInit {
-  constructor() {}
+  backTo: string;
+  constructor(private _activatedRoute: ActivatedRoute) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const { backTo } = this._activatedRoute.snapshot.queryParams;
+    console.log(backTo);
+
+    this.backTo = backTo;
+  }
 }

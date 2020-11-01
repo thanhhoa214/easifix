@@ -1,6 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Category, User } from '../data.model';
+import { User } from '../data.model';
 import { DataService } from '../data.service';
 import { Utils } from '../shared/utils';
 
@@ -26,6 +26,8 @@ export class FixerProfileComponent extends Utils implements OnInit {
   ngOnInit(): void {
     const { backTo } = this._activatedRoute.snapshot.queryParams;
     this.backTo = backTo;
+    console.log(backTo);
+
     const { user } = JSON.parse(localStorage.getItem('data'));
     this.user = this._dataService.getUser(user);
     this.collapsedCategories = this.getArray(this.user.categories.length).map(
@@ -50,5 +52,11 @@ export class FixerProfileComponent extends Utils implements OnInit {
   goToBooking(user: string, category: string, service: string) {
     localStorage.setItem('data', JSON.stringify({ user, category, service }));
     this._router.navigate(['home', 'booking']);
+  }
+
+  goToFixerFeedback() {
+    this._router.navigate(['..', 'fixer-feedback'], {
+      queryParams: { backTo: '/fixer-profile' },
+    });
   }
 }

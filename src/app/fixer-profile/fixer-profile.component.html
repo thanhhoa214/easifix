@@ -14,7 +14,7 @@
         class="mr-1"
         style="color: #929395"
       ></ion-icon>
-      <ion-input value="Thông tin" disabled></ion-input>
+      <ion-text style="color: #929395">Thông tin</ion-text>
     </ion-item>
     <ion-item>
       <ion-label>Họ tên</ion-label>
@@ -41,28 +41,37 @@
         class="mr-1"
         style="color: #929395"
       ></ion-icon>
-      <ion-input value="Các dịch vụ" disabled></ion-input>
+      <ion-text style="color: #929395">Các dịch vụ</ion-text>
     </ion-item>
     <div *ngFor="let category of user.categories">
-      <ion-list-header class="bg-light h6 d-flex align-items-center">
+      <ion-list-header
+        class="bg-light h6 d-flex align-items-center"
+        (click)="toggleCollapse(category.id)"
+      >
         <div
           class="w-100 d-flex justify-content-between align-items-center mr-3"
         >
           <span>{{ category.name }}</span>
           <ion-icon
-            name="chevron-down-outline"
-            (click)="toggleCollapse(category.id)"
+            name="chevron-{{
+              collapsedCategories[category.id] ? 'up' : 'down'
+            }}-outline"
           ></ion-icon>
         </div>
       </ion-list-header>
       <ng-container *ngIf="collapsedCategories[category.id]"
         ><ion-item
-          *ngFor="let service of category.services"
+          *ngFor="let service of category.services; index as serviceIndex"
           class="small"
           [detail]="true"
           (click)="goToBooking(user.id, category.id, service.id)"
         >
-          <ion-label>{{ service.name }}</ion-label>
+          <ion-label
+            ><ion-text color="primary"
+              ><small>({{ serviceIndex }})</small></ion-text
+            >
+            {{ service.name }}</ion-label
+          >
           <ion-select value="Apple" (click)="chooseBrand($event)">
             <ion-select-option value="Apple">Apple</ion-select-option>
             <ion-select-option value="Samsung">Samsung</ion-select-option>
@@ -79,9 +88,17 @@
 
   <ion-list lines="full" class="mb-2">
     <ion-item color="light">
-      <ion-input value="Phản hồi" disabled></ion-input>
+      <ion-icon
+        name="arrow-undo-circle-outline"
+        class="mr-1"
+        style="color: #929395"
+      ></ion-icon>
+      <ion-text style="color: #929395">Phản hồi</ion-text>
+      <ion-text slot="end" color="primary" (click)="goToFixerFeedback()"
+        >Xem thêm</ion-text
+      >
     </ion-item>
-    <ion-item *ngFor="let i of [1, 2, 3]" [detail]="true">
+    <ion-item *ngFor="let i of [1, 2, 3]">
       <ion-thumbnail slot="start" class="p-2">
         <img src="assets/avatar-0.jpg" />
       </ion-thumbnail>
@@ -93,12 +110,9 @@
         <ion-rating [rate]="3" [readonly]="true" size="small"> </ion-rating>
         <br />
         <h4 class="text-right">
-          <span class="text-secondary text-right ml-5">Ngày: 20/02/2020</span>
+          <span class="text-secondary text-right ml-5"> 20/02/2020</span>
         </h4>
       </ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Xem thêm phản hồi >>></ion-label>
     </ion-item>
   </ion-list>
 </ion-content>

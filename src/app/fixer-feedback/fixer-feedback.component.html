@@ -1,1 +1,25 @@
-<p>fixer-feedback works!</p>
+<app-header title="Thông tin thợ" [backTo]="backTo"></app-header>
+<ion-list lines="full" class="mb-2">
+  <ion-item color="light">
+    <ion-text style="color: #929395">Phản hồi</ion-text>
+  </ion-item>
+  <ion-item *ngFor="let i of [1, 2, 3]" [detail]="true">
+    <ion-thumbnail slot="start" class="p-2">
+      <img src="assets/avatar-0.jpg" />
+    </ion-thumbnail>
+    <ion-label>
+      <h2>
+        <strong>Luân Nguyễn</strong>
+      </h2>
+      <h3>Giá cả hợp lý, thợ sửa thân thiện.</h3>
+      <ion-rating [rate]="3" [readonly]="true" size="small"> </ion-rating>
+      <br />
+      <h4 class="text-right">
+        <span class="text-secondary text-right ml-5">Ngày: 20/02/2020</span>
+      </h4>
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Xem thêm phản hồi >>></ion-label>
+  </ion-item>
+</ion-list>
