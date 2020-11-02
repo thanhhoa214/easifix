@@ -9,6 +9,7 @@ import { FailedComponent } from './components/failed/failed.component';
 import { ProfileUpdateSuccessComponent } from './profile-update-success/profile-update-success.component';
 import { HomeSearchModalComponent } from './components/home-search-modal/home-search-modal.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrandSelectComponent } from './components/brand-select/brand-select.component';
 
 const components = [
   BottomBarComponent,
@@ -19,7 +20,7 @@ const components = [
   HomeSearchModalComponent,
 ];
 @NgModule({
-  declarations: [...components],
+  declarations: [...components, BrandSelectComponent],
   exports: [...components],
   imports: [CommonModule, RouterModule, IonicModule, ReactiveFormsModule],
 })

@@ -5,6 +5,7 @@ import {
 } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { User, Service, Category } from '../data.model';
 import { DataService } from '../data.service';
 import { Utils } from '../shared/utils';
@@ -21,6 +22,9 @@ export class SearchComponent extends Utils {
   nearby = ['Sửa lò nướng', 'Sửa máy giặt', 'Sửa Tivi'];
   nearbyUsers: User[] = [];
   categories: Category[] = [];
+  brand: string = '';
+
+  subscriptions: Subscription[] = [];
 
   constructor(
     private _activatedRoute: ActivatedRoute,
@@ -34,25 +38,33 @@ export class SearchComponent extends Utils {
   ionViewDidEnter(): void {
     this.nearbyUsers = this._dataService.getUsers();
     this.categories = this._dataService.getCategories();
-    this.search.valueChanges.subscribe((value) => {
-      if (!value) return;
-      const valueInLower = value?.toLowerCase();
-      this.users = this._dataService
-        .getUsers()
-        .filter((user) =>
-          user.categories.filter(
-            (category) =>
-              category.name?.toLowerCase().includes(valueInLower) ||
-              category.services.filter((service) =>
-                service.name?.toLowerCase().includes(valueInLower)
-              )
-          )
-        );
-    });
-    const { q } = this._activatedRoute.snapshot.queryParams;
-    this.search.setValue(q);
+    this.brand = this._dataService.getBrand();
+    this.subscriptions.push(
+      this.search.valueChanges.subscribe((value) => {
+        if (!value) return;
+        const valueInLower = value?.toLowerCase();
+        this.users = this._dataService
+          .getUsers()
+          .filter((user) =>
+            user.categories.some(
+              (category) =>
+                category.name?.toLowerCase().includes(valueInLower) ||
+                category.services.some((service) =>
+                  service.name?.toLowerCase().includes(valueInLower)
+                )
+            )
+          );
+      })
+    );
+    this.subscriptions.push(
+      this._activatedRoute.queryParams.subscribe((queryParams) => {
+        this.search.setValue(queryParams.q);
+      })
+    );
   }
-
+  ionViewDidLeave() {
+    this.subscriptions.forEach((subscription) => subscription.unsubscribe());
+  }
   getSearchHistory(): string[] {
     return this._dataService.getSearchHistory();
   }
@@ -65,22 +77,24 @@ export class SearchComponent extends Utils {
     this._changeDetector.detectChanges();
   }
 
-  getServices(user: User) {
-    const services: Service[] = [];
-    const searchValue = this.search.value?.toLowerCase();
-    user.categories.forEach((category) => {
-      if (category.name?.toLowerCase().includes(searchValue)) {
-        services.push(...category.services);
-        return;
-      }
-      category.services.forEach((service) => {
-        if (service.name?.toLowerCase().includes(searchValue)) {
-          services.push(service);
-        }
-      });
-    });
-    return services;
-  }
+  // getSearchUsers() {
+  //   const services: Service[] = [];
+  //   const searchValue = this.search.value?.toLowerCase();
+  //   this._dataService.getUsers().forEach((user) => {
+  //     user.categories.forEach((category) => {
+  //       if (category.name?.toLowerCase().includes(searchValue)) {
+  //         services.push(...category.services);
+  //         return;
+  //       }
+  //       category.services.forEach((service) => {
+  //         if (service.name?.toLowerCase().includes(searchValue)) {
+  //           services.push(service);
+  //         }
+  //       });
+  //     });
+  //   });
+  //   return services;
+  // }
 
   getRandom() {
     return Math.floor(Math.random() * 9);
@@ -109,7 +123,7 @@ export class SearchComponent extends Utils {
   goToFixerProfile(user: string) {
     localStorage.setItem('data', JSON.stringify({ user }));
     this._router.navigate(['..', 'fixer-profile'], {
-      queryParams: { backTo: '/search' },
+      queryParams: { backTo: '/search', q: this.search.value },
     });
   }
 }

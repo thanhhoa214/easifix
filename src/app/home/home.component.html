@@ -32,7 +32,7 @@
     <ion-slides #sliders [options]="{ slidesPerView: 3.8 }" class="promotions">
       <ion-slide
         *ngFor="let category of categories"
-        (click)="goToSearch(category.name)"
+        (click)="showFilters(category.id)"
         class="d-flex flex-column justify-content-center"
       >
         <ion-avatar class="p-1 border bg-light">
@@ -100,11 +100,9 @@
 
                 <div
                   class="d-flex flex-column text-left"
-                  (click)="goToBooking(user.id, category.id, service.id)"
+                  (click)="showBrandPicker(user.id, category.id, service.id)"
                 >
                   <span>{{ user.name }}</span>
-                  <!-- <span class="mt-n1 small">{{ user.name }}</span> -->
-
                   <span>
                     {{ service.price | currency: '':'VND':'4.0-0' }}
                   </span>

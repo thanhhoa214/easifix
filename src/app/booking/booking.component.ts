@@ -18,6 +18,7 @@ export class BookingComponent implements OnInit {
   category: Category;
   dateNow: number = 30;
   monthNow: number = 10;
+  brand: string = '';
 
   time = ['7:30 đến 9:00', '14:00 đến 15:30', '18:30 đến 20:00'];
   timeHour = '';
@@ -31,6 +32,7 @@ export class BookingComponent implements OnInit {
     const { user, category, service } = JSON.parse(
       localStorage.getItem('data')
     );
+    this.brand = this._dataService.getBrand();
     this.user = this._dataService.getUser(user);
     this.service = this._dataService.getService(user, category, service);
     this.category = this._dataService.getCategory(user, category);

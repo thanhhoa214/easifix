@@ -13,8 +13,9 @@ export class FixerFeedbackComponent implements OnInit {
 
   ngOnInit(): void {
     const { backTo } = this._activatedRoute.snapshot.queryParams;
-    console.log(backTo);
-
     this.backTo = backTo;
+  }
+  getRandom() {
+    return Math.floor(Math.random() * 3) + 3;
   }
 }

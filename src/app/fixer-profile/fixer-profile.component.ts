@@ -1,7 +1,9 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ModalController } from '@ionic/angular';
 import { User } from '../data.model';
 import { DataService } from '../data.service';
+import { BrandSelectComponent } from '../shared/components/brand-select/brand-select.component';
 import { Utils } from '../shared/utils';
 
 @Component({
@@ -14,19 +16,42 @@ export class FixerProfileComponent extends Utils implements OnInit {
   user: User;
   backTo: string;
   collapsedCategories: boolean[];
+  searchQuery: string;
+  brand: string;
 
   constructor(
     private _dataService: DataService,
     private _router: Router,
+    private _modalController: ModalController,
     private _activatedRoute: ActivatedRoute
   ) {
     super();
   }
 
   ngOnInit(): void {
-    const { backTo } = this._activatedRoute.snapshot.queryParams;
+    const { backTo, q } = this._activatedRoute.snapshot.queryParams;
     this.backTo = backTo;
-    console.log(backTo);
+    this.searchQuery = q;
+    this.brand = this._dataService.getBrand();
+
+    const { user } = JSON.parse(localStorage.getItem('data'));
+    this.user = this._dataService.getUser(user);
+    this.collapsedCategories = this.getArray(this.user.categories.length).map(
+      (item) => !!item
+    );
+
+    if (!this.user) {
+      this._router.navigateByUrl('/home');
+    }
+  }
+
+  ionViewDidEnter(): void {
+    console.log('heyyyyyy');
+
+    const { backTo, q } = this._activatedRoute.snapshot.queryParams;
+    this.backTo = backTo;
+    this.searchQuery = q;
+    this.brand = this._dataService.getBrand();
 
     const { user } = JSON.parse(localStorage.getItem('data'));
     this.user = this._dataService.getUser(user);
@@ -51,12 +76,28 @@ export class FixerProfileComponent extends Utils implements OnInit {
   }
   goToBooking(user: string, category: string, service: string) {
     localStorage.setItem('data', JSON.stringify({ user, category, service }));
-    this._router.navigate(['home', 'booking']);
+    if (this.brand) {
+      this._router.navigate(['home', 'booking']);
+      return;
+    }
+    this.showFilters();
   }
 
   goToFixerFeedback() {
     this._router.navigate(['..', 'fixer-feedback'], {
       queryParams: { backTo: '/fixer-profile' },
     });
+  }
+
+  getRandom() {
+    return Math.floor(Math.random() * 3) + 3;
+  }
+  async showFilters() {
+    const modal = await this._modalController.create({
+      component: BrandSelectComponent,
+      backdropDismiss: true,
+      cssClass: 'my-custom-class',
+    });
+    await modal.present();
   }
 }

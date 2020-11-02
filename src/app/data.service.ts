@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Service, User, Category, LSItemName } from './data.model';
+import { Service, User, Category, LSItemName, IdName } from './data.model';
 import { DATABASE } from './data';
 
 @Injectable({ providedIn: 'root' })
@@ -23,7 +23,7 @@ export class DataService {
     return DATABASE.categories;
   }
   getPredictions(): string[] {
-    return DATABASE.predicts;
+    return DATABASE.brands.map((brands) => brands.name);
   }
 
   getSearchHistory() {
@@ -54,6 +54,13 @@ export class DataService {
     let searchItems = this._getEncode(LSItemName.SEARCH_HISTORY) ?? [];
     searchItems = searchItems.filter((item) => item !== keyword);
     this._setEncode(LSItemName.SEARCH_HISTORY, searchItems);
+  }
+
+  writeBrand(name: string) {
+    localStorage.setItem(LSItemName.BRANDS, name ?? '');
+  }
+  getBrand(): string {
+    return localStorage.getItem(LSItemName.BRANDS) ?? '';
   }
 
   private _getEncode(localStorageItemName: LSItemName) {

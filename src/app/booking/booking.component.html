@@ -40,8 +40,11 @@
       <ion-text class="ml-1"> Dịch vụ yêu cầu</ion-text>
     </h6>
     <ion-item lines="none">
-      <ion-label
-        ><b class="small font-weight-bold">[{{ category.name }}]</b><br />
+      <ion-label>
+        <div class="d-flex align-items-center">
+          <b class="small font-weight-bold">[{{ category.name }}]</b>
+          <ion-badge>{{ brand }}</ion-badge>
+        </div>
         {{ service.name }}
       </ion-label>
     </ion-item>

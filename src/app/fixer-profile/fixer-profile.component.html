@@ -1,4 +1,7 @@
-<app-header title="Thông tin thợ" [backTo]="backTo"></app-header>
+<app-header
+  title="Thông tin thợ"
+  [backTo]="backTo + '?q=' + searchQuery"
+></app-header>
 <ion-content>
   <ion-avatar size="large" class="p-1 border mx-auto">
     <img [src]="'assets/' + user.avatar" alt="Lỗi" />
@@ -41,11 +44,14 @@
         class="mr-1"
         style="color: #929395"
       ></ion-icon>
-      <ion-text style="color: #929395">Các dịch vụ</ion-text>
+      <ion-text style="color: #929395">Các dịch vụ {{ searchQuery }}</ion-text>
     </ion-item>
     <div *ngFor="let category of user.categories">
       <ion-list-header
-        class="bg-light h6 d-flex align-items-center"
+        class="bg-{{
+          category.name.includes(searchQuery) ? 'secondary' : 'light'
+        }} h6 d-flex align-items-center"
+        [class.text-light]="category.name.includes(searchQuery)"
         (click)="toggleCollapse(category.id)"
       >
         <div
@@ -54,13 +60,21 @@
           <span>{{ category.name }}</span>
           <ion-icon
             name="chevron-{{
-              collapsedCategories[category.id] ? 'up' : 'down'
+              collapsedCategories[category.id] ||
+              category.name.includes(searchQuery)
+                ? 'up'
+                : 'down'
             }}-outline"
           ></ion-icon>
         </div>
       </ion-list-header>
-      <ng-container *ngIf="collapsedCategories[category.id]"
-        ><ion-item
+      <ng-container
+        *ngIf="
+          collapsedCategories[category.id] ||
+          category.name.includes(searchQuery)
+        "
+      >
+        <ion-item
           *ngFor="let service of category.services; index as serviceIndex"
           class="small"
           [detail]="true"
@@ -72,17 +86,12 @@
             >
             {{ service.name }}</ion-label
           >
-          <ion-select value="Apple" (click)="chooseBrand($event)">
-            <ion-select-option value="Apple">Apple</ion-select-option>
-            <ion-select-option value="Samsung">Samsung</ion-select-option>
-            <ion-select-option value="LG">LG</ion-select-option>
-            <ion-select-option value="Sony">Sony</ion-select-option>
-          </ion-select>
           <ion-label class="text-right">
+            <ion-badge>{{ brand }}</ion-badge>
             {{ service.price | currency: '':'đ':'4.0-0' }}</ion-label
           >
-        </ion-item></ng-container
-      >
+        </ion-item>
+      </ng-container>
     </div>
   </ion-list>
 
@@ -99,18 +108,32 @@
       >
     </ion-item>
     <ion-item *ngFor="let i of [1, 2, 3]">
-      <ion-thumbnail slot="start" class="p-2">
-        <img src="assets/avatar-0.jpg" />
-      </ion-thumbnail>
-      <ion-label>
+      <!-- <ion-thumbnail slot="start" class="border border-black"> -->
+      <img
+        src="assets/avatar-{{ i % 3 == 0 ? 6 : i % 2 == 0 ? 4 : 5 }}.png"
+        style="width: 5rem; height: 5rem"
+      />
+      <!-- </ion-thumbnail> -->
+      <ion-label class="ml-2 mt-3 pt-1">
         <h2>
-          <strong>Luân Nguyễn</strong>
+          <strong>{{
+            i % 3 == 0 ? 'Luân Nguyễn' : i % 2 == 0 ? 'Tâm Nguyễn' : 'Thanh Hòa'
+          }}</strong>
         </h2>
-        <h3>Giá cả hợp lý, thợ sửa thân thiện.</h3>
-        <ion-rating [rate]="3" [readonly]="true" size="small"> </ion-rating>
+        <h2>
+          {{
+            i % 3 == 0
+              ? 'Giá cả hợp lý, thợ sửa thân thiện.'
+              : i % 2 == 0
+              ? 'Sửa nhiệt tình và nhanh chóng'
+              : 'Mình gọi và được nhân viên đến sửa trong chưa đầy 1 giờ'
+          }}
+        </h2>
+        <ion-rating [rate]="getRandom()" [readonly]="true" size="large">
+        </ion-rating>
         <br />
         <h4 class="text-right">
-          <span class="text-secondary text-right ml-5"> 20/02/2020</span>
+          <span class="text-secondary text-right ml-5">20/02/2020</span>
         </h4>
       </ion-label>
     </ion-item>

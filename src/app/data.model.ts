@@ -39,4 +39,9 @@ export const enum LSItemName {
   USERS = 'db-users',
   ORDERS = 'db-orders,',
   SEARCH_HISTORY = 'db-search-history',
+  BRANDS = 'db-brands',
+}
+export interface IdName {
+  id: string;
+  name: string;
 }

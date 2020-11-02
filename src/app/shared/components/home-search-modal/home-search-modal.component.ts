@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ModalController } from '@ionic/angular';
 import { Category } from 'src/app/data.model';
 import { DataService } from 'src/app/data.service';
 
@@ -11,12 +12,17 @@ import { DataService } from 'src/app/data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeSearchModalComponent {
+  @Input() searchQuery: string = '';
   @Input() selectedUserId: string = '1';
   @Input() selectedCategory: string = '2';
   search = new FormControl();
   category: Category;
 
-  constructor(private dataService: DataService, private router: Router) {
+  constructor(
+    private dataService: DataService,
+    private router: Router,
+    private modalController: ModalController
+  ) {
     this.category = this.dataService.getCategory(
       this.selectedUserId,
       this.selectedCategory
@@ -24,9 +30,11 @@ export class HomeSearchModalComponent {
   }
 
   getPredictions() {
+    const q = this.search.value;
+    if (!q) return this.dataService.getPredictions();
     return this.dataService
       .getPredictions()
-      .filter((item) => item.includes(this.search.value));
+      .filter((item) => item.includes(q) && item !== q);
   }
 
   setSearchValue(value: string) {
@@ -34,9 +42,8 @@ export class HomeSearchModalComponent {
   }
 
   goToSearch() {
-    const value = this.search.value;
-    this.router.navigateByUrl('/home/search', {
-      queryParams: { q: value },
-    });
+    this.dataService.writeBrand(this.search.value);
+    this.router.navigateByUrl('/search?q=' + this.category.name);
+    this.modalController.dismiss();
   }
 }
