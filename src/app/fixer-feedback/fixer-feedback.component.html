@@ -1,4 +1,4 @@
-<app-header title="Phản hồi" [backTo]="backTo"></app-header>
+<app-header title="Phản hồi" [backTo]="backTo || 'home'"></app-header>
 <ion-content>
   <ion-list lines="full" class="mb-2">
     <ion-item *ngFor="let i of [1, 2, 3, 4, 5, 6]" details>

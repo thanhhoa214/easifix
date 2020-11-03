@@ -25,6 +25,9 @@ export class DataService {
   getPredictions(): string[] {
     return DATABASE.brands.map((brands) => brands.name);
   }
+  getRequests(): string[] {
+    return DATABASE.requests.map((request) => request.name);
+  }
 
   getSearchHistory() {
     return this._getEncode(LSItemName.SEARCH_HISTORY);
@@ -61,6 +64,30 @@ export class DataService {
   }
   getBrand(): string {
     return localStorage.getItem(LSItemName.BRANDS) ?? '';
+  }
+  getCategoryByRequestName(requestName: string): Category {
+    const requestId = DATABASE.requests.find(
+      (r) => r.name?.toLowerCase() == requestName?.toLowerCase()
+    )?.id;
+    const firstDeviceRequest = DATABASE.devicesRequests.find(
+      (devicesRequest) => devicesRequest.requestID == requestId
+    );
+    return DATABASE.categories.find(
+      (c) => c.id == firstDeviceRequest?.deviceID
+    );
+  }
+  searchCategory(q: string) {
+    if (!q) return undefined;
+    return (
+      DATABASE.categories.find(
+        (c) => c.name.toLowerCase() === q.toLowerCase()
+      ) || this.getCategoryByRequestName(q)
+    );
+  }
+  getCategoryByName(name: string): Category {
+    return DATABASE.categories.find(
+      (category) => category.name.toLowerCase() === name?.toLowerCase()
+    );
   }
 
   private _getEncode(localStorageItemName: LSItemName) {

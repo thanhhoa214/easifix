@@ -19,6 +19,8 @@ export class BrandSelectComponent {
   ) {}
 
   getPredictions() {
+    const q = this.search.value;
+    if (!q) return this.dataService.getPredictions();
     return this.dataService
       .getPredictions()
       .filter(

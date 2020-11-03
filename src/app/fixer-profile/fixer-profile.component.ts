@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
-import { User } from '../data.model';
+import { Category, User } from '../data.model';
 import { DataService } from '../data.service';
 import { BrandSelectComponent } from '../shared/components/brand-select/brand-select.component';
 import { Utils } from '../shared/utils';
@@ -17,7 +17,9 @@ export class FixerProfileComponent extends Utils implements OnInit {
   backTo: string;
   collapsedCategories: boolean[];
   searchQuery: string;
+  searchCategory: Category;
   brand: string;
+  imgSrc1Hide = true;
 
   constructor(
     private _dataService: DataService,
@@ -34,8 +36,9 @@ export class FixerProfileComponent extends Utils implements OnInit {
     this.searchQuery = q;
     this.brand = this._dataService.getBrand();
 
-    const { user } = JSON.parse(localStorage.getItem('data'));
+    const { user, category } = JSON.parse(localStorage.getItem('data'));
     this.user = this._dataService.getUser(user);
+    this.searchCategory = this._dataService.getCategory(user, category);
     this.collapsedCategories = this.getArray(this.user.categories.length).map(
       (item) => !!item
     );
@@ -46,14 +49,13 @@ export class FixerProfileComponent extends Utils implements OnInit {
   }
 
   ionViewDidEnter(): void {
-    console.log('heyyyyyy');
-
     const { backTo, q } = this._activatedRoute.snapshot.queryParams;
     this.backTo = backTo;
     this.searchQuery = q;
     this.brand = this._dataService.getBrand();
 
-    const { user } = JSON.parse(localStorage.getItem('data'));
+    const { user, category } = JSON.parse(localStorage.getItem('data'));
+    this.searchCategory = category;
     this.user = this._dataService.getUser(user);
     this.collapsedCategories = this.getArray(this.user.categories.length).map(
       (item) => !!item
@@ -99,5 +101,8 @@ export class FixerProfileComponent extends Utils implements OnInit {
       cssClass: 'my-custom-class',
     });
     await modal.present();
+  }
+  toggleCall() {
+    this.imgSrc1Hide = !this.imgSrc1Hide;
   }
 }

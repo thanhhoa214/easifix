@@ -5,3 +5,11 @@ ion-avatar {
   height: 4rem;
   width: 4rem;
 }
+
+.full-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+}

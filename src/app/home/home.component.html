@@ -29,11 +29,11 @@
     class="d-flex justify-content-center align-items-center"
     id="category-horizontal"
   >
-    <ion-slides #sliders [options]="{ slidesPerView: 3.8 }" class="promotions">
+    <ion-slides #sliders [options]="{ slidesPerView: 4.7 }" class="promotions">
       <ion-slide
         *ngFor="let category of categories"
         (click)="showFilters(category.id)"
-        class="d-flex flex-column justify-content-center"
+        class="d-flex flex-column justify-content-start align-items-center"
       >
         <ion-avatar class="p-1 border bg-light">
           <img

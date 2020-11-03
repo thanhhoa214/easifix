@@ -1,7 +1,16 @@
 <app-header
   title="Thông tin thợ"
-  [backTo]="backTo + '?q=' + searchQuery"
+  [backTo]="(backTo || 'home') + '?q=' + searchQuery"
 ></app-header>
+
+<img
+  src="assets/call.png"
+  alt=""
+  class="full-page"
+  *ngIf="imgSrc1Hide"
+  (click)="toggleCall()"
+/>
+
 <ion-content>
   <ion-avatar size="large" class="p-1 border mx-auto">
     <img [src]="'assets/' + user.avatar" alt="Lỗi" />
@@ -44,14 +53,16 @@
         class="mr-1"
         style="color: #929395"
       ></ion-icon>
-      <ion-text style="color: #929395">Các dịch vụ {{ searchQuery }}</ion-text>
+      <ion-text style="color: #929395"
+        >Các dịch vụ liên quan "{{ searchQuery }}"</ion-text
+      >
     </ion-item>
     <div *ngFor="let category of user.categories">
       <ion-list-header
         class="bg-{{
-          category.name.includes(searchQuery) ? 'secondary' : 'light'
+          category.name.includes(searchCategory?.name) ? 'secondary' : 'light'
         }} h6 d-flex align-items-center"
-        [class.text-light]="category.name.includes(searchQuery)"
+        [class.text-light]="category.name.includes(searchCategory?.name)"
         (click)="toggleCollapse(category.id)"
       >
         <div
@@ -61,7 +72,7 @@
           <ion-icon
             name="chevron-{{
               collapsedCategories[category.id] ||
-              category.name.includes(searchQuery)
+              category.name.includes(searchCategory?.name)
                 ? 'up'
                 : 'down'
             }}-outline"
@@ -71,7 +82,7 @@
       <ng-container
         *ngIf="
           collapsedCategories[category.id] ||
-          category.name.includes(searchQuery)
+          category.name.includes(searchCategory?.name)
         "
       >
         <ion-item
@@ -139,3 +150,8 @@
     </ion-item>
   </ion-list>
 </ion-content>
+
+<ion-button expand="block" class="w-90 mx-auto" (click)="toggleCall()">
+  <ion-icon name="call" class="mx-1 p-1 border rounded-circle"></ion-icon>
+  Gọi ngay (miễn phí)</ion-button
+>

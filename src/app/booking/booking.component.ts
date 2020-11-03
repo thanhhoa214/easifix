@@ -99,4 +99,10 @@ export class BookingComponent implements OnInit {
   gotToCheckout() {
     this._router.navigateByUrl('/home/checkout');
   }
+  goToFixerProfile(user: string) {
+    localStorage.setItem('data', JSON.stringify({ user }));
+    this._router.navigate(['..', 'fixer-profile'], {
+      queryParams: { backTo: '/home/booking' },
+    });
+  }
 }

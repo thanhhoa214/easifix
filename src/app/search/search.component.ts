@@ -42,6 +42,11 @@ export class SearchComponent extends Utils {
     this.subscriptions.push(
       this.search.valueChanges.subscribe((value) => {
         if (!value) return;
+        const searchCategoryName = this._dataService
+          .getCategoryByRequestName(value)
+          ?.name?.toLowerCase();
+        console.log(searchCategoryName);
+
         const valueInLower = value?.toLowerCase();
         this.users = this._dataService
           .getUsers()
@@ -49,6 +54,7 @@ export class SearchComponent extends Utils {
             user.categories.some(
               (category) =>
                 category.name?.toLowerCase().includes(valueInLower) ||
+                category.name?.toLowerCase().includes(searchCategoryName) ||
                 category.services.some((service) =>
                   service.name?.toLowerCase().includes(valueInLower)
                 )
@@ -121,9 +127,24 @@ export class SearchComponent extends Utils {
     this._router.navigate(['..', 'home', 'booking']);
   }
   goToFixerProfile(user: string) {
-    localStorage.setItem('data', JSON.stringify({ user }));
+    const category =
+      this._dataService.getCategoryByRequestName(this.search.value) ||
+      this._dataService.getCategoryByName(this.search.value);
+    const data = JSON.parse(localStorage.getItem('data'));
+    localStorage.setItem(
+      'data',
+      JSON.stringify({ ...data, category: category.id })
+    );
+
     this._router.navigate(['..', 'fixer-profile'], {
-      queryParams: { backTo: '/search', q: this.search.value },
+      queryParams: { backTo: '/search', q: this.search.value ?? '' },
     });
+  }
+  getPredictions() {
+    const q = this.search.value;
+    if (!q) return this._dataService.getRequests();
+    return this._dataService
+      .getRequests()
+      .filter((item) => item.includes(q) && item !== q);
   }
 }

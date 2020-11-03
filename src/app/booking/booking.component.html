@@ -21,7 +21,7 @@
       <ion-icon name="person-outline" style="zoom: 1.3"></ion-icon>
       <ion-text class="ml-1"> Thông tin kỹ thuật viên</ion-text>
     </h6>
-    <ion-item lines="none">
+    <ion-item lines="none" (click)="goToFixerProfile(user.id)">
       <ion-avatar class="mr-1 p-1 border">
         <img [src]="'assets/' + user.avatar" />
       </ion-avatar>
