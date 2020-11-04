@@ -16,55 +16,36 @@
     <ion-avatar class="p-1 border mx-auto">
       <img src="assets/avatar.png" alt="Lỗi" />
     </ion-avatar>
-    <p>
-      <strong>{{ 'Tên Khách Hàng' | uppercase }}</strong>
-    </p>
+    <span>
+      <br>Tên Khách Hàng
+    </span>
     <p class="invisible">
       <span class="d-inline-block">Easifix cảm ơn bạn vì đã tin tưởng.</span>
     </p>
   </div>
   <ion-card class="small d-flex flex-column w-90 text-center mb-2 mt-n4" style="height: 18rem">
-    <ion-rating [rate]="rate" [readonly]="false" size="small"><!-- (rateChange)="onRateChange($event)" -->
+    <ion-rating [rate]="4" [readonly]="false" size="small" >
     </ion-rating>
-    <!-- <div class="d-flex justify-content-center flex-wrap px-1">
-      <ion-button [fill]="parts[0] ? 'solid' : 'outline'" class="rounded-circle" size="small" style="width: 30%"
-        (click)="updatePart(0)">
-        Nhanh chóng
-      </ion-button>
-      <ion-button [fill]="parts[1] ? 'solid' : 'outline'" class="rounded-circle" style="width: 30%" size="small"
-        (click)="updatePart(1)">
-        Tiện lợi
-      </ion-button>
-      <ion-button [fill]="parts[2] ? 'solid' : 'outline'" class="rounded-circle" style="width: 30%" size="small"
-        (click)="updatePart(2)">
-        Hiệu quả
-      </ion-button>
-
-      <ion-button [fill]="parts[3] ? 'solid' : 'outline'" class="rounded-circle" style="width: 30%" size="small"
-        (click)="updatePart(3)">
-        Chất lượng tốt
-      </ion-button>
-      <ion-button [fill]="parts[4] ? 'solid' : 'outline'" class="rounded-circle" style="width: 30%" size="small"
-        (click)="updatePart(4)">
-        An toàn
-      </ion-button>
-      <ion-button [fill]="parts[5] ? 'solid' : 'outline'" class="rounded-circle" style="width: 30%" size="small"
-        (click)="updatePart(5)">
-        Tuyệt vời
-      </ion-button>
-    </div> -->
-    <h6 class="mx-3 d-flex align-items-center text-left">
-      <ion-icon name="reader-outline" style="zoom: 1.3" class="h2"></ion-icon>
-      <ion-text class="ml-1">
-        Bạn có điều gì muốn cải thiện hoặc nhận xét về dịch vụ của chúng
-        tôi?</ion-text>
-    </h6>
-    <ion-item lines="none">
-      <ion-textarea class="border rounded-lg small px-2" cols="15" style="height: 4.5rem"
-        placeholder="Thái độ rất tốt, tập trung, đúng giờ ..."></ion-textarea>
-    </ion-item>
+    <ion-list lines="full">
+      <ion-item>
+        <ion-label>Bạn vừa nhận được:</ion-label>
+        <ion-label class="text-right">200.000 đ</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <b>Dịch vụ:</b> <br>
+          <b> - Sửa máy giặt: </b> <br>
+           <span class="ml-2">+ Thay nắp máy giặt Panasonic</span>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <b>Phản hồi:</b> <br>
+           <span class="ml-2">Đạo đức nghề nghiệp tốt</span>
+        </ion-label>
+      </ion-item>
+    </ion-list>
   </ion-card>
 </div>
 
-<ion-button expand="block" class="w-90 mx-auto" >Hoàn thành</ion-button>
-<!-- (click)="goToHome()" -->
+<ion-button expand="block" class="w-90 mx-auto" >Đóng</ion-button>
