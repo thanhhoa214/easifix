@@ -10,6 +10,7 @@ import { ProfileUpdateSuccessComponent } from './profile-update-success/profile-
 import { HomeSearchModalComponent } from './components/home-search-modal/home-search-modal.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrandSelectComponent } from './components/brand-select/brand-select.component';
+import { IonicRatingModule } from 'ionic-rating';
 
 const components = [
   BottomBarComponent,
@@ -22,6 +23,12 @@ const components = [
 @NgModule({
   declarations: [...components, BrandSelectComponent],
   exports: [...components],
-  imports: [CommonModule, RouterModule, IonicModule, ReactiveFormsModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    IonicModule,
+    IonicRatingModule,
+    ReactiveFormsModule,
+  ],
 })
 export class SharedModule {}

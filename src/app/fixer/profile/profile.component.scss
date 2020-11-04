@@ -1,0 +1,19 @@
+ion-avatar {
+  width: 9rem;
+  height: 9rem;
+  border: 3px solid var(--ion-color-primary);
+}
+.small {
+  font-size: 0.95rem;
+}
+ion-select button {
+  display: none;
+}
+
+.full-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+}

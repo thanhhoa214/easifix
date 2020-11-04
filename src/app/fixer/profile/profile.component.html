@@ -1,6 +1,125 @@
-<ion-content
-  ><h4>
-    Profile khá giống profile-fixer.component.html nhưng các dịch vụ ko được bấm
-    vào
-  </h4></ion-content
->
+<app-header title="Thông tin thợ"></app-header>
+
+<ion-content>
+  <ion-avatar size="large" class="p-1 border mx-auto">
+    <img [src]="'assets/' + user.avatar" alt="Lỗi" />
+  </ion-avatar>
+  <div class="w-100 d-flex justify-content-center">
+    <ion-rating [rate]="user.rating" [readonly]="true" size="default">
+    </ion-rating>
+  </div>
+  <ion-list lines="full">
+    <ion-item color="light">
+      <ion-icon
+        name="reader-outline"
+        class="mr-1"
+        style="color: #929395"
+      ></ion-icon>
+      <ion-text style="color: #929395">Thông tin</ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-label>Họ tên</ion-label>
+      <ion-label class="text-right">{{ user.name }}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Số điện thoại</ion-label>
+      <ion-label class="text-right">{{ user.phone }}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Địa chỉ</ion-label>
+      <ion-label class="text-right"
+        >{{ user.address }},<br />
+        {{ user.province }}</ion-label
+      >
+    </ion-item>
+  </ion-list>
+  <ion-list lines="full" class="mb-2">
+    <ion-item color="light">
+      <ion-icon
+        name="add-circle-outline"
+        class="mr-1"
+        style="color: #929395"
+      ></ion-icon>
+      <ion-text style="color: #929395">Các dịch vụ hỗ trợ</ion-text>
+    </ion-item>
+    <div *ngFor="let category of user.categories">
+      <ion-list-header
+        class="bg-light h6 d-flex align-items-center"
+        (click)="toggleCollapse(category.id)"
+      >
+        <div
+          class="w-100 d-flex justify-content-between align-items-center mr-3"
+        >
+          <span>{{ category.name }}</span>
+          <ion-icon
+            name="chevron-{{
+              collapsedCategories[category.id] ? 'up' : 'down'
+            }}-outline"
+          ></ion-icon>
+        </div>
+      </ion-list-header>
+      <ng-container *ngIf="collapsedCategories[category.id]">
+        <ion-item
+          *ngFor="let service of category.services; index as serviceIndex"
+          class="small"
+        >
+          <ion-label
+            ><ion-text color="primary"
+              ><small>({{ serviceIndex }})</small></ion-text
+            >
+            {{ service.name }}</ion-label
+          >
+          <ion-label class="text-right">
+            {{ service.price | currency: '':'đ':'4.0-0' }}</ion-label
+          >
+        </ion-item>
+      </ng-container>
+    </div>
+  </ion-list>
+
+  <ion-list lines="full" class="mb-2">
+    <ion-item color="light">
+      <ion-icon
+        name="arrow-undo-circle-outline"
+        class="mr-1"
+        style="color: #929395"
+      ></ion-icon>
+      <ion-text style="color: #929395">Phản hồi</ion-text>
+      <ion-text slot="end" color="primary" (click)="goToFixerFeedback()"
+        >Xem thêm</ion-text
+      >
+    </ion-item>
+    <ion-item *ngFor="let i of [1, 2, 3]">
+      <!-- <ion-thumbnail slot="start" class="border border-black"> -->
+      <img
+        src="assets/avatar-{{ i % 3 == 0 ? 6 : i % 2 == 0 ? 4 : 5 }}.png"
+        style="width: 5rem; height: 5rem"
+      />
+      <!-- </ion-thumbnail> -->
+      <ion-label class="ml-2 mt-3 pt-1">
+        <h2>
+          <strong>{{
+            i % 3 == 0 ? 'Luân Nguyễn' : i % 2 == 0 ? 'Tâm Nguyễn' : 'Thanh Hòa'
+          }}</strong>
+        </h2>
+        <h2>
+          {{
+            i % 3 == 0
+              ? 'Giá cả hợp lý, thợ sửa thân thiện.'
+              : i % 2 == 0
+              ? 'Sửa nhiệt tình và nhanh chóng'
+              : 'Mình gọi và được nhân viên đến sửa trong chưa đầy 1 giờ'
+          }}
+        </h2>
+        <ion-rating [rate]="getRandom()" [readonly]="true" size="large">
+        </ion-rating>
+        <br />
+        <h4 class="text-right">
+          <span class="text-secondary text-right ml-5">20/02/2020</span>
+        </h4>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
