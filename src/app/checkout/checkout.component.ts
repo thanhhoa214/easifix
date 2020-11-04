@@ -72,7 +72,7 @@ export class CheckoutComponent implements OnInit {
     return this.checkFee + fee;
   }
   gotToPayment(total: number) {
-    const des = this.activeButton ? 'momo' : 'success';
+    const des = this.activeButton == 'momo' ? 'momo' : 'success';
     this._router.navigateByUrl('/' + des);
     localStorage.setItem('totalPrice', total + '');
   }

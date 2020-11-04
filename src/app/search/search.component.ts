@@ -48,16 +48,19 @@ export class SearchComponent extends Utils {
         console.log(searchCategoryName);
 
         const valueInLower = value?.toLowerCase();
+        const words = valueInLower.split(' ');
         this.users = this._dataService
           .getUsers()
           .filter((user) =>
-            user.categories.some(
-              (category) =>
-                category.name?.toLowerCase().includes(valueInLower) ||
-                category.name?.toLowerCase().includes(searchCategoryName) ||
-                category.services.some((service) =>
-                  service.name?.toLowerCase().includes(valueInLower)
-                )
+            user.categories.some((category) =>
+              words.some(
+                (word) =>
+                  category.name?.toLowerCase().includes(word) ||
+                  category.name?.toLowerCase().includes(searchCategoryName) ||
+                  category.services.some((service) =>
+                    service.name?.toLowerCase().includes(word)
+                  )
+              )
             )
           );
       })
@@ -129,7 +132,8 @@ export class SearchComponent extends Utils {
   goToFixerProfile(user: string) {
     const category =
       this._dataService.getCategoryByRequestName(this.search.value) ||
-      this._dataService.getCategoryByName(this.search.value);
+      this._dataService.getCategoryByName(this.search.value) ||
+      this._dataService.getCategoryByName('Sửa tivi');
     const data = JSON.parse(localStorage.getItem('data')) || {};
 
     localStorage.setItem(
