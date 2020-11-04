@@ -37,6 +37,18 @@ export class CheckoutComponent implements OnInit {
     }
   }
 
+  ionViewDidEnter() {
+    const { user, category, service } = JSON.parse(
+      localStorage.getItem('data')
+    );
+    this.user = this._dataService.getUser(user);
+    this.service = this._dataService.getService(user, category, service);
+    this.category = this._dataService.getCategory(user, category);
+    if (!this.user || !this.category || !this.service) {
+      this._router.navigateByUrl('/home');
+    }
+  }
+
   async openSuccessModal() {
     const random = Math.round(Math.random() * 2) % 2;
     console.log(random);

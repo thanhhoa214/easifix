@@ -35,6 +35,17 @@ export class HistoryCompletedComponent implements OnInit {
     this.category = this._dataService.getCategory(user, category);
     this.service = this._dataService.getService(user, category, service);
   }
+  ionViewDidEnter(): void {
+    this.notiNumber$ = this._bottomBarService.notfication$;
+    this.processNotiNumber$ = this._bottomBarService.processingNotfication$;
+    const { user, category, service } = JSON.parse(
+      localStorage.getItem('data')
+    );
+    this.totalPrice = parseInt(localStorage.getItem('totalPrice'));
+    this.user = this._dataService.getUser(user);
+    this.category = this._dataService.getCategory(user, category);
+    this.service = this._dataService.getService(user, category, service);
+  }
 
   getArray(length: number) {
     return Array(length).fill('');

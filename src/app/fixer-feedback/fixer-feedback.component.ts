@@ -15,6 +15,10 @@ export class FixerFeedbackComponent implements OnInit {
     const { backTo } = this._activatedRoute.snapshot.queryParams;
     this.backTo = backTo;
   }
+  ionViewDidEnter(): void {
+    const { backTo } = this._activatedRoute.snapshot.queryParams;
+    this.backTo = backTo;
+  }
   getRandom() {
     return Math.floor(Math.random() * 3) + 3;
   }

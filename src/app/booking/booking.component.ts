@@ -23,23 +23,6 @@ export class BookingComponent implements OnInit {
   time = ['7:30 đến 9:00', '14:00 đến 15:30', '18:30 đến 20:00'];
   timeHour = '';
 
-  constructor(
-    private _dataService: DataService,
-    private _router: Router,
-    private _bottomBarService: BottomBarService
-  ) {}
-  ngOnInit() {
-    const { user, category, service } = JSON.parse(
-      localStorage.getItem('data')
-    );
-    this.brand = this._dataService.getBrand();
-    this.user = this._dataService.getUser(user);
-    this.service = this._dataService.getService(user, category, service);
-    this.category = this._dataService.getCategory(user, category);
-    this.timeHour = this.time[0];
-    this._bottomBarService.pushProcessingNotification();
-  }
-
   commitments = [
     {
       title: ['Bảo hành', 'dịch vụ'],
@@ -62,6 +45,33 @@ export class BookingComponent implements OnInit {
       icon: 'construct-outline',
     },
   ];
+  constructor(
+    private _dataService: DataService,
+    private _router: Router,
+    private _bottomBarService: BottomBarService
+  ) {}
+  ngOnInit() {
+    const { user, category, service } = JSON.parse(
+      localStorage.getItem('data')
+    );
+    this.brand = this._dataService.getBrand();
+    this.user = this._dataService.getUser(user);
+    this.service = this._dataService.getService(user, category, service);
+    this.category = this._dataService.getCategory(user, category);
+    this.timeHour = this.time[0];
+    this._bottomBarService.pushProcessingNotification();
+  }
+  ionViewDidEnter() {
+    const { user, category, service } = JSON.parse(
+      localStorage.getItem('data')
+    );
+    this.brand = this._dataService.getBrand();
+    this.user = this._dataService.getUser(user);
+    this.service = this._dataService.getService(user, category, service);
+    this.category = this._dataService.getCategory(user, category);
+    this.timeHour = this.time[0];
+    this._bottomBarService.pushProcessingNotification();
+  }
 
   updateDay(index: number) {
     const newDays = this.days.map((_) => false);
