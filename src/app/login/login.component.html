@@ -20,6 +20,7 @@
             type="tel"
             placeholder="Điền số điện thoại của bạn"
             maxlength="10"
+            #telephone
           ></ion-input>
         </div>
         <div class="w-100 d-flex align-items-center">
@@ -40,7 +41,7 @@
         </div>
       </ion-card>
     </div>
-    <ion-button expand="block" class="w-90" [routerLink]="['..', 'home']"
+    <ion-button expand="block" class="w-90" (click)="login(telephone.value)"
       >Đăng nhập</ion-button
     >
     <span>Hoặc <ion-text color="primary"> tạo tài khoản mới </ion-text></span>

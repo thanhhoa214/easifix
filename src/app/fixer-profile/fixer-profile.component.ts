@@ -37,6 +37,8 @@ export class FixerProfileComponent extends Utils implements OnInit {
     this.brand = this._dataService.getBrand();
 
     const { user, category } = JSON.parse(localStorage.getItem('data'));
+    console.log(user, category);
+
     this.user = this._dataService.getUser(user);
     this.searchCategory = this._dataService.getCategory(user, category);
     this.collapsedCategories = this.getArray(this.user.categories.length).map(

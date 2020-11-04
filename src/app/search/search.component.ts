@@ -130,10 +130,11 @@ export class SearchComponent extends Utils {
     const category =
       this._dataService.getCategoryByRequestName(this.search.value) ||
       this._dataService.getCategoryByName(this.search.value);
-    const data = JSON.parse(localStorage.getItem('data'));
+    const data = JSON.parse(localStorage.getItem('data')) || {};
+
     localStorage.setItem(
       'data',
-      JSON.stringify({ ...data, category: category.id })
+      JSON.stringify({ ...data, user, category: category.id })
     );
 
     this._router.navigate(['..', 'fixer-profile'], {

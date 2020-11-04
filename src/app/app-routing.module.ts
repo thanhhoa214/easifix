@@ -31,11 +31,23 @@ const routes: Routes = [
   { path: 'fixer-feedback', component: FixerFeedbackComponent },
   { path: 'momo', component: SuccessMomoComponent },
   { path: 'success', component: SuccessComponent },
-
+  {
+    path: 'fixer',
+    loadChildren: () =>
+      import('./fixer/fixer.module').then((m) => m.FixerModule),
+  },
   {
     path: '',
     component: LayoutComponent,
     children: [
+      {
+        path: 'fixer',
+        loadChildren: () =>
+          import('./fixer/fixer-routing.module').then(
+            (module) => module.FixerRoutingModule
+          ),
+      },
+
       {
         path: 'home',
         children: [
