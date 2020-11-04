@@ -9,6 +9,8 @@ import { SharedModule } from '../shared/shared.module';
 import { IonicModule } from '@ionic/angular';
 import { FixerComponent } from './fixer.component';
 import { BottomBarComponent } from './shared/bottom-bar/bottom-bar.component';
+import { IonicRatingModule } from 'ionic-rating';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,12 @@ import { BottomBarComponent } from './shared/bottom-bar/bottom-bar.component';
     FixerComponent,
     BottomBarComponent,
   ],
-  imports: [SharedModule, IonicModule, FixerRoutingModule],
+  imports: [
+    CommonModule,
+    IonicModule,
+    IonicRatingModule,
+    SharedModule,
+    FixerRoutingModule,
+  ],
 })
 export class FixerModule {}
