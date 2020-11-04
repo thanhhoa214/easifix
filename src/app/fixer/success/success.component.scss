@@ -1,0 +1,14 @@
+.w-90 {
+    width: 90%;
+  }
+  ion-avatar {
+    width: 9rem;
+    height: 9rem;
+    border: 3px solid var(--ion-color-primary);
+  }
+  ion-rating {
+    ion-button {
+      background: transparent !important;
+    }
+  }
+  

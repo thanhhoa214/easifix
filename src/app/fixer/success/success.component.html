@@ -1,8 +1,51 @@
-<ion-content
+<!-- <ion-content
   >trang thành công khá giống trang thành công bên kia ngoài việc trong thông
   báo sẽ là 1 message
   <h4>
     Bạn vừa nhận được 200.000đ [Sửa máy giặt]___BRAND___
     <b>Thay nắp máy giặt</b> từ <b>Nuyễn Văn A</b>
   </h4></ion-content
->
+> -->
+<div class="h-100 d-flex flex-column justify-content-end align-items-center">
+  <div class="border bg-white pb-2 text-center w-75">
+    <div class="mt-4">
+      <p>
+        <strong>{{ 'thành công' | uppercase }}</strong>
+      </p>
+    </div>
+    <ion-avatar class="p-1 border mx-auto">
+      <img src="assets/avatar.png" alt="Lỗi" />
+    </ion-avatar>
+    <span>
+      <br>Tên Khách Hàng
+    </span>
+    <p class="invisible">
+      <span class="d-inline-block">Easifix cảm ơn bạn vì đã tin tưởng.</span>
+    </p>
+  </div>
+  <ion-card class="small d-flex flex-column w-90 text-center mb-2 mt-n4" style="height: 18rem">
+    <ion-rating [rate]="4" [readonly]="false" size="small" >
+    </ion-rating>
+    <ion-list lines="full">
+      <ion-item>
+        <ion-label>Bạn vừa nhận được:</ion-label>
+        <ion-label class="text-right">200.000 đ</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <b>Dịch vụ:</b> <br>
+          <b> - Sửa máy giặt: </b> <br>
+           <span class="ml-2">+ Thay nắp máy giặt Panasonic</span>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <b>Phản hồi:</b> <br>
+           <span class="ml-2">Đạo đức nghề nghiệp tốt</span>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</div>
+
+<ion-button expand="block" class="w-90 mx-auto" >Đóng</ion-button>

@@ -1,14 +1,5 @@
-<ion-item
-  lines="none"
-  detail="false"
-  class="pt-3 bg-transparent"
-  style="--background: transparent"
->
-  <ion-avatar
-    slot="start"
-    [routerLink]="['..', 'profile']"
-    class="p-1 border mr-1"
-  >
+<ion-item lines="none" detail="false" class="pt-3 bg-transparent" style="--background: transparent">
+  <ion-avatar slot="start" [routerLink]="['..', 'profile']" class="p-1 border mr-1">
     <img src="assets/avatar.png" />
   </ion-avatar>
   <ion-card class="p-2 ml-1 w-100">
@@ -19,7 +10,82 @@
   </ion-card>
 </ion-item>
 <ion-content>
-  <h4 class="bg-primary">
+  <ion-card class="calendar" class="py-3">
+    <h6 class="ml-3 d-flex align-items-center">
+      <ion-icon name="calendar-outline" style="zoom: 1.3"></ion-icon>
+      <ion-text class="ml-1"> Lịch</ion-text>
+    </h6>
+    <ion-item>
+      <ion-label> Ngày {{ dateNow }} Tháng {{ monthNow }}, 2020 </ion-label>
+      <ion-icon name="calendar-outline"></ion-icon>
+    </ion-item>
+    <ion-item lines="none" class="small">
+      <ion-button [fill]="days[0] ? 'solid' : 'outline'" class="rounded-circle" style="width: 14%"
+        (click)="updateDay(0)">
+        T6
+      </ion-button>
+      <ion-button [fill]="days[1] ? 'solid' : 'outline'" class="rounded-circle" style="width: 14%"
+        (click)="updateDay(1)">
+        T7
+      </ion-button>
+      <ion-button [fill]="days[2] ? 'solid' : 'outline'" class="rounded-circle" style="width: 14%"
+        (click)="updateDay(2)">
+        CN
+      </ion-button>
+      <ion-button [fill]="days[3] ? 'solid' : 'outline'" class="rounded-circle" style="width: 14%"
+        (click)="updateDay(3)">
+        T2
+      </ion-button>
+      <ion-button [fill]="days[4] ? 'solid' : 'outline'" class="rounded-circle" style="width: 14%"
+        (click)="updateDay(4)">
+        T3
+      </ion-button>
+      <ion-button [fill]="days[5] ? 'solid' : 'outline'" class="rounded-circle" style="width: 14%"
+        (click)="updateDay(5)">
+        T4
+      </ion-button>
+      <ion-button [fill]="days[6] ? 'solid' : 'outline'" class="rounded-circle" style="width: 14%"
+        (click)="updateDay(6)">
+        T5
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <b>Bạn có khách đặt lịch vào: </b><br>
+        <span> - T2: Tên khách hàng (Tên dịch vụ)</span><br>
+        <span> - T4: Tên khách hàng (Tên dịch vụ)</span><br>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+  <div id="content" class="text-secondary mt-2">
+    <div class="py-1 ml-3 d-flex align-items-center">
+      <span class="pl-1">Hôm nay</span>
+    </div>
+    <ion-list lines="full">
+      <ion-item *ngFor="let i of [1,2]">
+        <ion-thumbnail slot="start">
+          <img src="assets/avatar-0.jpg" />
+        </ion-thumbnail>
+        <ion-label>
+          <h2 class="d-flex justify-content-between">
+            <strong>Tên dịch vụ</strong>
+          </h2>
+          <h3>
+            <p class="text-secondary">
+              Hãng: Samsung
+            </p>
+            <p class="text-dark">
+              Giờ: 14:00 đến 15:30
+            </p>
+            <p class="text-secondary">
+              {{ user.distance }} km - {{ user.time }} phút
+            </p>
+          </h3>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+  <!-- <h4 class="bg-primary">
     Phần 1: chứa calendar full width với 1 vài thông báo trong một số ngày nào
     đó (random)
   </h4>
@@ -36,6 +102,5 @@ Mỗi yêu cầu (Thiết kế giống phần
   - tên service
   - brand service
   - thời gian đặt
-</pre
-  >
+</pre> -->
 </ion-content>
