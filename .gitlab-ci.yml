@@ -13,6 +13,7 @@ page:
   script:
     - npm install
     - npm run build-gitlab
+    - cp -r www/ public/
   artifacts:
     paths:
       - public
