@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   constructor(private router: Router) {}
-  login(phone: string) {
+  login(phone: number | string) {
     if (phone == '9999999999') {
       localStorage.setItem('role', 'fixer');
       this.router.navigateByUrl('/fixer');
