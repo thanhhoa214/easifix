@@ -1,6 +1,61 @@
+<app-header title="Thông tin yêu cầu"></app-header>
 <ion-content>
-  Có chứa chi tiết về yêu cầu.
+  <!-- Có chứa chi tiết về yêu cầu.
   <br />Khá giống với <code>booking.component.html</code> chỉ là rút gọn lại
   phần thời gian và ngày vào chung với phần thông tin. và
-  <h4>Địa chỉ trên 1 cái map (trước mắt là chụp hình gắn vô)</h4>
+  <h4>Địa chỉ trên 1 cái map (trước mắt là chụp hình gắn vô)</h4> -->
+  <ion-card class="py-2">
+    <h6 class="ml-3 d-flex align-items-center">
+      <ion-icon name="person-outline" style="zoom: 1.3"></ion-icon>
+      <ion-text class="ml-1"> Thông tin khách hàng</ion-text>
+    </h6>
+    <ion-item lines="none">
+      <ion-avatar class="mr-1 p-1 border">
+        <img src="assets/avatar.png" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Nhi Lê</h2>
+        <p class="text-monospace">0123456789</p>
+        <p class="text-secondary">
+          Địa chỉ: 55b Trần Quang Khải, Q1, Tp.HCM
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card class="py-2">
+    <h6 class="ml-3 d-flex align-items-center">
+      <ion-text class="ml-1"> Bản đồ (Vị trí khách hàng)</ion-text>
+    </h6>
+    <ion-item lines="none">
+      <img src="assets/map.jpg" id="map" />
+    </ion-item>
+  </ion-card>
+  <ion-card class="py-3">
+    <h6 class="ml-3 d-flex align-items-center">
+      <ion-icon name="ribbon-outline" style="zoom: 1.3"></ion-icon>
+      <ion-text class="ml-1"> Dịch vụ yêu cầu</ion-text>
+    </h6>
+    <ion-list lines="full">
+      <ion-item>
+        <ion-label><b>Tên dịch vụ:</b></ion-label>
+        <ion-label class="text-right">Sửa tivi</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label><b>Hãng:</b></ion-label>
+        <ion-label class="text-right">Aqua</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label><b>Chi tiết dịch vụ:</b></ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label> - Thay màn hình tivi</ion-label>
+        <ion-label class="text-right">2.000.000 đ</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label><b>Giờ:</b></ion-label>
+        <ion-label class="text-right">14:00 - 15:30</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
 </ion-content>
+<ion-button expand="block" class="w-90 mx-auto" >Hủy</ion-button>
