@@ -17,3 +17,10 @@ ion-select button {
   width: 100%;
   z-index: 999999;
 }
+.edit-icon {
+  position: fixed;
+  top: 0.25rem;
+  right: 0.25rem;
+  z-index: 999998;
+  zoom: 1.5;
+}

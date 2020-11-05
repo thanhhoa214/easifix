@@ -1,5 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { User } from 'src/app/data.model';
+import { DataService } from 'src/app/data.service';
 
 @Component({
   selector: 'app-home',
@@ -8,18 +9,20 @@ import { User } from 'src/app/data.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent implements OnInit {
-  days = [true, false, false, false, false, false, false];
+  days = [true, false, true, true, false, false, false];
   user: User;
   dateNow: number = 6;
   monthNow: number = 11;
-  constructor() {}
+  selectedDay = 0;
 
-  ngOnInit(): void {}
+  constructor(private _dataService: DataService) {}
+
+  ngOnInit(): void {
+    this.user = this._dataService.getUser('3');
+  }
 
   updateDay(index: number) {
-    const newDays = this.days.map((_) => false);
-    newDays[index] = true;
-    this.days = newDays;
+    this.selectedDay = index;
     this.dateNow = 6 + index;
     this.monthNow = 11;
   }

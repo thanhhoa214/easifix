@@ -1,82 +1,190 @@
-<ion-item lines="none" detail="false" class="pt-3 bg-transparent" style="--background: transparent">
-  <ion-avatar slot="start" [routerLink]="['..', 'profile']" class="p-1 border mr-1">
-    <img src="assets/avatar.png" />
+<ion-item
+  lines="none"
+  detail="false"
+  class="pt-3 bg-transparent"
+  style="--background: transparent"
+>
+  <ion-avatar
+    slot="start"
+    [routerLink]="['..', 'profile']"
+    class="p-1 border mr-1"
+  >
+    <img [src]="'assets/' + user.avatar" />
   </ion-avatar>
   <ion-card class="p-2 ml-1 w-100">
     <div class="d-flex flex-column">
-      <b>Chào Nhi Lê!</b>
+      <b>Chào {{ user.name }}!</b>
       <span>Chúc bạn ngày mới vui vẻ ❤️</span>
     </div>
   </ion-card>
 </ion-item>
 <ion-content>
-  <ion-card class="calendar" class="py-3">
+  <ion-card class="calendar" class="pb-3">
     <h6 class="ml-3 d-flex align-items-center">
       <ion-icon name="calendar-outline" style="zoom: 1.3"></ion-icon>
-      <ion-text class="ml-1"> Lịch</ion-text>
+      <ion-text class="ml-1"> Lịch tuần này</ion-text>
     </h6>
-    <ion-item>
-      <ion-label> Ngày {{ dateNow }} Tháng {{ monthNow }}, 2020 </ion-label>
-      <ion-icon name="calendar-outline"></ion-icon>
-    </ion-item>
+    <h6 class="ml-3 my-0">
+      <span> Hôm nay - {{ dateNow }}/{{ monthNow }}/2020 </span>
+    </h6>
     <ion-item lines="none" class="small">
-      <ion-button [fill]="days[0] ? 'solid' : 'outline'" class="rounded-circle" style="width: 14%"
-        (click)="updateDay(0)">
+      <ion-button
+        [fill]="days[0] ? 'solid' : 'outline'"
+        [color]="selectedDay == 0 ? 'secondary' : 'primary'"
+        class="rounded-circle"
+        style="width: 14%"
+        (click)="updateDay(0)"
+      >
         T6
       </ion-button>
-      <ion-button [fill]="days[1] ? 'solid' : 'outline'" class="rounded-circle" style="width: 14%"
-        (click)="updateDay(1)">
+      <ion-button
+        [fill]="days[1] ? 'solid' : 'outline'"
+        [color]="selectedDay == 1 ? 'secondary' : 'primary'"
+        class="rounded-circle"
+        style="width: 14%"
+        (click)="updateDay(1)"
+      >
         T7
       </ion-button>
-      <ion-button [fill]="days[2] ? 'solid' : 'outline'" class="rounded-circle" style="width: 14%"
-        (click)="updateDay(2)">
+      <ion-button
+        [fill]="days[2] ? 'solid' : 'outline'"
+        [color]="selectedDay == 2 ? 'secondary' : 'primary'"
+        class="rounded-circle"
+        style="width: 14%"
+        (click)="updateDay(2)"
+      >
         CN
       </ion-button>
-      <ion-button [fill]="days[3] ? 'solid' : 'outline'" class="rounded-circle" style="width: 14%"
-        (click)="updateDay(3)">
+      <ion-button
+        [fill]="days[3] ? 'solid' : 'outline'"
+        [color]="selectedDay == 3 ? 'secondary' : 'primary'"
+        class="rounded-circle"
+        style="width: 14%"
+        (click)="updateDay(3)"
+      >
         T2
       </ion-button>
-      <ion-button [fill]="days[4] ? 'solid' : 'outline'" class="rounded-circle" style="width: 14%"
-        (click)="updateDay(4)">
+      <ion-button
+        [fill]="days[4] ? 'solid' : 'outline'"
+        [color]="selectedDay == 4 ? 'secondary' : 'primary'"
+        class="rounded-circle"
+        style="width: 14%"
+        (click)="updateDay(4)"
+      >
         T3
       </ion-button>
-      <ion-button [fill]="days[5] ? 'solid' : 'outline'" class="rounded-circle" style="width: 14%"
-        (click)="updateDay(5)">
+      <ion-button
+        [fill]="days[5] ? 'solid' : 'outline'"
+        [color]="selectedDay == 5 ? 'secondary' : 'primary'"
+        class="rounded-circle"
+        style="width: 14%"
+        (click)="updateDay(5)"
+      >
         T4
       </ion-button>
-      <ion-button [fill]="days[6] ? 'solid' : 'outline'" class="rounded-circle" style="width: 14%"
-        (click)="updateDay(6)">
+      <ion-button
+        [fill]="days[6] ? 'solid' : 'outline'"
+        [color]="selectedDay == 6 ? 'secondary' : 'primary'"
+        class="rounded-circle"
+        style="width: 14%"
+        (click)="updateDay(6)"
+      >
         T5
       </ion-button>
     </ion-item>
     <ion-item>
-      <ion-label>
-        <b>Bạn có khách đặt lịch vào: </b><br>
-        <span> - T2: Tên khách hàng (Tên dịch vụ)</span><br>
-        <span> - T4: Tên khách hàng (Tên dịch vụ)</span><br>
+      <ion-label
+        class="d-flex flex-column text-wrap small"
+        *ngIf="selectedDay == 0"
+      >
+        <b class="mb-1">Danh sách đặt lịch vào hôm nay: </b>
+        <div class="d-flex justify-content-between align-items-center">
+          <ion-icon
+            name="call"
+            color="primary"
+            class="p-1 mx-2 border rounded-circle"
+          ></ion-icon>
+          <div class="d-flex flex-column flex-grow-1">
+            <p>Sửa tivi Aqua - Thay màn hình</p>
+            <div class="d-flex justify-content-between">
+              <p class="text-secondary">14:00 đến 15:30</p>
+              <p>(Nhi Lê)</p>
+            </div>
+          </div>
+        </div>
+      </ion-label>
+      <ion-label
+        class="d-flex flex-column text-wrap small"
+        *ngIf="selectedDay == 2"
+      >
+        <b class="mb-1">Danh sách đặt lịch vào chủ nhật (08/11/2020): </b>
+        <div class="d-flex justify-content-between align-items-center">
+          <ion-icon
+            name="call"
+            color="primary"
+            class="p-1 mx-2 border rounded-circle"
+          ></ion-icon>
+          <div class="d-flex flex-column flex-grow-1">
+            <p>Sửa máy giặt Panasonic - Sửa van nước</p>
+            <div class="d-flex justify-content-between">
+              <p class="text-secondary">9:00 đến 10:30</p>
+              <p>(Đào Mộng Mơ)</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <ion-icon
+            name="call"
+            color="primary"
+            class="p-1 mx-2 border rounded-circle"
+          ></ion-icon>
+          <div class="d-flex flex-column flex-grow-1">
+            <p>Sửa máy lạnh Nanomax - Thay quạt</p>
+            <div class="d-flex justify-content-between">
+              <p class="text-secondary">15:00 đến 18:00</p>
+              <p>(Đoàn Minh Hải)</p>
+            </div>
+          </div>
+        </div>
+      </ion-label>
+      <ion-label
+        class="d-flex flex-column text-wrap small"
+        *ngIf="selectedDay != 2 && selectedDay != 0"
+      >
+        <b class="mb-1"
+          >Danh sách đặt lịch vào thứ
+          {{ selectedDay - 1 == 0 ? '7' : selectedDay - 1 }} ({{
+            selectedDay + 6
+          }}/11/2020):
+        </b>
+        <div class="d-flex justify-content-between align-items-center">
+          <ion-icon
+            name="call"
+            color="primary"
+            class="p-1 mx-2 border rounded-circle"
+          ></ion-icon>
+          <div class="d-flex flex-column flex-grow-1">
+            <p>Chưa có đơn đặt hàng nào vào ngày này.</p>
+          </div>
+        </div>
       </ion-label>
     </ion-item>
   </ion-card>
-  <div id="content" class="text-secondary mt-2">
+  <div id="content" class="text-secondary my-2">
     <div class="py-1 ml-3 d-flex align-items-center">
       <span class="pl-1">Hôm nay</span>
     </div>
     <ion-list lines="full">
-      <ion-item *ngFor="let i of [1,2]">
+      <ion-item>
         <ion-thumbnail slot="start">
-          <img src="assets/avatar-0.jpg" />
+          <img src="assets/avatar.png" />
         </ion-thumbnail>
         <ion-label>
           <h2 class="d-flex justify-content-between">
-            <strong>Tên dịch vụ</strong>
+            <strong>Sửa tivi Aqua - Thay màn hình</strong>
           </h2>
           <h3>
-            <p class="text-secondary">
-              Hãng: Samsung
-            </p>
-            <p class="text-dark">
-              Giờ: 14:00 đến 15:30
-            </p>
+            <p class="text-dark">14:00 đến 15:30</p>
             <p class="text-secondary">
               {{ user.distance }} km - {{ user.time }} phút
             </p>

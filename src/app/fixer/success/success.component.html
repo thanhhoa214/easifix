@@ -16,36 +16,35 @@
     <ion-avatar class="p-1 border mx-auto">
       <img src="assets/avatar.png" alt="Lỗi" />
     </ion-avatar>
-    <span>
-      <br>Tên Khách Hàng
-    </span>
+    <span> Nhi Lê </span>
     <p class="invisible">
       <span class="d-inline-block">Easifix cảm ơn bạn vì đã tin tưởng.</span>
     </p>
   </div>
-  <ion-card class="small d-flex flex-column w-90 text-center mb-2 mt-n4" style="height: 18rem">
-    <ion-rating [rate]="4" [readonly]="false" size="small" >
-    </ion-rating>
+  <ion-card
+    class="small d-flex flex-column w-90 text-center mb-2 mt-n4"
+    style="height: auto"
+  >
     <ion-list lines="full">
       <ion-item>
-        <ion-label>Bạn vừa nhận được:</ion-label>
+        <ion-label>Bạn vừa nhận:</ion-label>
         <ion-label class="text-right">200.000 đ</ion-label>
       </ion-item>
       <ion-item>
-        <ion-label>
-          <b>Dịch vụ:</b> <br>
-          <b> - Sửa máy giặt: </b> <br>
-           <span class="ml-2">+ Thay nắp máy giặt Panasonic</span>
+        <ion-label class="d-flex flex-column">
+          <b>Dịch vụ:</b>
+          <span> Sửa tivi - Thay màn hình Aqua</span>
         </ion-label>
       </ion-item>
-      <ion-item>
-        <ion-label>
-          <b>Phản hồi:</b> <br>
-           <span class="ml-2">Đạo đức nghề nghiệp tốt</span>
+      <ion-item lines="none">
+        <ion-label class="d-flex flex-column">
+          <b>Phản hồi:</b>
+          <ion-rating [rate]="4" [readonly]="true" size="small"> </ion-rating>
+          <span class="ml-2">Nhanh chóng, tiện lợi</span>
         </ion-label>
       </ion-item>
     </ion-list>
   </ion-card>
 </div>
 
-<ion-button expand="block" class="w-90 mx-auto" >Đóng</ion-button>
+<ion-button expand="block" class="w-90 mx-auto">Đóng</ion-button>
