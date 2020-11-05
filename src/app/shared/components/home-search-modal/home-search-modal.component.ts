@@ -16,6 +16,7 @@ export class HomeSearchModalComponent {
   @Input() selectedUserId: string = '1';
   @Input() selectedCategory: string = '2';
   search = new FormControl();
+  brandSearch = new FormControl();
   category: Category;
 
   constructor(
@@ -29,21 +30,33 @@ export class HomeSearchModalComponent {
     );
   }
 
-  getPredictions() {
-    const q = this.search.value;
+  getBrandPredictions() {
+    const q = this.brandSearch.value;
     if (!q) return this.dataService.getPredictions();
     return this.dataService
       .getPredictions()
       .filter((item) => item.includes(q) && item !== q);
   }
 
+  getPredictions() {
+    const q = this.search.value;
+    if (!q) return this.dataService.getRequests();
+    return this.dataService
+      .getRequests()
+      .filter((item) => item.includes(q) && item !== q);
+  }
+
   setSearchValue(value: string) {
     this.search.setValue(value);
   }
+  setBrandSearchValue(value: string) {
+    this.brandSearch.setValue(value);
+  }
 
   goToSearch() {
-    this.dataService.writeBrand(this.search.value);
-    this.router.navigateByUrl('/search?q=' + this.category.name);
+    this.dataService.writeBrand(this.brandSearch.value);
+    const queryParams = this.category.name + ' ' + this.search.value ?? '';
+    this.router.navigateByUrl('/search?q=' + queryParams);
     this.modalController.dismiss();
   }
 }

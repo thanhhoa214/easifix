@@ -27,7 +27,7 @@ const brands = [
 ];
 const requests = [
   { id: '1', name: 'Âm thanh rè' },
-  { id: '2', name: 'Bánh xe hư' },
+  { id: '2', name: 'Thay màn hình' },
   { id: '3', name: 'Bật không lên' },
   { id: '4', name: 'Bật nhưng không hút' },
   { id: '5', name: 'Bị chảy nước' },
@@ -320,7 +320,7 @@ const users: User[] = [
     distance: 5,
     time: 34,
     phone: '0909123123',
-    rating: 4.7,
+    rating: 5,
     name: 'Võ Thành Nhân',
     avatar: 'avatar-0.jpg',
     address: '55B Trần Quang Khải',
@@ -344,7 +344,7 @@ const users: User[] = [
     distance: 1.2,
     time: 20,
     phone: '0909134123',
-    rating: 3,
+    rating: 5,
     name: 'Dương Nguyên',
     avatar: 'avatar-2.jpg',
     address: '32 Dương Lâm',

@@ -16,8 +16,8 @@ export class BookingComponent implements OnInit {
   user: User;
   service: Service;
   category: Category;
-  dateNow: number = 30;
-  monthNow: number = 10;
+  dateNow: number = 6;
+  monthNow: number = 11;
   brand: string = '';
 
   time = ['7:30 đến 9:00', '14:00 đến 15:30', '18:30 đến 20:00'];
@@ -77,28 +77,30 @@ export class BookingComponent implements OnInit {
     const newDays = this.days.map((_) => false);
     newDays[index] = true;
     this.days = newDays;
-    if (index == 0) {
-      this.dateNow = 30;
-      this.monthNow = 10;
-    } else if (index == 1) {
-      this.dateNow = 31;
-      this.monthNow = 10;
-    } else if (index == 2) {
-      this.dateNow = 1;
-      this.monthNow = 11;
-    } else if (index == 3) {
-      this.dateNow = 2;
-      this.monthNow = 11;
-    } else if (index == 4) {
-      this.dateNow = 3;
-      this.monthNow = 11;
-    } else if (index == 5) {
-      this.dateNow = 4;
-      this.monthNow = 11;
-    } else if (index == 6) {
-      this.dateNow = 5;
-      this.monthNow = 11;
-    }
+    this.dateNow = 6 + index;
+    this.monthNow = 11;
+    // if (index == 0) {
+    //   this.dateNow = 6;
+    //   this.monthNow = 11;
+    // } else if (index == 1) {
+    //   this.dateNow = 31;
+    //   this.monthNow = 10;
+    // } else if (index == 2) {
+    //   this.dateNow = 1;
+    //   this.monthNow = 11;
+    // } else if (index == 3) {
+    //   this.dateNow = 2;
+    //   this.monthNow = 11;
+    // } else if (index == 4) {
+    //   this.dateNow = 3;
+    //   this.monthNow = 11;
+    // } else if (index == 5) {
+    //   this.dateNow = 4;
+    //   this.monthNow = 11;
+    // } else if (index == 6) {
+    //   this.dateNow = 5;
+    //   this.monthNow = 11;
+    // }
   }
   updatePart(index: number) {
     const newParts = this.parts.map((_) => false);

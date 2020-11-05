@@ -1,32 +1,60 @@
-<ion-card class="p-2">
-  <h5 class="ml-2">Chi tiết dịch vụ</h5>
-  <div>
-    <b class="ml-2">Tên hãng sản xuất</b>
-  </div>
-  <small class="ml-2 mt-3"
-    >Mẹo: Chọn hãng sẽ giúp bạn tìm kiếm nhanh hơn đó</small
-  >
-  <ion-input
-    [formControl]="search"
-    class="mx-2 w-90 border rounded-lg px-2"
-    placeholder="Tìm kiếm ..."
-  ></ion-input>
-  <div class="d-flex flex-wrap ml-2" id="predictions">
-    <ion-button
-      fill="outline"
-      size="small"
-      class="rounded-circle"
-      (click)="setSearchValue(item)"
-      *ngFor="let item of getPredictions()"
+<div class="h-100 w-100 d-flex justify-content-center align-items-center">
+  <ion-card class="p-2">
+    <h5 class="ml-2">Chi tiết dịch vụ</h5>
+    <div>
+      <b class="ml-2">Mô tả vấn đề</b>
+    </div>
+    <small class="ml-2 mt-3"
+      >Mẹo: Mô tả vấn đề sẽ giúp bạn tìm kiếm chính xác hơn.</small
     >
-      {{ item }}
-    </ion-button>
-  </div>
+    <ion-input
+      [formControl]="search"
+      class="mx-2 w-90 border rounded-lg px-2"
+      placeholder="Mô tả vấn đề ..."
+    ></ion-input>
+    <div
+      class="d-flex flex-wrap ml-2"
+      id="predictions"
+      *ngIf="getPredictions()?.length > 0"
+    >
+      <ion-button
+        fill="outline"
+        size="small"
+        class="rounded-circle"
+        (click)="setSearchValue(item)"
+        *ngFor="let item of getPredictions()"
+      >
+        {{ item }}
+      </ion-button>
+    </div>
+    <div class="mt-2">
+      <b class="ml-2">Tên hãng sản xuất</b>
+    </div>
+    <small class="ml-2 mt-3"
+      >Mẹo: Chọn hãng sẽ giúp bạn tìm kiếm nhanh hơn đó</small
+    >
+    <ion-input
+      [formControl]="brandSearch"
+      class="mx-2 w-90 border rounded-lg px-2"
+      placeholder="Tên hãng bạn dùng ..."
+    ></ion-input>
+    <div class="d-flex flex-wrap ml-2 mb-2" id="predictions">
+      <ion-button
+        fill="outline"
+        size="small"
+        class="rounded-circle"
+        (click)="setBrandSearchValue(item)"
+        *ngFor="let item of getBrandPredictions()"
+      >
+        {{ item }}
+      </ion-button>
+    </div>
 
-  <ion-button expand="block" class="w-100 mx-auto" (click)="goToSearch()"
-    >Tìm kiếm</ion-button
-  >
-  <p class="w-100 mx-auto text-center">
-    <ion-text (click)="goToSearch()">Bỏ qua</ion-text>
-  </p>
-</ion-card>
+    <ion-button expand="block" class="w-100 mx-auto" (click)="goToSearch()"
+      >Tìm kiếm</ion-button
+    >
+    <p class="w-100 mx-auto text-center">
+      <ion-text (click)="goToSearch()">Bỏ qua</ion-text>
+    </p>
+  </ion-card>
+</div>
