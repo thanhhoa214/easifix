@@ -9,11 +9,12 @@ import { DataService } from 'src/app/data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent implements OnInit {
-  days = [true, false, true, true, false, false, false];
+  days = [true, false, true, false, false, false, false];
   user: User;
   dateNow: number = 6;
   monthNow: number = 11;
   selectedDay = 0;
+  updated = false;
 
   constructor(private _dataService: DataService) {}
 

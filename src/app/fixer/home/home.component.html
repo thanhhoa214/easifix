@@ -98,7 +98,10 @@
         *ngIf="selectedDay == 0"
       >
         <b class="mb-1">Danh sách đặt lịch vào hôm nay: </b>
-        <div class="d-flex justify-content-between align-items-center">
+        <div
+          class="d-flex justify-content-between align-items-center"
+          *ngIf="updated"
+        >
           <ion-icon
             name="call"
             color="primary"
@@ -110,6 +113,14 @@
               <p class="text-secondary">14:00 đến 15:30</p>
               <p>(Nhi Lê)</p>
             </div>
+          </div>
+        </div>
+        <div
+          class="d-flex justify-content-between align-items-center"
+          *ngIf="!updated"
+        >
+          <div class="d-flex flex-column flex-grow-1">
+            <p>Bạn chưa có đơn đặt hàng nào vào ngày này.</p>
           </div>
         </div>
       </ion-label>
@@ -158,13 +169,8 @@
           }}/11/2020):
         </b>
         <div class="d-flex justify-content-between align-items-center">
-          <ion-icon
-            name="call"
-            color="primary"
-            class="p-1 mx-2 border rounded-circle"
-          ></ion-icon>
           <div class="d-flex flex-column flex-grow-1">
-            <p>Chưa có đơn đặt hàng nào vào ngày này.</p>
+            <p>Bạn chưa có đơn đặt hàng nào vào ngày này.</p>
           </div>
         </div>
       </ion-label>
@@ -175,7 +181,7 @@
       <span class="pl-1">Hôm nay</span>
     </div>
     <ion-list lines="full">
-      <ion-item>
+      <ion-item *ngIf="updated">
         <ion-thumbnail slot="start">
           <img src="assets/avatar.png" />
         </ion-thumbnail>
@@ -189,6 +195,11 @@
               {{ user.distance }} km - {{ user.time }} phút
             </p>
           </h3>
+        </ion-label>
+      </ion-item>
+      <ion-item *ngIf="!updated" (click)="updated = true">
+        <ion-label>
+          <p>Bạn chưa có đơn đặt hàng nào vào hôm nay.</p>
         </ion-label>
       </ion-item>
     </ion-list>
