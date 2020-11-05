@@ -20,6 +20,8 @@ page:
     - master
     - develop
     - pages
+  tags:
+    - ios
 
 build-apk:
   stage: build-apk
