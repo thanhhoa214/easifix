@@ -1,11 +1,25 @@
 image: node:latest
 stages:
+  - page
   - build-apk
 
 variables:
   LC_ALL: 'en_US.UTF-8'
   LANG: 'en_US.UTF-8'
   GIT_STRATEGY: clone
+
+page: 
+  stage: page
+  script:
+    - npm install
+    - npm run build-gitlab
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+    - develop
+    - pages
 
 build-apk:
   stage: build-apk

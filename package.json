@@ -9,6 +9,7 @@
     "build": "ionic build",
     "sync": "npx cap sync",
     "build:prod": "ionic build --prod",
+    "build-gitlab": "ng build --base-href=/easifix/",
     "test": "ionic test",
     "lint": "ionic lint",
     "e2e": "ionic e2e"
