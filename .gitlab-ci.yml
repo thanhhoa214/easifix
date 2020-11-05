@@ -1,6 +1,6 @@
 image: node:latest
 stages:
-  - page
+  - pages
   - build-apk
 
 variables:
@@ -8,12 +8,11 @@ variables:
   LANG: 'en_US.UTF-8'
   GIT_STRATEGY: clone
 
-page: 
-  stage: page
+pages: 
+  stage: pages
   script:
     - npm install
     - npm run build-gitlab
-    - cp -r www/ public/
   artifacts:
     paths:
       - public
