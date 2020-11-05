@@ -11,6 +11,7 @@ import { FixerComponent } from './fixer.component';
 import { BottomBarComponent } from './shared/bottom-bar/bottom-bar.component';
 import { IonicRatingModule } from 'ionic-rating';
 import { CommonModule } from '@angular/common';
+import { HistoryCompletedComponent } from './history-completed/history-completed.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CommonModule } from '@angular/common';
     ProfileComponent,
     FixerComponent,
     BottomBarComponent,
+    HistoryCompletedComponent,
   ],
   imports: [
     CommonModule,

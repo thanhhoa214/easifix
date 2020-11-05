@@ -24,10 +24,16 @@
   </ng-container>
   <ng-template #notHave>
     <div
-      class="d-flex flex-column justify-content-center align-items-center"
-      style="height: 90vh"
+      class="d-flex flex-column justify-content-center align-items-center text-center"
+      style="height: 80vh"
     >
-      Bạn chưa đặt dịch vụ nào gần đây.
+      <ion-icon
+        name="chatbubble-ellipses-outline"
+        style="zoom: 7"
+        class="text-muted"
+      ></ion-icon>
+      Bạn chưa đặt dịch vụ <br />
+      nào gần đây.
       <ion-button expand="block" class="mx-auto" routerLink="/home"
         >Đặt ngay</ion-button
       >

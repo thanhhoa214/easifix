@@ -11,6 +11,9 @@ import { PromotionComponent } from '../promotion/promotion.component';
 import { PromotionDetailComponent } from '../promotion-detail/promotion-detail.component';
 import { NotificationComponent } from '../notification/notification.component';
 import { SettingComponent } from '../setting/setting.component';
+import { HistoryComponent } from '../history/history.component';
+import { HistoryProcessingComponent } from './history-processing/history-processing.component';
+import { HistoryCompletedComponent } from './history-completed/history-completed.component';
 
 const routes: Routes = [
   {
@@ -36,6 +39,15 @@ const routes: Routes = [
           },
           { path: 'notifications', component: NotificationComponent },
           { path: '', redirectTo: 'notifications', pathMatch: 'full' },
+        ],
+      },
+      {
+        path: 'history',
+        component: HistoryComponent,
+        children: [
+          { path: 'processing', component: HistoryProcessingComponent },
+          { path: 'completed', component: HistoryCompletedComponent },
+          { path: '', redirectTo: 'processing', pathMatch: 'full' },
         ],
       },
       { path: 'setting', component: SettingComponent },

@@ -1,0 +1,33 @@
+<ion-content class="mt-2" color="light">
+  <ion-list *ngIf="updated">
+    <ion-item color="light">
+      <img src="assets/avatar.png" class="rounded-lg my-3 mx-2" />
+      <div class="d-flex flex-column">
+        <div>
+          <ion-text>
+            <h4 class="my-0">
+              <b>Nhi Lê</b>
+            </h4>
+          </ion-text>
+          <p class="mb-0 small">2/2 Phan Văn Trị, Quận Gò Vấp, TP.HCM</p>
+          <ion-text color="medium">
+            {{ 350000 | currency: '':'VND':'4.0-0' }}
+          </ion-text>
+        </div>
+      </div>
+    </ion-item>
+  </ion-list>
+  <div
+    class="d-flex flex-column justify-content-center align-items-center text-center"
+    style="height: 80vh"
+    *ngIf="!updated"
+  >
+    <ion-icon
+      name="chatbubble-ellipses-outline"
+      style="zoom: 7"
+      class="text-muted"
+    ></ion-icon>
+    Bạn chưa có dịch vụ nào <br />
+    được đặt gần đây.
+  </div>
+</ion-content>
