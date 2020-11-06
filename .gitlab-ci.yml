@@ -27,6 +27,7 @@ build-apk:
   stage: build-apk
   script:
     - echo "Build APK in Debug Mode"
+    - npm install -g @ionic/cli
     - npm install
     - npm run build:prod
     - npm run sync
