@@ -11,7 +11,7 @@ import { DataService } from 'src/app/data.service';
 export class HomeComponent implements OnInit {
   days = [true, false, true, false, false, false, false];
   user: User;
-  dateNow: number = 6;
+  dateNow: number = 9;
   monthNow: number = 11;
   selectedDay = 0;
   updated = false;
@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
 
   updateDay(index: number) {
     this.selectedDay = index;
-    this.dateNow = 6 + index;
+    this.dateNow = 9 + index;
     this.monthNow = 11;
   }
 }
