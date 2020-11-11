@@ -1,9 +1,29 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import {
+  Component,
+  ChangeDetectionStrategy,
+  Input,
+  ViewChild,
+  ElementRef,
+} from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ModalController } from '@ionic/angular';
+import { ModalController, Platform } from '@ionic/angular';
 import { Category } from 'src/app/data.model';
 import { DataService } from 'src/app/data.service';
+import {
+  Plugins,
+  CameraResultType,
+  CameraSource,
+  Capacitor,
+} from '@capacitor/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import {
+  VideoCapturePlus,
+  VideoCapturePlusOptions,
+  MediaFile,
+} from '@ionic-native/video-capture-plus/ngx';
+
+const { Camera } = Plugins;
 
 @Component({
   selector: 'app-home-search-modal',
@@ -12,9 +32,15 @@ import { DataService } from 'src/app/data.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeSearchModalComponent {
-  @Input() searchQuery: string = '';
-  @Input() selectedUserId: string = '1';
-  @Input() selectedCategory: string = '2';
+  @Input() searchQuery = '';
+  @Input() selectedUserId = '1';
+  @Input() selectedCategory = '2';
+  @ViewChild('filePicker', { static: false }) filePickerRef: ElementRef<
+    HTMLInputElement
+  >;
+
+  photo: SafeResourceUrl;
+  isDesktop: boolean;
   search = new FormControl();
   brandSearch = new FormControl();
   category: Category;
@@ -22,12 +48,20 @@ export class HomeSearchModalComponent {
   constructor(
     private dataService: DataService,
     private router: Router,
-    private modalController: ModalController
+    private modalController: ModalController,
+    private platform: Platform,
+    private sanitizer: DomSanitizer
   ) {
     this.category = this.dataService.getCategory(
       this.selectedUserId,
       this.selectedCategory
     );
+    if (
+      (this.platform.is('mobile') && this.platform.is('hybrid')) ||
+      this.platform.is('desktop')
+    ) {
+      this.isDesktop = true;
+    }
   }
 
   getBrandPredictions() {
@@ -58,5 +92,41 @@ export class HomeSearchModalComponent {
     const queryParams = this.category.name + ' ' + this.search.value ?? '';
     this.router.navigateByUrl('/search?q=' + queryParams);
     this.modalController.dismiss();
+  }
+
+  async getPicture() {
+    if (!Capacitor.isPluginAvailable('Camera')) {
+      this.filePickerRef.nativeElement.click();
+      return;
+    }
+
+    const image = await Camera.getPhoto({
+      quality: 100,
+      width: 400,
+      allowEditing: false,
+      resultType: CameraResultType.DataUrl,
+      source: CameraSource.Prompt,
+    });
+
+    this.dataService.imageDataUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+      image && image.dataUrl
+    );
+    this.photo = this.dataService.imageDataUrl;
+  }
+
+  onFileChoose(event: Event) {
+    const file = (event.target as HTMLInputElement).files[0];
+    const pattern = /image-*/;
+    const reader = new FileReader();
+
+    if (!file.type.match(pattern)) {
+      console.log('File format not supported');
+      return;
+    }
+
+    reader.onload = () => {
+      this.photo = reader.result.toString();
+    };
+    reader.readAsDataURL(file);
   }
 }

@@ -12,6 +12,7 @@ import { BottomBarComponent } from './shared/bottom-bar/bottom-bar.component';
 import { IonicRatingModule } from 'ionic-rating';
 import { CommonModule } from '@angular/common';
 import { HistoryCompletedComponent } from './history-completed/history-completed.component';
+import { HistoryProcessingComponent } from './history-processing/history-processing.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HistoryCompletedComponent } from './history-completed/history-completed
     FixerComponent,
     BottomBarComponent,
     HistoryCompletedComponent,
+    HistoryProcessingComponent,
   ],
   imports: [
     CommonModule,

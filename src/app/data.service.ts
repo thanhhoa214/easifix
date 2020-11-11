@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Service, User, Category, LSItemName, IdName } from './data.model';
 import { DATABASE } from './data';
+import { SafeResourceUrl } from '@angular/platform-browser';
 
 @Injectable({ providedIn: 'root' })
 export class DataService {
+  imageDataUrl: SafeResourceUrl;
+
   constructor() {
     this._setEncode(LSItemName.SERVICES, DATABASE.services);
     this._setEncode(LSItemName.CATEGORIES, DATABASE.categories);

@@ -16,7 +16,7 @@ export class BookingComponent implements OnInit {
   user: User;
   service: Service;
   category: Category;
-  dateNow: number = 9;
+  dateNow: number = 11;
   monthNow: number = 11;
   brand: string = '';
 
@@ -77,7 +77,7 @@ export class BookingComponent implements OnInit {
     const newDays = this.days.map((_) => false);
     newDays[index] = true;
     this.days = newDays;
-    this.dateNow = 9 + index;
+    this.dateNow = 11 + index;
     this.monthNow = 11;
     // if (index == 0) {
     //   this.dateNow = 6;

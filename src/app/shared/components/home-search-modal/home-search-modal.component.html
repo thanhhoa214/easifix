@@ -49,6 +49,29 @@
         {{ item }}
       </ion-button>
     </div>
+    <input
+      type="file"
+      *ngIf="isDesktop"
+      #filePicker
+      (change)="onFileChoose($event)"
+    />
+
+    <ion-card>
+      <ion-card-content
+        class="d-flex justify-content-center align-items-center"
+      >
+        <img [src]="photo" *ngIf="photo" />
+        <ion-button
+          *ngIf="!photo"
+          size="small"
+          fill="outline"
+          (click)="getPicture()"
+        >
+          <ion-icon name="image" slot="start"></ion-icon>
+          <ion-label>Gallery</ion-label>
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
 
     <ion-button expand="block" class="w-100 mx-auto" (click)="goToSearch()"
       >Tìm kiếm</ion-button

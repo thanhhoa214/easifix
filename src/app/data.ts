@@ -131,7 +131,7 @@ const devices = [
   { id: '9', name: 'Sửa máy hút bụi' },
 ];
 const services: Service[] = [
-  { id: '1', name: 'Thay màn hình', price: 650000 },
+  { id: '1', name: 'Sửa board', price: 50000 },
   { id: '2', name: 'Sửa cốt máy giặt', price: 250000 },
   { id: '3', name: 'Sửa motor xả nước', price: 450000 },
   { id: '4', name: 'Sửa van nước', price: 240000 },
@@ -149,7 +149,7 @@ const services: Service[] = [
   { id: '16', name: 'Thay loa tivi', price: 570000 },
   { id: '17', name: 'Thay phim màn hình', price: 250000 },
   { id: '18', name: 'Thay đèn LED cho', price: 950000 },
-  { id: '19', name: 'Sửa board', price: 50000 },
+  { id: '19', name: 'Thay màn hình', price: 650000 },
   { id: '20', name: 'Vệ sinh tivi', price: 60000 },
   { id: '21', name: 'Thay ron', price: 580000 },
   { id: '22', name: 'Vệ sinh tủ lạnh', price: 540000 },

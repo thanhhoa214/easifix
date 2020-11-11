@@ -28,6 +28,7 @@ import { IonicRatingModule } from 'ionic-rating';
 import { SuccessComponent } from './success/success.component';
 import { FixerProfileComponent } from './fixer-profile/fixer-profile.component';
 import { FixerFeedbackComponent } from './fixer-feedback/fixer-feedback.component';
+import { VideoCapturePlus } from '@ionic-native/video-capture-plus';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,6 +66,6 @@ import { FixerFeedbackComponent } from './fixer-feedback/fixer-feedback.componen
     ReactiveFormsModule,
   ],
   bootstrap: [AppComponent],
-  providers: [{ provide: LOCALE_ID, useValue: 'vi' }],
+  providers: [{ provide: LOCALE_ID, useValue: 'vi' }, VideoCapturePlus],
 })
 export class AppModule {}
