@@ -1,32 +1,6 @@
-<div class="h-100 w-100 d-flex justify-content-center align-items-center">
-  <ion-card class="p-2">
+<div class="mt-2 h-97 w-100 d-flex justify-content-center align-items-center">
+  <ion-card class="p-2 overflow-auto h-100 w-100">
     <h5 class="ml-2">Chi tiết dịch vụ</h5>
-    <div>
-      <b class="ml-2">Mô tả vấn đề</b>
-    </div>
-    <small class="ml-2 mt-3"
-      >Mẹo: Mô tả vấn đề sẽ giúp bạn tìm kiếm chính xác hơn.</small
-    >
-    <ion-input
-      [formControl]="search"
-      class="mx-2 w-90 border rounded-lg px-2"
-      placeholder="Mô tả vấn đề ..."
-    ></ion-input>
-    <div
-      class="d-flex flex-wrap ml-2"
-      id="predictions"
-      *ngIf="getPredictions()?.length > 0"
-    >
-      <ion-button
-        fill="outline"
-        size="small"
-        class="rounded-circle"
-        (click)="setSearchValue(item)"
-        *ngFor="let item of getPredictions()"
-      >
-        {{ item }}
-      </ion-button>
-    </div>
     <div class="mt-2">
       <b class="ml-2">Tên hãng sản xuất</b>
     </div>
@@ -49,27 +23,50 @@
         {{ item }}
       </ion-button>
     </div>
-    <input
-      type="file"
-      *ngIf="isDesktop"
-      #filePicker
-      (change)="onFileChoose($event)"
-    />
+    <div class="mt-2">
+      <b class="ml-2">Mô tả vấn đề</b>
+    </div>
+    <small class="ml-2 mt-3"
+      >Mẹo: Mô tả vấn đề sẽ giúp bạn tìm kiếm chính xác hơn.</small
+    >
+    <ion-textarea
+      [formControl]="search"
+      class="mx-2 w-90 border rounded-lg px-2"
+      placeholder="Mô tả vấn đề ..."
+      [rows]="4"
+    ></ion-textarea>
+    <!-- <div
+      class="d-flex flex-wrap ml-2"
+      id="predictions"
+      *ngIf="getPredictions()?.length > 0"
+    >
+      <ion-button
+        fill="outline"
+        size="small"
+        class="rounded-circle"
+        (click)="setSearchValue(item)"
+        *ngFor="let item of getPredictions()"
+      >
+        {{ item }}
+      </ion-button>
+    </div> -->
+    <div class="mt-2">
+      <b class="ml-2">Chụp lại vấn đề</b>
+    </div>
 
-    <ion-card>
+    <small class="ml-2 mt-3"
+      >Mẹo: Chụp lại để chúng tôi hiểu và phục vụ tốt hơn.</small
+    >
+    <ion-card class="mt-1">
       <ion-card-content
-        class="d-flex justify-content-center align-items-center"
+        class="d-flex justify-content-center align-items-center img-wrapper"
+        (click)="getPicture()"
       >
         <img [src]="photo" *ngIf="photo" />
-        <ion-button
-          *ngIf="!photo"
-          size="small"
-          fill="outline"
-          (click)="getPicture()"
-        >
-          <ion-icon name="image" slot="start"></ion-icon>
-          <ion-label>Gallery</ion-label>
-        </ion-button>
+        <div class="d-flex flex-column align-items-center" *ngIf="!photo">
+          <ion-icon name="image" style="zoom: 3"></ion-icon>
+          <span>Chụp lại vấn đề của bạn</span>
+        </div>
       </ion-card-content>
     </ion-card>
 

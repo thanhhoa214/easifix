@@ -4,6 +4,7 @@ import {
   Input,
   ViewChild,
   ElementRef,
+  ChangeDetectorRef,
 } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -17,11 +18,6 @@ import {
   Capacitor,
 } from '@capacitor/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import {
-  VideoCapturePlus,
-  VideoCapturePlusOptions,
-  MediaFile,
-} from '@ionic-native/video-capture-plus/ngx';
 
 const { Camera } = Plugins;
 
@@ -50,7 +46,8 @@ export class HomeSearchModalComponent {
     private router: Router,
     private modalController: ModalController,
     private platform: Platform,
-    private sanitizer: DomSanitizer
+    private sanitizer: DomSanitizer,
+    private changeDetector: ChangeDetectorRef
   ) {
     this.category = this.dataService.getCategory(
       this.selectedUserId,
@@ -112,21 +109,7 @@ export class HomeSearchModalComponent {
       image && image.dataUrl
     );
     this.photo = this.dataService.imageDataUrl;
-  }
-
-  onFileChoose(event: Event) {
-    const file = (event.target as HTMLInputElement).files[0];
-    const pattern = /image-*/;
-    const reader = new FileReader();
-
-    if (!file.type.match(pattern)) {
-      console.log('File format not supported');
-      return;
-    }
-
-    reader.onload = () => {
-      this.photo = reader.result.toString();
-    };
-    reader.readAsDataURL(file);
+    this.changeDetector.detectChanges();
+    console.log(this.dataService.imageDataUrl);
   }
 }

@@ -1,4 +1,5 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
+import { SafeResourceUrl } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Category, Service, User } from '../data.model';
 import { DataService } from '../data.service';
@@ -19,6 +20,7 @@ export class BookingComponent implements OnInit {
   dateNow: number = 11;
   monthNow: number = 11;
   brand: string = '';
+  photo: SafeResourceUrl;
 
   time = ['7:30 đến 9:00', '14:00 đến 15:30', '18:30 đến 20:00'];
   timeHour = '';
@@ -58,6 +60,7 @@ export class BookingComponent implements OnInit {
     this.user = this._dataService.getUser(user);
     this.service = this._dataService.getService(user, category, service);
     this.category = this._dataService.getCategory(user, category);
+    this.photo = this._dataService.imageDataUrl;
     this.timeHour = this.time[0];
     this._bottomBarService.pushProcessingNotification();
   }

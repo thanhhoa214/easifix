@@ -11,7 +11,6 @@ import { HomeSearchModalComponent } from './components/home-search-modal/home-se
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrandSelectComponent } from './components/brand-select/brand-select.component';
 import { IonicRatingModule } from 'ionic-rating';
-import { VideoCapturePlus } from '@ionic-native/video-capture-plus';
 
 const components = [
   BottomBarComponent,
@@ -31,6 +30,5 @@ const components = [
     IonicRatingModule,
     ReactiveFormsModule,
   ],
-  providers: [VideoCapturePlus],
 })
 export class SharedModule {}

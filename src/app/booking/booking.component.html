@@ -178,6 +178,13 @@
       ></ion-textarea>
     </ion-item>
   </ion-card>
+  <ion-card class="mt-1" *ngIf="photo">
+    <ion-card-content
+      class="d-flex justify-content-center align-items-center img-wrapper"
+    >
+      <img [src]="photo" />
+    </ion-card-content>
+  </ion-card>
 </ion-content>
 <ion-button expand="block" class="w-90 mx-auto" (click)="gotToCheckout()"
   >Xác nhận</ion-button
