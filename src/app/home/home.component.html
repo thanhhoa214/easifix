@@ -79,8 +79,8 @@
           >Xem thêm</ion-text
         >
       </div>
-      <ion-list>
-        <ng-container *ngFor="let service of category.services; index as index">
+      <!-- <ion-list>
+        <ng-container *ngFor="let user of nearbyUsers; index as index">
           <ion-item *ngIf="index < 3">
             <ng-container *ngIf="nearbyUsers[getRandom()] as user">
               <ion-thumbnail slot="start" class="rounded-lg">
@@ -88,7 +88,7 @@
               </ion-thumbnail>
               <ion-label>
                 <h2 class="d-flex justify-content-between">
-                  <strong> {{ service.name }}</strong>
+                  <strong> {{ user.name }}</strong>
                   <div>
                     <ion-icon
                       name="star"
@@ -100,7 +100,7 @@
 
                 <div
                   class="d-flex flex-column text-left"
-                  (click)="showBrandPicker(user.id, category.id, service.id)"
+                  (click)="showBrandPicker(user.id, category.id, 1)"
                 >
                   <span>{{ user.name }}</span>
                   <span>
@@ -111,6 +111,47 @@
             </ng-container>
           </ion-item>
         </ng-container>
+      </ion-list> -->
+      <ion-list lines="full">
+        <ion-item
+          *ngFor="let user of getRecommendedUsers(); index as index"
+          [detail]="true"
+          (click)="goToFixerProfile(user.id)"
+        >
+          <ion-thumbnail slot="start">
+            <img [src]="'assets/' + user.avatar" />
+          </ion-thumbnail>
+          <ion-label>
+            <h2 class="d-flex justify-content-between">
+              <strong>{{ user.name }}</strong>
+              <span>
+                <ion-icon
+                  name="star"
+                  *ngFor="let i of getArray(user.rating)"
+                  color="warning"
+                ></ion-icon>
+              </span>
+            </h2>
+            <h3>
+              <p class="text-secondary">
+                {{
+                  index % 2
+                    ? 'Gần bạn nhất, chất lượng, giá bình dân'
+                    : index % 3
+                    ? 'Sửa nhanh, giá rẻ'
+                    : 'Tận tình, nhanh chóng, đảm bảo chất lượng'
+                }}
+              </p>
+              <p class="text-dark" *ngIf="getMinAndMaxPrice(user.id) as minmax">
+                Mức giá: {{ minmax.min | currency: '':'đ':'4.0-0' }} -
+                {{ minmax.max | currency: '':'đ':'4.0-0' }}
+              </p>
+              <p class="text-secondary">
+                {{ user.distance }} km - {{ user.time }} phút
+              </p>
+            </h3>
+          </ion-label>
+        </ion-item>
       </ion-list>
     </div>
   </div>
