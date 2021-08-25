@@ -60,6 +60,7 @@ import { FixerFeedbackComponent } from './fixer-feedback/fixer-feedback.componen
     IonicModule.forRoot({
       mode: 'ios',
       animated: false,
+      _forceStatusbarPadding: true,
     }),
     IonicRatingModule,
     ReactiveFormsModule,

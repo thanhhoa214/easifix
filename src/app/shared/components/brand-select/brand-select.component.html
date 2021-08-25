@@ -1,17 +1,44 @@
-<ion-card class="p-2">
-  <h5 class="ml-2">Chi tiết dịch vụ</h5>
-  <div>
-    <b class="ml-2">Tên hãng sản xuất</b>
-  </div>
-  <small class="ml-2 mt-3"
-    >Mẹo: Chọn hãng sẽ giúp bạn nhân viên chuẩn bị tốt hơn</small
+<div class="mt-2 h-97 w-100 d-flex justify-content-center align-items-center">
+  <ion-card class="p-2 overflow-auto h-100 w-100">
+    <h5 class="ml-2">Chi tiết dịch vụ</h5>
+    <div>
+      <b class="ml-2">Tên hãng sản xuất</b>
+    </div>
+    <small class="ml-2 mt-3"
+      >Mẹo: Chọn hãng sẽ giúp bạn nhân viên chuẩn bị tốt hơn</small
+    >
+    <ion-input
+      [formControl]="search"
+      class="mx-2 w-90 border rounded-lg px-2"
+      placeholder="Tìm kiếm ..."
+    ></ion-input>
+    <div class="d-flex flex-wrap ml-2" id="predictions">
+      <ion-button
+        fill="outline"
+        size="small"
+        class="rounded-circle"
+        (click)="setSearchValue(item)"
+        *ngFor="let item of getPredictions()"
+      >
+        {{ item }}
+      </ion-button>
+    </div>
+    <div class="mt-2">
+      <b class="ml-2">Mô tả vấn đề</b>
+    </div>
+    <small class="ml-2 mt-3"
+      >Mẹo: Mô tả vấn đề sẽ giúp bạn tìm kiếm chính xác hơn.</small
+    >
+    <ion-textarea
+      class="mx-2 w-90 border rounded-lg px-2"
+      placeholder="Mô tả vấn đề ..."
+      [rows]="4"
+    ></ion-textarea>
+    <!-- <div
+    class="d-flex flex-wrap ml-2"
+    id="predictions"
+    *ngIf="getPredictions()?.length > 0"
   >
-  <ion-input
-    [formControl]="search"
-    class="mx-2 w-90 border rounded-lg px-2"
-    placeholder="Tìm kiếm ..."
-  ></ion-input>
-  <div class="d-flex flex-wrap ml-2" id="predictions">
     <ion-button
       fill="outline"
       size="small"
@@ -21,12 +48,32 @@
     >
       {{ item }}
     </ion-button>
-  </div>
+  </div> -->
+    <div class="mt-2">
+      <b class="ml-2">Chụp lại vấn đề</b>
+    </div>
 
-  <ion-button expand="block" class="w-100 mx-auto" (click)="goToSearch()"
-    >Xác nhận</ion-button
-  >
-  <p class="w-100 mx-auto text-center">
-    <ion-text (click)="goToSearch()">Bỏ qua</ion-text>
-  </p>
-</ion-card>
+    <small class="ml-2 mt-3"
+      >Mẹo: Chụp lại để chúng tôi hiểu và phục vụ tốt hơn.</small
+    >
+    <ion-card class="mt-1">
+      <ion-card-content
+        class="d-flex justify-content-center align-items-center img-wrapper"
+        (click)="getPicture()"
+      >
+        <img [src]="photo" *ngIf="photo" />
+        <div class="d-flex flex-column align-items-center" *ngIf="!photo">
+          <ion-icon name="image" style="zoom: 3"></ion-icon>
+          <span>Chụp lại vấn đề của bạn</span>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-button expand="block" class="w-100 mx-auto" (click)="goToSearch()"
+      >Xác nhận</ion-button
+    >
+    <p class="w-100 mx-auto text-center">
+      <ion-text (click)="goToSearch()">Bỏ qua</ion-text>
+    </p>
+  </ion-card>
+</div>
